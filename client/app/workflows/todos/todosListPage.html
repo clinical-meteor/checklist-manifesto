@@ -1,0 +1,70 @@
+<template name="todosListPage">
+  <div id="todosListPage" class="page lists-show">
+    {{#with list}}
+
+      <nav id="listPanelHeader" class="js-title-nav">
+        {{#if editing}}
+          <form class="js-edit-form list-edit-form">
+            <input type="text" name="name" value="{{name}}">
+            <div class="nav-group right">
+              <a href="#" class="js-cancel nav-item"><span class="icon-close" title="Cancel"></span></a>
+            </div>
+          </form>
+        {{else}}
+            <div class="nav-group">
+              <a href="#" class="js-menu nav-item"><span class="icon-list-unordered" title="Show menu"></span></a>
+            </div>
+
+            <h1 id="listPanelTitle" class="js-edit-list title-page"><span class="title-wrapper">{{name}}</span>
+              <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
+            </h1>
+
+            <div class="nav-group right">
+              <div class="nav-item options-mobile">
+                <select class="list-edit">
+                  <option disabled selected>Select an action</option>
+                  {{#if userId}}
+                    <option value="public">Make Public</option>
+                  {{else}}
+                    <option value="private">Make Private</option>
+                  {{/if}}
+                  <option value="delete">Delete</option>
+                </select>
+                <span class="icon-cog"></span>
+              </div>
+              <div class="options-web">
+                <a class="js-toggle-list-privacy nav-item">
+                  {{#if userId}}
+                    <span id="listPanelLockIcon" class="icon-lock" title="Make list private"></span>
+                  {{else}}
+                    <span id="listPanelLockIcon" class="icon-unlock" title="Make list public"></span>
+                  {{/if}}
+                </a>
+
+                <a id="listPanelDeleteIcon" class="js-delete-list nav-item">
+                  <span class="icon-trash" title="Delete list"></span>
+                </a>
+              </div>
+            </div>
+        {{/if}}
+
+        <form class="js-todo-new todo-new input-symbol">
+          <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks">
+          <span id="listPanelNewItemIcon" class="icon-add js-todo-add"></span>
+        </form>
+      </nav>
+
+
+      <div id="listPanelItems" class="content-scrollable list-items">
+        {{#each todos}}
+          {{> todosItem}}
+        {{else}}
+          <div class="wrapper-message">
+            <div class="title-message">No tasks here</div>
+            <div class="subtitle-message">Add new tasks using the field above</div>
+          </div>
+        {{/each}}
+      </div>
+    {{/with}}
+  </div>
+</template>

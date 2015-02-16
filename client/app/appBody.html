@@ -1,0 +1,81 @@
+
+<template name="appBody">
+  <div id="appBody" class="{{menuOpen}}">
+
+    <section id="sidebarMenu" class="sidebarMenu">
+
+      <div id="todosLists" class="todosLists">
+        <div class="panel panel-default">
+          {{#if currentUser}}
+            <a id="currentUserEmail" href="#" class="js-user-menu">
+              <!-- {{#if userMenuOpen}}
+                <span class="icon-arrow-up"></span>
+                {{else}}
+                <span class="icon-arrow-down"></span>
+              {{/if}} -->
+              {{email}}
+            </a>
+          {{else}}
+            <a id="signInButton" href="{{pathFor 'entrySignIn'}}">Sign In</a>
+          {{/if}}
+
+          <hr>
+
+          <div class="panel-body">
+            <a id="newListButton" class="js-new-list link-list-new"><span class="icon-plus"></span>New List</a>
+            {{#each lists}}
+              <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
+                {{#if userId}}
+                  <span class="icon-lock"></span>
+                {{/if}}
+                {{name}}
+                {{#if incompleteCount}}
+                  <span class="count-list">{{incompleteCount}}</span>
+                {{/if}}
+              </a>
+            {{/each}}
+          </div>
+          <hr>
+          <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Taskpad</a>
+          <a id="glossaryButton" href="{{pathFor 'glossaryPage'}}">Glossary</a>
+          <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
+          <a id="privacyButton" href="{{pathFor 'privacyPage'}}">Privacy Policy</a>
+          {{#if currentUser}}
+            <hr>
+            <a id="logoutButton" class="js-logout">Logout</a>
+          {{/if}}
+          <hr>
+          <div id="connectionStatusPanel" class="centered">
+            {{getConnectionStatus}}
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <div class="contentOverlay"></div>
+
+    <div id="contentContainer" class="tile">
+      {{#each thisArray}}
+        {{> yield}}
+      {{/each}}
+
+      {{#unless connected}}
+        <nav id="connectionAlert" class="navbar navbar-default navbar-fixed-bottom">
+          <div class="connectionPanel container">
+            <span id="connectionIcon" class="icon-sync"></span>
+            <div class="meta">
+              <div id="connectionTitle" class="title-notification">Trying to connect</div>
+              <div id="connectionMessage" class="description">There seems to be a connection issue</div>
+            </div>
+          </div>
+        </nav>
+      {{/unless}}
+    </div>
+
+
+  </div>
+</template>
