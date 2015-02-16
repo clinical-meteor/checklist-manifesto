@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="accounts.signin"
+             errors="0"
+             failures="3"
+             tests="21">
+  
+  <testsuite errors="0" failures="3" hostname="" id=""
+    name="App Layout" package="accounts.signin" skipped="0"
+    tests="21" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 1316 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#appBody&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarMenu&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpButton&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== A. SIGN UP PAGE">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entrySignIn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInToAppButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#needAnAccountButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; contains text: &quot;Sign In.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; contains text: &quot;Signing in allows you to view private lists&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== B. FOO">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#signUpButton&quot; using: css selector
+Unable to locate element: &quot;#signUpPageTitle&quot; using: css selector
+Unable to locate element: &quot;#signUpPageMessage&quot; using: css selector
+Unable to locate element: &quot;#signUpPageEmailInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPagePasswordInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPagePasswordConfirmInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPageJoinNowButton&quot; using: css selector
+Unable to locate element: &quot;#currentUserEmail&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

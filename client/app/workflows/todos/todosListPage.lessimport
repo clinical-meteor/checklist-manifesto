@@ -1,6 +1,0 @@
-#todosListPage {
-  .content-scrollable {
-    background: @color-empty;
-    top: 5em !important;
-  }
-}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="app.layout"
+             errors="0"
+             failures="7"
+             tests="25">
+  
+  <testsuite errors="0" failures="7" hostname="" id=""
+    name="App Layout" package="app.layout" skipped="0"
+    tests="25" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 1253 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#appBody&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#sidebarMenu&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpButton&gt; is present.">
+        
+          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#todosLists&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#newListButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#todosLists .listItem:nth-child(2)&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#todosListPage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelHeader&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelItemCount&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelLockIcon&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelDeleteIcon&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelNewItemIcon&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelNewItemInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelItems&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelItems .taskItem:nth-child(1)&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelTitle&gt; contains text: &quot;Grove Installation&quot;.">
+        
+          <failure message="Expected &quot;Grove Installation&quot; but got: &quot;Meteor Principles 7&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(1) .taskInput&gt; equals &quot;Connect lights and sensors.&quot;.">
+        
+          <failure message="Expected &quot;Connect lights and sensors.&quot; but got: &quot;Simplicity Equals Productivity&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(2) .taskInput&gt; equals &quot;Put rock wool in net pots with hydroton clay.&quot;.">
+        
+          <failure message="Expected &quot;Put rock wool in net pots with hydroton clay.&quot; but got: &quot;Embrace the Ecosystem&quot;"></failure>
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(3) .taskInput&gt; equals &quot;Place seeds in rock wool.&quot;.">
+        
+          <failure message="Expected &quot;Place seeds in rock wool.&quot; but got: &quot;Full Stack Reactivity&quot;"></failure>
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#signUpButton&quot; using: css selector
+Unable to locate element: &quot;#signUpPageTitle&quot; using: css selector
+Unable to locate element: &quot;#signUpPageMessage&quot; using: css selector
+Unable to locate element: &quot;#signUpPageEmailInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPagePasswordInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPagePasswordConfirmInput&quot; using: css selector
+Unable to locate element: &quot;#signUpPageJoinNowButton&quot; using: css selector
+Unable to locate element: &quot;#currentUserEmail&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

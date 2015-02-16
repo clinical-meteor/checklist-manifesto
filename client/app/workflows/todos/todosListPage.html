@@ -7,12 +7,16 @@
           <form class="js-edit-form list-edit-form">
             <input type="text" name="name" value="{{name}}">
             <div class="nav-group right">
-              <a href="#" class="js-cancel nav-item"><span class="icon-close" title="Cancel"></span></a>
+              <a href="#" class="js-cancel nav-item">
+                <i class="fa fa-times" title="Cancel"></i>
+              </a>
             </div>
           </form>
         {{else}}
             <div class="nav-group">
-              <a href="#" class="js-menu nav-item"><span class="icon-list-unordered" title="Show menu"></span></a>
+              <a href="#" class="js-menu nav-item">
+                <i class="fa fa-list-ul" title="Show menu"></i>
+              </a>
             </div>
 
             <h1 id="listPanelTitle" class="js-edit-list title-page"><span class="title-wrapper">{{name}}</span>
@@ -30,19 +34,21 @@
                   {{/if}}
                   <option value="delete">Delete</option>
                 </select>
-                <span class="icon-cog"></span>
+                <i class="fa fa-cog"></i>
               </div>
               <div class="options-web">
                 <a class="js-toggle-list-privacy nav-item">
                   {{#if userId}}
-                    <span id="listPanelLockIcon" class="icon-lock" title="Make list private"></span>
+                    <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
+                    <!-- <span id="listPanelLockIcon" class="icon-lock" title="Make list private"></span> -->
                   {{else}}
-                    <span id="listPanelLockIcon" class="icon-unlock" title="Make list public"></span>
+                    <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
+                    <!-- <span id="listPanelLockIcon" class="icon-unlock" title="Make list public"></span> -->
                   {{/if}}
                 </a>
 
                 <a id="listPanelDeleteIcon" class="js-delete-list nav-item">
-                  <span class="icon-trash" title="Delete list"></span>
+                  <i class="fa fa-trash" title="Delete list"></i>
                 </a>
               </div>
             </div>
@@ -50,7 +56,8 @@
 
         <form class="js-todo-new todo-new input-symbol">
           <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks">
-          <span id="listPanelNewItemIcon" class="icon-add js-todo-add"></span>
+          <!-- <span id="listPanelNewItemIcon" class="icon-add js-todo-add"></span> -->
+          <i id="listPanelNewItemIcon" class="fa fa-pencil js-todo-add"></i>
         </form>
       </nav>
 

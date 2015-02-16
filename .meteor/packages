@@ -5,14 +5,21 @@
 
 standard-app-packages
 insecure
-less
 iron:router
+
+accounts-base
 accounts-password
-fastclick
+
 noorderstorm:hammer
-mizzao:bootstrap-3
+fastclick
+
 ground:db
 ground:localstorage
 appcache
-clinical:nightwatch
 
+natestrauser:font-awesome
+nemo64:bootstrap
+less
+
+clinical:nightwatch
+clinical:ui-vocabulary

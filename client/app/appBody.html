@@ -9,9 +9,9 @@
           {{#if currentUser}}
             <a id="currentUserEmail" href="#" class="js-user-menu">
               <!-- {{#if userMenuOpen}}
-                <span class="icon-arrow-up"></span>
+                <i class="fa fa-arrow-up"></i>
                 {{else}}
-                <span class="icon-arrow-down"></span>
+                <i class="fa fa-arrow-down"></i>
               {{/if}} -->
               {{email}}
             </a>
@@ -22,11 +22,11 @@
           <hr>
 
           <div class="panel-body">
-            <a id="newListButton" class="js-new-list link-list-new"><span class="icon-plus"></span>New List</a>
+            <a id="newListButton" class="js-new-list link-list-new"><i class="fa fa-plus"></i>New List</a>
             {{#each lists}}
               <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
                 {{#if userId}}
-                  <span class="icon-lock"></span>
+                  <i class="fa fa-lock"></i>
                 {{/if}}
                 {{name}}
                 {{#if incompleteCount}}
@@ -66,7 +66,7 @@
       {{#unless connected}}
         <nav id="connectionAlert" class="navbar navbar-default navbar-fixed-bottom">
           <div class="connectionPanel container">
-            <span id="connectionIcon" class="icon-sync"></span>
+            <i id="connectionIcon" class="fa fa-refresh fa-spin"></i>
             <div class="meta">
               <div id="connectionTitle" class="title-notification">Trying to connect</div>
               <div id="connectionMessage" class="description">There seems to be a connection issue</div>
