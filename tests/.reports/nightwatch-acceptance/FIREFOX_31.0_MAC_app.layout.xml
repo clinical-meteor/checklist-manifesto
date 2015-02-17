@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="app.layout"
              errors="0"
-             failures="3"
+             failures="0"
              tests="22">
   
-  <testsuite errors="0" failures="3" hostname="" id=""
+  <testsuite errors="0" failures="0" hostname="" id=""
     name="App Layout" package="app.layout" skipped="0"
     tests="22" time="" timestamp="">
     
     
-      <testcase name="Element &lt;body&gt; was visible after 1042 milliseconds.">
+      <testcase name="Element &lt;body&gt; was visible after 1331 milliseconds.">
         
         
       </testcase>
@@ -104,23 +104,17 @@
         
       </testcase>
     
-      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(1) .taskInput&gt; equals &quot;Simplicity Equals Productivity.&quot;.">
-        
-          <failure message="Expected &quot;Simplicity Equals Productivity.&quot; but got: &quot;Simplicity Equals Productivity&quot;"></failure>
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(1) .taskInput&gt; equals &quot;Simplicity Equals Productivity&quot;.">
         
         
       </testcase>
     
-      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(2) .taskInput&gt; equals &quot;Embrace the Ecosystem.&quot;.">
-        
-          <failure message="Expected &quot;Embrace the Ecosystem.&quot; but got: &quot;Embrace the Ecosystem&quot;"></failure>
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(2) .taskInput&gt; equals &quot;Embrace the Ecosystem&quot;.">
         
         
       </testcase>
     
-      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(3) .taskInput&gt; equals &quot;Full Stack Reactivity.&quot;.">
-        
-          <failure message="Expected &quot;Full Stack Reactivity.&quot; but got: &quot;Full Stack Reactivity&quot;"></failure>
+      <testcase name="Testing if attribute value of &lt;#listPanelItems .taskItem:nth-child(3) .taskInput&gt; equals &quot;Full Stack Reactivity&quot;.">
         
         
       </testcase>

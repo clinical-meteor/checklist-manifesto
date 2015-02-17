@@ -1,8 +1,5 @@
-var MENU_KEY = 'menuOpen';
-Session.setDefault(MENU_KEY, false);
-
-var USER_MENU_KEY = 'userMenuOpen';
-Session.setDefault(USER_MENU_KEY, false);
+Session.setDefault('menuOpen', false);
+Session.setDefault('userMenuOpen', false);
 
 
 
@@ -15,9 +12,9 @@ Template.appBody.rendered = function() {
     this.hammer = new Hammer(this.find('#appBody'));
     this.hammer.on('swipeleft swiperight', function(event) {
       if (event.gesture.direction === 'right') {
-        Session.set(MENU_KEY, true);
+        Session.set('menuOpen', true);
       } else if (event.gesture.direction === 'left') {
-        Session.set(MENU_KEY, false);
+        Session.set('menuOpen', false);
       }
     });
   }
@@ -57,10 +54,10 @@ Template.appBody.helpers({
     return [this];
   },
   menuOpen: function() {
-    return Session.get(MENU_KEY) && 'menu-open';
+    return Session.get('menuOpen') && 'menu-open';
   },
   userMenuOpen: function() {
-    return Session.get(USER_MENU_KEY);
+    return Session.get('userMenuOpen');
   },
 
 });
@@ -71,23 +68,23 @@ Template.appBody.helpers({
 // TEMPLATE INPUTS
 
 Template.appBody.events({
-  'click .js-menu': function() {
-    Session.set(MENU_KEY, ! Session.get(MENU_KEY));
+  'click .sidebarMenuToggle': function() {
+    Session.set('menuOpen', ! Session.get('menuOpen'));
   },
 
   'click .contentOverlay': function(event) {
-    Session.set(MENU_KEY, false);
+    Session.set('menuOpen', false);
     event.preventDefault();
   },
 
   'click .js-user-menu': function(event) {
-    Session.set(USER_MENU_KEY, ! Session.get(USER_MENU_KEY));
+    Session.set('userMenuOpen', ! Session.get('userMenuOpen'));
     // stop the menu from closing
     event.stopImmediatePropagation();
   },
 
   'click #menu a': function() {
-    Session.set(MENU_KEY, false);
+    Session.set('menuOpen', false);
   },
 
   'click .js-logout': function() {

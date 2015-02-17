@@ -41,7 +41,6 @@
 }
 
 [class^="fa-"], [class*=" fa-"] {
-	font-family: 'todos';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;

@@ -16,11 +16,8 @@
         {{else}}
           <div class="navbar-header">
       			<a id="navbarBrandLink" class="unselectable navbar-brand">
-      				{{#if isLoggedIn }}<i id="navbarMenu" class="fa fa-bars"></i>{{/if}}
-              <a href="#" class="js-menu nav-item">
-                <i class="fa fa-list-ul" title="Show menu"></i>
-              </a>
-              <!-- <input type="text" name="name" value="{{name}}" readonly> -->
+              <i id="navbarMenu" class="sidebarMenuToggle fa fa-list-ul" title="Show menu"></i>
+
               <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
               <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
       			</a>

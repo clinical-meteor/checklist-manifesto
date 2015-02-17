@@ -17,7 +17,9 @@ ground:db
 ground:localstorage
 appcache
 
+#pfafman:font-awesome-4
 #natestrauser:font-awesome
+#linto:fontawesome
 fortawesome:fontawesome
 nemo64:bootstrap
 less

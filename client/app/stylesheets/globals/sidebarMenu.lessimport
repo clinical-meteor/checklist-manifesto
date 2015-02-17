@@ -1,6 +1,4 @@
 #sidebarMenu {
-  padding-right: 10px;
-
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
@@ -46,11 +44,11 @@
       }
     }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-      .position(absolute, .5em, .5em, auto, auto);
-      line-height: 20px;
-    }
+    // [class^="icon-"],
+    // [class*=" icon-"] {
+    //   .position(absolute, .5em, .5em, auto, auto);
+    //   line-height: 20px;
+    // }
   }
 
   .todosLists {
@@ -75,31 +73,82 @@
       padding: .3em .5em;
     }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-      .font-s2;
-      float: left;
-      margin-left: -1.5rem;
-      margin-right: .5rem;
-      margin-top: .1rem;
-      width: 1em;
-    }
-
-    .icon-lock {
-      .font-s1;
-      margin-top: .2rem;
-      opacity: .8;
-    }
+    // [class^="icon-"],
+    // [class*=" icon-"] {
+    //   .font-s2;
+    //   float: left;
+    //   margin-left: -1.5rem;
+    //   margin-right: .5rem;
+    //   margin-top: .1rem;
+    //   width: 1em;
+    // }
+    //
+    // .icon-lock {
+    //   .font-s1;
+    //   margin-top: .2rem;
+    //   opacity: .8;
+    // }
 
     .listItem {
-      color: #222222;
+      // color: #222222;
 
       &:hover,
       &:active,
       &.active {
-        color: black;
         .count-list { background: @color-primary; }
       }
     }
+  }
+}
+
+
+
+
+// desktop
+@media only screen and (min-width: 960px) {
+}
+
+// landscape orientation
+@media only screen and (min-width: 960px) {
+  #sidebarMenu{
+
+    padding-right: 10px;
+    padding-top: 50px;
+
+    .panel{
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    }
+    .panel-default{
+      border-color: #ddd;
+    }
+
+  }
+}
+
+// portrait orientation
+@media only screen and (max-width: 960px) {
+  #sidebarMenu{
+    .panel{
+      margin-bottom: 20px;
+      background-color: inherit;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+      // box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+
+      a{
+        color: white;
+      }
+    }
+
+    .panel-default{
+      border-color: none;
+    }
+
   }
 }

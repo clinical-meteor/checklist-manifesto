@@ -13,12 +13,10 @@
             {{email}}
           </a>
         {{else}}
-          <a id="signInButton" href="{{pathFor 'entrySignIn'}}">Sign In</a>
+          <a id="signInButton" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">Sign In</a>
         {{/if}}
 
-        <hr>
-
-        <div class="panel-body">
+        <div class="panel-body withLowerBorder">
           <a id="newListButton" class="js-new-list link-list-new"><i class="fa fa-plus"></i>New List</a>
           {{#each lists}}
             <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
@@ -32,16 +30,15 @@
             </a>
           {{/each}}
         </div>
-        <hr>
+
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Taskpad</a>
         <a id="glossaryButton" href="{{pathFor 'glossaryPage'}}">Glossary</a>
         <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
-        <a id="privacyButton" href="{{pathFor 'privacyPage'}}">Privacy Policy</a>
+        <a id="privacyButton" href="{{pathFor 'privacyPage'}}" class="withLowerBorder">Privacy Policy</a>
         {{#if currentUser}}
-          <hr>
-          <a id="logoutButton" class="js-logout">Logout</a>
+          <a id="logoutButton" class="js-logout withLowerBorder">Logout</a>
         {{/if}}
-        <hr>
+
         <div id="connectionStatusPanel" class="centered">
           {{getConnectionStatus}}
         </div>
