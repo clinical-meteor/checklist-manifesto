@@ -5,21 +5,23 @@
       <!-- <nav id="listPanelHeader" class="js-title-nav"> -->
       <nav id="listPanelHeader" class="unselectable navbar navbar-default navbar-fixed-top" role="navigation">
         {{#if editing}}
-          <form class="navbar-form navbar-left">
+        <div class="navbar-header">
+          <form id="listPanelTitleForm" class="navbar-brand">
             <input id="listPanelTitle" type="text" name="name" value="{{name}}">
-            <div class="nav-group right">
+          </form>
+          <div class="navbar-brand float-right">
               <a href="#" class="js-cancel nav-item">
                 <i class="fa fa-times" title="Cancel"></i>
               </a>
-            </div>
-          </form>
+          </div>
+        </div>
         {{else}}
           <div class="navbar-header">
       			<a id="navbarBrandLink" class="unselectable navbar-brand">
               <i id="navbarMenu" class="sidebarMenuToggle fa fa-list-ul" title="Show menu"></i>
 
               <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
-              <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
+              <!-- <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span> -->
       			</a>
 
       			<!-- <a id="quickSignInLink" class="float-right navbar-brand">

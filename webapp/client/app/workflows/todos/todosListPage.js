@@ -1,5 +1,4 @@
-var EDITING_KEY = 'editingList';
-Session.setDefault(EDITING_KEY, false);
+Session.setDefault('editingList', false);
 
 
 //==============================================================================
@@ -30,7 +29,7 @@ Template.todosListPage.helpers({
     return Lists.findOne(Session.get('selectedListId'));
   },
   editing: function() {
-    return Session.get(EDITING_KEY);
+    return Session.get('editingList');
   },
   todos: function() {
     return Todos.find({listId: this._id}, {sort: {createdAt : -1}});
@@ -44,7 +43,7 @@ Template.todosListPage.helpers({
 
 Template.todosListPage.events({
   'click .js-cancel': function() {
-    Session.set(EDITING_KEY, false);
+    Session.set('editingList', false);
   },
 
   'keydown input[type=text]': function(event) {
@@ -56,14 +55,14 @@ Template.todosListPage.events({
   },
 
   'blur input[type=text]': function() {
-    Session.set(EDITING_KEY, false);
+    Session.set('editingList', false);
   },
 
-  'submit .js-edit-form': function(event, template) {
+  'submit #listPanelTitleForm': function(event, template) {
     event.preventDefault();
 
     Lists.update(this._id, {$set: {name: template.$('[name=name]').val()}});
-    Session.set(EDITING_KEY, false);
+    Session.set('editingList', false);
   },
 
   'change .list-edit': function(event, template) {
@@ -80,7 +79,10 @@ Template.todosListPage.events({
     }
   },
 
-  'click .js-edit-list': function(event, template) {
+  // 'click .js-edit-list': function(event, template) {
+  //   editList(this, template);
+  // },
+  'click #listPanelTitle': function(event, template) {
     editList(this, template);
   },
 
@@ -134,11 +136,12 @@ Template.todosListPage.events({
 // TEMPLATE HELPERS
 
 var editList = function(list, template) {
-  Session.set(EDITING_KEY, true);
+  Session.set('editingList', true);
 
   // wait for the template to redraw based on the reactive change
   Tracker.afterFlush(function() {
-    template.$('.js-edit-form input[type=text]').focus();
+    // template.$('.js-edit-form input[type=text]').focus();
+    template.$('#listPanelTitleForm input[type=text]').focus();
   });
 };
 
