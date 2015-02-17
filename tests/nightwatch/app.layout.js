@@ -9,11 +9,7 @@ module.exports = {
 
       .verify.elementPresent('#appBody')
       .verify.elementPresent('#sidebarMenu')
-      .verify.elementPresent('#entryButtons')
-
-      .verify.elementPresent('#entryButtons')
       .verify.elementPresent('#signInButton')
-      .verify.elementPresent('#signUpButton')
 
       .verify.elementPresent('#todosLists')
       .verify.elementPresent('#newListButton')
@@ -31,10 +27,10 @@ module.exports = {
       .verify.elementPresent("#listPanelItems")
       .verify.elementPresent("#listPanelItems .taskItem:nth-child(1)")
 
-      .verify.containsText("#listPanelTitle", "Grove Installation")
-      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(1) .taskInput", "value", "Connect lights and sensors.")
-      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(2) .taskInput", "value", "Put rock wool in net pots with hydroton clay.")
-      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(3) .taskInput", "value", "Place seeds in rock wool.")
+      .verify.containsText("#listPanelTitle", "Meteor Principles")
+      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(1) .taskInput", "value", "Simplicity Equals Productivity")
+      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(2) .taskInput", "value", "Embrace the Ecosystem")
+      .verify.attributeEquals("#listPanelItems .taskItem:nth-child(3) .taskInput", "value", "Full Stack Reactivity")
 
       .end();
   }

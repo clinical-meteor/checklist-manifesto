@@ -2,16 +2,14 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
-  "App Layout" : function (client) {
+  "Static Pages" : function (client) {
     client
       .url("http://localhost:3000")
       .waitForElementVisible("body", 1000)
 
       .verify.elementPresent('#appBody')
       .verify.elementPresent('#sidebarMenu')
-      .verify.elementPresent('#entryButtons')
       .verify.elementPresent('#signInButton')
-      .verify.elementPresent('#signUpButton')
 
       .click("#signInButton").pause(200)
 

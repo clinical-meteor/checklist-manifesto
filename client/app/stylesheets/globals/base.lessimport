@@ -16,7 +16,9 @@ body {
   font-size: 16px; //this sets the baseline so we can use multiples of 4 & (r)ems
 }
 
-// Default type layout
+//==================================================================================================
+// TYPOGRAPHY
+
 h1, h2, h3, h4, h5, h6 {
   .type-regular;
   margin: 0;
@@ -72,4 +74,105 @@ b {
 
 em {
   font-style: italic;
+}
+
+//==================================================================================================
+// HYPERLINKS
+
+a {
+  .transition( all 200ms ease-in );
+  color: @color-secondary;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover { color: darken(@color-primary, 10%); }
+  &:active { color: @color-well; }
+  &:focus { outline:none; } //removes FF dotted outline
+}
+
+//==================================================================================================
+// TILES & PANELS
+
+.tile {
+  background-color: #fff;
+  //border-radius: 6px 6px 6px 6px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  position: relative;
+  box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+  -moz-box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+  -webkit-box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+}
+
+//==================================================================================================
+// EMPTY STATES & 404 MESSAGES
+
+.wrapper-message {
+  .position(absolute, 45%, 0, auto, 0);
+  .transform(translate3d(0, -50%, 0));
+  text-align: center;
+
+  .title-message {
+    .font-m2;
+    .type-light;
+    color: @color-ancillary;
+    margin-bottom: .5em;
+  }
+
+  .subtitle-message {
+    .font-s2;
+    color: @color-medium;
+  }
+}
+
+//==================================================================================================
+// BUTTONS
+
+[class^="btn-"],
+[class*=" btn-"] {
+  // Sizing
+  .font-s2;
+  line-height: 20px !important; //override line-height always so we can use em's to size
+  padding: 1em 1.25em; // 48px tall
+
+  // Style
+  .title-caps;
+  .transition( all 200ms ease-in );
+  color: @color-empty;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important; //prevents global <a> styles from applying
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &[class*="primary"] {
+    background-color: @color-primary;
+    color: @color-empty;
+
+    &:hover { background-color: darken(@color-primary, 5%); }
+    &:active { box-shadow: rgba(0,0,0,.3) 0 1px 3px 0 inset; }
+  }
+
+  &[class*="secondary"] {
+    .transition( all 300ms ease-in );
+    color: @color-empty;
+
+    &:hover{ color: @color-rare; };
+  }
+
+  &[disabled] { opacity: .5; }
+}
+
+.btns-group {
+  .display(flex);
+  .flex-wrap(wrap);
+  width: 100%;
+
+  [class*="btn-"] {
+    .ellipsized;
+    .flex(1);
+
+    & + [class*="btn-"] { margin-left: -1px; }
+  }
 }

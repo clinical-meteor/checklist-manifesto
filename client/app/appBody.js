@@ -48,9 +48,7 @@ Template.appBody.destroyed = function() {
 // TEMPLATE OUTPUTS
 
 Template.appBody.helpers({
-  getConnectionStatus: function () {
-    return Meteor.status().status;
-  },
+
   // We use #each on an array of one item so that the "list" template is
   // removed and a new copy is added when changing lists, which is
   // important for animation purposes. #each looks at the _id property of it's
@@ -61,24 +59,10 @@ Template.appBody.helpers({
   menuOpen: function() {
     return Session.get(MENU_KEY) && 'menu-open';
   },
-  email: function() {
-    return Meteor.user().emails[0].address;
-  },
   userMenuOpen: function() {
     return Session.get(USER_MENU_KEY);
   },
-  lists: function() {
-    return Lists.find();
-  },
-  activeListClass: function() {
-    var current = Router.current();
-    if (current.route.name === 'todosListPage' && current.params._id === this._id) {
-      return 'active';
-    }
-  },
-  connected: function() {
-    return Meteor.status().connected;
-  }
+
 });
 
 

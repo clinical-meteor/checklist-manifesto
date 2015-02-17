@@ -2,23 +2,19 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
-  "App Layout" : function (client) {
+  "Accounts SignIn" : function (client) {
     client
       .url("http://localhost:3000")
       .waitForElementVisible("body", 1000)
 
       .verify.elementPresent('#appBody')
       .verify.elementPresent('#sidebarMenu')
-      .verify.elementPresent('#entryButtons')
-
-      .verify.elementPresent('#entryButtons')
       .verify.elementPresent('#signInButton')
-      .verify.elementPresent('#signUpButton')
 
-      .click("#signInButton").pause(200)
+      .click("#signInButton").pause(500)
 
       .verify.elementPresent('body', "================================================")
-      .verify.elementPresent('body', "== A. SIGN UP PAGE")
+      .verify.elementPresent('body', "== A. SIGN IN PAGE")
 
       .verify.elementPresent("#entrySignIn")
       .verify.elementPresent("#signInPageTitle")

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="accounts.entry"
-             errors="7"
-             failures="13"
-             tests="22">
+             errors="0"
+             failures="0"
+             tests="24">
   
-  <testsuite errors="7" failures="13" hostname="" id=""
-    name="App Layout" package="accounts.entry" skipped="0"
-    tests="22" time="" timestamp="">
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Accounts Entry" package="accounts.entry" skipped="0"
+    tests="24" time="" timestamp="">
     
     
-      <testcase name="Element &lt;body&gt; was visible after 1109 milliseconds.">
+      <testcase name="Element &lt;body&gt; was visible after 1001 milliseconds.">
         
         
       </testcase>
@@ -24,28 +24,7 @@
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
       <testcase name="Testing if element &lt;#signInButton&gt; is present.">
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#signUpButton&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
@@ -55,77 +34,82 @@
         
       </testcase>
     
-      <testcase name="== A. SIGN UP PAGE">
+      <testcase name="== A. SIGN IN PAGE">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#entrySignIn&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#needAnAccountButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== B. SIGN UP PAGE">
         
         
       </testcase>
     
       <testcase name="Testing if element &lt;#entrySignUp&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPageTitle&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPageMessage&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPageEmailInput&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPagePasswordInput&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPagePasswordConfirmInput&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPageJoinNowButton&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
       <testcase name="Testing if element &lt;#signUpPageSignInButton&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPageTitle&gt; contains text: &quot;Join&quot;.">
         
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#signUpPageTitle&gt; contains text: &quot;Join&quot;. Element could not be located.">
-        
-          <failure message="Expected &quot;Join&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#signUpPageMessage&gt; contains text: &quot;Joining allows you to make private lists&quot;. Element could not be located.">
-        
-          <failure message="Expected &quot;Joining allows you to make private lists&quot; but got: &quot;null&quot;"></failure>
+      <testcase name="Testing if element &lt;#signUpPageMessage&gt; contains text: &quot;Joining allows you to make private lists&quot;.">
         
         
       </testcase>
@@ -145,17 +129,6 @@
         
       </testcase>
     
-    
-      <system-err>
-        Unable to locate element: &quot;#signUpButton&quot; using: css selector
-Unable to locate element: &quot;#signUpPageTitle&quot; using: css selector
-Unable to locate element: &quot;#signUpPageMessage&quot; using: css selector
-Unable to locate element: &quot;#signUpPageEmailInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordConfirmInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPageJoinNowButton&quot; using: css selector
-Unable to locate element: &quot;#currentUserEmail&quot; using: css selector
-      </system-err>
     
     </testsuite>
   

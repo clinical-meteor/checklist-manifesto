@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="app.static"
-             errors="1"
-             failures="5"
-             tests="27">
+             errors="0"
+             failures="0"
+             tests="25">
   
-  <testsuite errors="1" failures="5" hostname="" id=""
-    name="App Layout" package="app.static" skipped="0"
-    tests="27" time="" timestamp="">
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Static Pages" package="app.static" skipped="0"
+    tests="25" time="" timestamp="">
     
     
-      <testcase name="Element &lt;body&gt; was visible after 1211 milliseconds.">
+      <testcase name="Element &lt;body&gt; was visible after 702 milliseconds.">
         
         
       </testcase>
@@ -24,21 +24,7 @@
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
       <testcase name="Testing if element &lt;#signInButton&gt; is present.">
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#signUpButton&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
@@ -95,14 +81,10 @@
     
       <testcase name="Testing if element &lt;#currentUserEmail&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
       <testcase name="Testing if element &lt;#todosListPage&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
@@ -129,8 +111,6 @@
     
       <testcase name="Testing if element &lt;#logoutButton&gt; is present.">
         
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
         
       </testcase>
     
@@ -154,17 +134,6 @@
         
       </testcase>
     
-    
-      <system-err>
-        Unable to locate element: &quot;#signUpButton&quot; using: css selector
-Unable to locate element: &quot;#signUpPageTitle&quot; using: css selector
-Unable to locate element: &quot;#signUpPageMessage&quot; using: css selector
-Unable to locate element: &quot;#signUpPageEmailInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordConfirmInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPageJoinNowButton&quot; using: css selector
-Unable to locate element: &quot;#currentUserEmail&quot; using: css selector
-      </system-err>
     
     </testsuite>
   

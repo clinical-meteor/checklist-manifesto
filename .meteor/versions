@@ -20,6 +20,7 @@ ejson@1.0.4
 email@1.0.4
 fastclick@1.0.1
 follower-livedata@1.0.2
+fortawesome:fontawesome@4.2.0_2
 geojson-utils@1.0.1
 ground:db@0.0.9
 ground:dictionary@0.0.1
@@ -55,7 +56,6 @@ minifiers@1.1.2
 minimongo@1.0.5
 mobile-status-bar@1.0.1
 mongo@1.0.8
-natestrauser:font-awesome@4.3.0
 nemo64:bootstrap-data@3.3.1_1
 nemo64:bootstrap@3.3.1_1
 noorderstorm:hammer@0.1.3

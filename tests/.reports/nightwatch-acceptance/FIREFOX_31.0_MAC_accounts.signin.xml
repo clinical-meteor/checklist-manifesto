@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="accounts.signin"
              errors="0"
-             failures="3"
-             tests="21">
+             failures="0"
+             tests="18">
   
-  <testsuite errors="0" failures="3" hostname="" id=""
-    name="App Layout" package="accounts.signin" skipped="0"
-    tests="21" time="" timestamp="">
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Accounts SignIn" package="accounts.signin" skipped="0"
+    tests="18" time="" timestamp="">
     
     
-      <testcase name="Element &lt;body&gt; was visible after 1316 milliseconds.">
+      <testcase name="Element &lt;body&gt; was visible after 669 milliseconds.">
         
         
       </testcase>
@@ -24,28 +24,7 @@
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#entryButtons&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
-        
-        
-      </testcase>
-    
       <testcase name="Testing if element &lt;#signInButton&gt; is present.">
-        
-        
-      </testcase>
-    
-      <testcase name="Testing if element &lt;#signUpButton&gt; is present.">
-        
-          <failure message="Expected &quot;present&quot; but got: &quot;null&quot;"></failure>
         
         
       </testcase>
@@ -55,7 +34,7 @@
         
       </testcase>
     
-      <testcase name="== A. SIGN UP PAGE">
+      <testcase name="== A. SIGN IN PAGE">
         
         
       </testcase>
@@ -120,17 +99,6 @@
         
       </testcase>
     
-    
-      <system-err>
-        Unable to locate element: &quot;#signUpButton&quot; using: css selector
-Unable to locate element: &quot;#signUpPageTitle&quot; using: css selector
-Unable to locate element: &quot;#signUpPageMessage&quot; using: css selector
-Unable to locate element: &quot;#signUpPageEmailInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPagePasswordConfirmInput&quot; using: css selector
-Unable to locate element: &quot;#signUpPageJoinNowButton&quot; using: css selector
-Unable to locate element: &quot;#currentUserEmail&quot; using: css selector
-      </system-err>
     
     </testsuite>
   

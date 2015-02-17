@@ -2,10 +2,11 @@
   <div id="todosListPage" class="page lists-show">
     {{#with list}}
 
-      <nav id="listPanelHeader" class="js-title-nav">
+      <!-- <nav id="listPanelHeader" class="js-title-nav"> -->
+      <nav id="listPanelHeader" class="unselectable navbar navbar-default navbar-fixed-top" role="navigation">
         {{#if editing}}
-          <form class="js-edit-form list-edit-form">
-            <input type="text" name="name" value="{{name}}">
+          <form class="navbar-form navbar-left">
+            <input id="listPanelTitle" type="text" name="name" value="{{name}}">
             <div class="nav-group right">
               <a href="#" class="js-cancel nav-item">
                 <i class="fa fa-times" title="Cancel"></i>
@@ -13,17 +14,47 @@
             </div>
           </form>
         {{else}}
-            <div class="nav-group">
+          <div class="navbar-header">
+      			<a id="navbarBrandLink" class="unselectable navbar-brand">
+      				{{#if isLoggedIn }}<i id="navbarMenu" class="fa fa-bars"></i>{{/if}}
               <a href="#" class="js-menu nav-item">
                 <i class="fa fa-list-ul" title="Show menu"></i>
               </a>
-            </div>
-
-            <h1 id="listPanelTitle" class="js-edit-list title-page"><span class="title-wrapper">{{name}}</span>
+              <!-- <input type="text" name="name" value="{{name}}" readonly> -->
+              <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
               <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
-            </h1>
+      			</a>
 
-            <div class="nav-group right">
+      			<!-- <a id="quickSignInLink" class="float-right navbar-brand">
+      				{{#if isLoggedIn }}
+      					{{getUserName}}
+      				{{else}}
+      					Sign-In
+      				{{/if}}
+      			</a> -->
+      			<a id="quickSignInLink" class="float-right navbar-brand">
+              <a class="js-toggle-list-privacy nav-item">
+                {{#if userId}}
+                  <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
+                {{else}}
+                  <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
+                {{/if}}
+              </a>
+              <a id="listPanelDeleteIcon" class="js-delete-list nav-item">
+                <i class="fa fa-trash" title="Delete list"></i>
+              </a>
+      			</a>
+      		</div>
+
+
+
+            <!-- <h1 id="listPanelTitle" class="js-edit-list title-page">
+              <span class="title-wrapper">{{name}}</span>
+              <input type="text" name="name" value="{{name}}" readonly>
+              <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
+            </h1> -->
+
+            <!-- <div class="nav-group right">
               <div class="nav-item options-mobile">
                 <select class="list-edit">
                   <option disabled selected>Select an action</option>
@@ -40,10 +71,8 @@
                 <a class="js-toggle-list-privacy nav-item">
                   {{#if userId}}
                     <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
-                    <!-- <span id="listPanelLockIcon" class="icon-lock" title="Make list private"></span> -->
                   {{else}}
                     <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
-                    <!-- <span id="listPanelLockIcon" class="icon-unlock" title="Make list public"></span> -->
                   {{/if}}
                 </a>
 
@@ -51,9 +80,13 @@
                   <i class="fa fa-trash" title="Delete list"></i>
                 </a>
               </div>
-            </div>
+            </div> -->
         {{/if}}
 
+
+      </nav>
+
+      <nav class="navbar navbar-default no-rounded-corners">
         <form class="js-todo-new todo-new input-symbol">
           <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks">
           <!-- <span id="listPanelNewItemIcon" class="icon-add js-todo-add"></span> -->

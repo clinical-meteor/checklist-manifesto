@@ -2,58 +2,7 @@
 <template name="appBody">
   <div id="appBody" class="{{menuOpen}}">
 
-    <section id="sidebarMenu" class="sidebarMenu">
-
-      <div id="todosLists" class="todosLists">
-        <div class="panel panel-default">
-          {{#if currentUser}}
-            <a id="currentUserEmail" href="#" class="js-user-menu">
-              <!-- {{#if userMenuOpen}}
-                <i class="fa fa-arrow-up"></i>
-                {{else}}
-                <i class="fa fa-arrow-down"></i>
-              {{/if}} -->
-              {{email}}
-            </a>
-          {{else}}
-            <a id="signInButton" href="{{pathFor 'entrySignIn'}}">Sign In</a>
-          {{/if}}
-
-          <hr>
-
-          <div class="panel-body">
-            <a id="newListButton" class="js-new-list link-list-new"><i class="fa fa-plus"></i>New List</a>
-            {{#each lists}}
-              <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
-                {{#if userId}}
-                  <i class="fa fa-lock"></i>
-                {{/if}}
-                {{name}}
-                {{#if incompleteCount}}
-                  <span class="count-list">{{incompleteCount}}</span>
-                {{/if}}
-              </a>
-            {{/each}}
-          </div>
-          <hr>
-          <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Taskpad</a>
-          <a id="glossaryButton" href="{{pathFor 'glossaryPage'}}">Glossary</a>
-          <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
-          <a id="privacyButton" href="{{pathFor 'privacyPage'}}">Privacy Policy</a>
-          {{#if currentUser}}
-            <hr>
-            <a id="logoutButton" class="js-logout">Logout</a>
-          {{/if}}
-          <hr>
-          <div id="connectionStatusPanel" class="centered">
-            {{getConnectionStatus}}
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
+    {{> sidebarMenu }}
 
 
     <div class="contentOverlay"></div>
