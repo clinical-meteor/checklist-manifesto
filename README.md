@@ -11,7 +11,7 @@ Improved version of the Todos boilerplate example.  Includes:
 ============================
 #### Meteor Version
 
-1.0
+1.0.3.1
 
 
 ============================
