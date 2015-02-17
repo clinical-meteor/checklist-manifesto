@@ -16,8 +16,8 @@
           <a id="signInButton" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">Sign In</a>
         {{/if}}
 
-        <div class="panel-body withLowerBorder">
-          <a id="newListButton" class="js-new-list link-list-new"><i class="fa fa-plus"></i>New List</a>
+        <div class="withLowerBorder">
+          <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
           {{#each lists}}
             <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
               {{#if userId}}

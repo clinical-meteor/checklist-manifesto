@@ -7,7 +7,7 @@ Session.setDefault('userMenuOpen', false);
 // TEMPLATE CONSTRUCTORS
 
 Template.appBody.rendered = function() {
-  if (Meteor.isCordova) {
+  //if (Meteor.isCordova) {
     // set up a swipe left / right handler
     this.hammer = new Hammer(this.find('#appBody'));
     this.hammer.on('swipeleft swiperight', function(event) {
@@ -17,7 +17,7 @@ Template.appBody.rendered = function() {
         Session.set('menuOpen', false);
       }
     });
-  }
+  //}
 
   this.find('#contentContainer')._uihooks = {
     insertElement: function(node, next) {

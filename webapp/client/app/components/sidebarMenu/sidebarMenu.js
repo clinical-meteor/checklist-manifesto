@@ -1,3 +1,23 @@
+
+
+
+Template.sidebarMenu.rendered = function() {
+  this.find('#todosLists a')._uihooks = {
+    insertElement: function(node, next) {
+      $(node)
+        .hide()
+        .insertBefore(next)
+        .fadeIn();
+    },
+    removeElement: function(node) {
+      $(node).fadeOut(function() {
+        this.remove();
+      });
+    }
+  };
+};
+
+
 Template.sidebarMenu.helpers({
   getConnectionStatus: function () {
     return Meteor.status().status;

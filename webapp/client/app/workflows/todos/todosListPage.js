@@ -1,25 +1,6 @@
 Session.setDefault('editingList', false);
 
 
-//==============================================================================
-// TEMPLATE CONSTRUCTOR
-
-Template.todosListPage.rendered = function() {
-  this.find('.js-title-nav')._uihooks = {
-    insertElement: function(node, next) {
-      $(node)
-        .hide()
-        .insertBefore(next)
-        .fadeIn();
-    },
-    removeElement: function(node) {
-      $(node).fadeOut(function() {
-        this.remove();
-      });
-    }
-  };
-};
-
 
 //==============================================================================
 // TEMPLATE OUTPUTS
