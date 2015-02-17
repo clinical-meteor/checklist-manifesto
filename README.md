@@ -3,7 +3,7 @@ offline-todos
 
 Improved version of the Todos boilerplate example.  Includes:
 
-- offline mode via grounddb
+- offline mode via Ground.Collection
 - responsive design to support tablet rotation  
 - selenium/nightwatch acceptance tests  
 - migrating towards a workflow-centric MVC pattern
