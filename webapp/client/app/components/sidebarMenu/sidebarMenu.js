@@ -2,7 +2,7 @@
 
 
 Template.sidebarMenu.rendered = function() {
-  this.find('#todosLists a')._uihooks = {
+  this.find('#sidebarMenuContents a')._uihooks = {
     insertElement: function(node, next) {
       $(node)
         .hide()

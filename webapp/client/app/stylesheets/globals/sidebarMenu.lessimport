@@ -44,14 +44,9 @@
       }
     }
 
-    // [class^="icon-"],
-    // [class*=" icon-"] {
-    //   .position(absolute, .5em, .5em, auto, auto);
-    //   line-height: 20px;
-    // }
   }
 
-  .todosLists {
+  .sidebarMenuContents {
 
     a {
       box-shadow: rgba(255,255,255,.15) 0 1px 0 0;
@@ -73,24 +68,7 @@
       padding: .3em .5em;
     }
 
-    // [class^="icon-"],
-    // [class*=" icon-"] {
-    //   .font-s2;
-    //   float: left;
-    //   margin-left: -1.5rem;
-    //   margin-right: .5rem;
-    //   margin-top: .1rem;
-    //   width: 1em;
-    // }
-    //
-    // .icon-lock {
-    //   .font-s1;
-    //   margin-top: .2rem;
-    //   opacity: .8;
-    // }
-
     .listItem {
-      // color: #222222;
 
       &:hover,
       &:active,

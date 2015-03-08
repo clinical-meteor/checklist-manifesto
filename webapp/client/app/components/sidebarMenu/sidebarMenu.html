@@ -1,15 +1,10 @@
 <template name="sidebarMenu">
   <section id="sidebarMenu" class="sidebarMenu">
 
-    <div id="todosLists" class="todosLists">
-      <div class="panel panel-default">
+    <div id="sidebarMenuContents" class="sidebarMenuContents">
+      <!-- <div class="panel panel-default tile"> -->
         {{#if currentUser}}
           <a id="currentUserEmail" href="#" class="js-user-menu">
-            <!-- {{#if userMenuOpen}}
-              <i class="fa fa-arrow-up"></i>
-              {{else}}
-              <i class="fa fa-arrow-down"></i>
-            {{/if}} -->
             {{email}}
           </a>
         {{else}}
@@ -31,8 +26,7 @@
           {{/each}}
         </div>
 
-        <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Taskpad</a>
-        <a id="glossaryButton" href="{{pathFor 'glossaryPage'}}">Glossary</a>
+        <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Clinical Checklists</a>
         <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
         <a id="privacyButton" href="{{pathFor 'privacyPage'}}" class="withLowerBorder">Privacy Policy</a>
         {{#if currentUser}}
@@ -43,7 +37,7 @@
           {{getConnectionStatus}}
         </div>
 
-      </div>
+      <!-- </div> -->
     </div>
 
   </section>

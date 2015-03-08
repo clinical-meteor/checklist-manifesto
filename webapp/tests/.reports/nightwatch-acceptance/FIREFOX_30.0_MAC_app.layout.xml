@@ -44,7 +44,7 @@
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#todosLists&gt; is present.">
+      <testcase name="Testing if element &lt;#sidebarMenuContents&gt; is present.">
         
         
       </testcase>
@@ -54,7 +54,7 @@
         
       </testcase>
     
-      <testcase name="Testing if element &lt;#todosLists .listItem:nth-child(2)&gt; is present.">
+      <testcase name="Testing if element &lt;#sidebarMenuContents .listItem:nth-child(2)&gt; is present.">
         
         
       </testcase>

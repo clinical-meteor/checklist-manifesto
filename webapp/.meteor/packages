@@ -10,12 +10,12 @@ iron:router
 accounts-base
 accounts-password
 
-noorderstorm:hammer
+#noorderstorm:hammer
+chriswessels:hammer
 fastclick
 
 ground:db
 ground:localstorage
-appcache
 
 #pfafman:font-awesome-4
 #natestrauser:font-awesome

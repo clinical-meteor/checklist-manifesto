@@ -11,9 +11,9 @@ module.exports = {
       .verify.elementPresent('#sidebarMenu')
       .verify.elementPresent('#signInButton')
 
-      .verify.elementPresent('#todosLists')
+      .verify.elementPresent('#sidebarMenuContents')
       .verify.elementPresent('#newListButton')
-      .verify.elementPresent('#todosLists .listItem:nth-child(2)')
+      .verify.elementPresent('#sidebarMenuContents .listItem:nth-child(2)')
 
       .verify.elementPresent('#contentContainer')
       .verify.elementPresent("#todosListPage")

@@ -4,7 +4,7 @@
 body {
   .position(absolute, 0, 0, 0, 0);
   //.background-image( linear-gradient(top, #6ca66a, #bbcaba 100%) );
-  .background-image(linear-gradient(top, #999, #cccccc 100%));
+  .background-image(linear-gradient(top, #555, #aaa 100%));
   //.background-image( url('/img/background.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -55,6 +55,7 @@ body {
   .transform(translate3d(0, 0, 0));
   //background: @color-tertiary;
   opacity: 1;
+  overflow-y: scroll;
 
   .content-scrollable {
     .position(absolute, 0, 0, 0, 0);

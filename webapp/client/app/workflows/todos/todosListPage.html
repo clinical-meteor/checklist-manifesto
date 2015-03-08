@@ -21,16 +21,8 @@
               <i id="navbarMenu" class="sidebarMenuToggle fa fa-list-ul" title="Show menu"></i>
 
               <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
-              <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
       			</a>
 
-      			<!-- <a id="quickSignInLink" class="float-right navbar-brand">
-      				{{#if isLoggedIn }}
-      					{{getUserName}}
-      				{{else}}
-      					Sign-In
-      				{{/if}}
-      			</a> -->
       			<a id="quickSignInLink" class="float-right navbar-brand">
               <a class="js-toggle-list-privacy nav-item">
                 {{#if userId}}
@@ -45,50 +37,12 @@
       			</a>
       		</div>
 
-
-
-            <!-- <h1 id="listPanelTitle" class="js-edit-list title-page">
-              <span class="title-wrapper">{{name}}</span>
-              <input type="text" name="name" value="{{name}}" readonly>
-              <span id="listPanelItemCount" class="count-list">{{incompleteCount}}</span>
-            </h1> -->
-
-            <!-- <div class="nav-group right">
-              <div class="nav-item options-mobile">
-                <select class="list-edit">
-                  <option disabled selected>Select an action</option>
-                  {{#if userId}}
-                    <option value="public">Make Public</option>
-                  {{else}}
-                    <option value="private">Make Private</option>
-                  {{/if}}
-                  <option value="delete">Delete</option>
-                </select>
-                <i class="fa fa-cog"></i>
-              </div>
-              <div class="options-web">
-                <a class="js-toggle-list-privacy nav-item">
-                  {{#if userId}}
-                    <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
-                  {{else}}
-                    <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
-                  {{/if}}
-                </a>
-
-                <a id="listPanelDeleteIcon" class="js-delete-list nav-item">
-                  <i class="fa fa-trash" title="Delete list"></i>
-                </a>
-              </div>
-            </div> -->
         {{/if}}
-
-
       </nav>
 
       <nav class="navbar navbar-default noRoundedCorners">
         <form class="js-todo-new todo-new input-symbol">
           <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks">
-          <!-- <span id="listPanelNewItemIcon" class="icon-add js-todo-add"></span> -->
           <i id="listPanelNewItemIcon" class="fa fa-pencil js-todo-add"></i>
         </form>
       </nav>
@@ -104,6 +58,10 @@
           </div>
         {{/each}}
       </div>
+
+      <nav id="listPanelFooter" class="unselectable navbar navbar-default navbar-fixed-bottom" role="navigation">
+
+      </nav>
     {{/with}}
   </div>
 </template>
