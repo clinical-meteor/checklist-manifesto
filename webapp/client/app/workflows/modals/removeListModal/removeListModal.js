@@ -10,9 +10,9 @@ Template.removeListModal.events({
     });
 
     console.log('list.name', list.name);
-    console.log($('#confirmRemoveListButton').val());
+    console.log($('#removeListModalInput').val());
 
-    if ($('#confirmRemoveListButton').val() === list.name) {
+    if ($('#removeListModalInput').val() === list.name) {
       Session.set('deleteListConfirmed', true);
     }
   }

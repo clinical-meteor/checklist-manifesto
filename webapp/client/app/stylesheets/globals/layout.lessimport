@@ -45,7 +45,7 @@ body {
     padding: 5px;
     text-align: center;
     font-size: 80%;
-    color: gray;
+    color: #dddddd;
   }
 }
 

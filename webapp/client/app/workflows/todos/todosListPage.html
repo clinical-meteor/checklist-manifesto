@@ -23,13 +23,9 @@
             </a>
 
             <a id="quickSignInLink" class="float-right navbar-brand">
-              <!-- <a class="js-toggle-list-privacy nav-item">
-                {{#if userId}}
-                  <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
-                {{else}}
-                  <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
-                {{/if}}
-              </a> -->
+              <a>
+                <i id="listPanelConfig" class="fa fa-cog" title="Make list private"></i>
+              </a>
             </a>
           </div>
 
@@ -57,13 +53,11 @@
       </div>
 
       <nav id="listPanelFooter" class="unselectable navbar navbar-default navbar-fixed-bottom" role="navigation">
-        <ul class="nav navbar-nav">
+        <!-- <ul class="nav navbar-nav">
           <li>
             <a id="listPanelDeleteIcon" class="js-delete-list nav-item">Delete List</a>
           </li>
-        </ul>
-
-
+        </ul> -->
       </nav>
     {{/with}}
   </div>

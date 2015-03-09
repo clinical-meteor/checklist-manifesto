@@ -20,19 +20,26 @@ Template.todosListPage.helpers({
 // TEMPLATE INPUTS
 
 Template.todosListPage.events({
-  'click #listPanelDeleteIcon': function (event, template) {
+
+  'click #listPanelConfig': function (event, template) {
     // trigger our modal dialog
     $('#removeListModal').modal("show");
 
     // this is stuff we do when the modal closes
     $('#removeListModal').on('hidden.bs.modal', function(e) {
       console.log('closing removeListModal');
-      
-      if(Session.get('deleteListConfirmed')){
-        console.log('delete list confirmed');
 
-        deleteList(this, template);
+      if(Session.get('deleteListConfirmed')){
+        console.log('delete list', Session.get('selectedListId'));
+
+        Todos.find({listId: this._id}).forEach(function(todo) {
+          Todos.remove(todo._id);
+        });
+        Lists.remove(Session.get('selectedListId'));
+
+        Session.set('selectedListId', false);
         Session.set('deleteListConfirmed', false);
+        Router.go('home');
       }
     });
   },
@@ -80,9 +87,9 @@ Template.todosListPage.events({
     editList(this, template);
   },
 
-  'click .js-toggle-list-privacy': function(event, template) {
-    toggleListPrivacy(this, template);
-  },
+  // 'click .js-toggle-list-privacy': function(event, template) {
+  //   toggleListPrivacy(this, template);
+  // },
 
   // 'click .js-delete-list': function(event, template) {
   //   deleteList(this, template);
@@ -139,25 +146,20 @@ var editList = function(list, template) {
   });
 };
 
-var deleteList = function(list) {
+var deleteList = function(list, template) {
+
+  console.log('deleteList', list);
   // ensure the last public list cannot be deleted.
-  if (! list.userId && Lists.find({userId: {$exists: false}}).count() === 1) {
-    return alert("Sorry, you cannot delete the final public list!");
-  }
+  // if (! list.userId && Lists.find({userId: {$exists: false}}).count() === 1) {
+  //   return alert("Sorry, you cannot delete the final public list!");
+  // }
 
-  var message = "Are you sure you want to delete the list " + list.name + "?";
-  if (confirm(message)) {
-    // we must remove each item individually from the client
-    Todos.find({listId: list._id}).forEach(function(todo) {
-      Todos.remove(todo._id);
-    });
-    Lists.remove(list._id);
+  Todos.find({listId: list._id}).forEach(function(todo) {
+    Todos.remove(todo._id);
+  });
+  Lists.remove(list._id);
 
-    Router.go('home');
-    return true;
-  } else {
-    return false;
-  }
+  Router.go('home');
 };
 
 var toggleListPrivacy = function(list) {
