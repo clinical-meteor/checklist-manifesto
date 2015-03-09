@@ -9,6 +9,9 @@ Improved version of the Todos boilerplate example.  Includes:
 - migrating towards a workflow-centric MVC pattern
 - clinical checklist examples
 
+
+![travis-build](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master)
+
 ============================
 #### Meteor Version
 
