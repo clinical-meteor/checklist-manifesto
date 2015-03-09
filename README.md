@@ -7,6 +7,7 @@ Improved version of the Todos boilerplate example.  Includes:
 - responsive design to support tablet rotation  
 - selenium/nightwatch acceptance tests  
 - migrating towards a workflow-centric MVC pattern
+- clinical checklist examples
 
 ============================
 #### Meteor Version
