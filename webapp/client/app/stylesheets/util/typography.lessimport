@@ -4,7 +4,7 @@
 // Core
 //@color-primary: #2cc5d2; //caribbean teal (buttons)
 @color-primary: #831d2c; //caribbean teal (buttons)
-@color-secondary: #6e916b; //cerulean blue (menu new list)
+@color-secondary: #831d2c; //cerulean blue (menu new list)
 @color-tertiary: #eeeeee; //muted teal (join/signin bg)
 @color-ancillary: #1c3f53; //deep navy (nav heading, menu icon)
 @color-complementary: #778b91; //muted navy (add item placeholder)

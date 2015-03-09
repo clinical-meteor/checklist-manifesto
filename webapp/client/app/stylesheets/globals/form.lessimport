@@ -41,7 +41,8 @@ input:-webkit-autofill {
       .position(absolute, 50%, auto, auto, 50%, .85em, .85em);
       .transform(translate3d(-50%, -50%, 0));
       background: transparent;
-      box-shadow: #abdfe3 0 0 0 1px inset;
+      box-shadow: rgba(131, 27, 53, 0.37) 0 0 0 1px inset;
+      //box-shadow: #abdfe3 0 0 0 1px inset;
       content: '';
       display: block;
     }
