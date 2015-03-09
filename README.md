@@ -47,3 +47,8 @@ terminal-b$ ./run_nightwatch.sh
 terminal-b$ ./run_nightwatch.sh -t tests/homePage.js
 
 ````
+
+============================
+#### Run Acceptance Tests
+
+The code is open source under MIT license, but the Symptomatic.io trademark is not.  
