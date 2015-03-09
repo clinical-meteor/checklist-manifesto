@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="itunes.connect"
+             errors="0"
+             failures="0"
+             tests="4">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="iTunesConnect Publication" package="itunes.connect" skipped="4"
+    tests="4" time="" timestamp="">
+    
+    
+    
+      <system-err>
+        Object #&lt;Object&gt; has no method &#39;reviewSignInPage&#39;
+Object #&lt;Object&gt; has no method &#39;reviewSignInPage&#39;
+Object #&lt;Object&gt; has no method &#39;reviewSignInPage&#39;
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

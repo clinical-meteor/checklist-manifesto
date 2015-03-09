@@ -2,58 +2,47 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
-  "Accounts Entry" : function (client) {
+  tags: ["accounts", "janedoe", "signUp", "signIn"],
+  "Accounts Entry": function (client) {
     client
-      .url("http://localhost:3000")
-      .waitForElementVisible("body", 1000)
+      .url("http://localhost:3000/entrySignIn")
+      .resizeWindow(1024, 768)
 
-      .verify.elementPresent('#appBody')
-      .verify.elementPresent('#sidebarMenu')
-      .verify.elementPresent('#signInButton')
+      //============================================================================================
+      .sectionBreak("A. Sign In Page")
 
-      .click("#signInButton").pause(200)
+      .waitForPage("#entrySignIn")
+      .saveScreenshot("tests/nightwatch/screenshots/ipad/accountsEntry/A-signInPage.png")
+      .reviewSignInPage()
+      .signIn("alice@symptomatic.io", "alice123")
 
-      .click("#signInButton").pause(500)
+      .verify.elementPresent("#errorMessages")
+      .verify.elementPresent("#errorMessages .list-item:nth-child(1)")
+      .verify.containsText("#errorMessages .list-item:nth-child(1)", "User not found")
+      .saveScreenshot("tests/nightwatch/screenshots/ipad/accountsEntry/A1-signInPage.png")
 
-      .verify.elementPresent('body', "================================================")
-      .verify.elementPresent('body', "== A. SIGN IN PAGE")
-
-      .verify.elementPresent("#entrySignIn")
-      .verify.elementPresent("#signInPageTitle")
-      .verify.elementPresent("#needAnAccountButton")
-
-      .click("#needAnAccountButton").pause(500)
+      .click("#needAnAccountButton").pause(200)
 
 
-      .verify.elementPresent('body', "================================================")
-      .verify.elementPresent('body', "== B. SIGN UP PAGE")
+      //============================================================================================
+      .sectionBreak("B. Sign Up Page")
 
-      .verify.elementPresent("#entrySignUp")
-      .verify.elementPresent("#signUpPageTitle")
-      .verify.elementPresent("#signUpPageMessage")
-      .verify.elementPresent("#signUpPageEmailInput")
-      .verify.elementPresent("#signUpPagePasswordInput")
-      .verify.elementPresent("#signUpPagePasswordConfirmInput")
-      .verify.elementPresent("#signUpPageJoinNowButton")
-      .verify.elementPresent("#signUpPageSignInButton")
-
-      .verify.containsText("#signUpPageTitle", "Join")
-      .verify.containsText("#signUpPageMessage", "Joining allows you to make private lists")
-
-      .setValue('#signUpPageEmailInput', "janedoe@gmail.com")
-      .setValue('#signUpPagePasswordInput', "janedoe")
-      .setValue('#signUpPagePasswordConfirmInput', "janedoe")
-
-      .click("#signUpPageJoinNowButton").pause(200)
+      .waitForPage("#entrySignUp")
+      .saveScreenshot("tests/nightwatch/screenshots/ipad/accountsEntry/B-signUpPage.png")
+      .reviewSignUpPage()
+      .signUp("alice@symptomatic.io", "alice123")
 
 
-      .verify.elementPresent('body', "================================================")
-      .verify.elementPresent('body', "== B. FOO")
+      //============================================================================================
+      .sectionBreak("C. Home Page")
 
+      .waitForPage("#todosListPage")
+      .saveScreenshot("tests/nightwatch/screenshots/ipad/accountsEntry/C-homePage.png")
 
+      .verify.elementPresent("#currentUserEmail")
+      .verify.containsText("#currentUserEmail", "alice@symptomatic.io")
 
-      .verify.elementPresent('#contentContainer')
-
+      .signOut()
       .end();
   }
 };

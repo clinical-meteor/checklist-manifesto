@@ -22,26 +22,29 @@ Router.configure({
 
 Router.route("/notfound", {
   template: "pageNotFound"
-})
+});
+Router.route("/support", {
+  template: "supportPage"
+});
 
 
 Router.map(function() {
   this.route('entrySignUp');
   this.route('entrySignIn');
 
-  // this.route('todosListPage', {
-  //   path: '/lists/:_id',
-  //   // subscribe to todos before the page is rendered but don't wait on the
-  //   // subscription, we'll just render the items as they arrive
-  //   onBeforeAction: function() {
-  //     //this.todosHandle = Meteor.subscribe('todos');
-  //     Session.set('selectedListId', this.params._id);
-  //     this.next();
-  //   }
-  //   // data: function() {
-  //   //   return Lists.findOne(this.params._id);
-  //   // }
-  // });
+  this.route('todosListPage', {
+    path: '/lists/:_id',
+    // subscribe to todos before the page is rendered but don't wait on the
+    // subscription, we'll just render the items as they arrive
+    onBeforeAction: function() {
+      //this.todosHandle = Meteor.subscribe('todos');
+      Session.set('selectedListId', this.params._id);
+      this.next();
+    }
+    // data: function() {
+    //   return Lists.findOne(this.params._id);
+    // }
+  });
 
   this.route('home', {
     path: '/',

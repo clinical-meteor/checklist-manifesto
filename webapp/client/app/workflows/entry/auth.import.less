@@ -8,6 +8,25 @@
 
   .content-scrollable { background: @color-tertiary; }
 
+  .checkmarkIcon{
+    position: absolute;
+    color: #831d2c;
+  }
+  .btn-gray{
+    width: 100%;
+  }
+  .checkmarkTitle{
+    padding-bottom: 100px;
+  }
+  .fa{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 15px;
+    padding-top: 16px;
+    // color: #555555;
+  }
+
   .wrapper-auth {
     padding-top: 4em;
 
@@ -69,6 +88,21 @@
       bottom: 0;
       margin-top: 1rem;
       position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 704px) {
+    .input-symbol{
+      width: 90%;
+    }
+    .btn-gray{
+      width: 90%;
+    }
+    input{
+      width: 90%;
+    }
+    .fa{
+      left: 5%;
     }
   }
 }

@@ -10,38 +10,49 @@
 
     <div class="content-scrollable">
       <div class="wrapper-auth">
+        <h1 class="checkmarkTitle">
+          <i class="checkmarkIcon fullwidth centered fa fa-3x fa-check"></i>
+        </h1>
+
         <h1 id="signUpPageTitle" class="title-auth">Join.</h1>
         <p id="signUpPageMessage" class="subtitle-auth" >Joining allows you to make private lists</p>
 
         <form>
           {{#if errorMessages}}
-            <div class="list-errors">
+            <div id="errorMessages" class="list-errors">
               {{#each errorMessages}}
-                <div class="list-item">{{this}}</div>
+                <div class="alert alert-danger list-item">{{this}}</div>
               {{/each}}
             </div>
           {{/if}}
 
           <div class="input-symbol  {{errorClass 'email'}}">
             <input id="signUpPageEmailInput" type="email" name="email" placeholder="Your Email" />
-            <span class="icon-email" title="Your Email"></span>
+            <i class="fa fa-envelope-o" title="Your Email"></i>
           </div>
 
           <div class="input-symbol  {{errorClass 'password'}}">
             <input id="signUpPagePasswordInput" type="password" name="password" placeholder="Password" />
-            <span class="icon-lock" title="Password"></span>
+            <span class="fa fa-lock" title="Password"></span>
+            <!-- <span class="icon-lock" title="Password"></span> -->
           </div>
 
           <div class="input-symbol {{errorClass 'confirm'}}">
             <input id="signUpPagePasswordConfirmInput" type="password" name="confirm" placeholder="Confirm Password" />
-            <span class="icon-lock" title="Confirm Password"></span>
+            <span class="fa fa-lock" title="Confirm Password"></span>
+            <!-- <span class="icon-lock" title="Confirm Password"></span> -->
           </div>
 
           <button id="signUpPageJoinNowButton" type="submit" class="btn-primary">Join Now</button>
+          <br>
+          <br>
+
+          <button id="signUpPageSignInButton" class="btn-gray">Have an account? Sign in</button>
+
         </form>
       </div>
 
-      <a id="signUpPageSignInButton" href="{{pathFor 'entrySignIn'}}" class="link-auth-alt">Have an account? Sign in</a>
+      <!-- <a id="signUpPageSignInButton" href="{{pathFor 'entrySignIn'}}" class="link-auth-alt">Have an account? Sign in</a> -->
     </div>
   </div>
 </template>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="accounts.entry"
+             errors="0"
+             failures="0"
+             tests="36">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Accounts Entry" package="accounts.entry" skipped="0"
+    tests="36" time="" timestamp="">
+    
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== A. Sign In Page">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 23 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInToAppButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#needAnAccountButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; contains text: &quot;Sign In&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; contains text: &quot;Improve your clincal practice with checklists.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 21 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#errorMessages&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#errorMessages .list-item:nth-child(1)&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#errorMessages .list-item:nth-child(1)&gt; contains text: &quot;User not found&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== B. Sign Up Page">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignUp&gt; was visible after 30 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignUp&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPagePasswordConfirmInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPageJoinNowButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignUp&gt; was visible after 20 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signUpPagePasswordConfirmInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== C. Home Page">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#todosListPage&gt; was visible after 25 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#currentUserEmail&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#currentUserEmail&gt; contains text: &quot;alice@symptomatic.io&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is present.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

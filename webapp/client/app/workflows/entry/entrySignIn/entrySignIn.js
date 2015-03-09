@@ -14,6 +14,9 @@ Template.entrySignIn.helpers({
 });
 
 Template.entrySignIn.events({
+  "click #needAnAccountButton":function(){
+    Router.go('/entrySignUp');
+  },
   'submit': function(event, template) {
     event.preventDefault();
 

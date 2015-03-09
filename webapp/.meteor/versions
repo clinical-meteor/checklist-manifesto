@@ -11,7 +11,7 @@ boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
 chriswessels:hammer@2.0.4_3
-clinical:nightwatch@1.5.1
+clinical:nightwatch@2.0.0
 clinical:ui-vocabulary@1.0.5
 ddp@1.0.14
 deps@1.0.6

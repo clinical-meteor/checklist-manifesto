@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="itunes.connect"
+             errors="0"
+             failures="0"
+             tests="13">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="iTunesConnect Publication" package="itunes.connect" skipped="0"
+    tests="13" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 67 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInToAppButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#needAnAccountButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; contains text: &quot;Sign In&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; contains text: &quot;Improve your clincal practice with checklists.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#marketingPage&gt; was visible after 1598 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#supportPage&gt; was visible after 19 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 19 milliseconds.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="app.layout"
+             errors="0"
+             failures="0"
+             tests="37">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Layout &amp; Static Pages" package="app.layout" skipped="0"
+    tests="37" time="" timestamp="">
+    
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== A. Sign In Page">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 20 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInToAppButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#needAnAccountButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageTitle&gt; contains text: &quot;Sign In&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageMessage&gt; contains text: &quot;Improve your clincal practice with checklists.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is not present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 22 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPageEmailInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#signInPagePasswordInput&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== B. Home Page">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#todosListPage&gt; was visible after 19 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelHeader&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#listPanelFooter&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#contentContainer&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#currentUserEmail&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#aboutButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#eulaButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#privacyButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#connectionStatusPanel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#todosListPage&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="=============================================================">
+        
+        
+      </testcase>
+    
+      <testcase name="== C. Static Pages">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#aboutPage&gt; was visible after 22 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#eulaPage&gt; was visible after 23 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 27 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#logoutButton&gt; is not present.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

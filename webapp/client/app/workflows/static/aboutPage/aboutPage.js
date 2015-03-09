@@ -1,3 +1,4 @@
 Router.route("/about",{
-  template: "aboutPage"
+  template: "aboutPage",
+  name: "aboutPage"
 });

@@ -14,6 +14,9 @@ Template.entrySignUp.helpers({
 });
 
 Template.entrySignUp.events({
+  "click #signUpPageSignInButton":function(){
+    Router.go('/entrySignIn');
+  },
   'submit': function(event, template) {
     event.preventDefault();
     var email = template.$('[name=email]').val();

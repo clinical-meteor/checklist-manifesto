@@ -1,7 +1,4 @@
-
-Router.map(function() {
-  this.route('privacyPage', {
-    path: '/privacy',
-    template: 'privacyPage'
-  });
+Router.route("/privacy",{
+  template: 'privacyPage',
+  name: 'privacyPage'
 });
