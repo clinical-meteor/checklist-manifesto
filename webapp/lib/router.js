@@ -23,9 +23,7 @@ Router.configure({
 Router.route("/notfound", {
   template: "pageNotFound"
 });
-Router.route("/support", {
-  template: "supportPage"
-});
+
 
 
 Router.map(function() {
@@ -40,7 +38,10 @@ Router.map(function() {
       //this.todosHandle = Meteor.subscribe('todos');
       Session.set('selectedListId', this.params._id);
       this.next();
-    }
+    },
+    // action: function(){
+    //   this.render('todosHeaderNavbar', {to: "pageHeader"})
+    // }
     // data: function() {
     //   return Lists.findOne(this.params._id);
     // }

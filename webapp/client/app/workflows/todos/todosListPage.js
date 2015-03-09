@@ -9,9 +9,6 @@ Template.todosListPage.helpers({
   list: function(){
     return Lists.findOne(Session.get('selectedListId'));
   },
-  editing: function() {
-    return Session.get('editingList');
-  },
   todos: function() {
     return Todos.find({listId: this._id}, {sort: {createdAt : -1}});
   }
@@ -23,6 +20,22 @@ Template.todosListPage.helpers({
 // TEMPLATE INPUTS
 
 Template.todosListPage.events({
+  'click #listPanelDeleteIcon': function (event, template) {
+    // trigger our modal dialog
+    $('#removeListModal').modal("show");
+
+    // this is stuff we do when the modal closes
+    $('#removeListModal').on('hidden.bs.modal', function(e) {
+      console.log('closing removeListModal');
+      
+      if(Session.get('deleteListConfirmed')){
+        console.log('delete list confirmed');
+
+        deleteList(this, template);
+        Session.set('deleteListConfirmed', false);
+      }
+    });
+  },
   'click .js-cancel': function() {
     Session.set('editingList', false);
   },
@@ -71,9 +84,9 @@ Template.todosListPage.events({
     toggleListPrivacy(this, template);
   },
 
-  'click .js-delete-list': function(event, template) {
-    deleteList(this, template);
-  },
+  // 'click .js-delete-list': function(event, template) {
+  //   deleteList(this, template);
+  // },
 
   'click .js-todo-add': function(event, template) {
     template.$('.js-todo-new input').focus();

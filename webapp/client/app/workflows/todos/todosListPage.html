@@ -2,7 +2,6 @@
   <div id="todosListPage" class="page lists-show">
     {{#with list}}
 
-      <!-- <nav id="listPanelHeader" class="js-title-nav"> -->
       <nav id="listPanelHeader" class="unselectable navbar navbar-default navbar-fixed-top" role="navigation">
         {{#if editing}}
         <div class="navbar-header">
@@ -17,28 +16,26 @@
         </div>
         {{else}}
           <div class="navbar-header">
-      			<a id="navbarBrandLink" class="unselectable navbar-brand">
+            <a id="navbarBrandLink" class="unselectable navbar-brand">
               <i id="navbarMenu" class="sidebarMenuToggle fa fa-list-ul" title="Show menu"></i>
 
               <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
-      			</a>
+            </a>
 
-      			<a id="quickSignInLink" class="float-right navbar-brand">
-              <a class="js-toggle-list-privacy nav-item">
+            <a id="quickSignInLink" class="float-right navbar-brand">
+              <!-- <a class="js-toggle-list-privacy nav-item">
                 {{#if userId}}
                   <i id="listPanelLockIcon" class="fa fa-lock" title="Make list private"></i>
                 {{else}}
                   <i id="listPanelLockIcon" class="fa fa-unlock" title="Make list public"></i>
                 {{/if}}
-              </a>
-              <a id="listPanelDeleteIcon" class="js-delete-list nav-item">
-                <i class="fa fa-trash" title="Delete list"></i>
-              </a>
-      			</a>
-      		</div>
+              </a> -->
+            </a>
+          </div>
 
         {{/if}}
       </nav>
+
 
       <nav class="navbar navbar-default noRoundedCorners">
         <form class="js-todo-new todo-new input-symbol">
@@ -60,6 +57,12 @@
       </div>
 
       <nav id="listPanelFooter" class="unselectable navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a id="listPanelDeleteIcon" class="js-delete-list nav-item">Delete List</a>
+          </li>
+        </ul>
+
 
       </nav>
     {{/with}}

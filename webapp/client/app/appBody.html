@@ -1,13 +1,17 @@
 
 <template name="appBody">
+  {{> removeListModal }}
+
   <div id="appBody" class="{{menuOpen}}">
-
     {{> sidebarMenu }}
-
 
     <div class="contentOverlay"></div>
 
     <div id="contentContainer" class="tile">
+      <aside>
+        {{> yield "pageHeader"}}
+      </aside>
+
       {{#each thisArray}}
         {{> yield}}
       {{/each}}
