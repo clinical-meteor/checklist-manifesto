@@ -1,4 +1,4 @@
-offline-todos
+clinical-checklists
 ============================
 
 Improved version of the Todos boilerplate example.  Includes:
@@ -19,10 +19,10 @@ Improved version of the Todos boilerplate example.  Includes:
 
 ````sh
 # Should be as simple as cloning the repository...  
-git clone https://github.com/awatson1978/offline-todos.git
+git clone https://github.com/awatson1978/clinical-checklists.git
 
 # And then running it...
-cd offline-todos
+cd clinical-checklists
 meteor
 ````
 
