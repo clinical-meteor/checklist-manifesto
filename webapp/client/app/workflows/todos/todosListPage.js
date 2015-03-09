@@ -11,6 +11,9 @@ Template.todosListPage.helpers({
   },
   todos: function() {
     return Todos.find({listId: this._id}, {sort: {createdAt : -1}});
+  },
+  editing: function() {
+    return Session.get('editingList');
   }
 });
 
@@ -66,19 +69,19 @@ Template.todosListPage.events({
     Session.set('editingList', false);
   },
 
-  'change .list-edit': function(event, template) {
-    if ($(event.target).val() === 'edit') {
-      editList(this, template);
-
-    } else if ($(event.target).val() === 'delete') {
-      if (! deleteList(this, template)) {
-        // reset the select
-        event.target.selectedIndex = 0;
-      }
-    } else {
-      toggleListPrivacy(this, template);
-    }
-  },
+  // 'change .list-edit': function(event, template) {
+  //   if ($(event.target).val() === 'edit') {
+  //     editList(this, template);
+  //
+  //   } else if ($(event.target).val() === 'delete') {
+  //     if (! deleteList(this, template)) {
+  //       // reset the select
+  //       event.target.selectedIndex = 0;
+  //     }
+  //   } else {
+  //     toggleListPrivacy(this, template);
+  //   }
+  // },
 
   // 'click .js-edit-list': function(event, template) {
   //   editList(this, template);
@@ -146,21 +149,21 @@ var editList = function(list, template) {
   });
 };
 
-var deleteList = function(list, template) {
-
-  console.log('deleteList', list);
-  // ensure the last public list cannot be deleted.
-  // if (! list.userId && Lists.find({userId: {$exists: false}}).count() === 1) {
-  //   return alert("Sorry, you cannot delete the final public list!");
-  // }
-
-  Todos.find({listId: list._id}).forEach(function(todo) {
-    Todos.remove(todo._id);
-  });
-  Lists.remove(list._id);
-
-  Router.go('home');
-};
+// var deleteList = function(list, template) {
+//
+//   console.log('deleteList', list);
+//   // ensure the last public list cannot be deleted.
+//   // if (! list.userId && Lists.find({userId: {$exists: false}}).count() === 1) {
+//   //   return alert("Sorry, you cannot delete the final public list!");
+//   // }
+//
+//   Todos.find({listId: list._id}).forEach(function(todo) {
+//     Todos.remove(todo._id);
+//   });
+//   Lists.remove(list._id);
+//
+//   Router.go('home');
+// };
 
 var toggleListPrivacy = function(list) {
   if (! Meteor.user()) {
