@@ -1,11 +1,14 @@
 Session.setDefault('editingList', false);
-
+Session.setDefault('newTaskRibbonVisible', false);
 
 
 //==============================================================================
 // TEMPLATE OUTPUTS
 
 Template.todosListPage.helpers({
+  isNewTaskRibbonVisible: function () {
+    return Session.get('newTaskRibbonVisible');
+  },
   list: function(){
     return Lists.findOne(Session.get('selectedListId'));
   },
@@ -23,6 +26,12 @@ Template.todosListPage.helpers({
 // TEMPLATE INPUTS
 
 Template.todosListPage.events({
+  'click #showNewTaskToggle': function (attribute) {
+    Session.toggle('newTaskRibbonVisible');
+  },
+  'click #newItemAddIcon': function () {
+    saveList(this);
+  },
 
   'click #listPanelConfig': function (event, template) {
     // trigger our modal dialog
@@ -103,38 +112,38 @@ Template.todosListPage.events({
   },
 
   'keyup #listPanelNewItemInput': function(event) {
-    console.log('click #listPanelNewItemInput');
-
-    event.preventDefault();
+    //console.log('click #listPanelNewItemInput', event.keyCode);
 
     if(event.keyCode == 13) {
-
-      var newTask = {
-        listId: this._id,
-        text: $('#listPanelNewItemInput').val(),
-        checked: false,
-        createdAt: new Date()
-      }
-
-      if(Meteor.userId()){
-        newTask.public = false;
-      }else{
-        newTask.public = true;
-      }
-
-      console.log('newTask', newTask);
-
-      var result = Todos.insert(newTask);
-
-      console.log('result', result);
-
-      Lists.update(this._id, {$inc: {incompleteCount: 1}});
-      $('#listPanelNewItemInput').val('');
-
+      saveList(this);
     }
   }
 });
 
+
+saveList = function(record){
+  var newTask = {
+    listId: record._id,
+    text: $('#listPanelNewItemInput').val(),
+    checked: false,
+    createdAt: new Date()
+  }
+
+  if(Meteor.userId()){
+    newTask.public = false;
+  }else{
+    newTask.public = true;
+  }
+
+  console.log('newTask', newTask);
+
+  var result = Todos.insert(newTask);
+
+  //console.log('result', result);
+
+  Lists.update(record._id, {$inc: {incompleteCount: 1}});
+  $('#listPanelNewItemInput').val('');
+}
 
 //==============================================================================
 // TEMPLATE HELPERS

@@ -10,8 +10,8 @@ iron:router
 accounts-base
 accounts-password
 
-#noorderstorm:hammer
-chriswessels:hammer
+noorderstorm:hammer
+#chriswessels:hammer
 fastclick
 
 ground:db
@@ -26,3 +26,5 @@ less
 
 clinical:nightwatch@2.0.0
 clinical:ui-vocabulary
+
+clinical:session-extended-api

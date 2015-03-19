@@ -7,7 +7,7 @@ Session.setDefault('userMenuOpen', false);
 // TEMPLATE CONSTRUCTORS
 
 Template.appBody.rendered = function() {
-  //if (Meteor.isCordova) {
+  if (Meteor.isCordova) {
     // set up a swipe left / right handler
     this.hammer = new Hammer(this.find('#appBody'));
     this.hammer.on('swipeleft swiperight', function(event) {
@@ -17,7 +17,7 @@ Template.appBody.rendered = function() {
         Session.set('menuOpen', false);
       }
     });
-  //}
+  }
 
   this.find('#contentContainer')._uihooks = {
     insertElement: function(node, next) {
@@ -68,6 +68,10 @@ Template.appBody.helpers({
 // TEMPLATE INPUTS
 
 Template.appBody.events({
+  // close the menu when a list is selected
+  'click #sidebarMenu a': function() {
+    Session.set('menuOpen', false);
+  },
   'click .sidebarMenuToggle': function() {
     Session.set('menuOpen', ! Session.get('menuOpen'));
   },
@@ -76,7 +80,6 @@ Template.appBody.events({
     Session.set('menuOpen', false);
     event.preventDefault();
   },
-
   'click .js-user-menu': function(event) {
     Session.set('userMenuOpen', ! Session.get('userMenuOpen'));
     // stop the menu from closing

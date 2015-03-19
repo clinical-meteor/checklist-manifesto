@@ -22,8 +22,11 @@
               <span id="listPanelTitle" class="title-wrapper">{{name}}</span>
             </a>
 
-            <a id="quickSignInLink" class="float-right navbar-brand">
-              <a>
+            <a class="float-right navbar-brand">
+              <a class="headerIcon">
+                <i id="showNewTaskToggle" class="fa fa-pencil" title="Add task"></i>
+              </a>
+              <a id="quickSignInLink" class="headerIcon">
                 <i id="listPanelConfig" class="fa fa-cog" title="Make list private"></i>
               </a>
             </a>
@@ -32,13 +35,16 @@
         {{/if}}
       </nav>
 
-
-      <nav class="navbar navbar-default noRoundedCorners">
-        <form class="js-todo-new todo-new input-symbol">
-          <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks">
-          <i id="listPanelNewItemIcon" class="fa fa-pencil js-todo-add"></i>
-        </form>
+      {{#if isNewTaskRibbonVisible}}
+      <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
+        <!-- <form id="newTaskForm" class="js-todo-new todo-new input-symbol"> -->
+          <span class="checkbox-placeholder"></span>
+          <input id="listPanelNewItemInput" type="text" placeholder="Type to add new tasks" autocomplete="off">
+          <!-- <i id="listPanelNewItemIcon" class="fa fa-pencil js-todo-add"></i> -->
+          <i id="newItemAddIcon" class="headerIcon fa fa-plus float-right"></i>
+        <!-- </form> -->
       </nav>
+      {{/if}}
 
 
       <div id="listPanelItems" class="content-scrollable list-items">
