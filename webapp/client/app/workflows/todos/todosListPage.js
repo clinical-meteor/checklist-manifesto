@@ -13,7 +13,7 @@ Template.todosListPage.helpers({
     return Lists.findOne(Session.get('selectedListId'));
   },
   todos: function() {
-    return Todos.find({listId: this._id}, {sort: {createdAt : -1}});
+    return Todos.find({listId: this._id}, {sort: {ordinal : 1}});
   },
   editing: function() {
     return Session.get('editingList');

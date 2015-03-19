@@ -73,12 +73,13 @@ Meteor.startup(function () {
         incompleteCount: list.items.length});
 
       if(list.items){
-        list.items.forEach(function(text){
+        list.items.forEach(function(text, index){
           // add a new task
           Todos.insert({
             listId: list_id,
             public: true,
             text: text,
+            ordinal: index,
             createdAt: new Date(timestamp)}
           );
 

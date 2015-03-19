@@ -5,12 +5,13 @@
   <div id="appBody" class="{{menuOpen}}">
     {{> sidebarMenu }}
 
-    <div class="contentOverlay"></div>
+    <!-- <div class="contentOverlay"></div> -->
 
+    <aside>
+      {{> yield "pageHeader"}}
+    </aside>
     <div id="contentContainer" class="tile">
-      <aside>
-        {{> yield "pageHeader"}}
-      </aside>
+
 
       {{#each thisArray}}
         {{> yield}}
@@ -28,6 +29,9 @@
         </nav>
       {{/unless}}
     </div>
+    <aside>
+      {{> yield "pageFooter"}}
+    </aside>
 
 
   </div>
