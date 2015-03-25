@@ -34,4 +34,5 @@ before_install:
   # give Meteor some time to download packages, init data, and to start
   - "sleep 100"
 
-script: ./run_nightwatch.sh
+#script: ./run_nightwatch.sh
+script: VELOCITY_CI=true meteor --test
