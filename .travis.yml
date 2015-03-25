@@ -30,9 +30,9 @@ before_install:
     # Optionally we can update all our dependencies here
     #- "meteor update"
   - "meteor reset"
-  - "meteor -p 3000 &"
+  # - "meteor -p 3000 &"
   # give Meteor some time to download packages, init data, and to start
-  - "sleep 100"
+  #- "sleep 100"
 
 #script: ./run_nightwatch.sh
 script: VELOCITY_CI=true meteor --test
