@@ -24,7 +24,11 @@ fortawesome:fontawesome
 nemo64:bootstrap
 less
 
-clinical:nightwatch@2.0.0
-clinical:ui-vocabulary
+#clinical:nightwatch@2.0.0
+velocity:nightwatch-framework@0.4.1
+velocity:nightwatch-reporter
+#velocity:html-reporter
+#velocity:core
 
+clinical:ui-vocabulary
 clinical:session-extended-api

@@ -10,6 +10,7 @@
         {{else}}
           <a id="signInButton" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">Sign In</a>
         {{/if}}
+        <!-- <a id="privacyButton" href="{{pathFor 'templatesPage'}}" class="withLowerBorder">Templates</a> -->
 
         <div class="withLowerBorder">
           <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
@@ -26,7 +27,8 @@
           {{/each}}
         </div>
 
-        <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About Clinical Checklists</a>
+        <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
+        <a id="featuresButton" href="{{pathFor 'marketingPage'}}">Features</a>
         <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
         <a id="privacyButton" href="{{pathFor 'privacyPage'}}" class="withLowerBorder">Privacy Policy</a>
         {{#if currentUser}}

@@ -8,7 +8,9 @@
     <!-- <div class="contentOverlay"></div> -->
 
     <aside>
-      {{> yield "pageHeader"}}
+      <div id="navbarHeader">
+        {{> yield "pageHeader"}}
+      </div>
     </aside>
     <div id="contentContainer" class="tile">
 
@@ -30,7 +32,9 @@
       {{/unless}}
     </div>
     <aside>
-      {{> yield "pageFooter"}}
+      <div id="navbarFooter">
+        {{> yield "pageFooter"}}
+      </div>
     </aside>
 
 

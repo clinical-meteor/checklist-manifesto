@@ -3,16 +3,22 @@
 
 module.exports = {
   tags: ["itunes", "publish", "marketing", "signIn"],
-  "iTunesConnect Publication" : function (client) {
+  "iTunesConnect" : function (client) {
     client
       .resizeWindow(1024, 768)
+
+      //============================================================================================
+      .sectionBreak("A. Demo User SignIn")
 
       .url("http://localhost:3000/entrySignIn")
       .waitForPage("#entrySignIn")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-signInPage.png")
       .reviewSignInPage()
 
-      .url("http://localhost:3000/marketing")
+      //============================================================================================
+      .sectionBreak("B. Marketing, Support, and Privacy")
+
+      .url("http://localhost:3000/features")
       .waitForPage("#marketingPage")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-marketingPage.png")
 

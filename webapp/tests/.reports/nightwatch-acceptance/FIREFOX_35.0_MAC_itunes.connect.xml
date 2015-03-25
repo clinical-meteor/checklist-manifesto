@@ -2,19 +2,29 @@
 <testsuites name="itunes.connect"
              errors="0"
              failures="0"
-             tests="13">
+             tests="17">
   
   <testsuite errors="0" failures="0" hostname="" id=""
-    name="iTunesConnect Publication" package="itunes.connect" skipped="0"
-    tests="13" time="" timestamp="">
+    name="iTunesConnect" package="itunes.connect" skipped="0"
+    tests="17" time="" timestamp="">
     
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 67 milliseconds.">
+      <testcase name="=============================================================">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 26 milliseconds.">
+      <testcase name="&gt;== A. Demo User SignIn">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 393 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 48 milliseconds.">
         
         
       </testcase>
@@ -59,17 +69,27 @@
         
       </testcase>
     
-      <testcase name="Element &lt;#marketingPage&gt; was visible after 1598 milliseconds.">
+      <testcase name="=============================================================">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#supportPage&gt; was visible after 19 milliseconds.">
+      <testcase name="&gt;== B. Marketing, Support, and Privacy">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#privacyPage&gt; was visible after 19 milliseconds.">
+      <testcase name="Element &lt;#marketingPage&gt; was visible after 3214 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#supportPage&gt; was visible after 463 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 2583 milliseconds.">
         
         
       </testcase>
