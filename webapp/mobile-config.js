@@ -1,9 +1,9 @@
 App.info({
-  name: 'Todos',
-  description: 'A simple todo list app built in Meteor.',
-  author: 'Percolate Studio Team',
-  email: 'us@percolatestudio.com',
-  website: 'http://percolatestudio.com',
+  name: 'Clinical Checklists',
+  description: 'A clinical checklist app built in Meteor.',
+  author: 'Pentasyllabic Studios',
+  email: 'pentasyllabic.studios@gmail.com',
+  website: 'http://www.pentasyllabic.com',
   version: '0.0.1'
 });
 
@@ -44,4 +44,3 @@ App.launchScreens({
 
 App.setPreference('StatusBarOverlaysWebView', 'false');
 App.setPreference('StatusBarBackgroundColor', '#000000');
-
