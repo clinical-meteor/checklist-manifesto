@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="itunes.connect"
              errors="0"
-             failures="0"
-             tests="17">
+             failures="1"
+             tests="23">
   
-  <testsuite errors="0" failures="0" hostname="" id=""
-    name="iTunesConnect" package="itunes.connect" skipped="0"
-    tests="17" time="" timestamp="">
+  <testsuite errors="0" failures="1" hostname="" id=""
+    name="iTunesConnect" package="itunes.connect" skipped="8"
+    tests="23" time="" timestamp="">
     
     
       <testcase name="=============================================================">
@@ -14,17 +14,17 @@
         
       </testcase>
     
-      <testcase name="&gt;== A. Demo User SignIn">
+      <testcase name="== A. Demo User SignIn">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 393 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 480 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 48 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 28 milliseconds.">
         
         
       </testcase>
@@ -74,22 +74,14 @@
         
       </testcase>
     
-      <testcase name="&gt;== B. Marketing, Support, and Privacy">
+      <testcase name="== B. Marketing, Support, and Privacy">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#marketingPage&gt; was visible after 3214 milliseconds.">
+      <testcase name="Timed out while waiting for element &lt;#marketingPage&gt; to be present for 3000 milliseconds.">
         
-        
-      </testcase>
-    
-      <testcase name="Element &lt;#supportPage&gt; was visible after 463 milliseconds.">
-        
-        
-      </testcase>
-    
-      <testcase name="Element &lt;#privacyPage&gt; was visible after 2583 milliseconds.">
+          <failure message="Expected &quot;visible&quot; but got: &quot;not found&quot;"></failure>
         
         
       </testcase>

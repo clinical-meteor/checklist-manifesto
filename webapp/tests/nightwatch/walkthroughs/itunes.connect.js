@@ -18,7 +18,7 @@ module.exports = {
       //============================================================================================
       .sectionBreak("B. Marketing, Support, and Privacy")
 
-      .url("http://localhost:3000/features")
+      .url("http://localhost:3000/foo")
       .waitForPage("#marketingPage")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-marketingPage.png")
 
