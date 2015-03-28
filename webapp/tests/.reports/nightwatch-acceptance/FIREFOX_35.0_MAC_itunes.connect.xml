@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites name="itunes.connect"
              errors="0"
-             failures="1"
-             tests="23">
+             failures="0"
+             tests="17">
   
-  <testsuite errors="0" failures="1" hostname="" id=""
-    name="iTunesConnect" package="itunes.connect" skipped="8"
-    tests="23" time="" timestamp="">
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="iTunesConnect" package="itunes.connect" skipped="0"
+    tests="17" time="" timestamp="">
     
     
       <testcase name="=============================================================">
@@ -19,12 +19,12 @@
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 332 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 245 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 29 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 69 milliseconds.">
         
         
       </testcase>
@@ -79,9 +79,17 @@
         
       </testcase>
     
-      <testcase name="Timed out while waiting for element &lt;#marketingPage&gt; to be present for 3000 milliseconds.">
+      <testcase name="Element &lt;#marketingPage&gt; was visible after 1688 milliseconds.">
         
-          <failure message="Expected &quot;visible&quot; but got: &quot;not found&quot;"></failure>
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#supportPage&gt; was visible after 206 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 209 milliseconds.">
         
         
       </testcase>
