@@ -1,5 +1,5 @@
 Session.setDefault('editingList', false);
-Session.setDefault('newTaskRibbonVisible', false);
+Session.setDefault('newTaskRibbonVisible', true);
 
 
 //==============================================================================
@@ -35,11 +35,11 @@ Template.todosListPage.events({
 
   'click #listPanelConfig': function (event, template) {
     // trigger our modal dialog
-    $('#removeListModal').modal("show");
+    $('#configListModal').modal("show");
 
     // this is stuff we do when the modal closes
-    $('#removeListModal').on('hidden.bs.modal', function(e) {
-      console.log('closing removeListModal');
+    $('#configListModal').on('hidden.bs.modal', function(e) {
+      console.log('closing configListModal');
 
       if(Session.get('deleteListConfirmed')){
         console.log('delete list', Session.get('selectedListId'));

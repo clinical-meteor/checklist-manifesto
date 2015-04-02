@@ -1,0 +1,55 @@
+<!-- set up the modal to start hidden and fade in and out -->
+<template name="configListModal">
+  {{#with currentList}}
+    <div id="configListModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content noRoundedCorners">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 id="configListModalTitle">Config List</h4>
+          </div>
+
+          {{#if isEditing}}
+            <div class="modal-body">
+
+              <input type="text" id="listNameInput" class="glass-control noRoundedCorners" placeholder="My Sample List" value="{{name}}">
+
+              <br>
+              <br>
+              <input type="text" id="listImageInput" class="glass-control noRoundedCorners" placeholder="http://www.somewhere.com/image.jpg" value="{{imageUrl}}">
+              <br>
+              <br>
+
+              <button id="saveListButton" type="button" class="btn btn-info noRoundedCorners" data-dismiss="modal">Save</button>
+              <button id="cancelRemoveListButton" type="button" class="btn btn-default noRoundedCorners" data-dismiss="modal">Cancel</button>
+
+            </div>
+            <div class="modal-footer alert-danger">
+                <div class="pull-left align-left">
+                  <b>Danger Zone</b><br>
+                  <span>Once you delete this list, it's permanent.</span>
+                </div>
+                <button id="deleteListButton" type="button" class="btn btn-danger noRoundedCorners">Delete List</button>
+            </div>
+
+          {{else}}
+            <div class="modal-body">
+              <p id="configListModalMessage">
+                Please type the name of the list you want to remove.
+              </p>
+              <br>
+              <input id="configListModalInput" type="text" class="glass-control noRoundedCorners" placeholder="List Name" value="">
+              <hr>
+              <button id="cancelRemoveListButton" type="button" class="btn btn-default noRoundedCorners">Cancel</button>
+              <button id="confirmRemoveListButton" type="button" class="pull-left btn btn-danger noRoundedCorners" data-dismiss="modal">Remove</button>
+
+            </div>
+          {{/if}}
+
+
+
+        </div>
+      </div>
+    </div>
+  {{/with}}
+</template>

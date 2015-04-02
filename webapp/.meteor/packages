@@ -25,10 +25,11 @@ nemo64:bootstrap
 less
 
 #clinical:nightwatch@2.0.0
-velocity:nightwatch-framework@0.4.1
-velocity:nightwatch-reporter
 #velocity:html-reporter
 #velocity:core
+
+velocity:nightwatch-framework
+velocity:nightwatch-reporter
 
 clinical:ui-vocabulary
 clinical:session-extended-api

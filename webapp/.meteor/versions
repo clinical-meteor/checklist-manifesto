@@ -83,7 +83,7 @@ underscore@1.0.3
 url@1.0.4
 velocity:core@0.5.1
 velocity:meteor-internals@1.0.2_2
-velocity:nightwatch-framework@0.4.1
+velocity:nightwatch-framework@0.4.10
 velocity:nightwatch-reporter@0.4.2
 webapp@1.2.0
 webapp-hashing@1.0.3

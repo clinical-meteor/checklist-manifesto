@@ -14,17 +14,17 @@
         
       </testcase>
     
-      <testcase name="&gt;== A. Sign In Page">
+      <testcase name="== A. Sign In Page">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 75 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 78 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 63 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 29 milliseconds.">
         
         
       </testcase>
@@ -74,7 +74,7 @@
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 78 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 23 milliseconds.">
         
         
       </testcase>
@@ -94,12 +94,12 @@
         
       </testcase>
     
-      <testcase name="&gt;== B. Home Page">
+      <testcase name="== B. Home Page">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#todosListPage&gt; was visible after 67 milliseconds.">
+      <testcase name="Element &lt;#todosListPage&gt; was visible after 29 milliseconds.">
         
         
       </testcase>
@@ -144,22 +144,22 @@
         
       </testcase>
     
-      <testcase name="&gt;== C. Static Pages">
+      <testcase name="== C. Static Pages">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#aboutPage&gt; was visible after 325 milliseconds.">
+      <testcase name="Element &lt;#aboutPage&gt; was visible after 29 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#eulaPage&gt; was visible after 40 milliseconds.">
+      <testcase name="Element &lt;#eulaPage&gt; was visible after 25 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#privacyPage&gt; was visible after 67 milliseconds.">
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 24 milliseconds.">
         
         
       </testcase>
