@@ -27,14 +27,6 @@ before_install:
   - "curl https://install.meteor.com | /bin/sh"
   # setup Meteor app
   - "cd webapp"
-  # Optionally we can update all our dependencies here
-
-  # - "meteor update"
-  # - "meteor reset"
-  # - "set VELOCITY_CI=true"
-  # - "meteor -p 3000 &"
-  # give Meteor some time to download packages, init data, and to start
-  #- "sleep 100"
 
 #script: ./run_nightwatch.sh
 script: "VELOCITY_CI=true meteor --test"

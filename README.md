@@ -10,7 +10,7 @@ Improved version of the Todos boilerplate example.  Includes:
 - clinical checklist examples
 
 
-![travis-build](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master)
+[![Build Status](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master)](https://travis-ci.org/awatson1978/clinical-checklists)
 
 ============================
 #### Meteor Version
