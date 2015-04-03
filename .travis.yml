@@ -8,6 +8,8 @@ node_js:
 services:
   - mongodb
 
+sudo: required
+
 cache:
   directories:
     - .meteor/local/build/programs/server/assets/packages
@@ -28,7 +30,7 @@ before_install:
   # install meteor
   - "curl https://install.meteor.com | /bin/sh"
   # give meteor a few milliseconds after installing
-  - "sleep 15"
+  - "sleep 5"
   # setup Meteor app
   - "cd webapp"
   # Optionally we can update all our dependencies here
