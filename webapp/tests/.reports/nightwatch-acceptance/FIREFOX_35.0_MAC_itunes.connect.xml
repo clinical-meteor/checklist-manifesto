@@ -19,12 +19,12 @@
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 245 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 592 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#entrySignIn&gt; was visible after 69 milliseconds.">
+      <testcase name="Element &lt;#entrySignIn&gt; was visible after 29 milliseconds.">
         
         
       </testcase>
@@ -79,17 +79,17 @@
         
       </testcase>
     
-      <testcase name="Element &lt;#marketingPage&gt; was visible after 1688 milliseconds.">
+      <testcase name="Element &lt;#marketingPage&gt; was visible after 287 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#supportPage&gt; was visible after 206 milliseconds.">
+      <testcase name="Element &lt;#supportPage&gt; was visible after 178 milliseconds.">
         
         
       </testcase>
     
-      <testcase name="Element &lt;#privacyPage&gt; was visible after 209 milliseconds.">
+      <testcase name="Element &lt;#privacyPage&gt; was visible after 1681 milliseconds.">
         
         
       </testcase>
