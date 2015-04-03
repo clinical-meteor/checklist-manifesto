@@ -35,4 +35,5 @@ before_install:
   - "meteor -p 3000 &"
   # give Meteor some time to download packages, init data, and to start
   - "sleep 70"
-script: run_nightwatch.sh
+
+script: ./run_nightwatch.sh
