@@ -14,8 +14,6 @@ cache:
   directories:
     - .meteor/local/build/programs/server/assets/packages
     - .meteor
-#    - node_modules
-#    - webapp/node_modules
 
 before_install:
   # set up the node_modules dir, so we know where it is
@@ -34,8 +32,6 @@ before_install:
   # setup Meteor app
   - "cd webapp"
   # Optionally we can update all our dependencies here
-  #- "meteor update"
-  - "meteor reset"
   - "meteor -p 3000 &"
   # give Meteor some time to download packages, init data, and to start
   - "sleep 70"
