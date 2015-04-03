@@ -32,6 +32,8 @@ before_install:
   # setup Meteor app
   - "cd webapp"
   # Optionally we can update all our dependencies here
+
+  - "meteor reset"
   - "meteor -p 3000 &"
   # give Meteor some time to download packages, init data, and to start
   - "sleep 70"
