@@ -41,4 +41,4 @@ before_install:
   - "sleep 70"
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
-script: "node_modules/starrynight/bin/starrynight.bin.js -survey acceptance"
+script: "../node_modules/starrynight/bin/starrynight.bin.js -survey acceptance"
