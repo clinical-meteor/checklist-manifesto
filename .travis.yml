@@ -19,7 +19,11 @@ before_install:
   # set up the node_modules dir, so we know where it is
   - "mkdir -p node_modules &"
   # install nightwatch, so we know where it is
-  - "npm install nightwatch"
+  # - "npm install nightwatch"
+
+  # install starrynight, so we can launch nightwatch and selenium
+  - "npm install starrynight"
+
   # fire up xvfb on port :99.0
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
@@ -27,15 +31,13 @@ before_install:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
   # install meteor
   - "curl https://install.meteor.com | /bin/sh"
-  # give meteor a few milliseconds after installing
+  # give meteor a few seconds after installing
   - "sleep 5"
   # setup Meteor app
   - "cd webapp"
-  # Optionally we can update all our dependencies here
+  - "meteor &"
 
-  - "meteor reset"
-  - "meteor -p 3000 &"
   # give Meteor some time to download packages, init data, and to start
   - "sleep 70"
 
-script: ./run_nightwatch.sh
+script: "starrynight -survey acceptance"

@@ -1,71 +1,72 @@
-19:02:24.363 INFO - Launching a standalone server
+16:25:39.951 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to selenium/chromedriver
-19:02:24.416 INFO - Java: Apple Inc. 20.65-b04-466.1
-19:02:24.416 INFO - OS: Mac OS X 10.10.2 x86_64
-19:02:24.431 INFO - v2.44.0, with Core v2.44.0. Built from revision 76d78cf
-19:02:24.525 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-19:02:24.569 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-19:02:24.570 INFO - Version Jetty/5.1.x
-19:02:24.571 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-19:02:24.572 INFO - Started HttpContext[/selenium-server,/selenium-server]
-19:02:24.572 INFO - Started HttpContext[/,/]
-19:02:24.630 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@335856a5
-19:02:24.630 INFO - Started HttpContext[/wd,/wd]
-19:02:24.637 INFO - Started SocketListener on 0.0.0.0:4444
-19:02:24.637 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
-19:02:24.874 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
-19:02:24.888 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
-19:02:28.288 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
-19:02:28.299 INFO - Executing: [get: http://localhost:3000/entrySignIn])
-19:02:29.106 INFO - Done: [get: http://localhost:3000/entrySignIn]
-19:02:29.114 INFO - Executing: [set window size])
-19:02:29.702 INFO - Done: [set window size]
-19:02:29.709 INFO - Executing: [switch to frame: null])
-19:02:29.851 INFO - Done: [switch to frame: null]
-19:02:29.868 INFO - Executing: [find element: By.selector: body])
-19:02:29.933 INFO - Done: [find element: By.selector: body]
-19:02:29.937 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]])
-19:02:29.947 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]]
-19:02:29.951 INFO - Executing: [find element: By.selector: body])
-19:02:29.959 INFO - Done: [find element: By.selector: body]
-19:02:29.963 INFO - Executing: [find element: By.selector: #entrySignIn])
-19:02:29.971 INFO - Done: [find element: By.selector: #entrySignIn]
-19:02:29.974 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]])
-19:02:29.990 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]]
-19:02:30.002 INFO - Executing: [take screenshot])
-19:02:30.133 INFO - Done: [take screenshot]
-19:02:30.155 INFO - Executing: [find element: By.selector: #entrySignIn])
-19:02:30.168 INFO - Done: [find element: By.selector: #entrySignIn]
-19:02:30.172 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]])
-19:02:30.184 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]]
-19:02:30.189 INFO - Executing: [find element: By.selector: #signInPageTitle])
-19:02:30.199 INFO - Done: [find element: By.selector: #signInPageTitle]
-19:02:30.203 INFO - Executing: [find element: By.selector: #signInPageMessage])
-19:02:30.212 INFO - Done: [find element: By.selector: #signInPageMessage]
-19:02:30.216 INFO - Executing: [find element: By.selector: #signInPageEmailInput])
-19:02:30.226 INFO - Done: [find element: By.selector: #signInPageEmailInput]
-19:02:30.232 INFO - Executing: [find element: By.selector: #signInPagePasswordInput])
-19:02:30.242 INFO - Done: [find element: By.selector: #signInPagePasswordInput]
-19:02:30.246 INFO - Executing: [find element: By.selector: #signInToAppButton])
-19:02:30.254 INFO - Done: [find element: By.selector: #signInToAppButton]
-19:02:30.257 INFO - Executing: [find element: By.selector: #needAnAccountButton])
-19:02:30.267 INFO - Done: [find element: By.selector: #needAnAccountButton]
-19:02:30.270 INFO - Executing: [find element: By.selector: #signInPageTitle])
-19:02:30.279 INFO - Done: [find element: By.selector: #signInPageTitle]
-19:02:30.282 INFO - Executing: [get text: 2 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageTitle]])
-19:02:30.293 INFO - Done: [get text: 2 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageTitle]]
-19:02:30.297 INFO - Executing: [find element: By.selector: #signInPageMessage])
-19:02:30.304 INFO - Done: [find element: By.selector: #signInPageMessage]
-19:02:30.306 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageMessage]])
-19:02:30.318 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageMessage]]
-19:02:30.322 INFO - Executing: [find element: By.selector: #logoutButton])
-19:02:31.634 WARN - Exception thrown
+16:25:40.006 INFO - Java: Apple Inc. 20.65-b04-466.1
+16:25:40.006 INFO - OS: Mac OS X 10.10.2 x86_64
+16:25:40.023 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+16:25:40.114 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+16:25:40.184 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+16:25:40.185 INFO - Version Jetty/5.1.x
+16:25:40.186 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+16:25:40.186 INFO - Started HttpContext[/selenium-server,/selenium-server]
+16:25:40.187 INFO - Started HttpContext[/,/]
+16:25:40.242 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+16:25:40.242 INFO - Started HttpContext[/wd,/wd]
+16:25:40.249 INFO - Started SocketListener on 0.0.0.0:4444
+16:25:40.249 INFO - Started org.openqa.jetty.jetty.Server@6262937c
+16:25:40.513 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])
+16:25:40.529 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]
+16:25:43.910 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]]
+16:25:43.919 INFO - Executing: [get: http://localhost:3000/entrySignIn])
+16:25:46.916 INFO - Done: [get: http://localhost:3000/entrySignIn]
+16:25:46.923 INFO - Executing: [set window size])
+16:25:47.057 INFO - Done: [set window size]
+16:25:47.061 INFO - Executing: [switch to frame: null])
+16:25:47.103 INFO - Done: [switch to frame: null]
+16:25:47.107 INFO - Executing: [find element: By.cssSelector: body])
+16:25:47.201 INFO - Done: [find element: By.cssSelector: body]
+16:25:47.204 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]])
+16:25:47.235 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]]
+16:25:47.239 INFO - Executing: [find element: By.cssSelector: body])
+16:25:47.280 INFO - Done: [find element: By.cssSelector: body]
+16:25:47.284 INFO - Executing: [find element: By.cssSelector: #entrySignIn])
+16:25:47.325 INFO - Done: [find element: By.cssSelector: #entrySignIn]
+16:25:47.328 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]])
+16:25:47.374 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]]
+16:25:47.376 INFO - Executing: [take screenshot])
+16:25:47.527 INFO - Done: [take screenshot]
+16:25:47.538 INFO - Executing: [find element: By.cssSelector: #entrySignIn])
+16:25:47.608 INFO - Done: [find element: By.cssSelector: #entrySignIn]
+16:25:47.611 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]])
+16:25:47.662 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]]
+16:25:47.666 INFO - Executing: [find element: By.cssSelector: #signInPageTitle])
+16:25:47.711 INFO - Done: [find element: By.cssSelector: #signInPageTitle]
+16:25:47.715 INFO - Executing: [find element: By.cssSelector: #signInPageMessage])
+16:25:47.757 INFO - Done: [find element: By.cssSelector: #signInPageMessage]
+16:25:47.760 INFO - Executing: [find element: By.cssSelector: #signInPageEmailInput])
+16:25:47.804 INFO - Done: [find element: By.cssSelector: #signInPageEmailInput]
+16:25:47.807 INFO - Executing: [find element: By.cssSelector: #signInPagePasswordInput])
+16:25:47.851 INFO - Done: [find element: By.cssSelector: #signInPagePasswordInput]
+16:25:47.854 INFO - Executing: [find element: By.cssSelector: #signInToAppButton])
+16:25:47.898 INFO - Done: [find element: By.cssSelector: #signInToAppButton]
+16:25:47.902 INFO - Executing: [find element: By.cssSelector: #needAnAccountButton])
+16:25:47.947 INFO - Done: [find element: By.cssSelector: #needAnAccountButton]
+16:25:47.951 INFO - Executing: [find element: By.cssSelector: #signInPageTitle])
+16:25:47.994 INFO - Done: [find element: By.cssSelector: #signInPageTitle]
+16:25:47.997 INFO - Executing: [get text: 2 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageTitle]])
+16:25:48.043 INFO - Done: [get text: 2 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageTitle]]
+16:25:48.047 INFO - Executing: [find element: By.cssSelector: #signInPageMessage])
+16:25:48.089 INFO - Done: [find element: By.cssSelector: #signInPageMessage]
+16:25:48.091 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageMessage]])
+16:25:48.139 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageMessage]]
+16:25:48.142 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:25:49.352 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
-Command duration or timeout: 9 milliseconds
+Command duration or timeout: 44 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
-Session ID: 39f3392c-234d-794d-8d01-1726aa1a3659
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#logoutButton}
+Session ID: 89bc31c7-62e4-144c-8b29-a503b50b8b6b
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -96,113 +97,114 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.lang.Thread.run(Thread.java:695)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-19:02:31.637 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+16:25:49.358 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-19:02:31.959 INFO - Executing: [find element: By.selector: #entrySignIn])
-19:02:31.967 INFO - Done: [find element: By.selector: #entrySignIn]
-19:02:31.970 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]])
-19:02:31.978 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #entrySignIn]]
-19:02:31.981 INFO - Executing: [find element: By.selector: #signInPageEmailInput])
-19:02:31.987 INFO - Done: [find element: By.selector: #signInPageEmailInput]
-19:02:31.994 INFO - Executing: [find element: By.selector: #signInPagePasswordInput])
-19:02:32.005 INFO - Done: [find element: By.selector: #signInPagePasswordInput]
-19:02:32.009 INFO - Executing: [find element: By.selector: #signInPageEmailInput])
-19:02:32.018 INFO - Done: [find element: By.selector: #signInPageEmailInput]
-19:02:32.021 INFO - Executing: [send keys: 4 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageEmailInput], [j, a, n, e, d, o, e, @, g, m, a, i, l, ., c, o, m]])
-19:02:32.094 INFO - Done: [send keys: 4 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPageEmailInput], [j, a, n, e, d, o, e, @, g, m, a, i, l, ., c, o, m]]
-19:02:32.098 INFO - Executing: [find element: By.selector: #signInPagePasswordInput])
-19:02:32.107 INFO - Done: [find element: By.selector: #signInPagePasswordInput]
-19:02:32.111 INFO - Executing: [send keys: 5 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPagePasswordInput], [j, a, n, e, d, o, e, 1, 2, 3]])
-19:02:32.154 INFO - Done: [send keys: 5 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInPagePasswordInput], [j, a, n, e, d, o, e, 1, 2, 3]]
-19:02:32.158 INFO - Executing: [find element: By.selector: #signInToAppButton])
-19:02:32.168 INFO - Done: [find element: By.selector: #signInToAppButton]
-19:02:32.172 INFO - Executing: [click: 6 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInToAppButton]])
-19:02:32.267 INFO - Done: [click: 6 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #signInToAppButton]]
-19:02:33.276 INFO - Executing: [switch to frame: null])
-19:02:33.286 INFO - Done: [switch to frame: null]
-19:02:33.291 INFO - Executing: [find element: By.selector: body])
-19:02:33.304 INFO - Done: [find element: By.selector: body]
-19:02:33.308 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]])
-19:02:33.320 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]]
-19:02:33.324 INFO - Executing: [find element: By.selector: body])
-19:02:33.334 INFO - Done: [find element: By.selector: body]
-19:02:33.339 INFO - Executing: [find element: By.selector: #todosListPage])
-19:02:33.351 INFO - Done: [find element: By.selector: #todosListPage]
-19:02:33.354 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #todosListPage]])
-19:02:33.369 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #todosListPage]]
-19:02:33.373 INFO - Executing: [find element: By.selector: #appBody])
-19:02:33.419 INFO - Done: [find element: By.selector: #appBody]
-19:02:33.423 INFO - Executing: [find element: By.selector: #navbarHeader])
-19:02:33.435 INFO - Done: [find element: By.selector: #navbarHeader]
-19:02:33.439 INFO - Executing: [find element: By.selector: #contentContainer])
-19:02:33.449 INFO - Done: [find element: By.selector: #contentContainer]
-19:02:33.452 INFO - Executing: [find element: By.selector: #contentContainer .content-scrollable])
-19:02:33.459 INFO - Done: [find element: By.selector: #contentContainer .content-scrollable]
-19:02:33.463 INFO - Executing: [find element: By.selector: #navbarFooter])
-19:02:33.469 INFO - Done: [find element: By.selector: #navbarFooter]
-19:02:33.473 INFO - Executing: [find element: By.selector: #sidebarMenu])
-19:02:33.482 INFO - Done: [find element: By.selector: #sidebarMenu]
-19:02:33.486 INFO - Executing: [find element: By.selector: #sidebarMenuContents])
-19:02:33.494 INFO - Done: [find element: By.selector: #sidebarMenuContents]
-19:02:33.498 INFO - Executing: [switch to frame: null])
-19:02:33.505 INFO - Done: [switch to frame: null]
-19:02:33.509 INFO - Executing: [find element: By.selector: body])
-19:02:33.519 INFO - Done: [find element: By.selector: body]
-19:02:33.522 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]])
-19:02:33.529 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: body]]
-19:02:33.533 INFO - Executing: [find element: By.selector: body])
-19:02:33.541 INFO - Done: [find element: By.selector: body]
-19:02:33.545 INFO - Executing: [find element: By.selector: #aboutButton])
-19:02:33.552 INFO - Done: [find element: By.selector: #aboutButton]
-19:02:33.555 INFO - Executing: [click: 16 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #aboutButton]])
-19:02:33.643 INFO - Done: [click: 16 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #aboutButton]]
-19:02:33.646 INFO - Executing: [find element: By.selector: #aboutPage])
-19:02:33.661 INFO - Done: [find element: By.selector: #aboutPage]
-19:02:33.664 INFO - Executing: [is displayed: 17 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #aboutPage]])
-19:02:33.673 INFO - Done: [is displayed: 17 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #aboutPage]]
-19:02:33.677 INFO - Executing: [find element: By.selector: #eulaButton])
-19:02:33.685 INFO - Done: [find element: By.selector: #eulaButton]
-19:02:33.687 INFO - Executing: [click: 18 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #eulaButton]])
-19:02:33.755 INFO - Done: [click: 18 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #eulaButton]]
-19:02:33.758 INFO - Executing: [find element: By.selector: #eulaPage])
-19:02:33.767 INFO - Done: [find element: By.selector: #eulaPage]
-19:02:33.769 INFO - Executing: [is displayed: 19 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #eulaPage]])
-19:02:33.778 INFO - Done: [is displayed: 19 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #eulaPage]]
-19:02:33.781 INFO - Executing: [find element: By.selector: #privacyButton])
-19:02:33.788 INFO - Done: [find element: By.selector: #privacyButton]
-19:02:33.790 INFO - Executing: [click: 20 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #privacyButton]])
-19:02:33.859 INFO - Done: [click: 20 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #privacyButton]]
-19:02:33.863 INFO - Executing: [find element: By.selector: #privacyPage])
-19:02:33.869 INFO - Done: [find element: By.selector: #privacyPage]
-19:02:33.871 INFO - Executing: [is displayed: 21 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #privacyPage]])
-19:02:33.882 INFO - Done: [is displayed: 21 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #privacyPage]]
-19:02:33.885 INFO - Executing: [find element: By.selector: #logoutButton])
-19:02:33.891 INFO - Done: [find element: By.selector: #logoutButton]
-19:02:33.894 INFO - Executing: [find element: By.selector: #logoutButton])
-19:02:33.905 INFO - Done: [find element: By.selector: #logoutButton]
-19:02:33.909 INFO - Executing: [find element: By.selector: #logoutButton])
-19:02:33.921 INFO - Done: [find element: By.selector: #logoutButton]
-19:02:33.924 INFO - Executing: [click: 22 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #logoutButton]])
-19:02:33.986 INFO - Done: [click: 22 [[FirefoxDriver: firefox on MAC (39f3392c-234d-794d-8d01-1726aa1a3659)] -> css selector: #logoutButton]]
-19:02:34.495 INFO - Executing: [find element: By.selector: #logoutButton])
-19:02:35.484 WARN - Exception thrown
+16:25:49.466 INFO - Executing: [find element: By.cssSelector: #entrySignIn])
+16:25:49.474 INFO - Done: [find element: By.cssSelector: #entrySignIn]
+16:25:49.476 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]])
+16:25:49.521 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #entrySignIn]]
+16:25:49.524 INFO - Executing: [find element: By.cssSelector: #signInPageEmailInput])
+16:25:49.567 INFO - Done: [find element: By.cssSelector: #signInPageEmailInput]
+16:25:49.571 INFO - Executing: [find element: By.cssSelector: #signInPagePasswordInput])
+16:25:49.612 INFO - Done: [find element: By.cssSelector: #signInPagePasswordInput]
+16:25:49.615 INFO - Executing: [find element: By.cssSelector: #signInPageEmailInput])
+16:25:49.665 INFO - Done: [find element: By.cssSelector: #signInPageEmailInput]
+16:25:49.669 INFO - Executing: [send keys: 4 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageEmailInput], [j, a, n, e, d, o, e, @, g, m, a, i, l, ., c, o, m]])
+16:25:49.772 INFO - Done: [send keys: 4 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPageEmailInput], [j, a, n, e, d, o, e, @, g, m, a, i, l, ., c, o, m]]
+16:25:49.775 INFO - Executing: [find element: By.cssSelector: #signInPagePasswordInput])
+16:25:49.821 INFO - Done: [find element: By.cssSelector: #signInPagePasswordInput]
+16:25:49.824 INFO - Executing: [send keys: 5 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPagePasswordInput], [j, a, n, e, d, o, e, 1, 2, 3]])
+16:25:49.909 INFO - Done: [send keys: 5 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInPagePasswordInput], [j, a, n, e, d, o, e, 1, 2, 3]]
+16:25:49.912 INFO - Executing: [find element: By.cssSelector: #signInToAppButton])
+16:25:49.960 INFO - Done: [find element: By.cssSelector: #signInToAppButton]
+16:25:49.963 INFO - Executing: [click: 6 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInToAppButton]])
+16:25:50.096 INFO - Done: [click: 6 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #signInToAppButton]]
+16:25:51.101 INFO - Executing: [switch to frame: null])
+16:25:51.113 INFO - Done: [switch to frame: null]
+16:25:51.117 INFO - Executing: [find element: By.cssSelector: body])
+16:25:51.170 INFO - Done: [find element: By.cssSelector: body]
+16:25:51.173 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]])
+16:25:51.220 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]]
+16:25:51.223 INFO - Executing: [find element: By.cssSelector: body])
+16:25:51.269 INFO - Done: [find element: By.cssSelector: body]
+16:25:51.272 INFO - Executing: [find element: By.cssSelector: #todosListPage])
+16:25:51.319 INFO - Done: [find element: By.cssSelector: #todosListPage]
+16:25:51.322 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #todosListPage]])
+16:25:51.368 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #todosListPage]]
+16:25:51.372 INFO - Executing: [find element: By.cssSelector: #appBody])
+16:25:51.417 INFO - Done: [find element: By.cssSelector: #appBody]
+16:25:51.420 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
+16:25:51.468 INFO - Done: [find element: By.cssSelector: #navbarHeader]
+16:25:51.471 INFO - Executing: [find element: By.cssSelector: #contentContainer])
+16:25:51.518 INFO - Done: [find element: By.cssSelector: #contentContainer]
+16:25:51.520 INFO - Executing: [find element: By.cssSelector: #contentContainer .content-scrollable])
+16:25:51.565 INFO - Done: [find element: By.cssSelector: #contentContainer .content-scrollable]
+16:25:51.568 INFO - Executing: [find element: By.cssSelector: #navbarFooter])
+16:25:51.613 INFO - Done: [find element: By.cssSelector: #navbarFooter]
+16:25:51.616 INFO - Executing: [find element: By.cssSelector: #sidebarMenu])
+16:25:51.660 INFO - Done: [find element: By.cssSelector: #sidebarMenu]
+16:25:51.663 INFO - Executing: [find element: By.cssSelector: #sidebarMenuContents])
+16:25:51.708 INFO - Done: [find element: By.cssSelector: #sidebarMenuContents]
+16:25:51.710 INFO - Executing: [switch to frame: null])
+16:25:51.754 INFO - Done: [switch to frame: null]
+16:25:51.758 INFO - Executing: [find element: By.cssSelector: body])
+16:25:51.802 INFO - Done: [find element: By.cssSelector: body]
+16:25:51.814 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]])
+16:25:51.850 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: body]]
+16:25:51.853 INFO - Executing: [find element: By.cssSelector: body])
+16:25:51.896 INFO - Done: [find element: By.cssSelector: body]
+16:25:51.900 INFO - Executing: [find element: By.cssSelector: #aboutButton])
+16:25:51.944 INFO - Done: [find element: By.cssSelector: #aboutButton]
+16:25:51.947 INFO - Executing: [click: 16 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #aboutButton]])
+16:25:52.135 INFO - Done: [click: 16 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #aboutButton]]
+16:25:52.139 INFO - Executing: [find element: By.cssSelector: #aboutPage])
+16:25:52.211 INFO - Done: [find element: By.cssSelector: #aboutPage]
+16:25:52.213 INFO - Executing: [is displayed: 17 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #aboutPage]])
+16:25:52.272 INFO - Done: [is displayed: 17 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #aboutPage]]
+16:25:52.275 INFO - Executing: [find element: By.cssSelector: #eulaButton])
+16:25:52.330 INFO - Done: [find element: By.cssSelector: #eulaButton]
+16:25:52.332 INFO - Executing: [click: 18 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #eulaButton]])
+16:25:52.547 INFO - Done: [click: 18 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #eulaButton]]
+16:25:52.551 INFO - Executing: [find element: By.cssSelector: #eulaPage])
+16:25:52.609 INFO - Done: [find element: By.cssSelector: #eulaPage]
+16:25:52.612 INFO - Executing: [is displayed: 19 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #eulaPage]])
+16:25:52.671 INFO - Done: [is displayed: 19 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #eulaPage]]
+16:25:52.674 INFO - Executing: [find element: By.cssSelector: #privacyButton])
+16:25:52.727 INFO - Done: [find element: By.cssSelector: #privacyButton]
+16:25:52.730 INFO - Executing: [click: 20 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #privacyButton]])
+16:25:52.873 INFO - Done: [click: 20 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #privacyButton]]
+16:25:52.875 INFO - Executing: [find element: By.cssSelector: #privacyPage])
+16:25:52.934 INFO - Done: [find element: By.cssSelector: #privacyPage]
+16:25:52.936 INFO - Executing: [is displayed: 21 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #privacyPage]])
+16:25:53.000 INFO - Done: [is displayed: 21 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #privacyPage]]
+16:25:53.003 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:25:53.055 INFO - Done: [find element: By.cssSelector: #logoutButton]
+16:25:53.059 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:25:53.115 INFO - Done: [find element: By.cssSelector: #logoutButton]
+16:25:53.118 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:25:53.175 INFO - Done: [find element: By.cssSelector: #logoutButton]
+16:25:53.177 INFO - Executing: [click: 22 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #logoutButton]])
+16:25:53.313 INFO - Done: [click: 22 [[FirefoxDriver: firefox on MAC (89bc31c7-62e4-144c-8b29-a503b50b8b6b)] -> css selector: #logoutButton]]
+16:25:53.819 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:25:54.605 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
-Command duration or timeout: 25 milliseconds
+Command duration or timeout: 11 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
-Session ID: 39f3392c-234d-794d-8d01-1726aa1a3659
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#logoutButton}
+Session ID: 89bc31c7-62e4-144c-8b29-a503b50b8b6b
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -232,100 +234,203 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.lang.Thread.run(Thread.java:695)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous8567153021844225302webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-19:02:35.485 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6648091688269148478webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+16:25:54.608 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#logoutButton"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-19:02:35.830 INFO - Executing: [delete session: b154128d-779e-45cc-bc0e-7721b0281254])
-19:02:35.921 INFO - Done: [delete session: b154128d-779e-45cc-bc0e-7721b0281254]
-19:02:36.956 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]])
-19:02:36.957 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]
-19:02:39.439 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]]
-19:02:39.447 INFO - Executing: [set window size])
-19:02:39.497 INFO - Done: [set window size]
-19:02:39.501 INFO - Executing: [switch to frame: null])
-19:02:39.516 INFO - Done: [switch to frame: null]
-19:02:39.521 INFO - Executing: [find element: By.selector: body])
-19:02:39.571 INFO - Done: [find element: By.selector: body]
-19:02:39.573 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: body]])
-19:02:39.585 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: body]]
-19:02:39.590 INFO - Executing: [find element: By.selector: body])
-19:02:39.617 INFO - Done: [find element: By.selector: body]
-19:02:39.621 INFO - Executing: [get: http://localhost:3000/entrySignIn])
-19:02:40.279 INFO - Done: [get: http://localhost:3000/entrySignIn]
-19:02:40.283 INFO - Executing: [find element: By.selector: #entrySignIn])
-19:02:40.858 INFO - Done: [find element: By.selector: #entrySignIn]
-19:02:40.860 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #entrySignIn]])
-19:02:40.872 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #entrySignIn]]
-19:02:40.874 INFO - Executing: [take screenshot])
-19:02:41.022 INFO - Done: [take screenshot]
-19:02:41.028 INFO - Executing: [find element: By.selector: #entrySignIn])
-19:02:41.040 INFO - Done: [find element: By.selector: #entrySignIn]
-19:02:41.043 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #entrySignIn]])
-19:02:41.055 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #entrySignIn]]
-19:02:41.058 INFO - Executing: [find element: By.selector: #signInPageTitle])
-19:02:41.067 INFO - Done: [find element: By.selector: #signInPageTitle]
-19:02:41.070 INFO - Executing: [find element: By.selector: #signInPageMessage])
-19:02:41.078 INFO - Done: [find element: By.selector: #signInPageMessage]
-19:02:41.081 INFO - Executing: [find element: By.selector: #signInPageEmailInput])
-19:02:41.090 INFO - Done: [find element: By.selector: #signInPageEmailInput]
-19:02:41.094 INFO - Executing: [find element: By.selector: #signInPagePasswordInput])
-19:02:41.104 INFO - Done: [find element: By.selector: #signInPagePasswordInput]
-19:02:41.108 INFO - Executing: [find element: By.selector: #signInToAppButton])
-19:02:41.116 INFO - Done: [find element: By.selector: #signInToAppButton]
-19:02:41.120 INFO - Executing: [find element: By.selector: #needAnAccountButton])
-19:02:41.128 INFO - Done: [find element: By.selector: #needAnAccountButton]
-19:02:41.133 INFO - Executing: [find element: By.selector: #signInPageTitle])
-19:02:41.143 INFO - Done: [find element: By.selector: #signInPageTitle]
-19:02:41.145 INFO - Executing: [get text: 2 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #signInPageTitle]])
-19:02:41.159 INFO - Done: [get text: 2 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #signInPageTitle]]
-19:02:41.164 INFO - Executing: [find element: By.selector: #signInPageMessage])
-19:02:41.173 INFO - Done: [find element: By.selector: #signInPageMessage]
-19:02:41.177 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #signInPageMessage]])
-19:02:41.194 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #signInPageMessage]]
-19:02:41.197 INFO - Executing: [switch to frame: null])
-19:02:41.206 INFO - Done: [switch to frame: null]
-19:02:41.210 INFO - Executing: [find element: By.selector: body])
-19:02:41.222 INFO - Done: [find element: By.selector: body]
-19:02:41.227 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: body]])
-19:02:41.241 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: body]]
-19:02:41.250 INFO - Executing: [find element: By.selector: body])
-19:02:41.270 INFO - Done: [find element: By.selector: body]
-19:02:41.273 INFO - Executing: [get: http://localhost:3000/features])
-19:02:41.724 INFO - Done: [get: http://localhost:3000/features]
-19:02:41.728 INFO - Executing: [find element: By.selector: #marketingPage])
-19:02:42.001 INFO - Done: [find element: By.selector: #marketingPage]
-19:02:42.004 INFO - Executing: [is displayed: 9 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #marketingPage]])
-19:02:42.012 INFO - Done: [is displayed: 9 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #marketingPage]]
-19:02:42.014 INFO - Executing: [take screenshot])
-19:02:42.297 INFO - Done: [take screenshot]
-19:02:42.362 INFO - Executing: [get: http://localhost:3000/support])
-19:02:42.793 INFO - Done: [get: http://localhost:3000/support]
-19:02:42.796 INFO - Executing: [find element: By.selector: #supportPage])
-19:02:42.960 INFO - Done: [find element: By.selector: #supportPage]
-19:02:42.962 INFO - Executing: [is displayed: 10 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #supportPage]])
-19:02:42.971 INFO - Done: [is displayed: 10 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #supportPage]]
-19:02:42.973 INFO - Executing: [take screenshot])
-19:02:43.052 INFO - Done: [take screenshot]
-19:02:43.057 INFO - Executing: [get: http://localhost:3000/privacy])
-19:02:43.487 INFO - Done: [get: http://localhost:3000/privacy]
-19:02:43.490 INFO - Executing: [find element: By.selector: #privacyPage])
-19:02:44.373 WARN - Exception thrown
+16:25:54.695 INFO - Executing: [delete session: 718b5eae-c679-43be-9316-ed8e3503f001])
+16:25:54.787 INFO - Done: [delete session: 718b5eae-c679-43be-9316-ed8e3503f001]
+16:25:54.926 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]])
+16:25:54.927 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]
+16:25:57.057 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Itunes Connect}]]
+16:25:57.061 INFO - Executing: [set window size])
+16:25:57.149 INFO - Done: [set window size]
+16:25:57.152 INFO - Executing: [switch to frame: null])
+16:25:57.195 INFO - Done: [switch to frame: null]
+16:25:57.198 INFO - Executing: [find element: By.cssSelector: body])
+16:25:57.276 INFO - Done: [find element: By.cssSelector: body]
+16:25:57.278 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: body]])
+16:25:57.325 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: body]]
+16:25:57.328 INFO - Executing: [find element: By.cssSelector: body])
+16:25:57.376 INFO - Done: [find element: By.cssSelector: body]
+16:25:57.379 INFO - Executing: [get: http://localhost:3000/entrySignIn])
+16:25:59.723 INFO - Done: [get: http://localhost:3000/entrySignIn]
+16:25:59.727 INFO - Executing: [find element: By.cssSelector: #entrySignIn])
+16:25:59.786 INFO - Done: [find element: By.cssSelector: #entrySignIn]
+16:25:59.788 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #entrySignIn]])
+16:25:59.838 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #entrySignIn]]
+16:25:59.840 INFO - Executing: [take screenshot])
+16:25:59.988 INFO - Done: [take screenshot]
+16:25:59.994 INFO - Executing: [find element: By.cssSelector: #entrySignIn])
+16:26:00.036 INFO - Done: [find element: By.cssSelector: #entrySignIn]
+16:26:00.038 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #entrySignIn]])
+16:26:00.082 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #entrySignIn]]
+16:26:00.085 INFO - Executing: [find element: By.cssSelector: #signInPageTitle])
+16:26:00.127 INFO - Done: [find element: By.cssSelector: #signInPageTitle]
+16:26:00.129 INFO - Executing: [find element: By.cssSelector: #signInPageMessage])
+16:26:00.173 INFO - Done: [find element: By.cssSelector: #signInPageMessage]
+16:26:00.176 INFO - Executing: [find element: By.cssSelector: #signInPageEmailInput])
+16:26:00.222 INFO - Done: [find element: By.cssSelector: #signInPageEmailInput]
+16:26:00.225 INFO - Executing: [find element: By.cssSelector: #signInPagePasswordInput])
+16:26:00.270 INFO - Done: [find element: By.cssSelector: #signInPagePasswordInput]
+16:26:00.272 INFO - Executing: [find element: By.cssSelector: #signInToAppButton])
+16:26:00.319 INFO - Done: [find element: By.cssSelector: #signInToAppButton]
+16:26:00.322 INFO - Executing: [find element: By.cssSelector: #needAnAccountButton])
+16:26:00.369 INFO - Done: [find element: By.cssSelector: #needAnAccountButton]
+16:26:00.373 INFO - Executing: [find element: By.cssSelector: #signInPageTitle])
+16:26:00.462 INFO - Done: [find element: By.cssSelector: #signInPageTitle]
+16:26:00.464 INFO - Executing: [get text: 2 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #signInPageTitle]])
+16:26:00.511 INFO - Done: [get text: 2 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #signInPageTitle]]
+16:26:00.514 INFO - Executing: [find element: By.cssSelector: #signInPageMessage])
+16:26:00.556 INFO - Done: [find element: By.cssSelector: #signInPageMessage]
+16:26:00.558 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #signInPageMessage]])
+16:26:00.606 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #signInPageMessage]]
+16:26:00.609 INFO - Executing: [switch to frame: null])
+16:26:00.653 INFO - Done: [switch to frame: null]
+16:26:00.655 INFO - Executing: [find element: By.cssSelector: body])
+16:26:00.702 INFO - Done: [find element: By.cssSelector: body]
+16:26:00.704 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: body]])
+16:26:00.747 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: body]]
+16:26:00.750 INFO - Executing: [find element: By.cssSelector: body])
+16:26:00.793 INFO - Done: [find element: By.cssSelector: body]
+16:26:00.796 INFO - Executing: [get: http://localhost:3000/features])
+16:26:01.256 INFO - Done: [get: http://localhost:3000/features]
+16:26:01.259 INFO - Executing: [find element: By.cssSelector: #marketingPage])
+16:26:02.165 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#marketingPage"}
+Command duration or timeout: 188 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#marketingPage}
+Session ID: 4786db0f-311f-284e-b5c3-5e3006ff9080
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#marketingPage"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+16:26:02.166 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#marketingPage"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+16:26:02.737 INFO - Executing: [find element: By.cssSelector: #marketingPage])
+16:26:02.746 INFO - Done: [find element: By.cssSelector: #marketingPage]
+16:26:02.750 INFO - Executing: [is displayed: 9 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #marketingPage]])
+16:26:02.800 INFO - Done: [is displayed: 9 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #marketingPage]]
+16:26:02.803 INFO - Executing: [take screenshot])
+16:26:03.136 INFO - Done: [take screenshot]
+16:26:03.180 INFO - Executing: [get: http://localhost:3000/support])
+16:26:03.623 INFO - Done: [get: http://localhost:3000/support]
+16:26:03.627 INFO - Executing: [find element: By.cssSelector: #supportPage])
+16:26:04.506 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#supportPage"}
+Command duration or timeout: 181 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#supportPage}
+Session ID: 4786db0f-311f-284e-b5c3-5e3006ff9080
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#supportPage"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+16:26:04.507 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#supportPage"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+16:26:05.083 INFO - Executing: [find element: By.cssSelector: #supportPage])
+16:26:05.091 INFO - Done: [find element: By.cssSelector: #supportPage]
+16:26:05.094 INFO - Executing: [is displayed: 10 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #supportPage]])
+16:26:05.145 INFO - Done: [is displayed: 10 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #supportPage]]
+16:26:05.147 INFO - Executing: [take screenshot])
+16:26:05.263 INFO - Done: [take screenshot]
+16:26:05.268 INFO - Executing: [get: http://localhost:3000/privacy])
+16:26:05.751 INFO - Done: [get: http://localhost:3000/privacy]
+16:26:05.754 INFO - Executing: [find element: By.cssSelector: #privacyPage])
+16:26:06.726 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#privacyPage"}
-Command duration or timeout: 117 milliseconds
+Command duration or timeout: 208 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
-Session ID: f8f7450b-869b-df4a-abde-18438f7c83b4
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+*** Element info: {Using=css selector, value=#privacyPage}
+Session ID: 4786db0f-311f-284e-b5c3-5e3006ff9080
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=35.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -355,25 +460,25 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.lang.Thread.run(Thread.java:695)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#privacyPage"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6077608042934700320webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6077608042934700320webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6077608042934700320webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6077608042934700320webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6077608042934700320webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-19:02:44.375 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#privacyPage"}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous6967061180947859932webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+16:26:06.727 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#privacyPage"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-19:02:45.149 INFO - Executing: [find element: By.selector: #privacyPage])
-19:02:45.156 INFO - Done: [find element: By.selector: #privacyPage]
-19:02:45.159 INFO - Executing: [is displayed: 11 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #privacyPage]])
-19:02:45.169 INFO - Done: [is displayed: 11 [[FirefoxDriver: firefox on MAC (f8f7450b-869b-df4a-abde-18438f7c83b4)] -> css selector: #privacyPage]]
-19:02:45.172 INFO - Executing: [take screenshot])
-19:02:45.325 INFO - Done: [take screenshot]
-19:02:45.347 INFO - Executing: [delete session: 06777b71-50e5-4a41-92ca-66faee4e9795])
-19:02:45.452 INFO - Done: [delete session: 06777b71-50e5-4a41-92ca-66faee4e9795]
-19:02:45.478 INFO - Shutting down...
+16:26:07.303 INFO - Executing: [find element: By.cssSelector: #privacyPage])
+16:26:07.312 INFO - Done: [find element: By.cssSelector: #privacyPage]
+16:26:07.314 INFO - Executing: [is displayed: 11 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #privacyPage]])
+16:26:07.368 INFO - Done: [is displayed: 11 [[FirefoxDriver: firefox on MAC (4786db0f-311f-284e-b5c3-5e3006ff9080)] -> css selector: #privacyPage]]
+16:26:07.370 INFO - Executing: [take screenshot])
+16:26:07.550 INFO - Done: [take screenshot]
+16:26:07.576 INFO - Executing: [delete session: d108ca95-5fb9-4dfe-9eaf-9474c9a1afc0])
+16:26:07.690 INFO - Done: [delete session: d108ca95-5fb9-4dfe-9eaf-9474c9a1afc0]
+16:26:07.714 INFO - Shutting down...
