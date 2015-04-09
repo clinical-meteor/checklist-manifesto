@@ -52,7 +52,7 @@ before_install:
   - "meteor &"
 
   # give Meteor some time to download packages, init data, and to start
-  - "sleep 60"
+  - "sleep 50"
 
 #install:
 #  - npm install
