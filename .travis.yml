@@ -28,11 +28,13 @@ before_install:
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install -g starrynight"
 
-  - "which node"
-  - "which starrynight"
+  #- "which node"
+  #- "which starrynight"
 
   - "export CONFIG_PREFIX=`npm config get prefix`"
   - "echo $CONFIG_PREFIX"
+
+  - "export TRAVIS=true"
 
   - "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/config.json"
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
