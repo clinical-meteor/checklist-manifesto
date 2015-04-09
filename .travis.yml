@@ -3,7 +3,7 @@
 language: node_js
 
 node_js:
-  - "0.10"
+  - "0.10.38"
 
 services:
   - mongodb
@@ -38,10 +38,10 @@ before_install:
 
   - "export TRAVIS=true"
 
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/"
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/"
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/bin"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/bin"
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/jar/"
 
   #- "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/travis.json"
