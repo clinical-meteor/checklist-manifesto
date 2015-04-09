@@ -37,7 +37,8 @@ before_install:
   - "sleep 5"
   # setup Meteor app
   - "cd webapp"
-  - "meteor --port 3000 &"
+  - "meteor reset"
+  - "meteor -p 3000 &"
 
   # give Meteor some time to download packages, init data, and to start
   - "sleep 60"
