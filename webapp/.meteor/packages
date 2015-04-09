@@ -28,8 +28,6 @@ less
 #velocity:html-reporter
 #velocity:core
 
-velocity:nightwatch-framework
-velocity:nightwatch-reporter
 
 clinical:ui-vocabulary
 clinical:session-extended-api
