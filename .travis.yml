@@ -36,7 +36,7 @@ before_install:
 
   - "export TRAVIS=true"
 
-  - "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/config.json"
+  #- "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/config.json"
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight"
 
