@@ -5,9 +5,9 @@
 
   <testsuite name="itunes.connect"
     errors="0" failures="0" hostname="" id="" package="itunes.connect" skipped="0"
-    tests="1" time="12.77" timestamp="Wed, 08 Apr 2015 21:25:54 GMT">
+    tests="1" time="15.55" timestamp="Thu, 09 Apr 2015 01:45:59 GMT">
   
-    <testcase name="iTunesConnect" time="12.77" assertions="17">
+    <testcase name="iTunesConnect" time="15.55" assertions="17">
 
     
 
