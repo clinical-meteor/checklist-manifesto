@@ -11,7 +11,7 @@ services:
 sudo: required
 
 env:
-  CONFIG_PREFIX=`npm config get prefix`
+
 
 cache:
   directories:
@@ -30,6 +30,9 @@ before_install:
 
   - "which node"
   - "which starrynight"
+
+  - "export CONFIG_PREFIX=`npm config get prefix`"
+  - "echo $CONFIG_PREFIX"
 
   # fire up xvfb on port :99.0
   - "export DISPLAY=:99.0"
