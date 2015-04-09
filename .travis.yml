@@ -44,7 +44,9 @@ before_install:
   # give Meteor some time to download packages, init data, and to start
   - "sleep 30"
 
-install: npm install
+install:
+  - "starrynight -survey acceptance"
+  #- "npm install"
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
 # script: "starrynight -survey acceptance"
