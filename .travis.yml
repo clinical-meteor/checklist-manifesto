@@ -28,6 +28,8 @@ before_install:
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install -g starrynight"
 
+  - "npm install -g selenium-server-standalone-jar"
+
   #- "which node"
   #- "which starrynight"
 
