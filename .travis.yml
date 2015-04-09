@@ -38,7 +38,12 @@ before_install:
 
   - "export TRAVIS=true"
 
-  #- "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/config.json"
+  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
+  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/"
+  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/"
+  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/jar/"
+
+  - "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/travis.json"
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
 
 
