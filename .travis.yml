@@ -42,9 +42,9 @@ before_install:
   #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
 
 
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/"
-  - "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/lib/runner/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/"
+  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/lib/runner/"
 
 
 
