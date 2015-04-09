@@ -10,6 +10,8 @@ services:
 
 sudo: required
 
+env:
+
 cache:
   directories:
     - .meteor/local/build/programs/server/assets/packages
@@ -41,6 +43,8 @@ before_install:
 
   # give Meteor some time to download packages, init data, and to start
   - "sleep 70"
+
+install: npm install
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
 script: "starrynight -survey acceptance"
