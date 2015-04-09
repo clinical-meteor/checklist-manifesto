@@ -37,7 +37,7 @@ before_install:
   # install meteor
   - "curl https://install.meteor.com | /bin/sh"
   # give meteor a few seconds after installing
-  - "sleep 10"
+  - "sleep 15"
   # setup Meteor app
   - "cd webapp"
   - "meteor &"
