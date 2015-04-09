@@ -23,6 +23,9 @@ before_install:
 
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install starrynight"
+  - "locate starrynight"
+  - "pwd"
+  - "ls -la node_modules"
 
   # fire up xvfb on port :99.0
   - "export DISPLAY=:99.0"
@@ -41,4 +44,4 @@ before_install:
   - "sleep 70"
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
-script: "../node_modules/starrynight/bin/starrynight.bin.js -survey acceptance"
+script: "starrynight -survey acceptance"
