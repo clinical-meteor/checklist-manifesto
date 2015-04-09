@@ -23,7 +23,6 @@ before_install:
 
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install starrynight"
-  - "locate starrynight"
   - "pwd"
   - "ls -la node_modules"
 
