@@ -24,7 +24,8 @@ before_install:
   # - "npm install nightwatch"
 
   # install starrynight, so we can launch nightwatch and selenium
-  - "npm install starrynight"
+  - "npm install -g starrynight"
+
   - "pwd"
   - "ls -la node_modules"
 
@@ -45,8 +46,7 @@ before_install:
   - "sleep 30"
 
 install:
-  - "starrynight -survey acceptance"
-  #- "npm install"
+  - npm install
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
-# script: "starrynight -survey acceptance"
+script: "starrynight -survey acceptance"
