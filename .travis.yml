@@ -26,8 +26,7 @@ before_install:
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install -g starrynight"
 
-  - "pwd"
-  - "ls -la node_modules"
+  - "which node"
 
   # fire up xvfb on port :99.0
   - "export DISPLAY=:99.0"
