@@ -23,7 +23,7 @@ Improved version of the Todos boilerplate example.  Includes:
 
 ````sh
 # Should be as simple as cloning the repository...  
-git clone https://github.com/awatson1978/clinical-checklists.git
+git clone https://github.com/awatson1978/clinical-checklists
 
 # And then running it...
 cd clinical-checklists/webapp
