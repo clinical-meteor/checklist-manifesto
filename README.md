@@ -26,7 +26,7 @@ Improved version of the Todos boilerplate example.  Includes:
 git clone https://github.com/awatson1978/clinical-checklists.git
 
 # And then running it...
-cd clinical-checklists
+cd clinical-checklists/webapp
 meteor
 ````
 
