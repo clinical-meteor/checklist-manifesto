@@ -35,8 +35,8 @@ describe("clinical:active-layout", function(){
     client
       .setWidth(1024, 768)
       .execute(function(){
-        Session.set('isFullscreen", true);
-        Session.set('fullscreenNavbars", true);
+        Session.set("isFullscreen", true);
+        Session.set("fullscreenNavbars", true);
       }).then(function(){
         client.wait(500, "", function(){
           expect.element("navbarHeader").to.have.css("left",0);
@@ -50,8 +50,8 @@ describe("clinical:active-layout", function(){
     client
       .setWidth(1024, 768)
       .execute(function(){
-        Session.set('isFullscreen", false);
-        Session.set('fullscreenNavbars", true);
+        Session.set("isFullscreen", false);
+        Session.set("fullscreenNavbars", true);
       }).then(function(){
         client.wait(500, "", function(){
           expect.element("navbarHeader").to.have.css("left",0);
@@ -66,9 +66,9 @@ describe("clinical:active-layout", function(){
     client
       .setWidth(1024, 768)
       .execute(function(){
-        Session.set('isSidebarVisible", false);
+        Session.set("isSidebarVisible", false);
         expect.element("sidebar").to.have.css("left",-300);
-        Session.set('isSidebarVisible", true);
+        Session.set("isSidebarVisible", true);
       }).then(function(){
         client.wait(500, "", function(){
           expect.element("sidebar").to.have.css("left",0);

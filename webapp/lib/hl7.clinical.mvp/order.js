@@ -37,94 +37,43 @@ HL7.Resources.Patients._transform = function (document) {
 };
 
 
-SequenceSchema = new SimpleSchema({
+
+OrderSchema = new SimpleSchema({
   "resourceType" : {
     type: String,
-    defaultValue : "Sequence"
-  },
-  "variationID" : {
-    type : [{ CodeableConcept }]
+    defaultValue: "Order"
     },
-  "referenceSeq" : {
-    type : CodeableConcept 
+  "identifier" : {
+    type: [{ Identifier }]
+    },
+  "date" : {
+    type: DateTime
+    },
+  "subject" : {
+    type: ReferenceSchema 
     }, 
-  "quantity" : {
-    type : Quantity 
+  "source" : {
+    type: ReferenceSchema 
     }, 
-  "coordinate.$.chromosome" : {
-    type : CodeableConcept 
+  "target" : {
+    type: ReferenceSchema 
     }, 
-  "coordinate.$.start" : {
-    type : Integer
+  "reasonCodeableConcept" : {
+    type: CodeableConcept 
     },
-  "coordinate.$.end" : {
-    type : Integer
+  "reasonReference" : {
+    type: ReferenceSchema 
     },
-  "coordinate.$.genomeBuild" : {
-    type : CodeableConcept 
-    } 
-  "species" : {
-    type : CodeableConcept 
+  "when.code" : {
+    type: CodeableConcept 
     }, 
-  "observedAllele" : {
-    type : String
+  "when.schedule" : {
+    type: Timing 
     },
-  "referenceAllele" : {
-    type : String
-    },
-  "cigar" : {
-    type : String
-    },
-  "quality.$.start" : {
-    type : Integer
-    },
-  "quality.$.end" : {
-    type : Integer
-    },
-  "quality.$.score" : {
-    type : Quantity 
-    }, 
-  "quality.$.platform" : {
-    type : CodeableConcept 
-    } 
-  "allelicState" : {
-    type : CodeableConcept 
-    }, 
-  "allelicFrequency" : {
-    type : Decimal
-    },
-  "copyNumberEvent" : { 
-    type :CodeableConcept 
-    }, 
-  "readCoverage" : {
-    type : Integer
-    },
-  "chip.chipId" : {
-    type : String
-    },
-  "chip.manufacturerId" : {
-    type : String
-    },
-  "chip.version" : {
-    type : String
-    },
-  "repository.$.url" : {
-    type : String
-    },
-  "repository.$.name" : {
-    type : String
-    },
-  "repository.$.structure" : {
-    type : String
-    },
-  "repository.$.variantId" : {
-    type : String
-    },
-  "repository.$.readGroupSetId" : {
-    type : String
+  "detail" : {
+    type: [ ReferenceSchema ] 
     }
 });
-
 
 
 

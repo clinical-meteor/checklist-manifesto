@@ -21,6 +21,9 @@
   "suffix" : {
     type: [String]
     },
+  "preferred" : {
+    type: [String]
+    },
   "period" : {
     type: Period 
     }
