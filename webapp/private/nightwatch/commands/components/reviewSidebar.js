@@ -9,7 +9,7 @@ exports.command = function(username, password) {
     .verify.elementPresent("#logoutButton")
     .verify.elementPresent("#connectionStatusPanel")
     
-    .verify.elementPresent("#todosListPage")
+    .verify.elementPresent("#checklistPage")
 
   return this; // allows the command to be chained.
 };

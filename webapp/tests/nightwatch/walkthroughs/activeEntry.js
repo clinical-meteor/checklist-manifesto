@@ -55,13 +55,13 @@ module.exports = {
       .verify.elementPresent("#signUpPagePasswordInput")
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid gray')
       .setValue("#signUpPagePasswordInput", "jan")
-      .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid orange')
+      .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid rgb(242, 222, 222)')
       .setValue("#signUpPagePasswordInput", "icedoe123")
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid green')
 
       .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid gray')
       .setValue("#signUpPagePasswordConfirmInput", "ja")
-      .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid orange')
+      .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid rgb(242, 222, 222)')
       .clearValue("#signUpPagePasswordConfirmInput")
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
       .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid green')
@@ -80,10 +80,6 @@ module.exports = {
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid green')
       .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid green')
-
-    // client.verify.elementPresent("#signUpPageErrorMessages")
-    //   .verify.elementPresent("#signUpPageErrorMessages")
-    //   .verify.containsText("#signUpPageErrorMessages", "Passwords do not match.")
   },
   "guest should be notified if email is not correctly formatted" : function (client) {
     client
@@ -92,13 +88,9 @@ module.exports = {
       .verify.elementPresent("#signUpPageEmailInput")
       .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid gray')
       .setValue("#signUpPageEmailInput", "janicedoe")
-      .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid orange')
+      .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid rgb(242, 222, 222)')
       .setValue("#signUpPageEmailInput", "@symptomatic.io")
       .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid green')
-    // client.verify.elementPresent("#signUpPageErrorMessages")
-      //.click("signUpPageEmailInput").pause(500)
-      //.verify.elementPresent("#signUpPageErrorMessages")
-      //.verify.elementPresent("#signUpPageErrorMessages", "That email is already registered.")
   },
   "when new user fills out form and registers, new user should get created" : function (client) {
     client
@@ -158,26 +150,35 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(320, 960)
-      .verify.containsText("#usernameLink", "Sign In")
+      // .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .click("#sidebarToggle").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
-      .click("#navbarMenu").pause(300)
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
   },
-  // "error messages should be empty by default" : function (client) {
-  //   client.verify.elementPresent("#errorMessages")
-  // },
-  // "guest should be notified if email already exists" : function (client) {
-  //   client
-  //     .setValue("signUpPageEmailInput", "janicedoe@symptomatic.io")
-  //     .click("signUpPageEmailInput").pause(500)
-  //     .verify.elementPresent("#signUpPageErrorMessages")
-  //     .verify.containsText("#signUpPageErrorMessages", "That email is already registered.")
-  // },
+  "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
+    client
+      .url("http://localhost:3000/entrySignIn")
+      .resizeWindow(1024, 768)
+      .signIn("alice@symptomatic.io", "alice123").pause(500)
+      .verify.containsText("#signInPageMessage", "User not found [403]")
+      .verify.cssProperty("#signInPageMessage", "color", "rgba(169, 68, 66, 1)")
+      .verify.cssProperty("#signInPageMessage", "background-color", "rgba(242, 222, 222, 1)")
+      .verify.cssProperty("#signInPageMessage", "border-color", "rgb(235, 204, 209)")
+  },
+  "anonymous guest should be notified if email already exists" : function (client) {
+    client
+      .url("http://localhost:3000/entrySignUp")
+      .resizeWindow(1024, 768)
+      .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .click("#signUpPageEmailInput").pause(500)
+      .verify.elementPresent("#signUpPageMessage")
+      .verify.containsText("#signUpPageMessage", "Email already exists. [403]")
+  },
   after: function(client){
     client
-      .dropUsers()
+      .dropEntryUsers()
       .end();
   }
 };

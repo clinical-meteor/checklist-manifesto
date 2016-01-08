@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="41"
+            failures="11"
+            tests="17">
+
+  <testsuite name="checklistWalkthrough"
+    errors="41" failures="11" hostname="" id="" package="checklistWalkthrough" skipped="0"
+    tests="17" time="51.20" timestamp="Fri, 08 Jan 2016 18:24:54 GMT">
+  
+    <testcase name="anonymous user - can view scratch checklist" time="3.479" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="anonymous user - sidebar should be hidden in portrait mode" time="0.2370" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="anonymous user - sidebar should be visible in landscape mode" time="0.2790" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="anonymous user - sidebar toggle opens and closes in portrait mode" time="1.085" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="anonymous user - cannot access list of lists" time="0.2480" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can access list of lists" time="3.955" assertions="6">
+
+    
+
+    
+
+    
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can access list of lists (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:88:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(2)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can access list of lists (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:89:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can add new task" time="0.9420" assertions="4">  <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; is not present.">    at Object.module.exports.signed in user - can add new task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:95:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+    
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; contains text: &quot;Publish app in App Store&quot;.">    at Object.module.exports.signed in user - can add new task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:100:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can complete task" time="2.899" assertions="7">
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; contains text: &quot;Publish app in App Store&quot;.">    at Object.module.exports.signed in user - can complete task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:105:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1) .delete&gt; is hidden. Element could not be located.">    at Object.module.exports.signed in user - can complete task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:107:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; has css property &quot;color: black&quot;.">    at Object.module.exports.signed in user - can complete task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:108:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; has css property &quot;color: gray&quot;.">    at Object.module.exports.signed in user - can complete task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:110:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can delete completed task" time="2.852" assertions="4">
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; contains text: &quot;Publish app in App Store&quot;.">    at Object.module.exports.signed in user - can delete completed task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:118:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1) .delete&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can delete completed task (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:119:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can add list(s)" time="19.04" assertions="19">
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:127:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(2)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:128:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(3)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:129:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(1)&gt; contains text: &quot;Blood Draw&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:131:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(2)&gt; contains text: &quot;MRI Procedure&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:132:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(3)&gt; contains text: &quot;Linen Change&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:133:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+    
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:138:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(2)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:139:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(3)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:140:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(4)&gt; contains text: &quot;List A&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:141:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:145:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(2)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:146:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(3)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:147:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(4)&gt; contains text: &quot;List A&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:148:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(5)&gt; contains text: &quot;List B&quot;. Element could not be located.">    at Object.module.exports.signed in user - can add list(s) (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:149:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can delete own list" time="0.004000" assertions="0">
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can edit own list(s)" time="0.001000" assertions="0">
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can display list library" time="2.438" assertions="2">
+
+      <failure message="Testing if element &lt;#protocolLibrary&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can display list library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:195:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can see public lists in library" time="4.222" assertions="3">  <failure message="Testing if element &lt;#searchBar&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can see public lists in library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:199:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#protocolLibrary #protocolList .protocol:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can see public lists in library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:201:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#protocolLibrary #protocolList .protocol:nth-child(1)&gt; contains text: &quot;Joe&#39;s Public List&quot;. Element could not be located.">    at Object.module.exports.signed in user - can see public lists in library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:202:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can not see private lists in library" time="0.02000" assertions="1">
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="signed in user - can clone protocol from library" time="4.834" assertions="3">  <failure message="Testing if element &lt;#protocolDetails .clone&gt; is visible. Element could not be located.">    at Object.module.exports.signed in user - can clone protocol from library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:211:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(5)&gt; is present.">    at Object.module.exports.signed in user - can clone protocol from library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:213:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#lists .list:nth-child(5)&gt; contains text: &quot;Joe&#39;s Public List&quot;. Element could not be located.">    at Object.module.exports.signed in user - can clone protocol from library (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:214:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+    <testcase name="anonymous user - can view public checklistPage with URL" time="4.658" assertions="4">  <failure message="Testing if element &lt;#checklistPage&gt; is visible. Element could not be located.">    at Object.module.exports.anonymous user - can view public checklistPage with URL (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:219:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#checklistTitle&gt; is visible. Element could not be located.">    at Object.module.exports.anonymous user - can view public checklistPage with URL (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:220:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#newTaskInput&gt; is hidden. Element could not be located.">    at Object.module.exports.anonymous user - can view public checklistPage with URL (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:221:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#checklistPage .taskItem:nth-child(1)&gt; is visible. Element could not be located.">    at Object.module.exports.anonymous user - can view public checklistPage with URL (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/checklistWalkthrough.js:222:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1) .delete&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(2)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(3)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(4)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#searchBar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolLibrary #protocolList .protocol:nth-child(1)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#protocolDetails .clone&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#lists .list:nth-child(5)&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistTitle&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#newTaskInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#checklistPage .taskItem:nth-child(1)&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

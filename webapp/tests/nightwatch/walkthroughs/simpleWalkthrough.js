@@ -2,6 +2,7 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
+  tags: ['layout'],
   "Layout & Static Pages" : function (client) {
     client
       .url("http://localhost:3000/entrySignIn")
@@ -20,7 +21,7 @@ module.exports = {
       //============================================================================================
       .sectionBreak("B. Home Page")
 
-      .waitForPage("#todosListPage")
+      .waitForPage("#checklistPage")
       .reviewMainLayout()
       .reviewSidebar()
 
@@ -38,7 +39,9 @@ module.exports = {
       .waitForPage("#privacyPage")
 
       .verify.elementPresent("#logoutButton")
-      .signOut()
+      .verify.elementPresent("#logoutButton")
+      .click("#logoutButton").pause(300)
+      .verify.containsText("#usernameLink", "Sign In")
       .verify.elementNotPresent("#logoutButton")
 
       .end();

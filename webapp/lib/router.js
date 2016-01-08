@@ -28,7 +28,7 @@ Router.route("/notfound", {
 
 Router.map(function() {
 
-  this.route('todosListPage', {
+  this.route('checklistPage', {
     path: '/lists/:_id',
     // subscribe to todos before the page is rendered but don't wait on the
     // subscription, we'll just render the items as they arrive
@@ -48,7 +48,7 @@ Router.map(function() {
   this.route('home', {
     path: '/',
     action: function() {
-      Router.go('todosListPage', Lists.findOne());
+      Router.go('checklistPage', Lists.findOne());
     }
   });
 });

@@ -1,88 +1,166 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="5"
             failures="3"
             tests="3">
 
   <testsuite name="activeLayout"
-    errors="0" failures="3" hostname="" id="" package="activeLayout" skipped="0"
-    tests="3" time="0.01000" timestamp="Thu, 07 Jan 2016 07:32:07 GMT">
+    errors="5" failures="3" hostname="" id="" package="activeLayout" skipped="0"
+    tests="3" time="16.25" timestamp="Fri, 08 Jan 2016 05:32:55 GMT">
   
-    <testcase name="it should hide/show navbar" time="0.005000" assertions="0">
+    <testcase name="it should hide/show navbar" time="11.82" assertions="6">
+
+    
+
+      <failure message="Testing if element &lt;#navbarHeader&gt; is not present.">    at Object.module.exports.it should hide/show navbar (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:48:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#navbarFooter&gt; is not present.">    at Object.module.exports.it should hide/show navbar (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:49:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
+
+    
+
+    
     </testcase>
       <system-err>
-         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+         ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
       </system-err>
   
-    <testcase name="sidebar should be visible in landscape and desktop modes" time="0.003000" assertions="0">
+    <testcase name="sidebar should be visible in landscape and desktop modes" time="0.1720" assertions="3">  <failure message="Testing if element &lt;#sidebar&gt; is present.">    at Object.module.exports.sidebar should be visible in landscape and desktop modes (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:62:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#signInLink&gt; is present.">    at Object.module.exports.sidebar should be visible in landscape and desktop modes (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:63:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#mainPanel&gt; is present.">    at Object.module.exports.sidebar should be visible in landscape and desktop modes (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:64:15)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
     </testcase>
       <system-err>
-         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+         ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
       </system-err>
   
-    <testcase name="sidebar should be hidden in portrait and phone mode" time="0.002000" assertions="0">
+    <testcase name="sidebar should be hidden in portrait and phone mode" time="4.249" assertions="6">  <failure message="Testing if element &lt;#sidebar&gt; is hidden. Element could not be located.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:70:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#signInLink&gt; is hidden. Element could not be located.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:71:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#mainPanel&gt; is present.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:72:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#sidebar&gt; is hidden. Element could not be located.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:74:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#signInLink&gt; is hidden. Element could not be located.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:75:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+      <failure message="Testing if element &lt;#mainPanel&gt; is present.">    at Object.module.exports.sidebar should be hidden in portrait and phone mode (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/walkthroughs/activeLayout.js:76:17)
+    at Module.call (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:407:9)</failure>
+
+    
     </testcase>
       <system-err>
-         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
- ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+         ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#sidebar&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInLink&quot; using: css selector
       </system-err>
   
   

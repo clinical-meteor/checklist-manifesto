@@ -2,31 +2,31 @@
   <section id="sidebarMenu" class="sidebarMenu">
 
     <div id="sidebarMenuContents" class="sidebarMenuContents">
-      <!-- <div class="panel panel-default tile"> -->
+
         {{#if currentUser}}
           <a id="usernameLink" href="#" class="js-user-menu">
             {{email}}
           </a>
+          <a id="protocolLibraryLink" href="{{pathFor 'protocolsListPage'}}" class="withLowerBorder">Protocols</a>
+          <div class="withLowerBorder">
+            <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
+            <div id="lists">
+              {{#each lists}}
+                <a href="{{pathFor 'checklistPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
+                  {{#if userId}}
+                    <i class="fa fa-lock"></i>
+                  {{/if}}
+                  {{name}}
+                  {{#if incompleteCount}}
+                    <span class="count-list">{{incompleteCount}}</span>
+                  {{/if}}
+                </a>
+              {{/each}}
+            </div>
+          </div>
         {{else}}
           <a id="usernameLink" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">{{getUsername}}</a>
         {{/if}}
-
-        <a id="protocolManualButton" href="{{pathFor 'protocolsListPage'}}" class="withLowerBorder">Protocols</a>
-
-        <div class="withLowerBorder">
-          <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
-          {{#each lists}}
-            <a href="{{pathFor 'todosListPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
-              {{#if userId}}
-                <i class="fa fa-lock"></i>
-              {{/if}}
-              {{name}}
-              {{#if incompleteCount}}
-                <span class="count-list">{{incompleteCount}}</span>
-              {{/if}}
-            </a>
-          {{/each}}
-        </div>
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
         <a id="featuresButton" href="{{pathFor 'marketingPage'}}">Features</a>
@@ -40,9 +40,7 @@
           {{getConnectionStatus}}
         </div>
 
-      <!-- </div> -->
+
     </div>
-
   </section>
-
 </template>

@@ -20,7 +20,7 @@ module.exports = {
       //============================================================================================
       .sectionBreak("B. Home Page")
 
-      .waitForPage("#todosListPage")
+      .waitForPage("#checklistPage")
       .reviewMainLayout()
       .reviewSidebar()
 

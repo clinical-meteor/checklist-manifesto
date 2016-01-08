@@ -1,22 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="app.layout"
-    errors="0" failures="1" hostname="" id="" package="app.layout" skipped="0"
-    tests="1" time="5.486" timestamp="Thu, 07 Jan 2016 07:32:07 GMT">
+    errors="0" failures="0" hostname="" id="" package="app.layout" skipped="0"
+    tests="1" time="6.963" timestamp="Fri, 08 Jan 2016 05:35:10 GMT">
   
-    <testcase name="Layout &amp; Static Pages" time="5.486" assertions="2">
+    <testcase name="Layout &amp; Static Pages" time="6.963" assertions="35">
 
-      <failure message="Timed out while waiting for element &lt;#entrySignIn&gt; to be present for 3000 milliseconds.">    at Object.exports.command (/Users/abigailwatson/Code/ClinicalFramework/clinical-checklists/webapp/tests/nightwatch/commands/actions/waitForPage.js:4:6)
-    at Object.F.command (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/api.js:274:31)
-    at Object.commandFn (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/api.js:287:24)
-    at AsyncTree.runCommand (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/queue.js:157:30)
-    at AsyncTree.runChildNode (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/queue.js:117:8)
-    at AsyncTree.walkDown (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/queue.js:83:10)
-    at AsyncTree.traverse (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/queue.js:71:10)
-    at queueRunner [as run] (/usr/local/lib/node_modules/starrynight/node_modules/nightwatch/lib/core/queue.js:218:18)</failure>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>

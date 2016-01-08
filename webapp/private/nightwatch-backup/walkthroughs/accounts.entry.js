@@ -36,7 +36,7 @@ module.exports = {
       //============================================================================================
       .sectionBreak("C. Home Page")
 
-      .waitForPage("#todosListPage")
+      .waitForPage("#checklistPage")
       .saveScreenshot("tests/nightwatch/screenshots/ipad/accountsEntry/C-homePage.png")
 
       .verify.elementPresent("#currentUserEmail")

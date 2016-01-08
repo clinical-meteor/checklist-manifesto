@@ -5,7 +5,7 @@ Session.setDefault('newTaskRibbonVisible', true);
 //==============================================================================
 // TEMPLATE OUTPUTS
 
-Template.todosListPage.helpers({
+Template.checklistPage.helpers({
   isNewTaskRibbonVisible: function () {
     return Session.get('newTaskRibbonVisible');
   },
@@ -25,7 +25,7 @@ Template.todosListPage.helpers({
 //==============================================================================
 // TEMPLATE INPUTS
 
-Template.todosListPage.events({
+Template.checklistPage.events({
   'click #showNewTaskToggle': function (attribute) {
     Session.toggle('newTaskRibbonVisible');
   },
@@ -71,7 +71,7 @@ Template.todosListPage.events({
     Session.set('editingList', false);
   },
 
-  'submit #listPanelTitleForm': function(event, template) {
+  'submit #checklistTitleForm': function(event, template) {
     event.preventDefault();
 
     Lists.update(this._id, {$set: {name: template.$('[name=name]').val()}});
@@ -95,7 +95,7 @@ Template.todosListPage.events({
   // 'click .js-edit-list': function(event, template) {
   //   editList(this, template);
   // },
-  'click #listPanelTitle': function(event, template) {
+  'click #checklistTitle': function(event, template) {
     editList(this, template);
   },
 
@@ -111,8 +111,8 @@ Template.todosListPage.events({
     template.$('.js-todo-new input').focus();
   },
 
-  'keyup #listPanelNewItemInput': function(event) {
-    //console.log('click #listPanelNewItemInput', event.keyCode);
+  'keyup #newTaskInput': function(event) {
+    //console.log('click #newTaskInput', event.keyCode);
 
     if(event.keyCode == 13) {
       saveList(this);
@@ -124,7 +124,7 @@ Template.todosListPage.events({
 saveList = function(record){
   var newTask = {
     listId: record._id,
-    text: $('#listPanelNewItemInput').val(),
+    text: $('#newTaskInput').val(),
     checked: false,
     createdAt: new Date()
   }
@@ -142,7 +142,7 @@ saveList = function(record){
   //console.log('result', result);
 
   Lists.update(record._id, {$inc: {incompleteCount: 1}});
-  $('#listPanelNewItemInput').val('');
+  $('#newTaskInput').val('');
 }
 
 //==============================================================================
@@ -154,7 +154,7 @@ var editList = function(list, template) {
   // wait for the template to redraw based on the reactive change
   Tracker.afterFlush(function() {
     // template.$('.js-edit-form input[type=text]').focus();
-    template.$('#listPanelTitleForm input[type=text]').focus();
+    template.$('#checklistTitleForm input[type=text]').focus();
   });
 };
 

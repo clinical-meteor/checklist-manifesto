@@ -95,8 +95,8 @@ Template.appBody.events({
 
     // if we are on a private list, we'll need to go to a public one
     var current = Router.current();
-    if (current.route.name === 'todosListPage' && current.data().userId) {
-      Router.go('todosListPage', Lists.findOne({userId: {$exists: false}}));
+    if (current.route.name === 'checklistPage' && current.data().userId) {
+      Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
     }
   },
 
@@ -104,6 +104,6 @@ Template.appBody.events({
     var list = {name: Lists.defaultName(), incompleteCount: 0};
     list._id = Lists.insert(list);
 
-    Router.go('todosListPage', list);
+    Router.go('checklistPage', list);
   }
 });

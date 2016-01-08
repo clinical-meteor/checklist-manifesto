@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="3"
+            tests="3">
+
+  <testsuite name="activeLayout"
+    errors="0" failures="3" hostname="" id="" package="activeLayout" skipped="0"
+    tests="3" time="0.02100" timestamp="Fri, 08 Jan 2016 05:22:04 GMT">
+  
+    <testcase name="it should hide/show navbar" time="0.01300" assertions="0">
+    </testcase>
+  
+    <testcase name="sidebar should be visible in landscape and desktop modes" time="0.006000" assertions="0">
+    </testcase>
+  
+    <testcase name="sidebar should be hidden in portrait and phone mode" time="0.002000" assertions="0">
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

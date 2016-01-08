@@ -20,14 +20,14 @@ module.exports = {
       //============================================================================================
       .sectionBreak("B. Home Page")
 
-      .waitForPage("#todosListPage")
+      .waitForPage("#checklistPage")
       .reviewMainLayout()
       .reviewSidebar()
 
       //============================================================================================
       .sectionBreak("C. Static Pages")
 
-      .verify.elementPresent("#todosListPage")
+      .verify.elementPresent("#checklistPage")
       .verify.elementPresent("#listPanelHeader")
       .verify.elementPresent("#listPanelFooter")
 
@@ -40,12 +40,12 @@ module.exports = {
       .verify.attributeEquals("#listPanelItems .taskItem:nth-child(7) .taskInput", "value", "Data on the Wire")
 
 
-      .verify.elementPresent("#listPanelNewItemInput")
-      .verify.attributeEquals("#listPanelNewItemInput", "value", "")
+      .verify.elementPresent("#newTaskInput")
+      .verify.attributeEquals("#newTaskInput", "value", "")
 
-      .setValue('#listPanelNewItemInput', "Foo").pause(1000)
+      .setValue('#newTaskInput', "Foo").pause(1000)
 
-      .setValue('#listPanelNewItemInput', String.fromCharCode(13)).pause(10000)
+      .setValue('#newTaskInput', String.fromCharCode(13)).pause(10000)
 
       .verify.attributeEquals("#listPanelItems .taskItem:nth-child(1) .taskInput", "value", "Foo")
       .verify.attributeEquals("#listPanelItems .taskItem:nth-child(2) .taskInput", "value", "Simplicity Equals Productivity")

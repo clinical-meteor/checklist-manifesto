@@ -563,10 +563,10 @@ Driver info: driver.version: unknown
 22:59:43.924 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: body]]
 22:59:43.927 INFO - Executing: [find element: By.selector: body])
 22:59:43.936 INFO - Done: [find element: By.selector: body]
-22:59:43.938 INFO - Executing: [find element: By.selector: #todosListPage])
-22:59:43.945 INFO - Done: [find element: By.selector: #todosListPage]
-22:59:43.947 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #todosListPage]])
-22:59:43.956 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #todosListPage]]
+22:59:43.938 INFO - Executing: [find element: By.selector: #checklistPage])
+22:59:43.945 INFO - Done: [find element: By.selector: #checklistPage]
+22:59:43.947 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistPage]])
+22:59:43.956 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistPage]]
 22:59:43.959 INFO - Executing: [find element: By.selector: #listPanelHeader])
 22:59:43.969 INFO - Done: [find element: By.selector: #listPanelHeader]
 22:59:43.972 INFO - Executing: [find element: By.selector: #listPanelFooter])
@@ -585,8 +585,8 @@ Driver info: driver.version: unknown
 22:59:44.040 INFO - Done: [find element: By.selector: #logoutButton]
 22:59:44.042 INFO - Executing: [find element: By.selector: #connectionStatusPanel])
 22:59:44.051 INFO - Done: [find element: By.selector: #connectionStatusPanel]
-22:59:44.053 INFO - Executing: [find element: By.selector: #todosListPage])
-22:59:44.059 INFO - Done: [find element: By.selector: #todosListPage]
+22:59:44.053 INFO - Executing: [find element: By.selector: #checklistPage])
+22:59:44.059 INFO - Done: [find element: By.selector: #checklistPage]
 22:59:44.062 INFO - Executing: [switch to frame: null])
 22:59:44.070 INFO - Done: [switch to frame: null]
 22:59:44.073 INFO - Executing: [find element: By.selector: body])
@@ -595,8 +595,8 @@ Driver info: driver.version: unknown
 22:59:44.086 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: body]]
 22:59:44.089 INFO - Executing: [find element: By.selector: body])
 22:59:44.095 INFO - Done: [find element: By.selector: body]
-22:59:44.098 INFO - Executing: [find element: By.selector: #todosListPage])
-22:59:44.105 INFO - Done: [find element: By.selector: #todosListPage]
+22:59:44.098 INFO - Executing: [find element: By.selector: #checklistPage])
+22:59:44.105 INFO - Done: [find element: By.selector: #checklistPage]
 22:59:44.107 INFO - Executing: [find element: By.selector: #listPanelHeader])
 22:59:44.114 INFO - Done: [find element: By.selector: #listPanelHeader]
 22:59:44.116 INFO - Executing: [find element: By.selector: #listPanelFooter])
@@ -617,9 +617,9 @@ Driver info: driver.version: unknown
 22:59:44.190 INFO - Done: [find element: By.selector: #listPanelItems .taskItem:nth-child(7) .taskInput]
 22:59:44.192 INFO - Executing: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #listPanelItems .taskItem:nth-child(7) .taskInput], value])
 22:59:44.201 INFO - Done: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #listPanelItems .taskItem:nth-child(7) .taskInput], value]
-22:59:44.205 INFO - Executing: [find element: By.selector: #listPanelNewItemInput])
+22:59:44.205 INFO - Executing: [find element: By.selector: #newTaskInput])
 22:59:45.087 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 Command duration or timeout: 7 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
@@ -652,7 +652,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
@@ -662,14 +662,14 @@ Driver info: driver.version: unknown
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
 	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-22:59:45.088 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+22:59:45.088 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-22:59:45.313 INFO - Executing: [find element: By.selector: #listPanelNewItemInput])
+22:59:45.313 INFO - Executing: [find element: By.selector: #newTaskInput])
 22:59:46.222 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 Command duration or timeout: 8 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
@@ -702,7 +702,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
@@ -712,14 +712,14 @@ Driver info: driver.version: unknown
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
 	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-22:59:46.223 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+22:59:46.223 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-22:59:46.445 INFO - Executing: [find element: By.selector: #listPanelNewItemInput])
+22:59:46.445 INFO - Executing: [find element: By.selector: #newTaskInput])
 22:59:47.340 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 Command duration or timeout: 9 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
@@ -752,7 +752,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
@@ -762,14 +762,14 @@ Driver info: driver.version: unknown
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
 	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-22:59:47.342 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+22:59:47.342 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-22:59:48.565 INFO - Executing: [find element: By.selector: #listPanelNewItemInput])
+22:59:48.565 INFO - Executing: [find element: By.selector: #newTaskInput])
 22:59:49.468 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 Command duration or timeout: 7 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
@@ -802,7 +802,7 @@ Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browse
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:695)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
@@ -812,7 +812,7 @@ Driver info: driver.version: unknown
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
 	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
 	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/anonymous951115064002438299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-22:59:49.469 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#listPanelNewItemInput"}
+22:59:49.469 WARN - Exception: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
@@ -954,10 +954,10 @@ Driver info: driver.version: unknown
 23:00:06.686 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on MAC (d3ac1528-9498-ef43-be16-d40a3f6ca023)] -> css selector: body]]
 23:00:06.688 INFO - Executing: [find element: By.selector: body])
 23:00:06.694 INFO - Done: [find element: By.selector: body]
-23:00:06.697 INFO - Executing: [find element: By.selector: #todosListPage])
-23:00:06.703 INFO - Done: [find element: By.selector: #todosListPage]
-23:00:06.704 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (d3ac1528-9498-ef43-be16-d40a3f6ca023)] -> css selector: #todosListPage]])
-23:00:06.713 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (d3ac1528-9498-ef43-be16-d40a3f6ca023)] -> css selector: #todosListPage]]
+23:00:06.697 INFO - Executing: [find element: By.selector: #checklistPage])
+23:00:06.703 INFO - Done: [find element: By.selector: #checklistPage]
+23:00:06.704 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on MAC (d3ac1528-9498-ef43-be16-d40a3f6ca023)] -> css selector: #checklistPage]])
+23:00:06.713 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on MAC (d3ac1528-9498-ef43-be16-d40a3f6ca023)] -> css selector: #checklistPage]]
 23:00:06.716 INFO - Executing: [find element: By.selector: #listPanelHeader])
 23:00:06.722 INFO - Done: [find element: By.selector: #listPanelHeader]
 23:00:06.725 INFO - Executing: [find element: By.selector: #listPanelFooter])
@@ -976,8 +976,8 @@ Driver info: driver.version: unknown
 23:00:06.789 INFO - Done: [find element: By.selector: #logoutButton]
 23:00:06.791 INFO - Executing: [find element: By.selector: #connectionStatusPanel])
 23:00:06.799 INFO - Done: [find element: By.selector: #connectionStatusPanel]
-23:00:06.802 INFO - Executing: [find element: By.selector: #todosListPage])
-23:00:06.808 INFO - Done: [find element: By.selector: #todosListPage]
+23:00:06.802 INFO - Executing: [find element: By.selector: #checklistPage])
+23:00:06.808 INFO - Done: [find element: By.selector: #checklistPage]
 23:00:06.810 INFO - Executing: [switch to frame: null])
 23:00:06.817 INFO - Done: [switch to frame: null]
 23:00:06.820 INFO - Executing: [find element: By.selector: body])

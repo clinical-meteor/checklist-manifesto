@@ -37,7 +37,7 @@ Template.sidebarMenu.helpers({
   },
   activeListClass: function() {
     var current = Router.current();
-    if (current.route.name === 'todosListPage' && current.params._id === this._id) {
+    if (current.route.name === 'checklistPage' && current.params._id === this._id) {
       return 'active';
     }
   }
