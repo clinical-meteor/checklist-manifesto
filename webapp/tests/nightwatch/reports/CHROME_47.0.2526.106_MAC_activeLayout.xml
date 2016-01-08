@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="3"
+            tests="3">
+
+  <testsuite name="activeLayout"
+    errors="0" failures="3" hostname="" id="" package="activeLayout" skipped="0"
+    tests="3" time="0.01000" timestamp="Thu, 07 Jan 2016 07:32:07 GMT">
+  
+    <testcase name="it should hide/show navbar" time="0.005000" assertions="0">
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+      </system-err>
+  
+    <testcase name="sidebar should be visible in landscape and desktop modes" time="0.003000" assertions="0">
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+      </system-err>
+  
+    <testcase name="sidebar should be hidden in portrait and phone mode" time="0.002000" assertions="0">
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signUpPageErrorMessages&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageConfirmPasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;signUpPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPageEmailInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInPagePasswordInput&quot; using: css selector
+ ERROR: Unable to locate element: &quot;#signInToAppButton&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

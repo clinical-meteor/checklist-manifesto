@@ -5,29 +5,24 @@
 
 standard-app-packages
 insecure
-iron:router
+less
+fastclick
+
 
 accounts-base
 accounts-password
 
 noorderstorm:hammer
-#chriswessels:hammer
-fastclick
 
 ground:db
 ground:localstorage
 
-#pfafman:font-awesome-4
-#natestrauser:font-awesome
-#linto:fontawesome
 fortawesome:fontawesome
 nemo64:bootstrap
-less
+aldeed:simple-schema
+awatson1978:fonts-helveticas
 
-#clinical:nightwatch@2.0.0
-#velocity:html-reporter
-#velocity:core
-
-
+clinical:router
 clinical:ui-vocabulary
 clinical:session-extended-api
+clinical:active-entry

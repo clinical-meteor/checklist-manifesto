@@ -19,6 +19,13 @@ Template.sidebarMenu.rendered = function() {
 
 
 Template.sidebarMenu.helpers({
+  getUsername: function () {
+    if (Meteor.userId()) {
+      return Meteor.user().emails[0].address;
+    } else {
+      return "Sign In";
+    }
+  },
   getConnectionStatus: function () {
     return Meteor.status().status;
   },

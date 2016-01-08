@@ -37,7 +37,7 @@ module.exports = {
   },
   "it should hide/show navbar": function(client){
     client
-      .windowSize(1024,768)
+      .resizeWindow(1024,768)
       .expect.element("#navbarHeader").to.be.visible
       .expect.element("#navbarFooter").to.be.visible
       .sendKeys('cmd-ctrl-n')
@@ -69,4 +69,7 @@ module.exports = {
         .expect.element("#signInLink").to.be.hidden
         .expect.element("#mainPanel").to.be.visible
   },
+  after: function(client){
+    client.end();
+  }
 }
