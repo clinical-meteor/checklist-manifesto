@@ -80,7 +80,7 @@ Template.appBody.events({
     Session.set('menuOpen', false);
     event.preventDefault();
   },
-  'click .js-user-menu': function(event) {
+  'click #usernameLink': function(event) {
     Session.set('userMenuOpen', ! Session.get('userMenuOpen'));
     // stop the menu from closing
     event.stopImmediatePropagation();
