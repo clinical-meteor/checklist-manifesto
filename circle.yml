@@ -30,13 +30,14 @@ dependencies:
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
     - npm install starrynight -g
+    - meteor list
 
 ## Customize test commands
 test:
   pre:
     - starrynight fetch
     - meteor:
-        background: true
+          background: true
     - sleep 60
   override:
     - starrynight run-tests --type validation
