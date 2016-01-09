@@ -18,6 +18,12 @@ Template.sidebarMenu.rendered = function() {
 };
 
 
+Template.sidebarMenu.events({
+  "click #protocolLibraryLink": function (event, template){
+     Router.go('/protocols');
+  }
+});
+
 Template.sidebarMenu.helpers({
   getUsername: function () {
     if (Meteor.user()) {

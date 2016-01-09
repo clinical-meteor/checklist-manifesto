@@ -19,12 +19,13 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignUp").pause(300)
       // .initializeChecklists()
-      .signUp("alice@somewhere.com", "alice123")
+      .signUp("alice@somewhere.com", "alice123").pause(500)
   },
   "signed in user - can display protocol library": function(client) {
     client
+      .verify.containsText("usernameLink", "alice@somewhere.com")
       .verify.elementPresent("#protocolLibraryLink")
-      .click("#protocolLibraryLink").pause(300)
+      .click("#protocolLibraryLink").pause(500)
       .verify.visible("#protocolLibrary")
       // TODO:  implement this
       //.verify.containsText("pageTitle", "Protocol Library")
@@ -107,7 +108,6 @@ module.exports = {
   after: function (client){
     client
       .dropEntryUsers()
-      .dropChecklists()
       .end();
   }
 };
