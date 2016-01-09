@@ -4,6 +4,14 @@ Meteor.startup(function () {
 
   if (Lists.find().count() === 0) {
     var data = [
+      {name: "MRI Procedure",
+       url: "http://www.suagm.edu/umet/biblioteca/Reserva_Profesores/maritza_acevedo_nurs_230_101/cama_abierta_y_ocupada.pdf",
+       items: [
+         "Item 1.",
+         "Item 2.",
+         "Item 3."
+       ]
+      },
       {name: "Change Bed Linens",
        url: "http://www.suagm.edu/umet/biblioteca/Reserva_Profesores/maritza_acevedo_nurs_230_101/cama_abierta_y_ocupada.pdf",
        items: [
@@ -24,7 +32,7 @@ Meteor.startup(function () {
          "Provided for patient comfort and safety."
        ]
       },
-      {name: "Take Blood Sample from Ebola Patient (WHO)",
+      {name: "Collect Blood Specimen",
       url: "http://who.int/csr/resources/publications/ebola/blood-collect-en.pdf",
        items: [
          "Step 1a:  Assemble equipment for collecting blood.",

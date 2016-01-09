@@ -27,7 +27,7 @@
                 <i id="showNewTaskToggle" class="fa fa-pencil" title="Add task"></i>
               </a>
               <a id="quickSignInLink" class="headerIcon">
-                <i id="listPanelConfig" class="fa fa-cog" title="Make list private"></i>
+                <i id="checklistConfig" class="fa fa-cog" title="Make list private"></i>
               </a>
             </a>
           </div>
@@ -47,7 +47,7 @@
       {{/if}}
 
 
-      <div id="listPanelItems" class="content-scrollable list-items">
+      <div id="checklistItems" class="content-scrollable list-items">
         {{#each todos}}
           {{> todosItem}}
         {{else}}

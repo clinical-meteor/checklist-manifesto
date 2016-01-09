@@ -5,17 +5,17 @@ module.exports = {
   tags: ['layout'],
   "Layout & Static Pages" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignUp")
       .resizeWindow(1024, 768)
 
       //============================================================================================
       .sectionBreak("A. Sign In Page")
 
-      .waitForPage("#entrySignIn")
+      .waitForPage("#entrySignUp")
       .saveScreenshot("tests/nightwatch/screenshots/ipad/A-signInPage.png")
-      .reviewSignInPage()
+      .reviewSignUpPage()
       .verify.elementNotPresent("#logoutButton")
-      .signIn("janedoe@gmail.com", "janedoe123")
+      .signUp("janedoe@gmail.com", "janedoe123")
 
 
       //============================================================================================
@@ -44,6 +44,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "Sign In")
       .verify.elementNotPresent("#logoutButton")
 
+      .dropEntryUsers()
       .end();
   }
 };

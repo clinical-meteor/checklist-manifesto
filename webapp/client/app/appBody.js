@@ -100,7 +100,7 @@ Template.appBody.events({
     }
   },
 
-  'click .js-new-list': function() {
+  'click #newListButton': function() {
     var list = {name: Lists.defaultName(), incompleteCount: 0};
     list._id = Lists.insert(list);
 

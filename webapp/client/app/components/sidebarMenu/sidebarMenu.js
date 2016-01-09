@@ -20,8 +20,12 @@ Template.sidebarMenu.rendered = function() {
 
 Template.sidebarMenu.helpers({
   getUsername: function () {
-    if (Meteor.userId()) {
-      return Meteor.user().emails[0].address;
+    if (Meteor.user()) {
+      if (Meteor.user().emails[0]) {
+        return Meteor.user().emails[0].address;
+      } else {
+        return "---";
+      }
     } else {
       return "Sign In";
     }

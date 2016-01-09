@@ -1,5 +1,5 @@
 Session.setDefault('editingList', false);
-Session.setDefault('newTaskRibbonVisible', true);
+Session.setDefault('newTaskRibbonVisible', false);
 
 
 //==============================================================================
@@ -33,7 +33,7 @@ Template.checklistPage.events({
     saveList(this);
   },
 
-  'click #listPanelConfig': function (event, template) {
+  'click #checklistConfig': function (event, template) {
     // trigger our modal dialog
     $('#configListModal').modal("show");
 
@@ -112,8 +112,7 @@ Template.checklistPage.events({
   },
 
   'keyup #newTaskInput': function(event) {
-    //console.log('click #newTaskInput', event.keyCode);
-
+    // keyCode 13 is the 'Enter' key
     if(event.keyCode == 13) {
       saveList(this);
     }
@@ -121,34 +120,46 @@ Template.checklistPage.events({
 });
 
 
-saveList = function(record){
-  var newTask = {
-    listId: record._id,
-    text: $('#newTaskInput').val(),
-    checked: false,
-    createdAt: new Date()
-  }
 
-  if(Meteor.userId()){
-    newTask.public = false;
-  }else{
-    newTask.public = true;
-  }
-
-  console.log('newTask', newTask);
-
-  var result = Todos.insert(newTask);
-
-  //console.log('result', result);
-
-  Lists.update(record._id, {$inc: {incompleteCount: 1}});
-  $('#newTaskInput').val('');
-}
 
 //==============================================================================
 // TEMPLATE HELPERS
 
-var editList = function(list, template) {
+saveList = function(record){
+  var newTask = {
+    listId: Session.get('selectedListId'),
+    text: $('#newTaskInput').val(),
+    checked: false,
+    public: true,
+    createdAt: new Date(),
+    ordinal: 0
+  }
+
+  // if(Meteor.userId()){
+  //   newTask.public = false;
+  // }else{
+  //   newTask.public = true;
+  // }
+
+  // bump the ordinal of all the tasks
+  Todos.find({listId: Session.get('selectedListId')}).forEach(function(task){
+    Todos.update({_id: task._id}, {$set: {
+      ordinal: task.ordinal + 1
+    }})
+  });
+
+  console.log('newTask', newTask);
+
+  var result = Todos.insert(newTask);
+  console.log('newTodo', Todos.findOne({_id: result}));
+
+  Lists.update(record._id, {$inc: {incompleteCount: 1}});
+  $('#newTaskInput').val('');
+
+  Session.set('newTaskRibbonVisible', false);
+}
+
+editList = function(list, template) {
   Session.set('editingList', true);
 
   // wait for the template to redraw based on the reactive change
@@ -174,7 +185,7 @@ var editList = function(list, template) {
 //   Router.go('home');
 // };
 
-var toggleListPrivacy = function(list) {
+toggleListPrivacy = function(list) {
   if (! Meteor.user()) {
     return alert("Please sign in or create an account to make private lists.");
   }

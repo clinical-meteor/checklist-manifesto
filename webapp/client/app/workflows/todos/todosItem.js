@@ -1,11 +1,14 @@
-var EDITING_KEY = 'EDITING_TODO_ID';
+
 
 Template.todosItem.helpers({
+  getText: function(){
+    return this.text;
+  },
   checkedClass: function() {
     return this.checked && 'checked';
   },
   editingClass: function() {
-    return Session.equals(EDITING_KEY, this._id) && 'editing';
+    return Session.equals("editingTaskId", this._id) && 'editing';
   }
 });
 
@@ -17,12 +20,12 @@ Template.todosItem.events({
   },
 
   'focus input[type=text]': function(event) {
-    Session.set(EDITING_KEY, this._id);
+    Session.set("editingTaskId", this._id);
   },
 
   'blur input[type=text]': function(event) {
-    if (Session.equals(EDITING_KEY, this._id))
-      Session.set(EDITING_KEY, null);
+    if (Session.equals("editingTaskId", this._id))
+      Session.set("editingTaskId", null);
   },
 
   'keydown input[type=text]': function(event) {
@@ -37,6 +40,7 @@ Template.todosItem.events({
   // we don't flood the server with updates (handles the event at most once
   // every 300ms)
   'keyup input[type=text]': _.throttle(function(event) {
+    console.log('keyup input[type=text]', event.target.value);
     Todos.update(this._id, {$set: {text: event.target.value}});
   }, 300),
 
@@ -44,7 +48,8 @@ Template.todosItem.events({
   // on iOS, we still require the click event so handle both
   'mousedown .js-delete-item, click .js-delete-item': function() {
     Todos.remove(this._id);
-    if (! this.checked)
+    if (! this.checked) {
       Lists.update(this.listId, {$inc: {incompleteCount: -1}});
+    }
   }
 });

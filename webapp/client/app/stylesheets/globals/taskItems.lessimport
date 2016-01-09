@@ -1,4 +1,4 @@
-#listPanelItems .taskItem {
+#checklistItems .taskItem {
   .font-s2;
 
   // Layout of taskItem children

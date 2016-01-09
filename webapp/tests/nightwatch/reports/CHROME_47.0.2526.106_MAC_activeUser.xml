@@ -3,8 +3,8 @@
             failures="0"
             tests="0">
 
-  <testsuite name="activeLayout"
-    errors="0" failures="0" hostname="" id="" package="activeLayout" skipped="0"
+  <testsuite name="activeUser"
+    errors="0" failures="0" hostname="" id="" package="activeUser" skipped="0"
     tests="0" time="0.000" timestamp="Sat, 09 Jan 2016 01:18:32 GMT">
   
   

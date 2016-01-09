@@ -1,16 +1,16 @@
 Router.route("/protocols", {
-  template: "protocolsListPage",
-  name: "protocolsListPage"
+  template: "protocolLibrary",
+  name: "protocolLibrary"
 });
 
 
-Template.protocolsListPage.helpers({
+Template.protocolLibrary.helpers({
   lists: function() {
     return Lists.find();
   }
 });
 
-Template.protocolsListPage.events({
+Template.protocolLibrary.events({
   "click #event": function(event, template){
 
   }
