@@ -67,9 +67,10 @@ module.exports = {
   },
   "signed in user - can access list of lists" : function (client) {
     client
-      .resizeWindow(1024, 768)
-      .click("#usernameLink").pause(300)
-        .click("#needAnAccountButton").pause(500)
+      // .click("#usernameLink").pause(300)
+      //   .click("#needAnAccountButton").pause(500)
+      .url("http://localhost:3000/entrySignUp").pause(300)
+        .resizeWindow(1024, 768)
         .setValue("#signUpPageFullNameInput", "Alice Doe")
         .setValue("#signUpPageEmailInput", "alice@symptomatic.io")
         .setValue("#signUpPagePasswordInput", "alice123")

@@ -4,13 +4,11 @@
     <div id="sidebarMenuContents" class="sidebarMenuContents">
 
         {{#if currentUser}}
-          <a id="usernameLink" class="js-user-menu">
-            {{email}}
-          </a>
-          <a id="protocolLibraryLink" href="/protocols" class="withLowerBorder">Protocols</a>
+          <div id="usernameLink" class="sidebarMenuItem">{{email}}</div>
+          <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
           <div class="withLowerBorder">
 
-            <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
+            <div id="newListButton" class="sidebarMenuItem">New List<i class="fa fa-plus"></i></div>
 
             <div id="lists">
               {{#each lists}}
@@ -27,8 +25,8 @@
             </div>
           </div>
         {{else}}
-          <a id="usernameLink" href="/entrySignIn" class="withLowerBorder">{{getUsername}}</a>
-          <a id="protocolLibraryLink" href="/protocols" class="withLowerBorder">Protocols</a>
+          <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
+          <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
         {{/if}}
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
