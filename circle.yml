@@ -36,7 +36,7 @@ test:
   pre:
     - starrynight fetch
     - meteor:
-      timeout: 600
+        background: true
   override:
     - starrynight run-tests --type validation
 
