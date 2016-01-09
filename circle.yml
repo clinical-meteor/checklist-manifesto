@@ -37,6 +37,7 @@ test:
     - starrynight fetch
     - meteor:
         background: true
+    - sleep 60
   override:
     - starrynight run-tests --type validation
 
