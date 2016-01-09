@@ -19,6 +19,9 @@ checkout:
    #- git submodule sync
    #- git submodule update --init --recursive # use submodules
 
+general:
+  build_dir: webapp
+
 ## Customize dependencies
 dependencies:
   cache_directories:
@@ -28,17 +31,12 @@ dependencies:
     - meteor || curl https://install.meteor.com | /bin/sh
     - npm install starrynight -g
 
-
-general:
-  build_dir: webapp
-
 ## Customize test commands
 test:
-  override:
-    - pwd
-    - meteor list
+  pre:
     - starrynight fetch
     - meteor
+  override:
     - starrynight run-tests --type validation
 
 ## Customize deployment commands
