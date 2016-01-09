@@ -93,18 +93,19 @@ Meteor.startup(function () {
     var timestamp = (new Date()).getTime();
 
     data.forEach(function(list){
-      var list_id = Lists.insert({
+      var listId = Lists.insert({
         name: list.name,
         creator: "System",
         public: true,
         incompleteCount: list.items.length
       });
+      console.log('New List Created: ' + listId);
 
       if(list.items){
         list.items.forEach(function(text, index){
           // add a new task
           Todos.insert({
-            listId: list_id,
+            listId: listId,
             text: text,
             public: true,
             ordinal: index,

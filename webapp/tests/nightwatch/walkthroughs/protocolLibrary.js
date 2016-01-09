@@ -25,8 +25,8 @@ module.exports = {
     client
       .verify.containsText("#usernameLink", "alice@somewhere.com")
       .verify.elementPresent("#protocolLibraryLink")
-      .click("#protocolLibraryLink").pause(500)
-      .verify.elementPresent("#protocolLibrary")
+      .click("#protocolLibraryLink").pause(1000)
+      .verify.elementPresent("#protocolLibraryItems")
       // TODO:  implement this
       //.verify.containsText("pageTitle", "Protocol Library")
   },
@@ -62,7 +62,8 @@ module.exports = {
       .setValue("#listNameInput", "Public List")
       .click("#saveListButton").pause(300)
 
-      .click("#protocolLibraryLink").pause(300)
+      .click("#protocolLibraryLink").pause(1000)
+      .verify.elementPresent("#protocolLibraryItems")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4)")
       .verify.containsText("#protocolLibraryItems .libraryItem:nth-child(4) .protocolName", "Public List")
       .verify.containsText("#lists .listItem:nth-child(1)", "Public List")
@@ -74,7 +75,7 @@ module.exports = {
 
   "signed in user - can clone protocol from library": function(client) {
     client
-      .url("http://localhost:3000/entrySignUp")
+      .url("http://localhost:3000/entrySignUp").pause(500)
       .signUp("betty@somewhere.com", "betty123")
       .verify.elementPresent("#lists .listItem:nth-child(1)")
       .verify.elementNotPresent("#lists .listItem:nth-child(2)")
@@ -90,7 +91,7 @@ module.exports = {
   },
   "anonymous user - can view public checklistPage with URL" : function (client) {
     client
-      .url("http://localhost:3000/protocols")
+      .url("http://localhost:3000/protocols").pause(500)
         .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1)")
         .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton")
         .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")

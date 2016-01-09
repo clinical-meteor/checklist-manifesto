@@ -170,7 +170,7 @@ module.exports = {
   },
   "anonymous guest should be notified if email already exists" : function (client) {
     client
-      .url("http://localhost:3000/entrySignUp").pause(300)
+      .url("http://localhost:3000/entrySignUp").pause(500)
       .resizeWindow(1024, 768)
       .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#signUpPageEmailInput").pause(500)
