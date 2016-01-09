@@ -26,7 +26,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "alice@somewhere.com")
       .verify.elementPresent("#protocolLibraryLink")
       .click("#protocolLibraryLink").pause(500)
-      .verify.visible("#protocolLibrary")
+      .verify.elementPresent("#protocolLibrary")
       // TODO:  implement this
       //.verify.containsText("pageTitle", "Protocol Library")
   },
@@ -45,7 +45,7 @@ module.exports = {
     client
       .click("#newListButton").pause(300)
       .verify.containsText("#lists .listItem:nth-child(1)", "List A")
-      .verify.elementNotPresent("#protocolLibrary .libraryItem:nth-child(4)")
+      .verify.elementNotPresent("#protocolLibraryItems .libraryItem:nth-child(4)")
   },
   "signed in user - can publish list to library (by making it public)": function(client) {
     client
@@ -63,8 +63,8 @@ module.exports = {
       .click("#saveListButton").pause(300)
 
       .click("#protocolLibraryLink").pause(300)
-      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4)")
-      .verify.containsText("#protocolLibrary .libraryItem:nth-child(4) .protocolName", "Public List")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4)")
+      .verify.containsText("#protocolLibraryItems .libraryItem:nth-child(4) .protocolName", "Public List")
       .verify.containsText("#lists .listItem:nth-child(1)", "Public List")
       .verify.containsText("#lists .listItem:nth-child(2)", "List B")
 
@@ -79,9 +79,9 @@ module.exports = {
       .verify.elementPresent("#lists .listItem:nth-child(1)")
       .verify.elementNotPresent("#lists .listItem:nth-child(2)")
       .click("#protocolLibraryLink").pause(300)
-      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4) .protocolName", "Public List")
-      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4) .cloneButton")
-      .click("#protocolLibrary .libraryItem:nth-child(4) .cloneButton").pause(400)
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4) .protocolName", "Public List")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4) .cloneButton")
+      .click("#protocolLibraryItems .libraryItem:nth-child(4) .cloneButton").pause(400)
       .verify.elementPresent("#lists .listItem:nth-child(1)")
       .verify.elementPresent("#lists .listItem:nth-child(2)")
       .verify.containsText("#lists .listItem:nth-child(1)", "List A")
@@ -91,11 +91,11 @@ module.exports = {
   "anonymous user - can view public checklistPage with URL" : function (client) {
     client
       .url("http://localhost:3000/protocols")
-        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1)")
-        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1) .previewButton")
-        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1) .protocolName")
-        .verify.containsText("#protocolLibrary .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
-        .click("#protocolLibrary .libraryItem:nth-child(1) .previewButton").pause(300)
+        .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1)")
+        .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton")
+        .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")
+        .verify.containsText("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
+        .click("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton").pause(300)
 
         .verify.visible("#checklistPage")
         .verify.visible("#checklistTitle")
