@@ -41,11 +41,7 @@ module.exports = {
       // .verify.visible("#protocolLibrary #protocolList .protocol:nth-child(1)")
       // .verify.containsText("#protocolLibrary #protocolList .protocol:nth-child(1)", "Joe's Public List")
   },
-  "signed in user - can not see private lists in library": function(client) {
-    client
-      .verify.elementNotPresent("#protocolLibrary #protocolList .protocol:nth-child(2)")
-  },
-  "signed in user - can publish list to library": function(client) {
+  "signed in user - can publish public list to library": function(client) {
     client
       .click("#protocolLibrary #protocolList .protocol:nth-child(1)").pause(300)
       .verify.visible("#protocolDetails .clone")
@@ -53,6 +49,11 @@ module.exports = {
       .verify.elementPresent("#lists .listItem:nth-child(5)")
       .verify.containsText("#lists .listItem:nth-child(5)", "Joe's Public List")
   },
+  "signed in user - can not see unpublished private lists in library": function(client) {
+    client
+      .verify.elementNotPresent("#protocolLibrary #protocolList .protocol:nth-child(2)")
+  },
+
   "signed in user - can clone protocol from library": function(client) {
     client
   },
