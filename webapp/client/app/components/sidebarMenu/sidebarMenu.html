@@ -3,9 +3,10 @@
 
     <div id="sidebarMenuContents" class="sidebarMenuContents">
 
+        <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
+        <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
+        
         {{#if currentUser}}
-          <div id="usernameLink" class="sidebarMenuItem">{{email}}</div>
-          <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
           <div class="withLowerBorder">
 
             <div id="newListButton" class="sidebarMenuItem">New List<i class="fa fa-plus"></i></div>
@@ -24,9 +25,6 @@
               {{/each}}
             </div>
           </div>
-        {{else}}
-          <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
-          <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
         {{/if}}
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
