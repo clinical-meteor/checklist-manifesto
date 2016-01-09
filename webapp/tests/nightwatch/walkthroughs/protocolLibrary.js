@@ -14,7 +14,7 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
-  tags: ["library"],
+  tags: ["library", "protocols"],
   before: function(client){
     client
       .url("http://localhost:3000/entrySignUp").pause(300)

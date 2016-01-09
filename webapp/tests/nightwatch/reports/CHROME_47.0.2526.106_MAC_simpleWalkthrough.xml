@@ -5,9 +5,9 @@
 
   <testsuite name="simpleWalkthrough"
     errors="0" failures="0" hostname="" id="" package="simpleWalkthrough" skipped="0"
-    tests="4" time="5.126" timestamp="Sat, 09 Jan 2016 19:55:12 GMT">
+    tests="4" time="5.057" timestamp="Sat, 09 Jan 2016 22:00:42 GMT">
   
-    <testcase name="A. Sign In Page" time="4.058" assertions="11">
+    <testcase name="A. Sign In Page" time="4.045" assertions="11">
 
     
 
@@ -32,7 +32,7 @@
     
     </testcase>
   
-    <testcase name="B. Home Page" time="0.2000" assertions="8">
+    <testcase name="B. Home Page" time="0.1820" assertions="8">
 
     
 
@@ -51,7 +51,7 @@
     
     </testcase>
   
-    <testcase name="B. Static Pages" time="0.4200" assertions="3">
+    <testcase name="B. Static Pages" time="0.3810" assertions="3">
 
     
 
@@ -60,7 +60,7 @@
     
     </testcase>
   
-    <testcase name="D. Logout" time="0.4480" assertions="3">
+    <testcase name="D. Logout" time="0.4490" assertions="3">
 
     
 

@@ -10,12 +10,12 @@ Router.configure({
 
   // wait on the following subscriptions before rendering the page to ensure
   // the data it's expecting is present
-  waitOn: function() {
-    return [
-      Meteor.subscribe('lists'),
-      Meteor.subscribe('todos')
-    ];
-  }
+  // waitOn: function() {
+  //   return [
+  //     Meteor.subscribe('lists'),
+  //     Meteor.subscribe('todos')
+  //   ];
+  // }
 });
 
 

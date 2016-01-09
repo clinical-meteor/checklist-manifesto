@@ -7,3 +7,6 @@
   // }
 //});
 //Meteor.subscribe('libraryLists');
+
+Meteor.subscribe('lists'),
+Meteor.subscribe('todos')
