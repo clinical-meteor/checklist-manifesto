@@ -32,6 +32,7 @@ module.exports = {
   },
   "signed in user - can see public lists in library": function(client) {
     client
+      .pause(5000)
       .verify.elementPresent("#protocolLibraryItems")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1)")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")
@@ -49,6 +50,7 @@ module.exports = {
   },
   "signed in user - can publish list to library (by making it public)": function(client) {
     client
+      .pause(200)
       .click("#lists .listItem:nth-child(1)").pause(300)
       .click("#checklistConfig").pause(300)
       .verify.visible("#configListModal")
