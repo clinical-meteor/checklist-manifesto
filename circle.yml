@@ -38,7 +38,7 @@ test:
     - pwd
     - meteor list
     - starrynight fetch
-    - meteor &&
+    - meteor
     - starrynight run-tests --type validation
 
 ## Customize deployment commands
