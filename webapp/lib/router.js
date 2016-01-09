@@ -12,8 +12,7 @@ Router.configure({
   // the data it's expecting is present
   waitOn: function() {
     return [
-      Meteor.subscribe('libraryLists'),
-      Meteor.subscribe('privateLists'),
+      Meteor.subscribe('lists'),
       Meteor.subscribe('todos')
     ];
   }
