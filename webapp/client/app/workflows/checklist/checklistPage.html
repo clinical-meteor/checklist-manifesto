@@ -1,6 +1,6 @@
-<template name="protocolLibrary">
-  <div id="protocolLibrary" class="page lists-show">
-
+<template name="checklistPage">
+  <div id="checklistPage" class="checklist page lists-show">
+    {{#with list}}
 
       <nav id="listPanelHeader" class="unselectable navbar navbar-default navbar-fixed-top" role="navigation">
         {{#if editing}}
@@ -48,36 +48,17 @@
 
 
       <div id="checklistItems" class="content-scrollable list-items">
-        {{#each lists }}
-          {{> libraryItem }}
+        {{#each todos}}
+          {{> todosItem}}
         {{else}}
           <div class="wrapper-message">
-            <div class="title-message">No protocols loaded</div>
-            <div class="subtitle-message">Check the initialization script or database connection.</div>
+            <div class="title-message">No tasks here</div>
+            <div class="subtitle-message">Add new tasks using the field above</div>
           </div>
         {{/each}}
       </div>
 
       {{> todosListFooter}}
-
-
-
-    <!-- <ul class="assets-list list-unstyled">
-      {{#each lists}}
-        <li class="col-md-6">
-          <a href="{{pathFor 'checklistPage'}}" title="{{name}}">
-            <div class="panel panel-default protocolTile" style="background:url({{imageUrl}})">
-            </div>
-          </a>
-        </li>
-      {{/each}}
-      <li class="js-new-list col-md-6">
-        <div class="centered panel panel-default protocolTile">
-          <i class="fa fa-5x fa-plus"></i>
-          <h6 class="fullwidth">Add Checklist</h6>
-        </div>
-      </li>
-    </ul> -->
-
+    {{/with}}
   </div>
 </template>

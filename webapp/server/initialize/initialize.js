@@ -4,36 +4,8 @@ Meteor.startup(function () {
 
   if (Lists.find().count() === 0) {
     var data = [
-      {name: "MRI Procedure",
-       url: "http://www.suagm.edu/umet/biblioteca/Reserva_Profesores/maritza_acevedo_nurs_230_101/cama_abierta_y_ocupada.pdf",
-       items: [
-         "Item 1.",
-         "Item 2.",
-         "Item 3."
-       ]
-      },
-      {name: "Change Bed Linens",
-       url: "http://www.suagm.edu/umet/biblioteca/Reserva_Profesores/maritza_acevedo_nurs_230_101/cama_abierta_y_ocupada.pdf",
-       items: [
-         "Introduced self and verified patient’s identity.",
-         "Explained procedure to patient.",
-         "Gathered appropriate equipment.",
-         "Performed hand hygiene and observed other appropriate infection control procedures.",
-         "Provided for patient privacy.",
-         "Placed fresh linen on patient’s chair or overbed table.",
-         "Assessed and assisted patient out of bed using assistance devices, if needed.",
-         "Raised the bed to a comfortable working height.",
-         "Applied clean gloves if linens and equipment were soiled with secretions and/or excretions.",
-         "Stripped the bed.",
-         "Applied the bottom sheet and drawsheet.",
-         "Moved to the other side and secured the bottom linens.",
-         "Applied or completed the top sheet, blanket, and spread.",
-         "Put clean pillowcases on the pillows and placed pillow(s) at head of bed.",
-         "Provided for patient comfort and safety."
-       ]
-      },
       {name: "Collect Blood Specimen",
-      url: "http://who.int/csr/resources/publications/ebola/blood-collect-en.pdf",
+       url: "http://who.int/csr/resources/publications/ebola/blood-collect-en.pdf",
        items: [
          "Step 1a:  Assemble equipment for collecting blood.",
          "Step 1b: Assemble equipment for preventing infections.",
@@ -72,21 +44,69 @@ Meteor.startup(function () {
          "Step 5d: Take off face protection",
          "Step 5e: Perform Hand hygiene."
          ]
+      },
+      {name: "Change Bed Linens",
+       url: "http://www.suagm.edu/umet/biblioteca/Reserva_Profesores/maritza_acevedo_nurs_230_101/cama_abierta_y_ocupada.pdf",
+       items: [
+         "Introduced self and verified patient’s identity.",
+         "Explained procedure to patient.",
+         "Gathered appropriate equipment.",
+         "Performed hand hygiene and observed other appropriate infection control procedures.",
+         "Provided for patient privacy.",
+         "Placed fresh linen on patient’s chair or overbed table.",
+         "Assessed and assisted patient out of bed using assistance devices, if needed.",
+         "Raised the bed to a comfortable working height.",
+         "Applied clean gloves if linens and equipment were soiled with secretions and/or excretions.",
+         "Stripped the bed.",
+         "Applied the bottom sheet and drawsheet.",
+         "Moved to the other side and secured the bottom linens.",
+         "Applied or completed the top sheet, blanket, and spread.",
+         "Put clean pillowcases on the pillows and placed pillow(s) at head of bed.",
+         "Provided for patient comfort and safety."
+       ]
+      },
+      {name: "MRI Safety Checklist",
+       url: "http://www.rcht.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Websites/Internet/OurServices/AZServices/C/ClinicalImaging/CHA2840.pdf",
+       items: [
+         "Do you have a cardiac pacemaker/defibrillator?",
+         "Have you ever had a cardiac pacemaker/defibrillator?",
+         "Have you ever had heart surgery?",
+         "Do you have a neuro-stimulator?",
+         "Have you ever had any type of electronic, mechanical, or magnetic Implant?",
+         "Have you ever had surgery to your brain?",
+         "Do you have a programmable hydrocephalus shunt?",
+         "Have you ever had surgery to your ears?",
+         "Have you ever had surgery to your eyes?",
+         "Have you ever had any operations involving the use of metal implants, plates, or clips?",
+         "Have you ever had any metal fragments in your eyes?",
+         "Have you ever had any metal fragments in any other part of your body?",
+         "Have you had any surgery in any part of your body in the past 6 weeks?",
+         "Do you have a prosthetic limb, eye or other artificial device not already mentioned?",
+         "Are you wearing any medication patches? (eg. Nicotine, HRT patch)",
+         "Do you have any wound dressings?",
+         "Have you had a previous MRI scan?",
+         "Could you be pregnant?",
+         "Are you breast-feeding?"
+       ]
       }
     ];
     var timestamp = (new Date()).getTime();
 
     data.forEach(function(list){
-      var list_id = Lists.insert({name: list.name,
-        incompleteCount: list.items.length});
+      var list_id = Lists.insert({
+        name: list.name,
+        creator: "System",
+        public: true,
+        incompleteCount: list.items.length
+      });
 
       if(list.items){
         list.items.forEach(function(text, index){
           // add a new task
           Todos.insert({
             listId: list_id,
-            public: true,
             text: text,
+            public: true,
             ordinal: index,
             createdAt: new Date(timestamp)}
           );

@@ -1,0 +1,13 @@
+<template name="todosItem">
+  <div class="taskItem {{checkedClass}} {{editingClass}}">
+    <label class="checkbox">
+      <input type="checkbox" checked="{{checked}}" name="checked" />
+      <span class="checkbox-custom"></span>
+    </label>
+
+    <input class="taskInput" type="text" placeholder="{{text}}" value="{{text}}" />
+    <a class="js-delete-item delete-item" href="#">
+      <i class="fa fa-trash"></i>
+    </a>
+  </div>
+</template>

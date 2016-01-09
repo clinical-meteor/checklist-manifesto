@@ -6,7 +6,7 @@ Router.route("/protocols", {
 
 Template.protocolLibrary.helpers({
   lists: function() {
-    return Lists.find();
+    return Lists.find({public: true});
   }
 });
 

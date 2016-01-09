@@ -19,18 +19,27 @@ module.exports = {
     client
       .url("http://localhost:3000")
   },
-  "signed in user - can display list library": function(client) {
+  "signed in user - can display protocol library": function(client) {
     client
       .verify.elementNotPresent("#protocolLibraryLink")
       .click("#protocolLibraryLink").pause(300)
       .verify.visible("#protocolLibrary")
+      // TODO:  implement this
+      //.verify.containsText("pageTitle", "Protocol Library")
   },
   "signed in user - can see public lists in library": function(client) {
     client
-      .verify.visible("#searchBar")
-      .setValue("#searchBar", "Joe")
-      .verify.visible("#protocolLibrary #protocolList .protocol:nth-child(1)")
-      .verify.containsText("#protocolLibrary #protocolList .protocol:nth-child(1)", "Joe's Public List")
+      .verify.visible("#checklistItems")
+      .verify.visible("#checklistItems .libraryItem:nth-item(1)")
+      .verify.visible("#checklistItems .libraryItem:nth-item(1) .protocolName")
+      .verify.visible("#checklistItems .libraryItem:nth-item(1) .protocolCreator")
+      .verify.visible("#checklistItems .libraryItem:nth-item(1) .previewButton")
+      .verify.visible("#checklistItems .libraryItem:nth-item(1) .cloneButton")
+      .verify.containsText("#checklistItems .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
+      .verify.containsText("#checklistItems .libraryItem:nth-child(2) .protocolName", "Change Bed Linens")
+      .verify.containsText("#checklistItems .libraryItem:nth-child(3) .protocolName", "MRI Safety Checklist")
+      // .verify.visible("#protocolLibrary #protocolList .protocol:nth-child(1)")
+      // .verify.containsText("#protocolLibrary #protocolList .protocol:nth-child(1)", "Joe's Public List")
   },
   "signed in user - can not see private lists in library": function(client) {
     client

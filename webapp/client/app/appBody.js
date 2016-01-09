@@ -101,7 +101,12 @@ Template.appBody.events({
   },
 
   'click #newListButton': function() {
-    var list = {name: Lists.defaultName(), incompleteCount: 0};
+    var list = {
+      name: Lists.defaultName(),
+      incompleteCount: 0,
+      public: false,
+      creator: Meteor.user().emails[0].address
+    };
     list._id = Lists.insert(list);
 
     Router.go('checklistPage', list);

@@ -124,7 +124,7 @@ module.exports = {
       .verify.visible("#lists .listItem:nth-child(2)")
       //.verify.visible("#lists .listItem:nth-child(3)")
 
-      .verify.containsText("#lists .listItem:nth-child(1)", "MRI Procedure")
+      .verify.containsText("#lists .listItem:nth-child(1)", "MRI Safety Checklist")
       .verify.containsText("#lists .listItem:nth-child(2)", "Change Bed Linens")
       .verify.containsText("#lists .listItem:nth-child(3)", "Collect Blood Specimen")
       .verify.elementNotPresent("#lists .listItem:nth-child(4)")
