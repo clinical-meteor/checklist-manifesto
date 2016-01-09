@@ -23,7 +23,7 @@ checkout:
 dependencies:
   cache_directories:
     - "~/.meteor" # relative to the user's home directory
-    #- "/usr/local/bin"
+
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
     - npm install starrynight -g
@@ -35,8 +35,6 @@ general:
 ## Customize test commands
 test:
   override:
-    - pwd
-    - meteor list
     - starrynight fetch
     - starrynight run-tests --type validation
 
