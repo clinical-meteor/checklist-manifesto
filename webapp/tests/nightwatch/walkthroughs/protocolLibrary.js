@@ -33,6 +33,7 @@ module.exports = {
   "signed in user - can see public lists in library": function(client) {
     client
       .pause(5000)
+      .verify.elementNotPresent("#noProtocolsMessage")
       .verify.elementPresent("#protocolLibraryItems")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1)")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")
