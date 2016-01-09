@@ -50,6 +50,7 @@ before_install:
 
   # give meteor a few seconds after installing
   - "sleep 5"
+  - "cd webapp"
   - "starrynight fetch"
 
   - "sleep 20"
