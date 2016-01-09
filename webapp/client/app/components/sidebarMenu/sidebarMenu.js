@@ -24,7 +24,7 @@ Template.sidebarMenu.events({
       Router.go('/entrySignIn');
     }
   },
-  "click #protocolLibraryLink": function (event, template){
+  "click #protocolLibraryLink": function (){
      Router.go('/protocols');
   },
   'click #logoutButton': function() {

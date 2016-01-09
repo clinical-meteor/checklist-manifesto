@@ -48,14 +48,16 @@
 
 
       <div id="protocolLibraryItems" class="content-scrollable list-items">
-        {{#each lists }}
-          {{> libraryItem }}
+        {{#if libraryItemsExist }}
+          {{#each lists }}
+            {{> libraryItem }}
+          {{/each}}
         {{else}}
           <div class="wrapper-message">
             <div class="title-message">No protocols loaded</div>
             <div class="subtitle-message">Check the initialization script or database connection.</div>
           </div>
-        {{/each}}
+        {{/if}}
       </div>
 
       {{> todosListFooter}}
