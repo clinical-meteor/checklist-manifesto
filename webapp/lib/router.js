@@ -12,7 +12,7 @@ Router.configure({
   // the data it's expecting is present
   waitOn: function() {
     return [
-      Meteor.subscribe('publicLists'),
+      Meteor.subscribe('libraryLists'),
       Meteor.subscribe('privateLists'),
       Meteor.subscribe('todos')
     ];
@@ -30,25 +30,21 @@ Router.map(function() {
 
   this.route('checklistPage', {
     path: '/lists/:_id',
-    // subscribe to todos before the page is rendered but don't wait on the
-    // subscription, we'll just render the items as they arrive
     onBeforeAction: function() {
-      //this.todosHandle = Meteor.subscribe('todos');
       Session.set('selectedListId', this.params._id);
       this.next();
-    },
-    // action: function(){
-    //   this.render('todosHeaderNavbar', {to: "pageHeader"})
-    // }
-    // data: function() {
-    //   return Lists.findOne(this.params._id);
-    // }
+    }
   });
 
   this.route('home', {
     path: '/',
     action: function() {
-      Router.go('checklistPage', Lists.findOne());
+      if (Lists.find({userId: Meteor.userId()}).count() > 0) {
+        Router.go('checklistPage', Lists.findOne({userId: Meteor.userId()}));
+      } else {
+        Router.go('checklistPage', Lists.findOne({_id: Lists.createNew()}));
+      }
+
     }
   });
 });

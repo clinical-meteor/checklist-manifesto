@@ -17,22 +17,27 @@ Template.libraryItem.events({
     Router.go('/lists/' + this._id);
   },
   'click .cloneButton': function (){
-    Lists.insert({
-      name: this.name,
-      creator: Meteor.user().emails[0].address,
-      public: false,
-      incompleteCount: this.incompleteCount
-    }, function(error, result){
-      Todos.find({listId: currentList._id}).forEach(function(task){
-        Todos.insert({
-          createdAt: new Date(),
-          listId: result,
-          ordinal: task.ordinal,
-          public: task.public,
-          text: task.text
+    if (Meteor.user()) {
+      var selectedListId = this._id;
+      Lists.insert({
+        name: this.name,
+        creator: Meteor.user().emails[0].address,
+        userId: Meteor.userId(),
+        public: false,
+        incompleteCount: this.incompleteCount
+      }, function(error, newListId){
+        console.log('List Cloned to ' + newListId);
+        Todos.find({listId: selectedListId}).forEach(function(task){
+          Todos.insert({
+            createdAt: new Date(),
+            listId: newListId,
+            ordinal: task.ordinal,
+            public: task.public,
+            text: task.text
+          });
         });
+        Router.go('/lists/' + newListId);
       });
-      Router.go('/lists/' + result);
-    });
+    }
   }
 });

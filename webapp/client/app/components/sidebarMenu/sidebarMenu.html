@@ -9,7 +9,9 @@
           </a>
           <a id="protocolLibraryLink" href="{{pathFor 'protocolLibrary'}}" class="withLowerBorder">Protocols</a>
           <div class="withLowerBorder">
+
             <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
+
             <div id="lists">
               {{#each lists}}
                 <a href="{{pathFor 'checklistPage'}}" class="listItem {{activeListClass}}" title="{{name}}">
@@ -26,6 +28,7 @@
           </div>
         {{else}}
           <a id="usernameLink" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">{{getUsername}}</a>
+          <a id="protocolLibraryLink" href="{{pathFor 'protocolLibrary'}}" class="withLowerBorder">Protocols</a>
         {{/if}}
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>

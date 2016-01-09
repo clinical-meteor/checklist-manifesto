@@ -601,22 +601,22 @@ Driver info: driver.version: unknown
 22:59:44.114 INFO - Done: [find element: By.selector: #listPanelHeader]
 22:59:44.116 INFO - Executing: [find element: By.selector: #listPanelFooter])
 22:59:44.123 INFO - Done: [find element: By.selector: #listPanelFooter]
-22:59:44.125 INFO - Executing: [find element: By.selector: #checklistItems])
-22:59:44.132 INFO - Done: [find element: By.selector: #checklistItems]
-22:59:44.135 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput])
-22:59:44.141 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput]
-22:59:44.144 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(7) .taskInput])
-22:59:44.151 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(7) .taskInput]
-22:59:44.154 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(8) .taskInput])
-22:59:44.160 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(8) .taskInput]
-22:59:44.164 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput])
-22:59:44.171 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput]
-22:59:44.173 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(1) .taskInput], value])
-22:59:44.179 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(1) .taskInput], value]
-22:59:44.184 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(7) .taskInput])
-22:59:44.190 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(7) .taskInput]
-22:59:44.192 INFO - Executing: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(7) .taskInput], value])
-22:59:44.201 INFO - Done: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(7) .taskInput], value]
+22:59:44.125 INFO - Executing: [find element: By.selector: #protocolLibraryItems])
+22:59:44.132 INFO - Done: [find element: By.selector: #protocolLibraryItems]
+22:59:44.135 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput])
+22:59:44.141 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput]
+22:59:44.144 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput])
+22:59:44.151 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput]
+22:59:44.154 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput])
+22:59:44.160 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput]
+22:59:44.164 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput])
+22:59:44.171 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput]
+22:59:44.173 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput], value])
+22:59:44.179 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput], value]
+22:59:44.184 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput])
+22:59:44.190 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput]
+22:59:44.192 INFO - Executing: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput], value])
+22:59:44.201 INFO - Done: [get element attribute: 20 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(7) .taskInput], value]
 22:59:44.205 INFO - Executing: [find element: By.selector: #newTaskInput])
 22:59:45.087 WARN - Exception thrown
 org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#newTaskInput"}
@@ -817,18 +817,18 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
 System info: host: 'Abigails-Mac-mini.local', ip: '172.20.10.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.2', java.version: '1.6.0_65'
 Driver info: driver.version: unknown
-22:59:59.692 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput])
-22:59:59.704 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(1) .taskInput]
-22:59:59.706 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(1) .taskInput], value])
-22:59:59.713 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(1) .taskInput], value]
-22:59:59.717 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(2) .taskInput])
-22:59:59.724 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(2) .taskInput]
-22:59:59.726 INFO - Executing: [get element attribute: 22 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(2) .taskInput], value])
-22:59:59.734 INFO - Done: [get element attribute: 22 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(2) .taskInput], value]
-22:59:59.737 INFO - Executing: [find element: By.selector: #checklistItems .taskItem:nth-child(8) .taskInput])
-22:59:59.746 INFO - Done: [find element: By.selector: #checklistItems .taskItem:nth-child(8) .taskInput]
-22:59:59.748 INFO - Executing: [get element attribute: 21 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(8) .taskInput], value])
-22:59:59.757 INFO - Done: [get element attribute: 21 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #checklistItems .taskItem:nth-child(8) .taskInput], value]
+22:59:59.692 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput])
+22:59:59.704 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput]
+22:59:59.706 INFO - Executing: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput], value])
+22:59:59.713 INFO - Done: [get element attribute: 19 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(1) .taskInput], value]
+22:59:59.717 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(2) .taskInput])
+22:59:59.724 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(2) .taskInput]
+22:59:59.726 INFO - Executing: [get element attribute: 22 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(2) .taskInput], value])
+22:59:59.734 INFO - Done: [get element attribute: 22 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(2) .taskInput], value]
+22:59:59.737 INFO - Executing: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput])
+22:59:59.746 INFO - Done: [find element: By.selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput]
+22:59:59.748 INFO - Executing: [get element attribute: 21 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput], value])
+22:59:59.757 INFO - Done: [get element attribute: 21 [[FirefoxDriver: firefox on MAC (063fad37-d9b7-734b-849a-29c82513310a)] -> css selector: #protocolLibraryItems .taskItem:nth-child(8) .taskInput], value]
 22:59:59.760 INFO - Executing: [delete session: 2967fafd-cf00-442c-aa45-db924f7fddf5])
 22:59:59.844 INFO - Done: [delete session: 2967fafd-cf00-442c-aa45-db924f7fddf5]
 23:00:00.867 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=App Layout}]])

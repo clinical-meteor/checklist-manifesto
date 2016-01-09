@@ -6,3 +6,4 @@
   //   Meteor.subscribe('todos', false);
   // }
 //});
+//Meteor.subscribe('libraryLists');

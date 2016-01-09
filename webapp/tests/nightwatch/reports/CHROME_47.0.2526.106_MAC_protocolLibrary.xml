@@ -1,11 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="0">
+            tests="6">
 
   <testsuite name="protocolLibrary"
     errors="0" failures="0" hostname="" id="" package="protocolLibrary" skipped="0"
-    tests="0" time="0.000" timestamp="Sat, 09 Jan 2016 01:18:59 GMT">
+    tests="6" time="10.98" timestamp="Sat, 09 Jan 2016 19:54:46 GMT">
+  
+    <testcase name="signed in user - can display protocol library" time="4.019" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can see public lists in library" time="0.1680" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can not see unpublished private lists in library" time="0.4220" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can publish list to library (by making it public)" time="2.433" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can clone protocol from library" time="2.753" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="anonymous user - can view public checklistPage with URL" time="1.186" assertions="11">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
   
   
   </testsuite>

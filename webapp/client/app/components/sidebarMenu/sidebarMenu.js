@@ -37,7 +37,7 @@ Template.sidebarMenu.helpers({
     return Meteor.user().emails[0].address;
   },
   lists: function() {
-    return Lists.find();
+    return Lists.find({userId: Meteor.userId()});
   },
   activeListClass: function() {
     var current = Router.current();

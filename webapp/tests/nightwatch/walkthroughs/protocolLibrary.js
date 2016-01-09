@@ -17,11 +17,13 @@ module.exports = {
   tags: ["library"],
   before: function(client){
     client
-      .url("http://localhost:3000")
+      .url("http://localhost:3000/entrySignUp").pause(300)
+      // .initializeChecklists()
+      .signUp("alice@somewhere.com", "alice123")
   },
   "signed in user - can display protocol library": function(client) {
     client
-      .verify.elementNotPresent("#protocolLibraryLink")
+      .verify.elementPresent("#protocolLibraryLink")
       .click("#protocolLibraryLink").pause(300)
       .verify.visible("#protocolLibrary")
       // TODO:  implement this
@@ -29,45 +31,83 @@ module.exports = {
   },
   "signed in user - can see public lists in library": function(client) {
     client
-      .verify.visible("#checklistItems")
-      .verify.visible("#checklistItems .libraryItem:nth-item(1)")
-      .verify.visible("#checklistItems .libraryItem:nth-item(1) .protocolName")
-      .verify.visible("#checklistItems .libraryItem:nth-item(1) .protocolCreator")
-      .verify.visible("#checklistItems .libraryItem:nth-item(1) .previewButton")
-      .verify.visible("#checklistItems .libraryItem:nth-item(1) .cloneButton")
-      .verify.containsText("#checklistItems .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
-      .verify.containsText("#checklistItems .libraryItem:nth-child(2) .protocolName", "Change Bed Linens")
-      .verify.containsText("#checklistItems .libraryItem:nth-child(3) .protocolName", "MRI Safety Checklist")
-      // .verify.visible("#protocolLibrary #protocolList .protocol:nth-child(1)")
-      // .verify.containsText("#protocolLibrary #protocolList .protocol:nth-child(1)", "Joe's Public List")
-  },
-  "signed in user - can publish public list to library": function(client) {
-    client
-      .click("#protocolLibrary #protocolList .protocol:nth-child(1)").pause(300)
-      .verify.visible("#protocolDetails .clone")
-      .click("#protocolDetails .clone").pause(300)
-      .verify.elementPresent("#lists .listItem:nth-child(5)")
-      .verify.containsText("#lists .listItem:nth-child(5)", "Joe's Public List")
+      .verify.elementPresent("#protocolLibraryItems")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1)")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolCreator")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton")
+      .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .cloneButton")
+      .verify.elementPresent("#lists .listItem:nth-child(1)")
+      .verify.elementNotPresent("#lists .listItem:nth-child(2)")
   },
   "signed in user - can not see unpublished private lists in library": function(client) {
     client
-      .verify.elementNotPresent("#protocolLibrary #protocolList .protocol:nth-child(2)")
+      .click("#newListButton").pause(300)
+      .verify.containsText("#lists .listItem:nth-child(1)", "List A")
+      .verify.elementNotPresent("#protocolLibrary .libraryItem:nth-child(4)")
   },
+  "signed in user - can publish list to library (by making it public)": function(client) {
+    client
+      .click("#lists .listItem:nth-child(1)").pause(300)
+      .click("#checklistConfig").pause(300)
+      .verify.visible("#configListModal")
+
+      .verify.elementPresent("#publicListButton")
+      .verify.elementPresent("#privateListButton")
+
+      .click("#publicListButton").pause(200)
+
+      .clearValue("#listNameInput")
+      .setValue("#listNameInput", "Public List")
+      .click("#saveListButton").pause(300)
+
+      .click("#protocolLibraryLink").pause(300)
+      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4)")
+      .verify.containsText("#protocolLibrary .libraryItem:nth-child(4) .protocolName", "Public List")
+      .verify.containsText("#lists .listItem:nth-child(1)", "Public List")
+      .verify.containsText("#lists .listItem:nth-child(2)", "List B")
+
+      .click("#logoutButton").pause(300)
+  },
+
 
   "signed in user - can clone protocol from library": function(client) {
     client
+      .url("http://localhost:3000/entrySignUp")
+      .signUp("betty@somewhere.com", "betty123")
+      .verify.elementPresent("#lists .listItem:nth-child(1)")
+      .verify.elementNotPresent("#lists .listItem:nth-child(2)")
+      .click("#protocolLibraryLink").pause(300)
+      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4) .protocolName", "Public List")
+      .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(4) .cloneButton")
+      .click("#protocolLibrary .libraryItem:nth-child(4) .cloneButton").pause(400)
+      .verify.elementPresent("#lists .listItem:nth-child(1)")
+      .verify.elementPresent("#lists .listItem:nth-child(2)")
+      .verify.containsText("#lists .listItem:nth-child(1)", "List A")
+      .verify.containsText("#lists .listItem:nth-child(2)", "Public List")
+      .click("#logoutButton").pause(300)
   },
   "anonymous user - can view public checklistPage with URL" : function (client) {
     client
-      .url("http://localhost:3000/janedoe/lists/foo")
+      .url("http://localhost:3000/protocols")
+        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1)")
+        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1) .previewButton")
+        .verify.elementPresent("#protocolLibrary .libraryItem:nth-child(1) .protocolName")
+        .verify.containsText("#protocolLibrary .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
+        .click("#protocolLibrary .libraryItem:nth-child(1) .previewButton").pause(300)
+
         .verify.visible("#checklistPage")
         .verify.visible("#checklistTitle")
-        .verify.hidden("#newTaskInput")
+        .verify.visible("#checklistTitle")
+        .verify.containsText("#checklistTitle", "Collect Blood Specimen")
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
+        .verify.visible("#checklistPage .taskItem:nth-child(1) .taskInput")
+        .verify.attributeEquals("#checklistPage .taskItem:nth-child(1) .taskInput", "placeholder", "Step 1a:  Assemble equipment for collecting blood.")
   },
   after: function (client){
     client
       .dropEntryUsers()
+      .dropChecklists()
       .end();
   }
 };

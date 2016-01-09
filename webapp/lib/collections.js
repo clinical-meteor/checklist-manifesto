@@ -1,5 +1,6 @@
+
+
 Lists = new Meteor.Collection('lists');
-//Ground.Collection(Lists);
 
 // Calculate a default name for a list in the form of 'List A'
 Lists.defaultName = function() {
@@ -12,6 +13,14 @@ Lists.defaultName = function() {
 
   return nextName;
 };
+Lists.createNew = function(){
+  var list = {
+    name: Lists.defaultName(),
+    incompleteCount: 0,
+    public: false,
+    creator: Meteor.user().emails[0].address,
+    userId: Meteor.userId()
+  };
 
-Todos = new Meteor.Collection('todos');
-//Ground.Collection(Todos);
+  return Lists.insert(list);
+}

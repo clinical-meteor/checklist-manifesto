@@ -120,6 +120,7 @@ module.exports = {
   "user should be able to request reset password email" : function (client) {
      client
       .url("http://localhost:3000/entrySignIn")
+      .resizeWindow(1600, 1200)
       .verify.elementPresent("#forgotPasswordButton")
       .click("#forgotPasswordButton")
       .verify.elementPresent("#forgotPassword")

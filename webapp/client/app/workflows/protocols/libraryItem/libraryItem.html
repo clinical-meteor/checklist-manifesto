@@ -8,7 +8,9 @@
     <span class="protocolCreator">{{creator}}</span>
 
     <button class="previewButton btn-sm ">Preview</button>
-    <button class="cloneButton btn-sm ">Clone</button>
-
+    {{#if currentUser}}
+      <button class="cloneButton btn-sm ">Clone</button>
+    {{else}}
+    {{/if}}
   </div>
 </template>
