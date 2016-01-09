@@ -30,13 +30,13 @@ dependencies:
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
     - npm install starrynight -g
-    - meteor:
-      timeout: 600
 
 ## Customize test commands
 test:
   pre:
     - starrynight fetch
+    - meteor:
+      timeout: 600
   override:
     - starrynight run-tests --type validation
 
