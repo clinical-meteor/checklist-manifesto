@@ -23,7 +23,7 @@ module.exports = {
   },
   "signed in user - can display protocol library": function(client) {
     client
-      .verify.containsText("usernameLink", "alice@somewhere.com")
+      .verify.containsText("#usernameLink", "alice@somewhere.com")
       .verify.elementPresent("#protocolLibraryLink")
       .click("#protocolLibraryLink").pause(500)
       .verify.visible("#protocolLibrary")

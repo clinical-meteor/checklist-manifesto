@@ -80,27 +80,7 @@ Template.appBody.events({
     Session.set('menuOpen', false);
     event.preventDefault();
   },
-  'click #usernameLink': function(event) {
-    Session.set('userMenuOpen', ! Session.get('userMenuOpen'));
-    // stop the menu from closing
-    event.stopImmediatePropagation();
-  },
-
   'click #menu a': function() {
     Session.set('menuOpen', false);
-  },
-
-  'click .js-logout': function() {
-    Meteor.logout();
-
-    // if we are on a private list, we'll need to go to a public one
-    var current = Router.current();
-    if (current.route.name === 'checklistPage' && current.data().userId) {
-      Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
-    }
-  },
-
-  'click #newListButton': function() {
-    Router.go('checklistPage', Lists.createNew());
   }
 });

@@ -19,8 +19,25 @@ Template.sidebarMenu.rendered = function() {
 
 
 Template.sidebarMenu.events({
+  "click #usernameLink": function(){
+    if (!Meteor.user()) {
+      Router.go('/entrySignIn');
+    }
+  },
   "click #protocolLibraryLink": function (event, template){
      Router.go('/protocols');
+  },
+  'click #logoutButton': function() {
+    Meteor.logout();
+
+    // if we are on a private list, we'll need to go to a public one
+    var current = Router.current();
+    if (current.route.name === 'checklistPage' && current.data().userId) {
+      Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
+    }
+  },
+  'click #newListButton': function() {
+    Router.go('checklistPage', Lists.createNew());
   }
 });
 

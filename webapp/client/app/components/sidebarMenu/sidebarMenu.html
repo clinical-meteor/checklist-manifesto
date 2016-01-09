@@ -7,7 +7,7 @@
           <a id="usernameLink" class="js-user-menu">
             {{email}}
           </a>
-          <a id="protocolLibraryLink" class="withLowerBorder">Protocols</a>
+          <a id="protocolLibraryLink" href="/protocols" class="withLowerBorder">Protocols</a>
           <div class="withLowerBorder">
 
             <a id="newListButton" class="js-new-list link-list-new">New List<i class="fa fa-plus"></i></a>
@@ -27,8 +27,8 @@
             </div>
           </div>
         {{else}}
-          <a id="usernameLink" href="{{pathFor 'entrySignIn'}}" class="withLowerBorder">{{getUsername}}</a>
-          <a id="protocolLibraryLink" href="{{pathFor 'protocolLibrary'}}" class="withLowerBorder">Protocols</a>
+          <a id="usernameLink" href="/entrySignIn" class="withLowerBorder">{{getUsername}}</a>
+          <a id="protocolLibraryLink" href="/protocols" class="withLowerBorder">Protocols</a>
         {{/if}}
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
@@ -36,7 +36,7 @@
         <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
         <a id="privacyButton" href="{{pathFor 'privacyPage'}}" class="withLowerBorder">Privacy Policy</a>
         {{#if currentUser}}
-          <a id="logoutButton" class="js-logout withLowerBorder">Logout</a>
+          <a id="logoutButton" class="withLowerBorder">Logout</a>
         {{/if}}
 
         <div id="connectionStatusPanel" class="centered">
