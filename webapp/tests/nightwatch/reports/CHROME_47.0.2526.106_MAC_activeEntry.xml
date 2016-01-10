@@ -5,9 +5,9 @@
 
   <testsuite name="activeEntry"
     errors="0" failures="0" hostname="" id="" package="activeEntry" skipped="0"
-    tests="14" time="51.67" timestamp="Sun, 10 Jan 2016 01:51:28 GMT">
+    tests="14" time="52.32" timestamp="Sun, 10 Jan 2016 05:34:27 GMT">
   
-    <testcase name="new user should be able to register on desktop" time="10.95" assertions="7">
+    <testcase name="new user should be able to register on desktop" time="11.14" assertions="7">
 
     
 
@@ -24,31 +24,14 @@
     
     </testcase>
   
-    <testcase name="company logo should display on sign-in page" time="0.05400" assertions="2">
+    <testcase name="company logo should display on sign-in page" time="0.04600" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="user should be able to request be able to create new account" time="0.08300" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="guest should be notified if password is insecure" time="0.6150" assertions="7">
-
-    
-
-    
-
-    
+    <testcase name="user should be able to request be able to create new account" time="0.08600" assertions="4">
 
     
 
@@ -59,101 +42,7 @@
     
     </testcase>
   
-    <testcase name="guest should be notified if passwords do not match" time="7.779" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="guest should be notified if email is not correctly formatted" time="7.179" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="when new user fills out form and registers, new user should get created" time="8.587" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="user should be able to signout" time="0.4220" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="user should be able to request reset password email" time="1.145" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="existing user should be able to sign in on desktop" time="3.136" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="existing user should be able to sign in on tablet" time="2.734" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="existing user should be able to sign in on phone" time="3.317" assertions="5">
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="if anonymous user tries to log in with non-existing account, a message is shown" time="2.740" assertions="7">
+    <testcase name="guest should be notified if password is insecure" time="0.5880" assertions="7">
 
     
 
@@ -170,7 +59,118 @@
     
     </testcase>
   
-    <testcase name="anonymous guest should be notified if email already exists" time="2.935" assertions="6">
+    <testcase name="guest should be notified if passwords do not match" time="7.903" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="guest should be notified if email is not correctly formatted" time="7.300" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="when new user fills out form and registers, new user should get created" time="8.659" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="user should be able to signout" time="0.4190" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="user should be able to request reset password email" time="1.151" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="existing user should be able to sign in on desktop" time="3.139" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="existing user should be able to sign in on tablet" time="2.812" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="existing user should be able to sign in on phone" time="3.357" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="if anonymous user tries to log in with non-existing account, a message is shown" time="2.786" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="anonymous guest should be notified if email already exists" time="2.931" assertions="6">
 
     
 

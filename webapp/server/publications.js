@@ -1,7 +1,3 @@
-
-
-
-
 Meteor.publish('lists', function() {
   if (this.userId) {
     return Lists.find({$or: [

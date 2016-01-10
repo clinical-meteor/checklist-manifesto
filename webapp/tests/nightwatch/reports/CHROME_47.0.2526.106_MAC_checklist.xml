@@ -5,9 +5,9 @@
 
   <testsuite name="checklist"
     errors="0" failures="0" hostname="" id="" package="checklist" skipped="0"
-    tests="12" time="16.68" timestamp="Sun, 10 Jan 2016 01:52:28 GMT">
+    tests="12" time="16.55" timestamp="Sun, 10 Jan 2016 05:35:28 GMT">
   
-    <testcase name="anonymous user - can view scratch checklist" time="3.211" assertions="4">
+    <testcase name="anonymous user - can view scratch checklist" time="3.070" assertions="4">
 
     
 
@@ -29,7 +29,7 @@
     
     </testcase>
   
-    <testcase name="anonymous user - sidebar should be visible in landscape mode" time="0.5860" assertions="5">
+    <testcase name="anonymous user - sidebar should be visible in landscape mode" time="0.6010" assertions="5">
 
     
 
@@ -42,7 +42,7 @@
     
     </testcase>
   
-    <testcase name="anonymous user - sidebar toggle opens and closes in portrait mode" time="1.092" assertions="3">
+    <testcase name="anonymous user - sidebar toggle opens and closes in portrait mode" time="1.091" assertions="3">
 
     
 
@@ -64,7 +64,7 @@
     
     </testcase>
   
-    <testcase name="signed in user - can access list of lists" time="1.805" assertions="4">
+    <testcase name="signed in user - can access list of lists" time="1.807" assertions="4">
 
     
 
@@ -75,7 +75,7 @@
     
     </testcase>
   
-    <testcase name="signed in user - can add new task" time="1.229" assertions="4">
+    <testcase name="signed in user - can add new task" time="1.242" assertions="4">
 
     
 
@@ -86,37 +86,7 @@
     
     </testcase>
   
-    <testcase name="signed in user - can complete task" time="0.7290" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can delete completed task" time="0.7730" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can add list(s)" time="1.329" assertions="8">
-
-    
-
-    
+    <testcase name="signed in user - can complete task" time="0.7240" assertions="6">
 
     
 
@@ -131,13 +101,18 @@
     
     </testcase>
   
-    <testcase name="signed in user - can edit own list(s)" time="1.242" assertions="11">
+    <testcase name="signed in user - can delete completed task" time="0.7660" assertions="4">
 
     
 
     
 
     
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can add list(s)" time="1.324" assertions="8">
 
     
 
@@ -156,7 +131,32 @@
     
     </testcase>
   
-    <testcase name="signed in user - can delete own list" time="3.568" assertions="14">
+    <testcase name="signed in user - can edit own list(s)" time="1.217" assertions="11">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can delete own list" time="3.601" assertions="14">
 
     
 
