@@ -20,15 +20,7 @@
       {{/each}}
 
       {{#unless connected}}
-        <nav id="connectionAlert" class="navbar navbar-default navbar-fixed-bottom">
-          <div class="connectionPanel container">
-            <i id="connectionIcon" class="fa fa-refresh fa-spin"></i>
-            <div class="meta">
-              <div id="connectionTitle" class="title-notification">Trying to connect</div>
-              <div id="connectionMessage" class="description">There seems to be a connection issue</div>
-            </div>
-          </div>
-        </nav>
+        {{> connectionAlert }}
       {{/unless}}
     </div>
     <aside>
