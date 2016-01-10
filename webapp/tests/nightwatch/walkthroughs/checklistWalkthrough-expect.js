@@ -118,7 +118,7 @@
 //       .expect.element("#lists .list:nth-child(3)").to.be.visible
 //
 //       .expect.element("#lists .list:nth-child(1)").to.have.text("Blood Draw")
-//       .expect.element("#lists .list:nth-child(2)").to.have.text("MRI Procedure")
+//       .expect.element("#lists .list:nth-child(2)").to.have.text("MRI Safety Checklist")
 //       .expect.element("#lists .list:nth-child(3)").to.have.text("Linen Change")
 //       .expect.element("#lists .list:nth-child(4)").to.not.exist
 //       .expect.element("#lists .list:nth-child(5)").to.not.exist

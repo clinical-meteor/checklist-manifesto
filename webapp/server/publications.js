@@ -1,12 +1,15 @@
-Meteor.publish('publicLists', function() {
-  return Lists.find({userId: {$exists: false}});
-});
 
-Meteor.publish('privateLists', function() {
+
+
+
+Meteor.publish('lists', function() {
   if (this.userId) {
-    return Lists.find({userId: this.userId});
+    return Lists.find({$or: [
+      {userId: this.userId},
+      {public: true}
+    ]});
   } else {
-    this.ready();
+    return Lists.find({public: true});
   }
 });
 

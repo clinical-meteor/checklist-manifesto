@@ -3,59 +3,43 @@
 language: node_js
 
 node_js:
-  - "0.10.38"
+  - "4.1"
 
 services:
   - mongodb
 
-sudo: required
+sudo: false
 
 env:
-
-
+  global:
+    - CXX=g++-4.8
+    - TRAVIS=true
+    - DISPLAY=:99.0
+    - CONFIG_PREFIX=`npm config get prefix`
+  matrix:
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
 cache:
   directories:
-    - .meteor/local/build/programs/server/assets/packages
-    - .meteor
+    #- node_modules
+    #- ~/.meteor
+    #- ~/.meteor/local/build/programs/server/assets/packages
+
 
 before_install:
   # set up the node_modules dir, so we know where it is
   - "mkdir -p node_modules &"
 
-  # install starrynight, so we can launch nightwatch and selenium
-  # - "npm install -g nightwatch"
 
   # install starrynight, so we can launch nightwatch and selenium
   - "npm install -g starrynight"
 
-  # npm install -g selenium-server-standalone-jar"
-
-  #- "which node"
-  #- "which starrynight"
-
-  - "export CONFIG_PREFIX=`npm config get prefix`"
-  #- "echo $CONFIG_PREFIX"
-
-  - "export TRAVIS=true"
-
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/nightwatch/bin"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/node_modules/selenium-server-standalone-jar/jar/"
-
-  #- "more /home/travis/.nvm/v0.10.38/lib/node_modules/starrynight/configs/nightwatch/travis.json"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
-
-
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/"
-  #- "ls -la /home/travis/.nvm/v0.10.38/lib/node_modules/selenium-server/lib/runner/"
-
-
 
   # fire up xvfb on port :99.0
-  - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 
   # set the xvfb screen size to 1280x1024x16
@@ -65,17 +49,20 @@ before_install:
   - "curl https://install.meteor.com | /bin/sh"
 
   # give meteor a few seconds after installing
-  - "sleep 10"
-
-  # setup Meteor app
+  - "sleep 5"
   - "cd webapp"
-  - "meteor &"
+  - "starrynight fetch"
 
-  # give Meteor some time to download packages, init data, and to start
-  - "sleep 60"
+  - "sleep 20"
+  - "starrynight generate --autoconfig"
 
-#install:
-#  - npm install
 
-# we're not installing starrynight globally, so we run the script from the local node_modules folder
-script: "starrynight -survey acceptance"
+  - "sleep 5"
+  - "~/.meteor/meteor &"
+
+
+  - "sleep 90"
+  - "ls -la ~/.meteor/packages"
+
+
+script: "starrynight run-tests --framework nightwatch --env travis"
