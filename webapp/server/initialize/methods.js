@@ -8,8 +8,8 @@ Meteor.methods({
     Lists.find().forEach(function(list){
       Lists.remove({_id: list._id});
     });
-    Todos.find().forEach(function(task){
-      Todos.remove({_id: task._id});
+    Tasks.find().forEach(function(task){
+      Tasks.remove({_id: task._id});
     })
   }
 });

@@ -13,7 +13,7 @@ Router.configure({
   // waitOn: function() {
   //   return [
   //     Meteor.subscribe('lists'),
-  //     Meteor.subscribe('todos')
+  //     Meteor.subscribe('tasks')
   //   ];
   // }
 });

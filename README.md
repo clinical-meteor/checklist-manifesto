@@ -1,4 +1,4 @@
-clinical-checklists
+checklist-manifesto
 ============================
 
 HIPAA and FDA ready version of the Todos demo example.  Includes:

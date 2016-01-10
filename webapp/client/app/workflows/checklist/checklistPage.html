@@ -37,10 +37,10 @@
 
       {{#if isNewTaskRibbonVisible}}
       <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
-        <!-- <form id="newTaskForm" class="js-todo-new todo-new input-symbol"> -->
+        <!-- <form id="newTaskForm" class="js-task-new task-new input-symbol"> -->
           <span class="checkbox-placeholder"></span>
           <input id="newTaskInput" type="text" placeholder="Type to add new tasks" autocomplete="off">
-          <!-- <i id="listPanelNewItemIcon" class="fa fa-pencil js-todo-add"></i> -->
+          <!-- <i id="listPanelNewItemIcon" class="fa fa-pencil js-task-add"></i> -->
           <i id="newItemAddIcon" class="headerIcon fa fa-plus float-right"></i>
         <!-- </form> -->
       </nav>
@@ -48,8 +48,8 @@
 
 
       <div id="protocolLibraryItems" class="content-scrollable list-items">
-        {{#each todos}}
-          {{> todosItem}}
+        {{#each tasks}}
+          {{> tasksItem}}
         {{else}}
           <div class="wrapper-message">
             <div class="title-message">No tasks here</div>
@@ -58,7 +58,7 @@
         {{/each}}
       </div>
 
-      {{> todosListFooter}}
+      {{> tasksListFooter}}
     {{/with}}
   </div>
 </template>

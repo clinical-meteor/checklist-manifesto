@@ -12,8 +12,8 @@ Template.checklistPage.helpers({
   list: function(){
     return Lists.findOne(Session.get('selectedListId'));
   },
-  todos: function() {
-    return Todos.find({listId: this._id}, {sort: {ordinal : 1}});
+  tasks: function() {
+    return Tasks.find({listId: this._id}, {sort: {ordinal : 1}});
   },
   editing: function() {
     return Session.get('editingList');
@@ -44,8 +44,8 @@ Template.checklistPage.events({
       if(Session.get('deleteListConfirmed')){
         console.log('delete list', Session.get('selectedListId'));
 
-        Todos.find({listId: this._id}).forEach(function(todo) {
-          Todos.remove(todo._id);
+        Tasks.find({listId: this._id}).forEach(function(task) {
+          Tasks.remove(task._id);
         });
         Lists.remove(Session.get('selectedListId'));
 
@@ -107,8 +107,8 @@ Template.checklistPage.events({
   //   deleteList(this, template);
   // },
 
-  'click .js-todo-add': function(event, template) {
-    template.$('.js-todo-new input').focus();
+  'click .js-task-add': function(event, template) {
+    template.$('.js-task-new input').focus();
   },
 
   'keyup #newTaskInput': function(event) {
@@ -142,16 +142,16 @@ saveList = function(record){
   // }
 
   // bump the ordinal of all the tasks
-  Todos.find({listId: Session.get('selectedListId')}).forEach(function(task){
-    Todos.update({_id: task._id}, {$set: {
+  Tasks.find({listId: Session.get('selectedListId')}).forEach(function(task){
+    Tasks.update({_id: task._id}, {$set: {
       ordinal: task.ordinal + 1
     }})
   });
 
   console.log('newTask', newTask);
 
-  var result = Todos.insert(newTask);
-  console.log('newTodo', Todos.findOne({_id: result}));
+  var result = Tasks.insert(newTask);
+  console.log('newTask', Tasks.findOne({_id: result}));
 
   Lists.update(record._id, {$inc: {incompleteCount: 1}});
   $('#newTaskInput').val('');
@@ -177,8 +177,8 @@ editList = function(list, template) {
 //   //   return alert("Sorry, you cannot delete the final public list!");
 //   // }
 //
-//   Todos.find({listId: list._id}).forEach(function(todo) {
-//     Todos.remove(todo._id);
+//   Tasks.find({listId: list._id}).forEach(function(task) {
+//     Tasks.remove(task._id);
 //   });
 //   Lists.remove(list._id);
 //

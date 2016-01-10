@@ -30,12 +30,12 @@
 
 
 @font-face {
-	font-family: 'todos';
-	src:url('icon/todos.eot?o4fu7p');
-	src:url('icon/todos.eot?#iefixo4fu7p') format('embedded-opentype'),
-		url('icon/todos.woff?o4fu7p') format('woff'),
-		url('icon/todos.ttf?o4fu7p') format('truetype'),
-		url('icon/todos.svg?o4fu7p#todos') format('svg');
+	font-family: 'tasks';
+	src:url('icon/tasks.eot?o4fu7p');
+	src:url('icon/tasks.eot?#iefixo4fu7p') format('embedded-opentype'),
+		url('icon/tasks.woff?o4fu7p') format('woff'),
+		url('icon/tasks.ttf?o4fu7p') format('truetype'),
+		url('icon/tasks.svg?o4fu7p#tasks') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
