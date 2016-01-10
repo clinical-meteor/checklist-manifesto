@@ -24,7 +24,7 @@ module.exports = {
   },
   "anonymous user - can view scratch checklist" : function (client) {
     client
-      .resizeWindow(768, 1024)
+      .resizeWindow(768, 1024).pause(300)
         .verify.visible("#sidebarToggle")
         .verify.visible("#checklistPage")
         .verify.visible("#checklistTitle")
@@ -32,7 +32,7 @@ module.exports = {
   },
   "anonymous user - sidebar should be hidden in portrait mode" : function (client) {
     client
-      .resizeWindow(768, 1024)
+      .resizeWindow(768, 1024).pause(300)
       .verify.elementPresent("#sidebarMenu")
       .verify.elementPresent("#usernameLink")
       .verify.cssProperty("#sidebarMenu", "left", "0px")
@@ -40,7 +40,7 @@ module.exports = {
   },
   "anonymous user - sidebar should be visible in landscape mode" : function (client) {
     client
-      .resizeWindow(1024, 768)
+      .resizeWindow(1024, 768).pause(300)
       .verify.elementPresent("#sidebarMenu")
       .verify.elementPresent("#usernameLink")
       .verify.cssProperty("#sidebarMenu", "left", "0px")
@@ -49,7 +49,7 @@ module.exports = {
   },
   "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
     client
-      .resizeWindow(768, 1024)
+      .resizeWindow(768, 1024).pause(300)
         .verify.visible("#sidebarToggle")
         // .verify.cssProperty("#contentContainer", "left", "0px")
         .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
@@ -59,7 +59,7 @@ module.exports = {
   },
   "anonymous user - cannot access list of lists" : function (client) {
     client
-      .resizeWindow(1024, 768)
+      .resizeWindow(1024, 768).pause(300)
       .verify.visible("#sidebarMenu")
       .verify.visible("#usernameLink")
       .verify.visible("#protocolLibraryLink")
