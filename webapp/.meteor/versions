@@ -10,7 +10,7 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
-clinical:active-entry@1.5.1
+clinical:active-entry@1.5.2
 clinical:router@2.0.17
 clinical:router-location@2.0.14
 clinical:router-middleware-stack@2.0.13
