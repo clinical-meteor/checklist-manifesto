@@ -1,15 +1,26 @@
 #protocolLibraryItems .taskItem {
-  .font-s2;
+  // .font-s2;
 
   // Layout of taskItem children
-  .display(flex);
-  .flex-wrap(wrap);
+  display: flex;
+  flex-wrap: wrap;
+  // .display(flex);
+  // .flex-wrap(wrap);
   height: 3rem;
   width: 100%;
 
-  .checkbox { .flex(0, 0, 44px); }
-  input[type="text"] { .flex(1); }
-  .delete-item { .flex(0, 0, 3rem); }
+  input[type="text"] {
+    flex: 1 auto;
+    // .flex(1);
+  }
+  .checkbox {
+    flex: 0 0 44px;
+    // .flex(0, 0, 44px);
+  }
+  .delete-item {
+    flex: 0 0 3rem;
+    // .flex(0, 0, 3rem);
+  }
 
 
   // Style of taskItem children
@@ -21,12 +32,15 @@
   }
 
   .delete-item {
-    color: @color-medium-rare;
+    color: gray;
+    // color: @color-medium-rare;
     line-height: 3rem;
     text-align: center;
 
-    &:hover { color: @color-primary; }
-    &:active { color: @color-well; }
+    &:hover,
+    &:active {
+      color:gray;
+    }
     .icon-trash { font-size: 1.1em; }
   }
 
@@ -37,7 +51,7 @@
   // Checked
   &.checked {
     input[type="text"] {
-      color: @color-medium-rare;
+      // color: @color-medium-rare;
       text-decoration: line-through;
     }
 

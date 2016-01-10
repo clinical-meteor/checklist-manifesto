@@ -1,12 +1,7 @@
-@import 'client/app/stylesheets/util/typography.lessimport';
+//@import 'client/app/stylesheets/util/typography.lessimport';
 
 #checklistPage {
-  .content-scrollable {
-    background: @color-empty;
-    //top: 5em !important;
-  }
   #protocolLibraryItems{
-    //top: 100px !important;
     position: static;
   }
   #newTaskInput{
@@ -31,11 +26,8 @@
     height: 50px;
     margin-bottom: 0px;
     z-index: 1;
-    .transition(all 200ms ease-out);
+    transition: all 200ms ease-in-out 0s;
   }
-  // #showNewTaskToggle:hover{
-  //   color: #831d2c;
-  // }
 }
 #listPanelNewItemIcon{
   top: 15px;
@@ -72,7 +64,6 @@
   transform: translate3d(-50%, -50%, 0);
   background: transparent;
   box-shadow: darkgray 0 0 0 1px inset;
-  //box-shadow: rgba(131, 27, 53, 0.37) 0 0 0 1px inset;
   content: '';
   display: block;
 }
