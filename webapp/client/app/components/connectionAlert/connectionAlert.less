@@ -1,0 +1,60 @@
+// @-webkit-keyframes spin {
+//   0% { .transform(rotate(0deg)); }
+//   100% { .transform(rotate(359deg)); }
+// }
+// @keyframes spin {
+//   0% { .transform(rotate(0deg)); }
+//   100% { .transform(rotate(359deg)); }
+// }
+
+
+// Notification message (e.g., when unable to connect)
+#connectionAlert {
+  //.position(absolute, auto, auto, -5px, 0px, 105%);
+
+  .connectionPanel {
+    height: 50px;
+    background: rgba(51,51,51, .85);
+    color: white;
+    margin-bottom: 0px;
+    padding: .5rem;
+    position: relative;
+    width: auto;
+
+    .fa-refresh {
+      margin-left: 10px;
+      margin-top: 8px;
+      position: absolute;
+      font-size: 1.5em;
+    }
+
+    .meta {
+      overflow: hidden;
+      padding-left: 3em;
+
+      #connectionTitle{
+        top:15px;
+        display: block;
+        font-weight: bold;
+        position:absolute;
+      }
+      #connectionMessage{
+        top: 15px;
+        display: block;
+        left: 200px;
+        position:absolute;
+      }
+      // portrait orientation
+      @media only screen and (max-width: 480px) {
+        #connectionMessage{
+          display: none;
+        }
+      }
+
+
+      .description {
+        display: block;
+      }
+    }
+  }
+}

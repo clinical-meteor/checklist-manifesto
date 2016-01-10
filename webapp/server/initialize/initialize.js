@@ -104,7 +104,7 @@ Meteor.startup(function () {
       if(list.items){
         list.items.forEach(function(text, index){
           // add a new task
-          Todos.insert({
+          Tasks.insert({
             listId: listId,
             text: text,
             public: true,

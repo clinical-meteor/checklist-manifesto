@@ -14,13 +14,13 @@ Meteor.publish('lists', function() {
 });
 
 
-Meteor.publish('todos', function() {
+Meteor.publish('tasks', function() {
   if(this.userId){
-    return Todos.find({$or:[
+    return Tasks.find({$or:[
       {ownerId: this.userId},
       {public: true}
       ]});
   }else{
-    return Todos.find({public: true});
+    return Tasks.find({public: true});
   }
 });

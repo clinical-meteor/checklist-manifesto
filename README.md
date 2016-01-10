@@ -1,16 +1,16 @@
-clinical-checklists
+checklist-manifesto
 ============================
 
-Improved version of the Todos boilerplate example.  Includes:
+HIPAA and FDA ready version of the Todos demo example.  Includes:
 
-- offline mode via Ground.Collection
-- responsive design to support tablet rotation  
-- selenium/nightwatch acceptance tests  
-- migrating towards a workflow-centric MVC pattern
+- multiuser / multiactor pattern
+- validation and verification tests
+- responsive design to support mobile devices
 - clinical checklist examples
+- offline mode via Ground.Collection
 
 
-[![Build Status](https://travis-ci.org/awatson1978/clinical-checklists.svg?branch=master)](https://travis-ci.org/awatson1978/clinical-checklists)
+[![Circle CI](https://circleci.com/gh/awatson1978/clinical-checklists/tree/master.svg?style=svg)](https://circleci.com/gh/awatson1978/clinical-checklists/tree/master)
 
 ============================
 #### Meteor Version
