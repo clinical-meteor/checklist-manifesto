@@ -5,9 +5,9 @@
 
   <testsuite name="protocolLibrary"
     errors="0" failures="0" hostname="" id="" package="protocolLibrary" skipped="0"
-    tests="6" time="18.97" timestamp="Sun, 10 Jan 2016 01:52:58 GMT">
+    tests="6" time="19.12" timestamp="Sun, 10 Jan 2016 05:35:58 GMT">
   
-    <testcase name="signed in user - can display protocol library" time="5.134" assertions="7">
+    <testcase name="signed in user - can display protocol library" time="5.301" assertions="7">
 
     
 
@@ -45,41 +45,14 @@
     
     </testcase>
   
-    <testcase name="signed in user - can not see unpublished private lists in library" time="0.4280" assertions="2">
+    <testcase name="signed in user - can not see unpublished private lists in library" time="0.4260" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="signed in user - can publish list to library (by making it public)" time="3.319" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can clone protocol from library" time="3.240" assertions="12">
-
-    
-
-    
-
-    
-
-    
+    <testcase name="signed in user - can publish list to library (by making it public)" time="3.315" assertions="8">
 
     
 
@@ -98,7 +71,34 @@
     
     </testcase>
   
-    <testcase name="anonymous user - can view public checklistPage with URL" time="1.676" assertions="11">
+    <testcase name="signed in user - can clone protocol from library" time="3.245" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="anonymous user - can view public checklistPage with URL" time="1.654" assertions="11">
 
     
 
