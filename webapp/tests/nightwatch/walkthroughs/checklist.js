@@ -44,7 +44,8 @@ module.exports = {
       .verify.elementPresent("#sidebarMenu")
       .verify.elementPresent("#usernameLink")
       .verify.cssProperty("#sidebarMenu", "left", "0px")
-      .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+      .verify.cssProperty("#contentContainer", "left", "270px")
+      .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
   },
   "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
     client
