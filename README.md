@@ -42,16 +42,17 @@ terminal-a$ meteor reset
 # run your application as usual
 terminal-a$ meteor
 
+# then open up a second terminal and run the validation tests
+terminal-b$ starrynight run-tests --type validation
+
+# if you want to run verification tests, you'll need to fetch the packages in the app
+terminal-a$ starrynight fetch
+
 # then open up a second terminal and run_nightwatch to run all tests
-terminal-b$ chmod 777 run_nightwatch.sh
-terminal-b$ ./run_nightwatch.sh
-
-# or specify a specific test
-terminal-b$ ./run_nightwatch.sh -t tests/homePage.js
-
+terminal-b$ starrynight run-tests --type verification
 ````
 
 ============================
 #### Run Acceptance Tests
 
-The code is open source under MIT license, but the Symptomatic.io trademark is not.  
+The code is open source under MIT license.
