@@ -2,33 +2,25 @@
 // http://nightwatchjs.org/api
 
 module.exports = {
-  tags: ['layout'],
-  "Layout & Static Pages" : function (client) {
+  tags: ['simple', 'static'],
+  "A. Sign In Page" : function (client) {
     client
       .url("http://localhost:3000/entrySignUp")
       .resizeWindow(1024, 768)
-
-      //============================================================================================
-      .sectionBreak("A. Sign In Page")
-
       .waitForPage("#entrySignUp")
       .saveScreenshot("tests/nightwatch/screenshots/ipad/A-signInPage.png")
       .reviewSignUpPage()
       .verify.elementNotPresent("#logoutButton")
-      .signUp("janedoe@gmail.com", "janedoe123")
-
-
-      //============================================================================================
-      .sectionBreak("B. Home Page")
-
+      .signUp("carl@somewhere.com", "carl123")
+  },
+  "B. Home Page": function (client){
+    client
       .waitForPage("#checklistPage")
       .reviewMainLayout()
       .reviewSidebar()
-
-
-      //============================================================================================
-      .sectionBreak("C. Static Pages")
-
+  },
+  "B. Static Pages": function (client){
+    client
       .click("#aboutButton")
       .waitForPage("#aboutPage")
 
@@ -37,13 +29,16 @@ module.exports = {
 
       .click("#privacyButton")
       .waitForPage("#privacyPage")
-
-      .verify.elementPresent("#logoutButton")
+  },
+  "D. Logout": function(client){
+    client
       .verify.elementPresent("#logoutButton")
       .click("#logoutButton").pause(300)
       .verify.containsText("#usernameLink", "Sign In")
       .verify.elementNotPresent("#logoutButton")
-
+  },
+  after: function(client){
+    client
       .dropEntryUsers()
       .end();
   }

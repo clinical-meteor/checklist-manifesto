@@ -23,7 +23,7 @@ module.exports = {
   tags: ['users', 'entry'],
   before: function(client){
     client
-      .url("http://localhost:3000/entrySignUp")
+      .url("http://localhost:3000/entrySignUp").pause(300)
       .initializeUsers()
       .resizeWindow(1024, 768)
   },
@@ -119,7 +119,8 @@ module.exports = {
   },
   "user should be able to request reset password email" : function (client) {
      client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(300)
+      .resizeWindow(1600, 1200)
       .verify.elementPresent("#forgotPasswordButton")
       .click("#forgotPasswordButton")
       .verify.elementPresent("#forgotPassword")
@@ -128,7 +129,7 @@ module.exports = {
   },
   "existing user should be able to sign in on desktop" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(1600, 1200)
       .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
@@ -148,7 +149,7 @@ module.exports = {
   },
   "existing user should be able to sign in on phone" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(320, 960)
       // .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
@@ -159,7 +160,7 @@ module.exports = {
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(1024, 768)
       .signIn("alice@symptomatic.io", "alice123").pause(500)
       .verify.containsText("#signInPageMessage", "User not found [403]")
@@ -169,7 +170,7 @@ module.exports = {
   },
   "anonymous guest should be notified if email already exists" : function (client) {
     client
-      .url("http://localhost:3000/entrySignUp")
+      .url("http://localhost:3000/entrySignUp").pause(500)
       .resizeWindow(1024, 768)
       .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#signUpPageEmailInput").pause(500)

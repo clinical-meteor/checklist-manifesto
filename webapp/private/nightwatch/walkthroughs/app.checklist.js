@@ -31,13 +31,13 @@ module.exports = {
       .verify.elementPresent("#listPanelHeader")
       .verify.elementPresent("#listPanelFooter")
 
-      .verify.elementPresent("#checklistItems")
-      .verify.elementPresent("#checklistItems .taskItem:nth-child(1) .taskInput")
-      .verify.elementPresent("#checklistItems .taskItem:nth-child(7) .taskInput")
-      .verify.elementNotPresent("#checklistItems .taskItem:nth-child(8) .taskInput")
+      .verify.elementPresent("#protocolLibraryItems")
+      .verify.elementPresent("#protocolLibraryItems .taskItem:nth-child(1) .taskInput")
+      .verify.elementPresent("#protocolLibraryItems .taskItem:nth-child(7) .taskInput")
+      .verify.elementNotPresent("#protocolLibraryItems .taskItem:nth-child(8) .taskInput")
 
-      .verify.attributeEquals("#checklistItems .taskItem:nth-child(1) .taskInput", "value", "Simplicity Equals Productivity")
-      .verify.attributeEquals("#checklistItems .taskItem:nth-child(7) .taskInput", "value", "Data on the Wire")
+      .verify.attributeEquals("#protocolLibraryItems .taskItem:nth-child(1) .taskInput", "value", "Simplicity Equals Productivity")
+      .verify.attributeEquals("#protocolLibraryItems .taskItem:nth-child(7) .taskInput", "value", "Data on the Wire")
 
 
       .verify.elementPresent("#newTaskInput")
@@ -47,9 +47,9 @@ module.exports = {
 
       .setValue('#newTaskInput', String.fromCharCode(13)).pause(10000)
 
-      .verify.attributeEquals("#checklistItems .taskItem:nth-child(1) .taskInput", "value", "Foo")
-      .verify.attributeEquals("#checklistItems .taskItem:nth-child(2) .taskInput", "value", "Simplicity Equals Productivity")
-      .verify.attributeEquals("#checklistItems .taskItem:nth-child(8) .taskInput", "value", "Data on the Wire")
+      .verify.attributeEquals("#protocolLibraryItems .taskItem:nth-child(1) .taskInput", "value", "Foo")
+      .verify.attributeEquals("#protocolLibraryItems .taskItem:nth-child(2) .taskInput", "value", "Simplicity Equals Productivity")
+      .verify.attributeEquals("#protocolLibraryItems .taskItem:nth-child(8) .taskInput", "value", "Data on the Wire")
 
 
       .end();

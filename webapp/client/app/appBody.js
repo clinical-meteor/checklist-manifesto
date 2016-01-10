@@ -54,7 +54,9 @@ Template.appBody.helpers({
     return [this];
   },
   menuOpen: function() {
-    return Session.get('menuOpen') && 'menu-open';
+    if (Session.get('menuOpen')) {
+      return 'menu-open';
+    }
   },
   userMenuOpen: function() {
     return Session.get('userMenuOpen');
@@ -80,30 +82,7 @@ Template.appBody.events({
     Session.set('menuOpen', false);
     event.preventDefault();
   },
-  'click .js-user-menu': function(event) {
-    Session.set('userMenuOpen', ! Session.get('userMenuOpen'));
-    // stop the menu from closing
-    event.stopImmediatePropagation();
-  },
-
   'click #menu a': function() {
     Session.set('menuOpen', false);
-  },
-
-  'click .js-logout': function() {
-    Meteor.logout();
-
-    // if we are on a private list, we'll need to go to a public one
-    var current = Router.current();
-    if (current.route.name === 'checklistPage' && current.data().userId) {
-      Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
-    }
-  },
-
-  'click #newListButton': function() {
-    var list = {name: Lists.defaultName(), incompleteCount: 0};
-    list._id = Lists.insert(list);
-
-    Router.go('checklistPage', list);
   }
 });

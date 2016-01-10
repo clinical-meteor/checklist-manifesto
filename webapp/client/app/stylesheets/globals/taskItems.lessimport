@@ -1,4 +1,4 @@
-#checklistItems .taskItem {
+#protocolLibraryItems .taskItem {
   .font-s2;
 
   // Layout of taskItem children

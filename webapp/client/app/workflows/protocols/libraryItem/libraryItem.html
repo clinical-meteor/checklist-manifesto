@@ -1,0 +1,16 @@
+<template name="libraryItem">
+  <div class="libraryItem {{checkedClass}} {{editingClass}}">
+    <label class="checkbox">
+      <input type="checkbox" checked="{{checked}}" name="checked" />
+    </label>
+
+    <span class="protocolName">{{name}}</span>
+    <span class="protocolCreator">{{creator}}</span>
+
+    <button class="previewButton btn-sm ">Preview</button>
+    {{#if currentUser}}
+      <button class="cloneButton btn-sm ">Clone</button>
+    {{else}}
+    {{/if}}
+  </div>
+</template>

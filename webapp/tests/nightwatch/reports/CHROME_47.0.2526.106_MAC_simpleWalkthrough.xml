@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="4">
 
   <testsuite name="simpleWalkthrough"
     errors="0" failures="0" hostname="" id="" package="simpleWalkthrough" skipped="0"
-    tests="1" time="12.83" timestamp="Sat, 09 Jan 2016 01:19:00 GMT">
+    tests="4" time="5.057" timestamp="Sat, 09 Jan 2016 22:00:42 GMT">
   
-    <testcase name="Layout &amp; Static Pages" time="12.83" assertions="32">
+    <testcase name="A. Sign In Page" time="4.045" assertions="11">
 
     
 
@@ -30,6 +30,9 @@
     
 
     
+    </testcase>
+  
+    <testcase name="B. Home Page" time="0.1820" assertions="8">
 
     
 
@@ -46,26 +49,18 @@
     
 
     
+    </testcase>
+  
+    <testcase name="B. Static Pages" time="0.3810" assertions="3">
 
     
 
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    </testcase>
+  
+    <testcase name="D. Logout" time="0.4490" assertions="3">
 
     
 
