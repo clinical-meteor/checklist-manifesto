@@ -54,7 +54,9 @@ Template.appBody.helpers({
     return [this];
   },
   menuOpen: function() {
-    return Session.get('menuOpen') && 'menu-open';
+    if (Session.get('menuOpen')) {
+      return 'menu-open';
+    }
   },
   userMenuOpen: function() {
     return Session.get('userMenuOpen');
