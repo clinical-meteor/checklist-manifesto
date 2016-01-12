@@ -10,7 +10,7 @@ HIPAA and FDA ready version of the Todos demo example.  Includes:
 - offline mode via Ground.Collection
 
 
-[![Circle CI](https://circleci.com/gh/awatson1978/clinical-checklists/tree/master.svg?style=svg)](https://circleci.com/gh/awatson1978/clinical-checklists/tree/master)
+[![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)
 
 ============================
 #### Meteor Version
