@@ -6,7 +6,7 @@ Router.configure({
   notFoundTemplate: 'pageNotFound',
 
   // show the appLoading template whilst the subscriptions below load their data
-  loadingTemplate: 'appLoading',
+  loadingTemplate: 'appLoading'
 });
 
 

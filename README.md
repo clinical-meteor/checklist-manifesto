@@ -55,4 +55,4 @@ terminal-b$ starrynight run-tests --type verification
 ============================
 #### Run Acceptance Tests
 
-The code is open source under MIT license.
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
