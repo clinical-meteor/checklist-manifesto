@@ -6,23 +6,16 @@ Router.configure({
   notFoundTemplate: 'pageNotFound',
 
   // show the appLoading template whilst the subscriptions below load their data
-  loadingTemplate: 'appLoading',
-
-  // wait on the following subscriptions before rendering the page to ensure
-  // the data it's expecting is present
-  // waitOn: function() {
-  //   return [
-  //     Meteor.subscribe('lists'),
-  //     Meteor.subscribe('todos')
-  //   ];
-  // }
+  loadingTemplate: 'appLoading'
 });
 
 
 Router.route("/notfound", {
   template: "pageNotFound"
 });
-
+Router.route("/loading", {
+  template: "appLoading"
+});
 
 
 Router.map(function() {

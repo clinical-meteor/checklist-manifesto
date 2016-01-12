@@ -1,0 +1,64 @@
+#protocolLibraryItems .taskItem {
+  // .font-s2;
+
+  // Layout of taskItem children
+  display: flex;
+  flex-wrap: wrap;
+  // .display(flex);
+  // .flex-wrap(wrap);
+  height: 3rem;
+  width: 100%;
+
+  input[type="text"] {
+    flex: 1 auto;
+    // .flex(1);
+  }
+  .checkbox {
+    flex: 0 0 44px;
+    // .flex(0, 0, 44px);
+  }
+  .delete-item {
+    flex: 0 0 3rem;
+    // .flex(0, 0, 3rem);
+  }
+
+
+  // Style of taskItem children
+  input[type="text"] {
+    background: transparent;
+    cursor: pointer;
+
+    &:focus { cursor: text; }
+  }
+
+  .delete-item {
+    color: gray;
+    // color: @color-medium-rare;
+    line-height: 3rem;
+    text-align: center;
+
+    &:hover,
+    &:active {
+      color:gray;
+    }
+    .icon-trash { font-size: 1.1em; }
+  }
+
+
+  // Border between list items
+  & + .taskItem { border-top: 1px solid #f0f9fb; }
+
+  // Checked
+  &.checked {
+    input[type="text"] {
+      // color: @color-medium-rare;
+      text-decoration: line-through;
+    }
+
+    .delete-item { display: inline-block; }
+  }
+
+  // Editing
+  .delete-item { display: none; }
+  &.editing .delete-item { display: inline-block; }
+}

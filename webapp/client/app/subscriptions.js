@@ -1,12 +1,12 @@
 
 //Deps.autorun(function(){
   // if(Meteor.userId()){
-  //   Meteor.subscribe('todos', Meteor.userId());
+  //   Meteor.subscribe('tasks', Meteor.userId());
   // }else{
-  //   Meteor.subscribe('todos', false);
+  //   Meteor.subscribe('tasks', false);
   // }
 //});
 //Meteor.subscribe('libraryLists');
 
 Meteor.subscribe('lists'),
-Meteor.subscribe('todos')
+Meteor.subscribe('tasks')

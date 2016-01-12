@@ -5,9 +5,9 @@
 
   <testsuite name="protocolLibrary"
     errors="0" failures="0" hostname="" id="" package="protocolLibrary" skipped="0"
-    tests="6" time="13.69" timestamp="Sat, 09 Jan 2016 22:00:21 GMT">
+    tests="6" time="19.12" timestamp="Sun, 10 Jan 2016 05:35:58 GMT">
   
-    <testcase name="signed in user - can display protocol library" time="5.272" assertions="7">
+    <testcase name="signed in user - can display protocol library" time="5.301" assertions="7">
 
     
 
@@ -24,58 +24,7 @@
     
     </testcase>
   
-    <testcase name="signed in user - can see public lists in library" time="0.1440" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can not see unpublished private lists in library" time="0.4210" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can publish list to library (by making it public)" time="3.097" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="signed in user - can clone protocol from library" time="3.149" assertions="12">
-
-    
-
-    
-
-    
+    <testcase name="signed in user - can see public lists in library" time="5.177" assertions="9">
 
     
 
@@ -96,7 +45,60 @@
     
     </testcase>
   
-    <testcase name="anonymous user - can view public checklistPage with URL" time="1.605" assertions="11">
+    <testcase name="signed in user - can not see unpublished private lists in library" time="0.4260" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can publish list to library (by making it public)" time="3.315" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="signed in user - can clone protocol from library" time="3.245" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="anonymous user - can view public checklistPage with URL" time="1.654" assertions="11">
 
     
 

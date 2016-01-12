@@ -1,0 +1,69 @@
+//@import 'client/app/stylesheets/util/typography.lessimport';
+
+#checklistPage {
+  #protocolLibraryItems{
+    position: static;
+  }
+  #newTaskInput{
+    background-color: inherit;
+    width: 100%;
+    padding-left: 40px;
+  }
+  #checklistTitleForm{
+    padding: 0px !important;
+    input{
+      background-color: inherit;
+      font-size: 18px;
+      line-height: 20px;
+      padding-top: 13px;
+      padding-left: 15px;
+    }
+  }
+  #listPanelFooter{
+    padding-left: 20px;
+  }
+  #newTaskRibbon{
+    height: 50px;
+    margin-bottom: 0px;
+    z-index: 1;
+    transition: all 200ms ease-in-out 0s;
+  }
+}
+#listPanelNewItemIcon{
+  top: 15px;
+  left: 15px !important;
+  position: absolute;
+  color: gray;
+  z-index: 10000;
+}
+#newItemAddIcon{
+  top: 17px;
+  right: 15px;
+  color: gray;
+}
+.headerIcon{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.headerIcon:hover{
+  text-decoration: none;
+}
+.checkbox-placeholder{
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 21px;
+  width: 0.75em;
+  height: 0.75em;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background: transparent;
+  box-shadow: darkgray 0 0 0 1px inset;
+  content: '';
+  display: block;
+}
