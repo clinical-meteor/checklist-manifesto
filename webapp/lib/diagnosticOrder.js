@@ -40,19 +40,56 @@ DiagnosticOrderSchema = new SimpleSchema({
     type: [ ReferenceSchema ]
   },
 
-  // proposed | draft | planned | requested | received | accepted | in-progress | review | completed | cancelled | suspended | rejected | failed
   "status" : {
-    type: String
+    type: String,
+    allowedValues: [
+      "proposed",
+      "draft",
+      "planned",
+      "requested",
+      "received",
+      "accepted",
+      "in-progress",
+      "review",
+      "completed",
+      "cancelled",
+      "suspended",
+      "rejected",
+      "failed"
+    ],
+    defaultValue: "planned"
   },
 
-  // routine | urgent | stat | asap
+  // 
   "priority" : {
-    type: String
+    type: String,
+    allowedValues: [
+      "routine",
+      "urgent",
+      "stat",
+      "asap"
+    ],
+    defaultValue: "routine"
   },
 
-  // R!  proposed | draft | planned | requested | received | accepted | in-progress | review | completed | cancelled | suspended | rejected | failed
   "event.$.status" : {
-    type: String
+    type: String,
+    allowedValues: [
+      "proposed",
+      "draft",
+      "planned",
+      "requested",
+      "received",
+      "accepted",
+      "in-progress",
+      "review",
+      "completed",
+      "cancelled",
+      "suspended",
+      "rejected",
+      "failed"
+    ],
+    defaultValue: "planned"
   },
 
   // More information about the event and its context
