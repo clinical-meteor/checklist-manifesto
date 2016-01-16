@@ -11,7 +11,6 @@ Meteor.startup(function(){
   });
 });
 
-
 Template.registerHelper('resized', function(){
   return Session.get('resize');
 });
