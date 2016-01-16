@@ -104,11 +104,13 @@ Meteor.methods({
           // add a new task
           Tasks.insert({
             listId: listId,
-            text: text,
             public: true,
             ordinal: index,
-            createdAt: new Date(timestamp)}
-          );
+            event: [{
+              description: text,
+              dateTime: new Date(timestamp)
+            }]
+          });
 
           // ensure unique timestamp.
           timestamp += 1;

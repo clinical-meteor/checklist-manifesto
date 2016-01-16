@@ -1,6 +1,9 @@
 
 
 Template.tasksItem.helpers({
+  getEventDescription: function (){
+    return this.event[0].description;
+  },
   getText: function(){
     return this.text;
   },

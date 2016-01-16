@@ -29,11 +29,13 @@ Template.libraryItem.events({
         console.log('List Cloned to ' + newListId);
         Tasks.find({listId: selectedListId}).forEach(function(task){
           Tasks.insert({
-            createdAt: new Date(),
             listId: newListId,
-            ordinal: task.ordinal,
             public: task.public,
-            text: task.text
+            ordinal: task.ordinal,
+            event: [{
+              description: task.event[0].description,
+              dateTime: task.event[0].dateTime
+            }]
           });
         });
         Router.go('/lists/' + newListId);

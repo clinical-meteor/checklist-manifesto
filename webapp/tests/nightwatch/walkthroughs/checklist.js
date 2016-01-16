@@ -114,6 +114,7 @@ module.exports = {
       .resizeWindow(1024, 768)
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
         .verify.attributeEquals("#checklistPage .taskItem:nth-child(1) .taskInput", "placeholder", "Publish app in App Store")
+        .click("#checklistPage .taskItem:nth-child(1) .taskInput").pause(300)
         .verify.visible("#checklistPage .taskItem:nth-child(1) .delete-item")
         .click("#checklistPage .taskItem:nth-child(1) .delete-item").pause(500)
         .verify.elementNotPresent("#checklistPage .taskItem:nth-child(1)")

@@ -30,9 +30,14 @@ cd clinical-checklists/webapp
 meteor
 ````
 
+============================
+#### HL7 Conformance Statement  
+
+All tasks are implemented with the HL7 FHIR [DiagnosticOrder](https://www.hl7.org/fhir/diagnosticorder.html) resource type.  Please see the HL7 FHIR DTSU2 for reference type schema definition.
+
 
 ============================
-#### Run Acceptance Tests
+#### FDA Validation and Verification Testing
 
 ````sh
 
@@ -43,6 +48,7 @@ terminal-a$ meteor reset
 terminal-a$ meteor
 
 # then open up a second terminal and run the validation tests
+terminal-b$ starrynight autoconfig
 terminal-b$ starrynight run-tests --type validation
 
 # if you want to run verification tests, you'll need to fetch the packages in the app

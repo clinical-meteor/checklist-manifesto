@@ -10,10 +10,10 @@ Template.checklistPage.helpers({
     return Session.get('newTaskRibbonVisible');
   },
   list: function(){
-    return Lists.findOne(Session.get('selectedListId'));
+    return Lists.findOne({_id: Session.get('selectedListId')});
   },
   tasks: function() {
-    return Tasks.find({listId: this._id}, {sort: {ordinal : 1}});
+    return Tasks.find({listId: Session.get('selectedListId')}, {sort: {ordinal : 1}});
   },
   editing: function() {
     return Session.get('editingList');
@@ -128,11 +128,12 @@ Template.checklistPage.events({
 saveList = function(record){
   var newTask = {
     listId: Session.get('selectedListId'),
-    text: $('#newTaskInput').val(),
-    checked: false,
     public: true,
-    createdAt: new Date(),
-    ordinal: 0
+    ordinal: 0,
+    event: [{
+      description: $('#newTaskInput').val(),
+      dateTime: new Date()
+    }]
   }
 
   // if(Meteor.userId()){
