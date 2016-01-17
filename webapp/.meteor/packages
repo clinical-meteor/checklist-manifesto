@@ -33,3 +33,4 @@ clinical:fonts
 clinical:static-pages
 clinical:error-pages
 clinical:glass-ui
+clinical:logging

@@ -45,6 +45,11 @@ All tasks are implemented with the HL7 FHIR [DiagnosticOrder](https://www.hl7.or
 
 
 ============================
+#### HIPAA Compliance  
+
+This app supports logging events to a HIPAA Audit Log.  See the [HIPAA Audit Utility](https://github.com/clinical-meteor/hipaa-utility) for details on viewing the Hipaa Audit Log.
+
+============================
 #### FDA Validation and Verification Testing
 
 ````sh
