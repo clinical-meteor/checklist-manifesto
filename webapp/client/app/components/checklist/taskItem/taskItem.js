@@ -1,6 +1,13 @@
 
 
 Template.tasksItem.helpers({
+  getStatusColor: function(){
+    if (this.status === "completed") {
+      return "color: #D3D3D3;";
+    } else {
+      return "color: #333333;";
+    }
+  },
   getStatusIcon: function(){
     if (this.status === "completed") {
       return "fa-check-square-o";
@@ -18,7 +25,6 @@ Template.tasksItem.helpers({
     if (this.status === "completed") {
       return "checked";
     }
-    return this.checked && 'checked';
   },
   editingClass: function() {
     return Session.equals("editingTaskId", this._id) && 'editing';
