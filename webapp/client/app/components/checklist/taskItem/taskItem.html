@@ -1,12 +1,10 @@
 <template name="tasksItem">
-  <div class="taskItem {{checkedClass}} {{editingClass}}">
+  <div class="taskItem {{checkedClass}} {{editingClass}}" style="{{getStatusColor}}">
     <label class="checkbox">
-      <i class="fa fa-square-o"></i>
-      <!-- <input type="checkbox" checked="{{checked}}" name="checked" />
-      <span class="checkbox-custom"></span> -->
+      <i class="fa {{getStatusIcon}}"></i>
     </label>
 
-    <input class="taskInput" type="text" placeholder="{{ getEventDescription }}" value="{{ getEventDescription }}" />
+    <input class="taskInput" type="text" placeholder="{{ getEventDescription }}" value="{{ getEventDescription }}" style="{{getStatusColor}}" />
     <a class="js-delete-item delete-item" href="#">
       <i class="fa fa-trash"></i>
     </a>

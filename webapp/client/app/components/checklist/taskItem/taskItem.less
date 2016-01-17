@@ -8,12 +8,12 @@
 
   input[type="text"] {
     flex: 1 auto;
-    // .flex(1);
   }
   .checkbox {
     flex: 0 0 44px;
     padding-left: 15px;
     padding-top: 6px;
+    cursor: pointer;
   }
   .delete-item {
     flex: 0 0 3rem;
@@ -46,6 +46,8 @@
 
   // Checked
   &.checked {
+    text-decoration: line-through;
+
     input[type="text"] {
       text-decoration: line-through;
     }

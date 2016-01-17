@@ -105,7 +105,7 @@ module.exports = {
       // .verify.hidden("#checklistPage .taskItem:nth-child(1) .delete")
       .verify.cssProperty("#checklistPage .taskItem:nth-child(1)", "color", "rgba(51, 51, 51, 1)")
       .click("#checklistPage .taskItem:nth-child(1) .checkbox").pause(500)
-      .verify.cssProperty("#checklistPage .taskItem:nth-child(1)", "color", "rgba(51, 51, 51, 1)")
+      .verify.cssProperty("#checklistPage .taskItem:nth-child(1)", "color", "rgba(211, 211, 211, 1)")
       .verify.visible("#checklistPage .taskItem:nth-child(1) .checkbox")
   },
 
