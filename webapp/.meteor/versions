@@ -22,7 +22,7 @@ clinical:router@2.0.17
 clinical:router-location@2.0.14
 clinical:router-middleware-stack@2.0.13
 clinical:router-url@2.0.15
-clinical:static-pages@1.0.12
+clinical:static-pages@1.0.13
 clinical:theming@0.4.4
 clinical:ui-vocabulary@1.0.5
 ddp@1.1.0

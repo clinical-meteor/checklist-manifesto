@@ -1,6 +1,13 @@
 
 
 Template.tasksItem.helpers({
+  getStatusIcon: function(){
+    if (this.status === "completed") {
+      return "fa-check-square-o";
+    } else {
+      return "fa-square-o";
+    }
+  },
   getEventDescription: function (){
     return this.event[0].description;
   },
@@ -8,6 +15,9 @@ Template.tasksItem.helpers({
     return this.text;
   },
   checkedClass: function() {
+    if (this.status === "completed") {
+      return "checked";
+    }
     return this.checked && 'checked';
   },
   editingClass: function() {
@@ -16,9 +26,12 @@ Template.tasksItem.helpers({
 });
 
 Template.tasksItem.events({
-  'change [type=checkbox]': function(event) {
-    var checked = $(event.target).is(':checked');
-    Tasks.update(this._id, {$set: {checked: checked}});
+  'click .checkbox': function(event) {
+    if (this.status === "completed") {
+      Tasks.update(this._id, {$set: {status: "planned"}});
+    } else {
+      Tasks.update(this._id, {$set: {status: "completed"}});
+    }
     Lists.update(this.listId, {$inc: {incompleteCount: checked ? -1 : 1}});
   },
 
