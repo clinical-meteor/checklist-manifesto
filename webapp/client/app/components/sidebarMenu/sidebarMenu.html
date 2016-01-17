@@ -5,7 +5,7 @@
 
         <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
         <div id="protocolLibraryLink" class="sidebarMenuItem withLowerBorder">Protocols</div>
-        
+
         {{#if currentUser}}
           <div class="withLowerBorder">
 
@@ -29,7 +29,7 @@
 
         <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
         <a id="featuresButton" href="{{pathFor 'marketingPage'}}">Features</a>
-        <a id="eulaButton" href="{{pathFor 'eulaPage'}}">End User Agreement</a>
+        <a id="eulaButton" href="{{pathFor 'eulaRoute'}}">End User Agreement</a>
         <a id="privacyButton" href="{{pathFor 'privacyPage'}}" class="withLowerBorder">Privacy Policy</a>
         {{#if currentUser}}
           <a id="logoutButton" class="withLowerBorder">Logout</a>

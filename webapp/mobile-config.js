@@ -1,10 +1,10 @@
 App.info({
-  name: 'Clinical Checklists',
-  description: 'A clinical checklist app built in Meteor.',
+  name: 'Checklist Manifesto',
+  description: 'A HIPAA and FDA compliant checklist app built in Meteor that supports HL7 FHIR.',
   author: 'Pentasyllabic Studios',
   email: 'pentasyllabic.studios@gmail.com',
   website: 'http://www.pentasyllabic.com',
-  version: '0.0.1'
+  version: '0.1.0'
 });
 
 App.icons({

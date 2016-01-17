@@ -6,10 +6,10 @@ Session.setDefault('userMenuOpen', false);
 //==============================================================================
 // TEMPLATE CONSTRUCTORS
 
-Template.appBody.rendered = function() {
+Template.appLayout.rendered = function() {
   if (Meteor.isCordova) {
     // set up a swipe left / right handler
-    this.hammer = new Hammer(this.find('#appBody'));
+    this.hammer = new Hammer(this.find('#appLayout'));
     this.hammer.on('swipeleft swiperight', function(event) {
       if (event.gesture.direction === 'right') {
         Session.set('menuOpen', true);
@@ -34,7 +34,7 @@ Template.appBody.rendered = function() {
   };
 };
 
-Template.appBody.destroyed = function() {
+Template.appLayout.destroyed = function() {
   if (Meteor.isCordova) {
     this.hammer.destroy();
   }
@@ -44,7 +44,7 @@ Template.appBody.destroyed = function() {
 //==============================================================================
 // TEMPLATE OUTPUTS
 
-Template.appBody.helpers({
+Template.appLayout.helpers({
 
   // We use #each on an array of one item so that the "list" template is
   // removed and a new copy is added when changing lists, which is
@@ -69,7 +69,7 @@ Template.appBody.helpers({
 //==============================================================================
 // TEMPLATE INPUTS
 
-Template.appBody.events({
+Template.appLayout.events({
   // close the menu when a list is selected
   'click #sidebarMenu a': function() {
     Session.set('menuOpen', false);

@@ -1,14 +1,7 @@
 checklist-manifesto
 ============================
 
-HIPAA and FDA ready version of the Todos demo example.  Includes:
-
-- multiuser / multiactor pattern
-- validation and verification tests
-- responsive design to support mobile devices
-- clinical checklist examples
-- offline mode via Ground.Collection
-
+HIPAA and FDA ready version of the Todos demo example.  
 
 [![Circle CI](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/checklist-manifesto/tree/master)
 
@@ -29,6 +22,21 @@ git clone https://github.com/awatson1978/clinical-checklists
 cd clinical-checklists/webapp
 meteor
 ````
+
+============================
+#### Local Development
+
+ChecklistManifesto uses many packages shared between ClinicalFramework apps.  Use the ``starrynight fetch`` command to fetch the shared packages for local development.
+
+````sh
+# Install the starrynight utility...
+npm install -g starrynight
+
+# And then running it...
+cd packages
+starrynight fetch
+````
+
 
 ============================
 #### HL7 Conformance Statement  

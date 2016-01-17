@@ -1,6 +1,6 @@
 Router.configure({
-  // we use the  appBody template to define the layout for the entire app
-  layoutTemplate: 'appBody',
+  // we use the  appLayout template to define the layout for the entire app
+  layoutTemplate: 'appLayout',
 
   // the pageNotFound template is used for unknown routes and missing lists
   notFoundTemplate: 'pageNotFound',
@@ -9,13 +9,6 @@ Router.configure({
   loadingTemplate: 'appLoading'
 });
 
-
-Router.route("/notfound", {
-  template: "pageNotFound"
-});
-Router.route("/loading", {
-  template: "appLoading"
-});
 
 
 Router.map(function() {

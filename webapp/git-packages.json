@@ -7,5 +7,11 @@
   },
   "clinical:active-entry": {
     "git": "https://github.com/clinical-meteor/clinical-active-entry.git"
+  },
+  "clinical:static-pages": {
+    "git": "https://github.com/clinical-meteor/clinical-static-pages.git"
+  },
+  "clinical:error-pages": {
+    "git": "https://github.com/clinical-meteor/clinical-error-pages.git"
   }
 }

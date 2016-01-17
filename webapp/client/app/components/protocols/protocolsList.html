@@ -22,14 +22,6 @@
               <span id="checklistTitle" class="title-wrapper">{{name}}</span>
             </a>
 
-            <a class="float-right navbar-brand">
-              <a class="headerIcon">
-                <i id="showNewTaskToggle" class="fa fa-pencil" title="Add task"></i>
-              </a>
-              <a id="quickSignInLink" class="headerIcon">
-                <i id="checklistConfig" class="fa fa-cog" title="Make list private"></i>
-              </a>
-            </a>
           </div>
 
         {{/if}}
@@ -37,12 +29,9 @@
 
       {{#if isNewTaskRibbonVisible}}
       <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
-        <!-- <form id="newTaskForm" class="js-task-new task-new input-symbol"> -->
           <span class="checkbox-placeholder"></span>
           <input id="newTaskInput" type="text" placeholder="Type to add new tasks" autocomplete="off">
-          <!-- <i id="listPanelNewItemIcon" class="fa fa-pencil js-task-add"></i> -->
           <i id="newItemAddIcon" class="headerIcon fa fa-plus float-right"></i>
-        <!-- </form> -->
       </nav>
       {{/if}}
 
