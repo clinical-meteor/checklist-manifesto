@@ -35,7 +35,7 @@ dependencies:
 ## Customize test commands
 test:
   pre:
-    - starrynight fetch
+    #- starrynight fetch
     - meteor:
           background: true
     - sleep 60
