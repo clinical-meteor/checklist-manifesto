@@ -22,8 +22,8 @@ clinical:router@2.0.17
 clinical:router-location@2.0.14
 clinical:router-middleware-stack@2.0.13
 clinical:router-url@2.0.15
-clinical:static-pages@1.0.7
-clinical:theming@0.3.0
+clinical:static-pages@1.0.12
+clinical:theming@0.4.4
 clinical:ui-vocabulary@1.0.5
 ddp@1.1.0
 deps@1.0.7

@@ -1,8 +1,9 @@
 <template name="tasksItem">
   <div class="taskItem {{checkedClass}} {{editingClass}}">
     <label class="checkbox">
-      <input type="checkbox" checked="{{checked}}" name="checked" />
-      <span class="checkbox-custom"></span>
+      <i class="fa fa-square-o"></i>
+      <!-- <input type="checkbox" checked="{{checked}}" name="checked" />
+      <span class="checkbox-custom"></span> -->
     </label>
 
     <input class="taskInput" type="text" placeholder="{{ getEventDescription }}" value="{{ getEventDescription }}" />

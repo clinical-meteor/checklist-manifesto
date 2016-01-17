@@ -4,10 +4,10 @@ Theme.configure({
     color: "#d7eaea"
   },
   palette: {
-    colorA: "#CCA79A",
-    colorB: "#831d2c",
-    colorC: "#4D1325",
-    colorD: "#070707",
+    colorA: "#01b9af",
+    colorB: "#00938b",
+    colorC: "#f3f3f3",
+    colorD: "#52565f",
     colorE: "#40434E"
   }
 });

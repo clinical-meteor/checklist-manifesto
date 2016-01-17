@@ -1,11 +1,8 @@
 #protocolLibraryItems .taskItem {
-  // .font-s2;
 
   // Layout of taskItem children
   display: flex;
   flex-wrap: wrap;
-  // .display(flex);
-  // .flex-wrap(wrap);
   height: 3rem;
   width: 100%;
 
@@ -15,11 +12,11 @@
   }
   .checkbox {
     flex: 0 0 44px;
-    // .flex(0, 0, 44px);
+    padding-left: 15px;
+    padding-top: 6px;
   }
   .delete-item {
     flex: 0 0 3rem;
-    // .flex(0, 0, 3rem);
   }
 
 
@@ -33,7 +30,6 @@
 
   .delete-item {
     color: gray;
-    // color: @color-medium-rare;
     line-height: 3rem;
     text-align: center;
 
@@ -51,7 +47,6 @@
   // Checked
   &.checked {
     input[type="text"] {
-      // color: @color-medium-rare;
       text-decoration: line-through;
     }
 

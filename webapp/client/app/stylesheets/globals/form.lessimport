@@ -41,15 +41,12 @@ input:-webkit-autofill {
       .position(absolute, 50%, auto, auto, 50%, .85em, .85em);
       .transform(translate3d(-50%, -50%, 0));
       background: transparent;
-      box-shadow: rgba(131, 27, 53, 0.37) 0 0 0 1px inset;
-      //box-shadow: #abdfe3 0 0 0 1px inset;
       content: '';
       display: block;
     }
 
     &:checked + span:before {
       box-shadow: none;
-      color: @color-medium-rare;
 
       // Icon family from icon.lessimport
       font-family: 'tasks';

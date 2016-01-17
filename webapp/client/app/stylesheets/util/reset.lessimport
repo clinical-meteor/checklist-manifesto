@@ -25,10 +25,7 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-// Focus states
-a:focus {
-  outline: thin dotted;
-}
+
 // Hover & Active
 a:hover,
 a:active {
