@@ -27,7 +27,7 @@ aldeed:collection2
 clinical:router
 clinical:ui-vocabulary
 clinical:session-extended-api
-clinical:active-entry
+clinical:active-entry@1.5.6
 clinical:theming
 clinical:fonts
 clinical:static-pages
