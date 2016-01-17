@@ -13,5 +13,12 @@
   },
   "clinical:error-pages": {
     "git": "https://github.com/clinical-meteor/clinical-error-pages.git"
+  },
+  "clinical:extended-api": {
+    "git": "https://github.com/clinical-meteor/extended-api.git"
+  },
+  "clinical:logging": {
+    "git": "https://github.com/clinical-meteor/logging.git"
   }
+
 }
