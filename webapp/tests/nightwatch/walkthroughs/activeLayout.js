@@ -40,46 +40,46 @@ module.exports = {
       // .verify.elementPresent("#navbarHeader")
   },
 
-  "it should hide/show navbar": function(client){
-    client
-      .resizeWindow(1024,768)
-      .verify.elementPresent("#navbarHeader")
-      .verify.elementPresent("#navbarFooter")
-      .keys(client.Keys.CONTROL)
-      .keys(client.Keys.COMMAND)
-      .keys(client.Keys.N)
-      .pause(300)
-      .keys(client.Keys.NULL)
-      .verify.elementNotPresent("#navbarHeader")
-      .verify.elementNotPresent("#navbarFooter")
-      .keys(client.Keys.CONTROL)
-      .keys(client.Keys.COMMAND)
-      .keys(client.Keys.N)
-      .pause(300)
-      .keys(client.Keys.NULL)
-      .verify.elementPresent("#navbarHeader")
-      .verify.elementPresent("#navbarFooter")
-  },
-  "sidebar should be visible in landscape and desktop modes" : function (client) {
-    var newUserId = false;
-    client
-      .resizeWindow(1024, 768)
-      .verify.elementPresent("#sidebar")
-      .verify.elementPresent("#signInLink")
-      .verify.elementPresent("#mainPanel")
-  },
-  "sidebar should be hidden in portrait and phone mode" : function (client) {
-    var newUserId = false;
-    client
-      .resizeWindow(480, 690)
-        .verify.hidden("#sidebar")
-        .verify.hidden("#signInLink")
-        .verify.elementPresent("#mainPanel")
-      .resizeWindow(480, 690)
-        .verify.hidden("#sidebar")
-        .verify.hidden("#signInLink")
-        .verify.elementPresent("#mainPanel")
-  },
+  // "it should hide/show navbar": function(client){
+  //   client
+  //     .resizeWindow(1024,768)
+  //     .verify.elementPresent("#navbarHeader")
+  //     .verify.elementPresent("#navbarFooter")
+  //     .keys(client.Keys.CONTROL)
+  //     .keys(client.Keys.COMMAND)
+  //     .keys(client.Keys.N)
+  //     .pause(300)
+  //     .keys(client.Keys.NULL)
+  //     .verify.elementNotPresent("#navbarHeader")
+  //     .verify.elementNotPresent("#navbarFooter")
+  //     .keys(client.Keys.CONTROL)
+  //     .keys(client.Keys.COMMAND)
+  //     .keys(client.Keys.N)
+  //     .pause(300)
+  //     .keys(client.Keys.NULL)
+  //     .verify.elementPresent("#navbarHeader")
+  //     .verify.elementPresent("#navbarFooter")
+  // },
+  // "sidebar should be visible in landscape and desktop modes" : function (client) {
+  //   var newUserId = false;
+  //   client
+  //     .resizeWindow(1024, 768)
+  //     .verify.elementPresent("#sidebar")
+  //     .verify.elementPresent("#signInLink")
+  //     .verify.elementPresent("#mainPanel")
+  // },
+  // "sidebar should be hidden in portrait and phone mode" : function (client) {
+  //   var newUserId = false;
+  //   client
+  //     .resizeWindow(480, 690)
+  //       .verify.hidden("#sidebar")
+  //       .verify.hidden("#signInLink")
+  //       .verify.elementPresent("#mainPanel")
+  //     .resizeWindow(480, 690)
+  //       .verify.hidden("#sidebar")
+  //       .verify.hidden("#signInLink")
+  //       .verify.elementPresent("#mainPanel")
+  // },
   after: function(client){
     client.end();
   }
