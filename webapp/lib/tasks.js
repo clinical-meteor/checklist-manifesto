@@ -3,7 +3,9 @@
 Tasks = new Meteor.Collection('tasks');
 //Ground.Collection(Tasks);
 
-
+if (Meteor.isClient){
+  Meteor.subscribe('tasks');
+}
 
 DiagnosticOrderSchema = new SimpleSchema({
   "resourceType" : {

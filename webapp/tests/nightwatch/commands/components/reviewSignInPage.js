@@ -9,7 +9,7 @@ exports.command = function(username, password) {
       .verify.elementPresent("#needAnAccountButton")
 
       .verify.containsText("#signInPageTitle", "Sign In")
-      .verify.containsText("#signInPageMessage", "Improve your clincal practice with checklists.")
+      .verify.containsText("#signInPageMessage", "Improve your clinical practice with checklists.")
 
   return this; // allows the command to be chained.
 };

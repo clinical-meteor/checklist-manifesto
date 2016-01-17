@@ -19,8 +19,6 @@ fastclick
 #ground:db
 #ground:localstorage
 
-nemo64:bootstrap
-
 aldeed:simple-schema
 aldeed:collection2
 
