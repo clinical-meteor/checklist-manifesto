@@ -28,9 +28,9 @@ clinical:router
 clinical:ui-vocabulary
 clinical:extended-api
 clinical:active-entry
-clinical:theming
-clinical:fonts
 clinical:static-pages
 clinical:error-pages
+clinical:theming
+clinical:fonts
 clinical:glass-ui
 clinical:hipaa-logger
