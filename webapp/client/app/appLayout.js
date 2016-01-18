@@ -86,3 +86,10 @@ Template.appLayout.events({
     Session.set('menuOpen', false);
   }
 });
+
+//==============================================================================
+// TEMPLATE HELPERS
+
+Template.registerHelper("connected", function(argument){
+  return Meteor.status().connected;
+});
