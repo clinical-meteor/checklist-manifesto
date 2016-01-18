@@ -1,8 +1,7 @@
 <template name="protocolLibrary">
-  <div id="protocolLibrary" class="page lists-show">
+  <div id="protocolLibrary" class="page lists-show" style="{{getOpacity}}">
 
-
-      <nav id="listPanelHeader" class="unselectable" role="navigation">
+      <!-- <nav id="listPanelHeader" class="unselectable" role="navigation">
         {{#if editing}}
         <div class="navbar-header">
           <form id="checklistTitleForm" class="navbar-brand">
@@ -25,7 +24,7 @@
           </div>
 
         {{/if}}
-      </nav>
+      </nav> -->
 
       {{#if isNewTaskRibbonVisible}}
       <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
@@ -48,9 +47,6 @@
           </div>
         {{/if}}
       </div>
-
-      {{> tasksListFooter}}
-
 
 
     <!-- <ul class="assets-list list-unstyled">

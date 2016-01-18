@@ -9,7 +9,7 @@ Meteor.startup(function (){
       colorB: "#00938b",
       colorC: "#f3f3f3",
       colorD: "#52565f",
-      colorE: "#40434E"
+      colorE: "#e7e7e7"
     },
     brand: {
       primary: "#01b9af",

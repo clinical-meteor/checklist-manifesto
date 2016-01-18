@@ -9,9 +9,7 @@ Router.configure({
   loadingTemplate: 'appLoading',
 
   yieldTemplates: {
-    'navbarHeader': {
-      to: 'header'
-    },
+
     'navbarFooter': {
       to: 'footer'
     },
@@ -33,6 +31,20 @@ Router.map(function() {
     onBeforeAction: function() {
       Session.set('selectedListId', this.params._id);
       this.next();
+    },
+    yieldTemplates: {
+      'checklistHeader': {
+        to: 'header'
+      },
+      'navbarFooter': {
+        to: 'footer'
+      },
+      'reactiveOverlaysTemplate': {
+        to: 'overlays'
+      },
+      'sidebar': {
+        to: 'westPanel'
+      }
     }
   });
 
@@ -47,9 +59,9 @@ Router.map(function() {
       }
     },
     yieldTemplates: {
-      'navbarHeader': {
-        to: 'header'
-      },
+      // 'navbarHeader': {
+      //   to: 'header'
+      // },
       'navbarFooter': {
         to: 'footer'
       },
@@ -76,6 +88,16 @@ if (Meteor.isClient) {
     Session.set('useCardLayout', true);
     WestPanel.hide();
     this.next();
+  });
+
+  Router.onAfterAction(function (){
+    if (Session.get("appWidth") < 1024) {
+       Session.set('appSurfaceOffset', true);
+       Session.set('useEastFence', false);
+    } else {
+       Session.set('appSurfaceOffset', true);
+       Session.set('useEastFence', true);
+    }
   });
 
 }
