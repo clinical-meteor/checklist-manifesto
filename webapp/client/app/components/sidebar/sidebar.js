@@ -1,7 +1,7 @@
 
 
 
-Template.sidebarMenu.rendered = function() {
+Template.sidebar.rendered = function() {
   this.find('#sidebarMenuContents a')._uihooks = {
     insertElement: function(node, next) {
       $(node)
@@ -18,7 +18,7 @@ Template.sidebarMenu.rendered = function() {
 };
 
 
-Template.sidebarMenu.events({
+Template.sidebar.events({
   "click #usernameLink": function(){
     if (!Meteor.user()) {
       Router.go('/entrySignIn');
@@ -41,7 +41,7 @@ Template.sidebarMenu.events({
   }
 });
 
-Template.sidebarMenu.helpers({
+Template.sidebar.helpers({
   getUsername: function () {
     if (Meteor.user()) {
       if (Meteor.user().emails[0]) {

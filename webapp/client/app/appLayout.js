@@ -2,7 +2,6 @@ Session.setDefault('menuOpen', false);
 Session.setDefault('userMenuOpen', false);
 
 
-
 //==============================================================================
 // TEMPLATE CONSTRUCTORS
 
@@ -71,11 +70,13 @@ Template.appLayout.helpers({
 
 Template.appLayout.events({
   // close the menu when a list is selected
-  'click #sidebarMenu a': function() {
+  'click #sidebar a': function() {
     Session.set('menuOpen', false);
   },
   'click .sidebarMenuToggle': function() {
-    Session.set('menuOpen', ! Session.get('menuOpen'));
+    if (Session.get('appWidth') < 1024) {
+      Session.toggle('menuOpen');
+    }
   },
 
   'click .contentOverlay': function(event) {

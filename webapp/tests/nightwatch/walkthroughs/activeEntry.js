@@ -122,7 +122,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(1600, 1200)
       .verify.elementPresent("#forgotPasswordButton")
-      .click("#forgotPasswordButton")
+      .click("#forgotPasswordButton").pause(300)
       .verify.elementPresent("#forgotPassword")
       .verify.elementPresent("#signInPageEmailInput")
       .verify.elementPresent("#sendReminderButton")

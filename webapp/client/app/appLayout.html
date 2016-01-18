@@ -12,7 +12,7 @@
   {{> configListModal }}
 
   <div id="appLayout" class="{{menuOpen}} helveticas">
-    {{> sidebarMenu }}
+    {{> sidebar }}
 
     <!-- <div class="contentOverlay"></div> -->
 
@@ -21,16 +21,18 @@
         {{> yield "pageHeader"}}
       </div>
     </aside>
-    <div id="contentContainer" class="tile">
+    <div id="mainPanel">
+      <div id="contentContainer" class="tile">
 
 
-      {{#each thisArray}}
-        {{> yield}}
-      {{/each}}
+        {{#each thisArray}}
+          {{> yield}}
+        {{/each}}
 
-      {{#unless connected}}
-        {{> connectionAlert }}
-      {{/unless}}
+        {{#unless connected}}
+          {{> connectionAlert }}
+        {{/unless}}
+      </div>
     </div>
     <aside>
       <div id="navbarFooter">

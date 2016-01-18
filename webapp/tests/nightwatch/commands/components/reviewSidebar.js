@@ -2,7 +2,7 @@
 
 exports.command = function(username, password) {
   this
-    .verify.elementPresent("#sidebarMenu")
+    .verify.elementPresent("#sidebar")
     .verify.elementPresent("#sidebarMenuContents")
     // .verify.elementPresent("#currentUserEmail")
     // .verify.elementPresent("#aboutButton")

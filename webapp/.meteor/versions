@@ -12,6 +12,7 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
 clinical:active-entry@1.5.8
+clinical:auto-resizing@0.1.2
 clinical:barcode@3.0.1
 clinical:error-pages@0.1.0
 clinical:extended-api@2.2.1
