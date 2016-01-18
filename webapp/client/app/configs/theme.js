@@ -10,6 +10,13 @@ Meteor.startup(function (){
       colorC: "#f3f3f3",
       colorD: "#52565f",
       colorE: "#40434E"
+    },
+    brand: {
+      primary: "#01b9af",
+      success: "#00938b",
+      info: "#f3f3f3",
+      warning: "#52565f",
+      danger: "#40434E"
     }
   });
 

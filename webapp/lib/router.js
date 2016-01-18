@@ -6,7 +6,22 @@ Router.configure({
   notFoundTemplate: 'pageNotFound',
 
   // show the appLoading template whilst the subscriptions below load their data
-  loadingTemplate: 'appLoading'
+  loadingTemplate: 'appLoading',
+
+  yieldTemplates: {
+    'navbarHeader': {
+      to: 'header'
+    },
+    'navbarFooter': {
+      to: 'footer'
+    },
+    'reactiveOverlaysTemplate': {
+      to: 'overlays'
+    },
+    'sidebar': {
+      to: 'westPanel'
+    }
+  }
 });
 
 
@@ -21,15 +36,32 @@ Router.map(function() {
     }
   });
 
-  this.route('home', {
+  this.route('/', {
     path: '/',
+    name: 'home',
     action: function() {
       if (Lists.find({userId: Meteor.userId()}).count() > 0) {
         Router.go('checklistPage', Lists.findOne({userId: Meteor.userId()}));
       } else {
         Router.go('checklistPage', Lists.findOne({_id: Lists.createNew()}));
       }
-
+    },
+    yieldTemplates: {
+      'navbarHeader': {
+        to: 'header'
+      },
+      'navbarFooter': {
+        to: 'footer'
+      },
+      'reactiveOverlaysTemplate': {
+        to: 'overlays'
+      },
+      'keybindingsModal': {
+        to: 'keybindingsModal'
+      },
+      'questionnaireActionButtons': {
+        to: "footerActionElements"
+      }
     }
   });
 });
@@ -37,4 +69,13 @@ Router.map(function() {
 if (Meteor.isClient) {
   Router.onBeforeAction('loading', {except: ['entrySignUp', 'entrySignIn']});
   Router.onBeforeAction('dataNotFound', {except: ['entrySignUp', 'entrySignIn']});
+
+  Router.onBeforeAction(function (){
+    Session.set('pageTitle', '');
+    Session.set('westPanelVisible', false);
+    Session.set('useCardLayout', true);
+    WestPanel.hide();
+    this.next();
+  });
+
 }
