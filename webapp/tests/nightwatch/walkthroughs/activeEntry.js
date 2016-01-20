@@ -155,7 +155,7 @@ module.exports = {
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#sidebarToggle").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
-      .click("#logoutButton").pause(200)
+      .click("#logoutButton").pause(500)
       .verify.containsText("#usernameLink", "Sign In")
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {

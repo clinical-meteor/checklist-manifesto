@@ -18,6 +18,12 @@ Router.configure({
     },
     'sidebar': {
       to: 'westPanel'
+    },
+    'globalSearchBar': {
+      to: 'globalInput'
+    },
+    'configListModal': {
+      to: 'modalA'
     }
   }
 });
@@ -44,7 +50,16 @@ Router.map(function() {
       },
       'sidebar': {
         to: 'westPanel'
+      },
+      'newTaskRibbon': {
+        to: 'globalInput'
+      },
+      'configListModal': {
+        to: 'modalA'
       }
+    },
+    onAfterAction: function(){
+      Session.set('showNavbars', true);
     }
   });
 
@@ -86,6 +101,7 @@ if (Meteor.isClient) {
     Session.set('pageTitle', '');
     Session.set('westPanelVisible', false);
     Session.set('useCardLayout', true);
+    Session.set('showNavbars', false);
     WestPanel.hide();
     this.next();
   });

@@ -1,5 +1,5 @@
 Meteor.startup(function (){
-  Layout.configure({
+  ActiveLayout.configure({
     help: {
       link: "/menu",
       text: "Menu"
