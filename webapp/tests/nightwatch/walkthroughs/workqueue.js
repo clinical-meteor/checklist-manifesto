@@ -1,7 +1,7 @@
 
 
 module.exports = {
-  tags: ["checklist"],
+  tags: ["workqueue"],
   before: function(client){
     client
       .url("http://localhost:3000")

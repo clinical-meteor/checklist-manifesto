@@ -33,6 +33,8 @@ Template.configListModal.events({
       'imageUrl': $('#listImageInput').val(),
       'name': $('#listNameInput').val()
     }});
+    Session.set('displayModal', false);
+    Overlay.hide();
   },
   'click #confirmRemoveListButton': function() {
     // console.log('removing list ', Session.get('selectedUserId'));
@@ -46,8 +48,11 @@ Template.configListModal.events({
     console.log($('#configListModalInput').val());
 
     if ($('#configListModalInput').val() === list.name) {
+      List.delete(Session.get('selectedListId'));
       Session.set('deleteListConfirmed', true);
       Session.set('isEditing', true);
+      Session.set('displayModal', false);
+      Overlay.hide();
     }
   }
 });

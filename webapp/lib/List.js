@@ -45,18 +45,18 @@ List = {
       template.$('#checklistTitleForm input[type=text]').focus();
     });
   },
-  delete: function(list, template) {
+  delete: function(listId, template) {
 
-    console.log('deleteList', list);
+    console.log('deleteList', listId);
     // ensure the last public list cannot be deleted.
     // if (! list.userId && Lists.find({userId: {$exists: false}}).count() === 1) {
     //   return alert("Sorry, you cannot delete the final public list!");
     // }
 
-    Tasks.find({listId: list._id}).forEach(function(task) {
+    Tasks.find({listId: listId}).forEach(function(task) {
       Tasks.remove(task._id);
     });
-    Lists.remove(list._id);
+    Lists.remove(listId);
 
     Router.go('home');
   },

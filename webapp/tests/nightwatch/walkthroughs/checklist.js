@@ -30,33 +30,6 @@ module.exports = {
         .verify.visible("#checklistTitle")
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
   },
-  "anonymous user - sidebar should be hidden in portrait mode" : function (client) {
-    client
-      .resizeWindow(768, 1024).pause(300)
-      .verify.elementPresent("#sidebar")
-      .verify.elementPresent("#usernameLink")
-      .verify.cssProperty("#sidebar", "left", "0px")
-      .verify.cssProperty("#contentContainer", "left", "0px")
-  },
-  "anonymous user - sidebar should be visible in landscape mode" : function (client) {
-    client
-      .resizeWindow(1024, 768).pause(300)
-      .verify.elementPresent("#sidebar")
-      .verify.elementPresent("#usernameLink")
-      .verify.cssProperty("#sidebar", "left", "0px")
-      .verify.cssProperty("#contentContainer", "left", "270px")
-      .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-  },
-  "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
-    client
-      .resizeWindow(768, 1024).pause(300)
-        .verify.visible("#sidebarToggle")
-        // .verify.cssProperty("#contentContainer", "left", "0px")
-        .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .click("#sidebarToggle").pause(500)
-        // .verify.cssProperty("#contentContainer", "left", "0px")
-        .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
-  },
   "anonymous user - cannot access list of lists" : function (client) {
     client
       .resizeWindow(1024, 768).pause(300)
