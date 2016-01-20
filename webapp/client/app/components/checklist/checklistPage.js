@@ -6,6 +6,9 @@ Session.setDefault('newTaskRibbonVisible', false);
 // TEMPLATE OUTPUTS
 
 Template.checklistPage.helpers({
+  listId: function(){
+    return Session.get('selectedListId');
+  },
   isNewTaskRibbonVisible: function () {
     return Session.get('newTaskRibbonVisible');
   },

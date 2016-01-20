@@ -1,26 +1,38 @@
 <template name="checklistPage">
   <div id="checklistPage" class="checklist " style={{getOpacity}}>
-    {{#with list}}
+    {{#if list}}
+      {{#with list}}
 
-      {{#if isNewTaskRibbonVisible}}
-      <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
-          <span class="checkbox-placeholder"></span>
-          <input id="newTaskInput" type="text" placeholder="Type to add new tasks" autocomplete="off">
-          <i id="newItemAddIcon" class="headerIcon fa fa-plus float-right"></i>
-      </nav>
-      {{/if}}
+        {{#if isNewTaskRibbonVisible}}
+        <nav id="newTaskRibbon" class="navbar navbar-default noRoundedCorners">
+            <span class="checkbox-placeholder"></span>
+            <input id="newTaskInput" type="text" placeholder="Type to add new tasks" autocomplete="off">
+            <i id="newItemAddIcon" class="headerIcon fa fa-plus float-right"></i>
+        </nav>
+        {{/if}}
 
 
-      <div id="protocolLibraryItems" class="content-scrollable list-items">
-        {{#each tasks}}
-          {{> tasksItem}}
-        {{else}}
+        <div id="protocolLibraryItems" class="content-scrollable list-items">
+          {{#each tasks}}
+            {{> tasksItem}}
+          {{else}}
+            <div class="wrapper-message">
+              <div class="title-message">No tasks here</div>
+              <div class="subtitle-message">Add new tasks using the field above</div>
+            </div>
+          {{/each}}
+        </div>
+      {{/with}}
+
+    {{else}}
+      <div id="pageNotFound" class="centered page">
+        <div class="content-scrollable">
           <div class="wrapper-message">
-            <div class="title-message">No tasks here</div>
-            <div class="subtitle-message">Add new tasks using the field above</div>
+            <span class="barcode">{{listId}}</span>
+            <div id="pageNotFoundMessage" class="title-message">List not found</div>
           </div>
-        {{/each}}
+        </div>
       </div>
-    {{/with}}
+    {{/if}}
   </div>
 </template>
