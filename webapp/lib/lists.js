@@ -23,3 +23,8 @@ Lists.createNew = function(){
 
   return Lists.insert(list);
 }
+
+
+if (Meteor.isClient){
+  Meteor.subscribe('lists');
+}

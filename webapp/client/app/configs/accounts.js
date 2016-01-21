@@ -1,8 +1,8 @@
-if (Meteor.isClient){
+Meteor.startup(function (){
   ActiveEntry.configure({
     passwordSignupFields: 'EMAIL_ONLY',
     logo: {
-      url: "/mini-circles.png",
+      url: "appIcon-transparent-medium-teal.png",
       displayed: true
     },
     signIn: {
@@ -16,4 +16,4 @@ if (Meteor.isClient){
       primary: ""
     }
   });
-};
+});

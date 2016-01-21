@@ -1,10 +1,31 @@
 <template name="tasksItem">
-  <div class="taskItem {{checkedClass}} {{editingClass}}" style="{{getStatusColor}}">
-    <label class="checkbox">
-      <i class="fa {{getStatusIcon}}"></i>
-    </label>
+  <div class="taskItem {{editingClass}}" style="{{getStatusColor}}">
+    <div id="actionIcons">
+      <label class="actionIcon checkbox">
+        <i class="fa {{getStatusIcon}}"></i>
+      </label>
+      <label class="dataSpan checkbox hiddenOnLandscape">
+        <span>{{getStatus}}</span>
+      </label>
 
-    <input class="taskInput" type="text" placeholder="{{ getEventDescription }}" value="{{ getEventDescription }}" style="{{getStatusColor}}" />
+      <label class="actionIcon cog hiddenOnLandscape">
+        <i class="fa fa-cog"></i>
+      </label>
+      <label class="actionIcon globe hiddenOnLandscape">
+        <i class="fa fa-globe"></i>
+      </label>
+      <label class="actionIcon link hiddenOnLandscape">
+        <i class="fa fa-link"></i>
+      </label>
+      <label class="actionIcon createdAt hiddenOnLandscape">
+        <span>{{getCreatedAt}}</span>
+      </label>
+    </div>
+
+    <input class="taskInput {{checkedClass}}" type="text" placeholder="{{ getEventDescription }}" value="{{ getEventDescription }}" style="{{getStatusColor}}" />
+    <label class="hiddenOnLandscape dataSpan orderer">
+      <span>{{getOrderer}}</span>
+    </label>
     <a class="js-delete-item delete-item" href="#">
       <i class="fa fa-trash"></i>
     </a>

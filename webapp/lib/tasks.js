@@ -3,12 +3,21 @@
 Tasks = new Meteor.Collection('tasks');
 //Ground.Collection(Tasks);
 
-
+if (Meteor.isClient){
+  Meteor.subscribe('tasks');
+}
 
 DiagnosticOrderSchema = new SimpleSchema({
   "resourceType" : {
     type: String,
     defaultValue: "DiagnosticOrder"
+  },
+
+
+  "createdAt" : {
+    type: Date,
+    defaultValue: new Date(),
+    optional: true
   },
 
   "listId" : {
@@ -17,8 +26,8 @@ DiagnosticOrderSchema = new SimpleSchema({
   },
   "public" : {
     type: Boolean,
-    optional: true,
-    defaultValue: true
+    defaultValue: true,
+    optional: true
   },
   "ordinal" : {
     type: Number,

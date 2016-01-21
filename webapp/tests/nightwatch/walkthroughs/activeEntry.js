@@ -25,7 +25,7 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignUp").pause(300)
       .initializeUsers()
-      .resizeWindow(1024, 768)
+      .resizeWindow(1200, 1024)
   },
   "new user should be able to register on desktop" : function (client) {
     client
@@ -107,6 +107,11 @@ module.exports = {
       .setValue("#signUpPagePasswordInput", "janicedoe123")
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
 
+      .verify.attributeEquals("#signUpPageFullNameInput", "value", "Janice Doe")
+      .verify.attributeEquals("#signUpPageEmailInput", "value", "janicedoe@symptomatic.io")
+      .verify.attributeEquals("#signUpPagePasswordInput", "value", "janicedoe123")
+      .verify.attributeEquals("#signUpPagePasswordConfirmInput", "value", "janicedoe123")
+
       .click("#signUpPageJoinNowButton").pause(1000)
 
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
@@ -119,17 +124,17 @@ module.exports = {
   },
   "user should be able to request reset password email" : function (client) {
      client
-      .url("http://localhost:3000/entrySignIn").pause(300)
+      .url("http://localhost:3000/entrySignIn").pause(500)
       .resizeWindow(1600, 1200)
       .verify.elementPresent("#forgotPasswordButton")
-      .click("#forgotPasswordButton")
+      .click("#forgotPasswordButton").pause(300)
       .verify.elementPresent("#forgotPassword")
       .verify.elementPresent("#signInPageEmailInput")
       .verify.elementPresent("#sendReminderButton")
   },
   "existing user should be able to sign in on desktop" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(300)
+      .url("http://localhost:3000/entrySignIn").pause(500)
       .resizeWindow(1600, 1200)
       .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
@@ -139,30 +144,33 @@ module.exports = {
   },
   "existing user should be able to sign in on tablet" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(1000)
       .resizeWindow(1024, 768)
       .verify.containsText("#usernameLink", "Sign In")
-      .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .signIn("janicedoe@symptomatic.io", "janicedoe123")
+      .acceptAlert().pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
   },
   "existing user should be able to sign in on phone" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(300)
+      .url("http://localhost:3000/entrySignIn").pause(1000)
       .resizeWindow(320, 960)
       // .verify.containsText("#usernameLink", "Sign In")
-      .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .signIn("janicedoe@symptomatic.io", "janicedoe123")
+      .acceptAlert().pause(1000)
       .click("#sidebarToggle").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
-      .click("#logoutButton").pause(200)
+      .click("#logoutButton").pause(500)
       .verify.containsText("#usernameLink", "Sign In")
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(300)
-      .resizeWindow(1024, 768)
-      .signIn("alice@symptomatic.io", "alice123").pause(500)
+      .url("http://localhost:3000/entrySignIn").pause(1000)
+      .resizeWindow(1024, 768).pause(500)
+      .signIn("alice@symptomatic.io", "alice123")
+      .acceptAlert().pause(500)
       .verify.containsText("#signInPageMessage", "User not found [403]")
       .verify.cssProperty("#signInPageMessage", "color", "rgba(169, 68, 66, 1)")
       .verify.cssProperty("#signInPageMessage", "background-color", "rgba(242, 222, 222, 1)")
@@ -172,8 +180,9 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignUp").pause(500)
       .resizeWindow(1024, 768)
-      .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
-      .click("#signUpPageEmailInput").pause(500)
+      .signUp("janicedoe@symptomatic.io", "janicedoe123")
+      .acceptAlert().pause(500)
+      .click("#signUpPageJoinNowButton").pause(500)
       .verify.elementPresent("#signUpPageMessage")
       .verify.containsText("#signUpPageMessage", "Email already exists. [403]")
   },

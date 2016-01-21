@@ -11,7 +11,7 @@ module.exports = {
       .saveScreenshot("tests/nightwatch/screenshots/ipad/A-signInPage.png")
       .reviewSignUpPage()
       .verify.elementNotPresent("#logoutButton")
-      .signUp("carl@somewhere.com", "carl123")
+      .signUp("carl@somewhere.com", "carl123").pause(1000)
   },
   "B. Home Page": function (client){
     client

@@ -30,37 +30,10 @@ module.exports = {
         .verify.visible("#checklistTitle")
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
   },
-  "anonymous user - sidebar should be hidden in portrait mode" : function (client) {
-    client
-      .resizeWindow(768, 1024).pause(300)
-      .verify.elementPresent("#sidebarMenu")
-      .verify.elementPresent("#usernameLink")
-      .verify.cssProperty("#sidebarMenu", "left", "0px")
-      .verify.cssProperty("#contentContainer", "left", "0px")
-  },
-  "anonymous user - sidebar should be visible in landscape mode" : function (client) {
-    client
-      .resizeWindow(1024, 768).pause(300)
-      .verify.elementPresent("#sidebarMenu")
-      .verify.elementPresent("#usernameLink")
-      .verify.cssProperty("#sidebarMenu", "left", "0px")
-      .verify.cssProperty("#contentContainer", "left", "270px")
-      .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-  },
-  "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
-    client
-      .resizeWindow(768, 1024).pause(300)
-        .verify.visible("#sidebarToggle")
-        // .verify.cssProperty("#contentContainer", "left", "0px")
-        .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .click("#sidebarToggle").pause(500)
-        // .verify.cssProperty("#contentContainer", "left", "0px")
-        .verify.cssProperty("#contentContainer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
-  },
   "anonymous user - cannot access list of lists" : function (client) {
     client
       .resizeWindow(1024, 768).pause(300)
-      .verify.visible("#sidebarMenu")
+      .verify.visible("#sidebar")
       .verify.visible("#usernameLink")
       .verify.visible("#protocolLibraryLink")
       .verify.elementNotPresent("#newListButton")
@@ -70,15 +43,15 @@ module.exports = {
     client
       // .click("#usernameLink").pause(300)
       //   .click("#needAnAccountButton").pause(500)
-      .url("http://localhost:3000/entrySignUp").pause(300)
+      .url("http://localhost:3000/entrySignUp").pause(500)
         .resizeWindow(1024, 768)
         .setValue("#signUpPageFullNameInput", "Alice Doe")
         .setValue("#signUpPageEmailInput", "alice@symptomatic.io")
         .setValue("#signUpPagePasswordInput", "alice123")
         .setValue("#signUpPagePasswordConfirmInput", "alice123")
-        .click("#signUpPageJoinNowButton").pause(300)
+        .click("#signUpPageJoinNowButton").pause(500)
 
-      .verify.visible("#sidebarMenu")
+      .verify.visible("#sidebar")
       .verify.visible("#usernameLink")
       .verify.visible("#protocolLibraryLink")
       .verify.visible("#newListButton")
@@ -147,16 +120,16 @@ module.exports = {
       .verify.visible("#configListModal #listNameInput")
       .verify.attributeEquals("#configListModal #listNameInput", "value", "List B")
       .clearValue("#configListModal #listNameInput")
-      .setValue("#configListModal #listNameInput", "Alice's List")
-      .verify.attributeEquals("#configListModal #listNameInput", "value", "Alice's List")
+      .setValue("#configListModal #listNameInput", "Biomarker List")
+      .verify.attributeEquals("#configListModal #listNameInput", "value", "Biomarker List")
       .verify.elementPresent("#configListModal #saveListButton")
       .click("#configListModal #saveListButton").pause(300)
       .verify.hidden("#configListModal")
-      .verify.containsText("#checklistTitle", "Alice's List")
+      .verify.containsText("#checklistTitle", "Biomarker List")
   },
   "signed in user - can delete own list": function(client) {
     client
-      .click("#lists .listItem:nth-child(3)")
+      .click("#lists .listItem:nth-child(3)").pause(200)
       .verify.containsText("#checklistTitle", "List C")
       .verify.visible("#checklistConfig")
       .verify.hidden("#configListModal")
@@ -170,13 +143,13 @@ module.exports = {
       .verify.attributeEquals("#configListModal #configListModalInput", "value", "List C")
       .click("#confirmRemoveListButton").pause(500)
       .verify.containsText("#lists .listItem:nth-child(1)", "List A")
-      .verify.containsText("#lists .listItem:nth-child(2)", "Alice's List")
+      .verify.containsText("#lists .listItem:nth-child(2)", "Biomarker List")
       .verify.elementNotPresent("#lists .listItem:nth-child(3)")
 
       .click("#lists .listItem:nth-child(2)")
       .click("#checklistConfig").pause(300)
       .click("#configListModal #deleteListButton").pause(300)
-      .setValue("#configListModal #configListModalInput", "Alice's List").pause(200)
+      .setValue("#configListModal #configListModalInput", "Biomarker List").pause(200)
       .click("#confirmRemoveListButton").pause(500)
       .verify.containsText("#lists .listItem:nth-child(1)", "List A")
       .verify.elementNotPresent("#lists .listItem:nth-child(2)")

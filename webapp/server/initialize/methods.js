@@ -90,7 +90,7 @@ Meteor.methods({
     ];
     var timestamp = (new Date()).getTime();
 
-    data.forEach(function(list){
+    data.forEach(function (list){
       var listId = Lists.insert({
         name: list.name,
         creator: "System",
@@ -103,6 +103,9 @@ Meteor.methods({
         list.items.forEach(function(text, index){
           // add a new task
           Tasks.insert({
+            orderer: {
+              display: "System"
+            },
             listId: listId,
             public: true,
             ordinal: index,

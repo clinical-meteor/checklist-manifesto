@@ -13,16 +13,13 @@ less
 accounts-base
 accounts-password
 
-noorderstorm:hammer
-fastclick
-
 #ground:db
 #ground:localstorage
 
-nemo64:bootstrap
-
 aldeed:simple-schema
 aldeed:collection2
+
+momentjs:moment
 
 clinical:router
 clinical:ui-vocabulary
@@ -31,6 +28,14 @@ clinical:active-entry
 clinical:static-pages
 clinical:error-pages
 clinical:theming
+clinical:theming-ui
 clinical:fonts
 clinical:glass-ui
 clinical:hipaa-logger
+
+clinical:mobile
+clinical:offline
+
+clinical:auto-resizing
+clinical:active-layout
+clinical:base-model

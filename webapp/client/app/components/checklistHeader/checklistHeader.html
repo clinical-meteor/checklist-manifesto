@@ -1,0 +1,37 @@
+<template name="checklistHeader">
+  <nav id="checklistHeader" class="unselectable" role="navigation">
+    {{#with list}}
+      {{#if editing}}
+      <div class="navbar-header">
+        <form id="checklistTitleForm" class="navbar-brand">
+          <input id="checklistTitle" type="text" name="name" value="{{name}}">
+        </form>
+        <div class="navbar-brand float-right">
+            <a href="#" class="js-cancel nav-item">
+              <i class="fa fa-times" title="Cancel"></i>
+            </a>
+        </div>
+      </div>
+      {{else}}
+        <div class="navbar-header">
+          <a id="navbarBrandLink" class="unselectable navbar-brand">
+            <i id="sidebarToggle" class="sidebarMenuToggle fa fa-list-ul" title="Show menu"></i>
+
+            <span id="checklistTitle" class="title-wrapper">{{name}}</span>
+          </a>
+          {{#if currentUser }}
+          <a id="checklistControlIcons" class="float-right navbar-brand">
+            <a class="headerIcon">
+              <i id="showNewTaskToggle" class="fa fa-pencil" title="Add task"></i>
+            </a>
+            <a id="quickSignInLink" class="headerIcon">
+              <i id="checklistConfig" class="fa fa-cog" title="Make list private"></i>
+            </a>
+          </a>
+          {{/if}}
+        </div>
+
+      {{/if}}
+    {{/with}}
+  </nav>
+</template>

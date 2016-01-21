@@ -1,0 +1,266 @@
+//==================================================================================================
+// BASE
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; // for some Androids
+}
+
+html, button, input, textarea, select {
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  //background-image: linear-gradient(to bottom, #555555, #aaaaaa 100%);
+  //.background-image(linear-gradient(top, #555, #aaa 100%));
+  //.background-image( linear-gradient(top, #6ca66a, #bbcaba 100%) );
+  //.background-image( url('/img/background.jpg'));
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; //this sets the baseline so we can use multiples of 4 & (r)ems
+
+  overflow-y: scroll;
+}
+
+//==================================================================================================
+// TYPOGRAPHY
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+h6 {
+  font-size: 20px;
+  line-height: 24px;
+}
+p{
+  font-size: 12px !important;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  padding-bottom: 20px;
+  line-height: 24px !important;
+}
+
+sub,
+sup {
+  font-size: .8em;
+}
+
+sub {
+  bottom: -.2em;
+}
+
+sup {
+  top: -.2em;
+}
+
+b {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+//==================================================================================================
+// HYPERLINKS
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #555555;
+}
+a:hover,
+a:active,
+a:focus{
+  color: #111111;
+}
+
+//==================================================================================================
+// TILES & PANELS
+
+.tile {
+  background-color: #fff;
+  //border-radius: 6px 6px 6px 6px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  position: relative;
+  box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+  -moz-box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+  -webkit-box-shadow: 4px 2px 6px 2px rgba(81, 81, 81, 0.5);
+
+  // box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.page{
+  height: 100%;
+}
+
+//==================================================================================================
+// APP LAYOUT
+
+#appLayout {
+  // position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .panel-heading{
+    padding: 0px !important;
+  }
+
+  #scrollableContent{
+    background-color: white;
+    overflow-y: auto;
+    position: absolute;
+    height: 100%;
+    width: 101%;
+  }
+
+  // @media screen and (min-width: 60em) {
+  //   //left: 5.55555%;
+  //   right: 5.55555%;
+  // }
+  //
+  // @media screen and (min-width: 80em) {
+  //   //left: 11.1111%;
+  //   right: 11.1111% !important;
+  // }
+
+  // Hide anything offscreen
+  overflow: hidden;
+}
+
+#sidebar {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 270px;
+
+  #connectionStatusPanel{
+    padding: 5px;
+    text-align: center;
+    font-size: 80%;
+    color: #dddddd;
+  }
+}
+
+#contentContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  //.transition(all 200ms ease-out);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+
+  //.transform(translate3d(0, 0, 0));
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  opacity: 1;
+  overflow-y: scroll;
+  border: 0px;
+
+  .content-scrollable {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //.transform(translate3d(0, 0, 0));
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow-y: scroll;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  // Toggle menu on mobile
+  .menu-open & {
+    //.transform(translate3d(270px, 0, 0));
+    -webkit-transform: translate3d(270px, 0, 0);
+    -moz-transform: translate3d(270px, 0, 0);
+    -ms-transform: translate3d(270px, 0, 0);
+    -o-transform: translate3d(270px, 0, 0);
+    transform: translate3d(270px, 0, 0);
+    opacity: .85;
+  }
+
+
+  // Show menu on desktop, negate .menu-open
+  @media screen and (min-width: 60em) {
+    //.transform(translate3d(0, 0, 0)); //reset transform and use position properties instead
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 270px;
+    opacity: .95;
+  }
+}
+
+// Transparent screen to prevent interactions on content when menu is open
+.contentOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+
+  .menu-open & {
+    //.transform(translate3d(270px, 0, 0));
+    -webkit-transform: translate3d(270px, 0, 0);
+    -moz-transform: translate3d(270px, 0, 0);
+    -ms-transform: translate3d(270px, 0, 0);
+    -o-transform: translate3d(270px, 0, 0);
+    transform: translate3d(270px, 0, 0);
+    z-index: 1;
+  }
+
+  // Hide overlay on desktop
+  @media screen and (min-width: 40em) { display: none; }
+}

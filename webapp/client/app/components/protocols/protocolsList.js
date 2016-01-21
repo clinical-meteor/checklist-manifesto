@@ -1,6 +1,20 @@
 Router.route("/protocols", {
   template: "protocolLibrary",
-  name: "protocolLibrary"
+  name: "protocolLibrary",
+  yieldTemplates: {
+    'checklistHeader': {
+      to: 'header'
+    },
+    'navbarFooter': {
+      to: 'footer'
+    },
+    'reactiveOverlaysTemplate': {
+      to: 'overlays'
+    },
+    'sidebar': {
+      to: 'westPanel'
+    }
+  }
 });
 
 

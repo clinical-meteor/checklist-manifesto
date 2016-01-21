@@ -6,7 +6,26 @@ Router.configure({
   notFoundTemplate: 'pageNotFound',
 
   // show the appLoading template whilst the subscriptions below load their data
-  loadingTemplate: 'appLoading'
+  loadingTemplate: 'appLoading',
+
+  yieldTemplates: {
+
+    'navbarFooter': {
+      to: 'footer'
+    },
+    'reactiveOverlaysTemplate': {
+      to: 'overlays'
+    },
+    'sidebar': {
+      to: 'westPanel'
+    },
+    'globalSearchBar': {
+      to: 'globalInput'
+    },
+    'configListModal': {
+      to: 'modalA'
+    }
+  }
 });
 
 
@@ -18,18 +37,58 @@ Router.map(function() {
     onBeforeAction: function() {
       Session.set('selectedListId', this.params._id);
       this.next();
+    },
+    yieldTemplates: {
+      'checklistHeader': {
+        to: 'header'
+      },
+      'navbarFooter': {
+        to: 'footer'
+      },
+      'reactiveOverlaysTemplate': {
+        to: 'overlays'
+      },
+      'sidebar': {
+        to: 'westPanel'
+      },
+      'newTaskRibbon': {
+        to: 'globalInput'
+      },
+      'configListModal': {
+        to: 'modalA'
+      }
+    },
+    onAfterAction: function(){
+      //Session.set('showNavbars', true);
     }
   });
 
-  this.route('home', {
+  this.route('/', {
     path: '/',
+    name: 'home',
     action: function() {
       if (Lists.find({userId: Meteor.userId()}).count() > 0) {
         Router.go('checklistPage', Lists.findOne({userId: Meteor.userId()}));
       } else {
         Router.go('checklistPage', Lists.findOne({_id: Lists.createNew()}));
       }
-
+    },
+    yieldTemplates: {
+      // 'navbarHeader': {
+      //   to: 'header'
+      // },
+      'navbarFooter': {
+        to: 'footer'
+      },
+      'reactiveOverlaysTemplate': {
+        to: 'overlays'
+      },
+      'keybindingsModal': {
+        to: 'keybindingsModal'
+      },
+      'questionnaireActionButtons': {
+        to: "footerActionElements"
+      }
     }
   });
 });
@@ -37,4 +96,24 @@ Router.map(function() {
 if (Meteor.isClient) {
   Router.onBeforeAction('loading', {except: ['entrySignUp', 'entrySignIn']});
   Router.onBeforeAction('dataNotFound', {except: ['entrySignUp', 'entrySignIn']});
+
+  Router.onBeforeAction(function (){
+    Session.set('pageTitle', '');
+    Session.set('westPanelVisible', false);
+    Session.set('useCardLayout', true);
+    //Session.set('showNavbars', false);
+    WestPanel.hide();
+    this.next();
+  });
+
+  Router.onAfterAction(function (){
+    if (Session.get("appWidth") < 1024) {
+       Session.set('appSurfaceOffset', true);
+       Session.set('useEastFence', false);
+    } else {
+       Session.set('appSurfaceOffset', true);
+       Session.set('useEastFence', true);
+    }
+  });
+
 }

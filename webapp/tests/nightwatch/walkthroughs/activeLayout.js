@@ -35,11 +35,13 @@ module.exports = {
       .initializeLists()
       .pause(500)
   },
-  "background color should be the theme color": function(client){
-    client
-      // .verify.elementPresent("#navbarHeader")
-  },
-
+  // "background color should be the theme color": function(client){
+  //   client
+  //     .cssProperty('body', 'background-image', '-webkit-linear-gradient(top, #555555, #aaaaaa 100%);')
+  //
+  //     // background-image: -moz-linear-gradient(top, #555555, #aaaaaa 100%); background-image: -o-linear-gradient(top, #555555, #aaaaaa 100%); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; -moz-user-select: none; -khtml-user-select: none;')
+  //     // .verify.elementPresent("#navbarHeader")
+  // },
   // "it should hide/show navbar": function(client){
   //   client
   //     .resizeWindow(1024,768)
@@ -60,25 +62,70 @@ module.exports = {
   //     .verify.elementPresent("#navbarHeader")
   //     .verify.elementPresent("#navbarFooter")
   // },
-  // "sidebar should be visible in landscape and desktop modes" : function (client) {
-  //   var newUserId = false;
+  "sidebar should be visible in landscape and desktop modes" : function (client) {
+    client
+      .resizeWindow(1024, 768)
+      .verify.elementPresent("#sidebar")
+      .verify.elementPresent("#usernameLink")
+      .verify.elementPresent("#mainPanel")
+  },
+  "sidebar should be hidden in phone mode" : function (client) {
+    client
+      .resizeWindow(480, 800)
+        .verify.visible("#sidebarToggle")
+        .verify.elementPresent("#panelSurface")
+        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#panelSurface", "left", "0px")
+  },
+  "sidebar should be hidden in portrait mode" : function (client) {
+    client
+      .resizeWindow(768, 1024)
+        .verify.visible("#sidebarToggle")
+        .verify.elementPresent("#panelSurface")
+        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#panelSurface", "left", "0px")
+  },
+  "sidebar should be visible in landscape mode" : function (client) {
+    client
+      .resizeWindow(1024, 768)
+        .verify.visible("#sidebarToggle")
+        .verify.elementPresent("#panelSurface")
+        .verify.cssProperty("#panelSurface", "left", "270px")
+        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+  },
+  "anonymous user - sidebar toggle opens and closes in phone mode" : function (client) {
+    client
+      .resizeWindow(480, 800)
+        .verify.visible("#sidebarToggle")
+        .verify.elementPresent("#panelSurface")
+        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#panelSurface", "left", "0px")
+        .click("#sidebarToggle").pause(500)
+        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+        .click("#sidebarToggle").pause(500)
+  },
+  "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
+    client
+      .resizeWindow(768, 1024)
+        .verify.visible("#sidebarToggle")
+        .verify.elementPresent("#panelSurface")
+        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#panelSurface", "left", "0px")
+        .click("#sidebarToggle").pause(500)
+        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+        .click("#sidebarToggle").pause(500)
+  },
+  // "anonymous user - sidebar toggle switches between pagescreen and fullscreen in landscape mode" : function (client) {
   //   client
   //     .resizeWindow(1024, 768)
-  //     .verify.elementPresent("#sidebar")
-  //     .verify.elementPresent("#signInLink")
-  //     .verify.elementPresent("#mainPanel")
-  // },
-  // "sidebar should be hidden in portrait and phone mode" : function (client) {
-  //   var newUserId = false;
-  //   client
-  //     .resizeWindow(480, 690)
-  //       .verify.hidden("#sidebar")
-  //       .verify.hidden("#signInLink")
-  //       .verify.elementPresent("#mainPanel")
-  //     .resizeWindow(480, 690)
-  //       .verify.hidden("#sidebar")
-  //       .verify.hidden("#signInLink")
-  //       .verify.elementPresent("#mainPanel")
+  //       .verify.visible("#sidebarToggle")
+  //       .verify.elementPresent("#panelSurface")
+  //       .verify.cssProperty("#panelSurface", "left", "0px")
+  //       .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+  //       .click("#sidebarToggle").pause(500)
+  //       .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
   // },
   after: function(client){
     client.end();
