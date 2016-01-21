@@ -35,13 +35,13 @@ module.exports = {
       .initializeLists()
       .pause(500)
   },
-  "background color should be the theme color": function(client){
-    client
-      .cssProperty('body', 'background-image', '-webkit-linear-gradient(top, #555555, #aaaaaa 100%);')
-
-      // background-image: -moz-linear-gradient(top, #555555, #aaaaaa 100%); background-image: -o-linear-gradient(top, #555555, #aaaaaa 100%); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; -moz-user-select: none; -khtml-user-select: none;')
-      // .verify.elementPresent("#navbarHeader")
-  },
+  // "background color should be the theme color": function(client){
+  //   client
+  //     .cssProperty('body', 'background-image', '-webkit-linear-gradient(top, #555555, #aaaaaa 100%);')
+  //
+  //     // background-image: -moz-linear-gradient(top, #555555, #aaaaaa 100%); background-image: -o-linear-gradient(top, #555555, #aaaaaa 100%); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; -moz-user-select: none; -khtml-user-select: none;')
+  //     // .verify.elementPresent("#navbarHeader")
+  // },
   // "it should hide/show navbar": function(client){
   //   client
   //     .resizeWindow(1024,768)
