@@ -10,12 +10,12 @@
 
 
 // @import "bootstrap/less/normalize.less"
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 //
 // 1. Set default font family to sans-serif.
-// 2. Prevent iOS text size adjust after orientation change, without disabling
-//    user zoom.
+// 2. Prevent iOS and IE text size adjust after device orientation change,
+//    without disabling user zoom.
 //
 
 html {
@@ -83,7 +83,7 @@ audio:not([controls]) {
 
 //
 // Address `[hidden]` styling not present in IE 8/9/10.
-// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+// Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
 //
 
 [hidden],
@@ -103,7 +103,8 @@ a {
 }
 
 //
-// Improve readability when focused and also mouse hovered in all browsers.
+// Improve readability of focused elements when they are also in an
+// active/hover state.
 //
 
 a:active,
@@ -221,7 +222,6 @@ figure {
 //
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -362,15 +362,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 //
 // 1. Address `appearance` set to `searchfield` in Safari and Chrome.
-// 2. Address `box-sizing` set to `border-box` in Safari and Chrome
-//    (include `-moz` to future-proof).
+// 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
 //
 
 input[type="search"] {
   -webkit-appearance: textfield; // 1
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; // 2
-  box-sizing: content-box;
+  box-sizing: content-box; //2
 }
 
 //
@@ -590,6 +587,17 @@ hr {
     overflow: visible;
     clip: auto;
   }
+}
+
+
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+
+[role="button"] {
+  cursor: pointer;
 }
 
 
@@ -835,7 +843,7 @@ abbr[data-original-title] {
 }
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
+  .text-uppercase();
 }
 
 // Blockquotes
@@ -1008,7 +1016,7 @@ address {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
 
   &,
@@ -1038,9 +1046,15 @@ address {
   &[disabled],
   fieldset[disabled] & {
     cursor: @cursor-disabled;
-    pointer-events: none; // Future-proof disabling of clicks
     .opacity(.65);
     .box-shadow(none);
+  }
+
+  a& {
+    &.disabled,
+    fieldset[disabled] & {
+      pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+    }
   }
 }
 
@@ -1098,7 +1112,7 @@ address {
   &:hover,
   &:focus {
     color: @link-hover-color;
-    text-decoration: underline;
+    text-decoration: @link-hover-decoration;
     background-color: transparent;
   }
   &[disabled],
@@ -1117,14 +1131,14 @@ address {
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
 }
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
 }
 
 
@@ -1378,11 +1392,9 @@ input[type="button"] {
 .tab-content {
   > .tab-pane {
     display: none;
-    visibility: hidden;
   }
   > .active {
     display: block;
-    visibility: visible;
   }
 }
 
@@ -1447,7 +1459,6 @@ input[type="button"] {
 
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 
 
@@ -1519,7 +1530,6 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-// Set the height of file controls to match text inputs
 input[type="file"] {
   display: block;
 }
@@ -1586,7 +1596,7 @@ output {
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
-  border-radius: @input-border-radius;
+  border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
@@ -1604,9 +1614,13 @@ output {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
-    cursor: @cursor-disabled;
     background-color: @input-bg-disabled;
-    opacity: 1; // iOS fix for unreadable disabled content
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
   }
 
   // Reset height for `textarea`s
@@ -1631,41 +1645,30 @@ input[type="search"] {
 // Special styles for iOS temporal inputs
 //
 // In Mobile Safari, setting `display: block` on temporal inputs causes the
-// text within the input to become vertically misaligned.
-// As a workaround, we set a pixel line-height that matches the
-// given height of the input. Since this fucks up everything else, we have to
-// appropriately reset it for Internet Explorer and the size variations.
+// text within the input to become vertically misaligned. As a workaround, we
+// set a pixel line-height that matches the given height of the input, but only
+// for Safari. See https://bugs.webkit.org/show_bug.cgi?id=139848
+//
+// Note that as of 8.3, iOS doesn't support `datetime` or `week`.
 
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: @input-height-base;
-  // IE8+ misaligns the text within date inputs, so we reset
-  line-height: @line-height-base ~"\0";
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    &.form-control {
+      line-height: @input-height-base;
+    }
 
-  &.input-sm {
-    line-height: @input-height-small;
-    line-height: @line-height-small ~"\0";
-  }
-  &.input-lg {
-    line-height: @input-height-large;
-    line-height: @line-height-large ~"\0";
-  }
-}
+    &.input-sm,
+    .input-group-sm & {
+      line-height: @input-height-small;
+    }
 
-// IE 11 hack to reverse the iOS temporal input hack.
-_:-ms-fullscreen, :root input[type="date"],
-_:-ms-fullscreen, :root input[type="time"],
-_:-ms-fullscreen, :root input[type="datetime-local"],
-_:-ms-fullscreen, :root input[type="month"] {
-  line-height: @line-height-base;
-
-  &.input-sm {
-    line-height: @line-height-small;
-  }
-  &.input-lg {
-    line-height: @line-height-large;
+    &.input-lg,
+    .input-group-lg & {
+      line-height: @input-height-large;
+    }
   }
 }
 
@@ -1676,7 +1679,7 @@ _:-ms-fullscreen, :root input[type="month"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: @form-group-margin-bottom;
 }
 
 
@@ -1716,6 +1719,7 @@ _:-ms-fullscreen, :root input[type="month"] {
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -1772,6 +1776,7 @@ input[type="checkbox"] {
   padding-bottom: (@padding-base-vertical + 1);
   // Remove default margin from `p`
   margin-bottom: 0;
+  min-height: (@line-height-computed + @font-size-base);
 
   &.input-lg,
   &.input-sm {
@@ -1785,15 +1790,64 @@ input[type="checkbox"] {
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
 // height and font-size of form controls.
+//
+// The `.form-group-* form-control` variations are sadly duplicated to avoid the
+// issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
-.input-sm,
-.form-group-sm .form-control {
+.input-sm {
   .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
 }
+.form-group-sm {
+  .form-control {
+    height: @input-height-small;
+    padding: @padding-small-vertical @padding-small-horizontal;
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+    border-radius: @input-border-radius-small;
+  }
+  select.form-control {
+    height: @input-height-small;
+    line-height: @input-height-small;
+  }
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: @input-height-small;
+    min-height: (@line-height-computed + @font-size-small);
+    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+  }
+}
 
-.input-lg,
-.form-group-lg .form-control {
+.input-lg {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
+}
+.form-group-lg {
+  .form-control {
+    height: @input-height-large;
+    padding: @padding-large-vertical @padding-large-horizontal;
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+    border-radius: @input-border-radius-large;
+  }
+  select.form-control {
+    height: @input-height-large;
+    line-height: @input-height-large;
+  }
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: @input-height-large;
+    min-height: (@line-height-computed + @font-size-large);
+    padding: (@padding-large-vertical + 1) @padding-large-horizontal;
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+  }
 }
 
 
@@ -1823,12 +1877,16 @@ input[type="checkbox"] {
   text-align: center;
   pointer-events: none;
 }
-.input-lg + .form-control-feedback {
+.input-lg + .form-control-feedback,
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
   width: @input-height-large;
   height: @input-height-large;
   line-height: @input-height-large;
 }
-.input-sm + .form-control-feedback {
+.input-sm + .form-control-feedback,
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
   width: @input-height-small;
   height: @input-height-small;
   line-height: @input-height-small;
@@ -1926,8 +1984,7 @@ input[type="checkbox"] {
     }
 
     // Remove default margin on radios/checkboxes that were used for stacking, and
-    // then undo the floating of radios and checkboxes to match (which also avoids
-    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
+    // then undo the floating of radios and checkboxes to match.
     .radio,
     .checkbox {
       display: inline-block;
@@ -1998,7 +2055,7 @@ input[type="checkbox"] {
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: (@grid-gutter-width / 2);
+    right: floor((@grid-gutter-width / 2));
   }
 
   // Form group sizes
@@ -2009,6 +2066,7 @@ input[type="checkbox"] {
     @media (min-width: @screen-sm-min) {
       .control-label {
         padding-top: ((@padding-large-vertical * @line-height-large) + 1);
+        font-size: @font-size-large;
       }
     }
   }
@@ -2016,6 +2074,7 @@ input[type="checkbox"] {
     @media (min-width: @screen-sm-min) {
       .control-label {
         padding-top: (@padding-small-vertical + 1);
+        font-size: @font-size-small;
       }
     }
   }
@@ -2093,7 +2152,6 @@ input[type="checkbox"] {
 
     &.collapse {
       display: block !important;
-      visibility: visible !important;
       height: auto !important;
       padding-bottom: 0; // Override default setting
       overflow: visible !important;
@@ -2357,6 +2415,8 @@ input[type="checkbox"] {
 }
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  .border-top-radius(@navbar-border-radius);
   .border-bottom-radius(0);
 }
 
@@ -2724,23 +2784,16 @@ input[type="checkbox"] {
     margin-bottom: 0;
     .border-bottom-radius(@list-group-border-radius);
   }
-
-  // Align badges within list items
-  > .badge {
-    float: right;
-  }
-  > .badge + .badge {
-    margin-right: 5px;
-  }
 }
 
 
-// Linked list items
+// Interactive list items
 //
-// Use anchor elements instead of `li`s or `div`s to create linked list items.
+// Use anchor or button elements instead of `li`s or `div`s to create interactive items.
 // Includes an extra `.active` modifier class for showing selected items.
 
-a.list-group-item {
+a.list-group-item,
+button.list-group-item {
   color: @list-group-link-color;
 
   .list-group-item-heading {
@@ -2754,6 +2807,11 @@ a.list-group-item {
     color: @list-group-link-hover-color;
     background-color: @list-group-hover-bg;
   }
+}
+
+button.list-group-item {
+  width: 100%;
+  text-align: left;
 }
 
 .list-group-item {
@@ -2861,7 +2919,11 @@ a.list-group-item {
   font-size: ceil((@font-size-base * 1.125));
   color: inherit;
 
-  > a {
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
     color: inherit;
   }
 }
@@ -2897,12 +2959,18 @@ a.list-group-item {
         .border-top-radius((@panel-border-radius - 1));
       }
     }
+
     // Add border bottom radius for last one
     &:last-child {
       .list-group-item:last-child {
         border-bottom: 0;
         .border-bottom-radius((@panel-border-radius - 1));
       }
+    }
+  }
+  > .panel-heading + .panel-collapse > .list-group {
+    .list-group-item:first-child {
+      .border-top-radius(0);
     }
   }
 }
@@ -3157,6 +3225,7 @@ a.list-group-item {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: @zindex-modal-background;
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }
@@ -3261,10 +3330,6 @@ a.list-group-item {
     &.active {
       z-index: 2;
     }
-    &:focus {
-      // Remove focus outline when dropdown JS adds it after closing the menu
-      outline: 0;
-    }
   }
 }
 
@@ -3283,6 +3348,7 @@ a.list-group-item {
   margin-left: -5px; // Offset the first child's margin
   &:extend(.clearfix all);
 
+  .btn,
   .btn-group,
   .input-group {
     float: left;
@@ -3318,13 +3384,13 @@ a.list-group-item {
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group > .btn-group:first-child {
+.btn-group > .btn-group:first-child:not(:last-child) {
   > .btn:last-child,
   > .dropdown-toggle {
     .border-right-radius(0);
   }
 }
-.btn-group > .btn-group:last-child > .btn:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
   .border-left-radius(0);
 }
 
@@ -3419,11 +3485,11 @@ a.list-group-item {
     border-radius: 0;
   }
   &:first-child:not(:last-child) {
-    border-top-right-radius: @border-radius-base;
+    border-top-right-radius: @btn-border-radius-base;
     .border-bottom-radius(0);
   }
   &:last-child:not(:first-child) {
-    border-bottom-left-radius: @border-radius-base;
+    border-bottom-left-radius: @btn-border-radius-base;
     .border-top-radius(0);
   }
 }
@@ -3654,6 +3720,7 @@ a.list-group-item {
   &:last-child {
     > .btn,
     > .btn-group {
+      z-index: 2;
       margin-left: -1px;
     }
   }
@@ -3848,7 +3915,7 @@ th {
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-  > tbody > tr:nth-child(odd) {
+  > tbody > tr:nth-of-type(odd) {
     background-color: @table-bg-accent;
   }
 }
@@ -3870,7 +3937,7 @@ th {
 // Reset default table behavior
 
 table col[class*="col-"] {
-  position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
+  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
   float: none;
   display: table-column;
 }
@@ -3878,7 +3945,7 @@ table {
   td,
   th {
     &[class*="col-"] {
-      position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
       float: none;
       display: table-cell;
     }
