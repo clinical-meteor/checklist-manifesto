@@ -166,7 +166,7 @@ module.exports = {
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
       .url("http://localhost:3000/entrySignIn").pause(1000)
-      .resizeWindow(1024, 768)
+      .resizeWindow(1024, 768).pause(500)
       .signIn("alice@symptomatic.io", "alice123").pause(500)
       .verify.containsText("#signInPageMessage", "User not found [403]")
       .verify.cssProperty("#signInPageMessage", "color", "rgba(169, 68, 66, 1)")
@@ -178,7 +178,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignUp").pause(500)
       .resizeWindow(1024, 768)
       .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
-      .click("#signUpPageEmailInput").pause(500)
+      .click("#signUpPageJoinNowButton").pause(500)
       .verify.elementPresent("#signUpPageMessage")
       .verify.containsText("#signUpPageMessage", "Email already exists. [403]")
   },
