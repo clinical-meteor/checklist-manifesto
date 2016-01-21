@@ -99,6 +99,31 @@
         "nativeEvents": true
       }
     },
+    "firefox": {
+      "launch_url": "http://localhost:3000",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4444,
+      "pathname": "/wd/hub",
+      "silent": true,
+      "disable_colors": false,
+      "firefox_profile": false,
+      "screenshots": {
+        "enabled": false,
+        "path": "./tests/nightwatch/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "databaseEnabled": true,
+        "locationContextEnabled": true,
+        "applicationCacheEnabled": true,
+        "browserConnectionEnabled": true,
+        "webStorageEnabled": true,
+        "acceptSslCerts": true,
+        "rotatable": true,
+        "nativeEvents": true
+      }
+    },
     "travischrome": {
       "launch_url": "http://localhost:3000",
       "selenium_host": "127.0.0.1",
