@@ -144,7 +144,7 @@ module.exports = {
   },
   "existing user should be able to sign in on tablet" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(500)
+      .url("http://localhost:3000/entrySignIn").pause(1000)
       .resizeWindow(1024, 768)
       .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
@@ -154,7 +154,7 @@ module.exports = {
   },
   "existing user should be able to sign in on phone" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(500)
+      .url("http://localhost:3000/entrySignIn").pause(1000)
       .resizeWindow(320, 960)
       // .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(1000)
@@ -165,7 +165,7 @@ module.exports = {
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn").pause(500)
+      .url("http://localhost:3000/entrySignIn").pause(1000)
       .resizeWindow(1024, 768)
       .signIn("alice@symptomatic.io", "alice123").pause(500)
       .verify.containsText("#signInPageMessage", "User not found [403]")

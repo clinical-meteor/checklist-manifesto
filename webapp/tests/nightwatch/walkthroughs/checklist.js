@@ -43,13 +43,13 @@ module.exports = {
     client
       // .click("#usernameLink").pause(300)
       //   .click("#needAnAccountButton").pause(500)
-      .url("http://localhost:3000/entrySignUp").pause(300)
+      .url("http://localhost:3000/entrySignUp").pause(500)
         .resizeWindow(1024, 768)
         .setValue("#signUpPageFullNameInput", "Alice Doe")
         .setValue("#signUpPageEmailInput", "alice@symptomatic.io")
         .setValue("#signUpPagePasswordInput", "alice123")
         .setValue("#signUpPagePasswordConfirmInput", "alice123")
-        .click("#signUpPageJoinNowButton").pause(300)
+        .click("#signUpPageJoinNowButton").pause(500)
 
       .verify.visible("#sidebar")
       .verify.visible("#usernameLink")
