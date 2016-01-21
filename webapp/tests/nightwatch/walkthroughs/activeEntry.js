@@ -25,7 +25,7 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignUp").pause(300)
       .initializeUsers()
-      .resizeWindow(1024, 768)
+      .resizeWindow(1200, 1024)
   },
   "new user should be able to register on desktop" : function (client) {
     client
@@ -106,6 +106,11 @@ module.exports = {
       .setValue("#signUpPageEmailInput", "janicedoe@symptomatic.io")
       .setValue("#signUpPagePasswordInput", "janicedoe123")
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
+
+      .verify.attributeEquals("#signUpPageFullNameInput", "value", "Janice Doe")
+      .verify.attributeEquals("#signUpPageEmailInput", "value", "janicedoe@symptomatic.io")
+      .verify.attributeEquals("#signUpPagePasswordInput", "value", "janicedoe123")
+      .verify.attributeEquals("#signUpPagePasswordConfirmInput", "value", "janicedoe123")
 
       .click("#signUpPageJoinNowButton").pause(1000)
 
