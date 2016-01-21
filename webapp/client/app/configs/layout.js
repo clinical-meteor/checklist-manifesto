@@ -2,7 +2,8 @@ Meteor.startup(function (){
   ActiveLayout.configure({
     help: {
       link: "/menu",
-      text: "Menu"
+      text: "",
+      display: false
     },
     classes: {
       header: "",
