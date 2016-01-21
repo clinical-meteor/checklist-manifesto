@@ -139,7 +139,7 @@ module.exports = {
   },
   "existing user should be able to sign in on tablet" : function (client) {
     client
-      .url("http://localhost:3000/entrySignIn")
+      .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(1024, 768)
       .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
@@ -152,7 +152,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignIn").pause(300)
       .resizeWindow(320, 960)
       // .verify.containsText("#usernameLink", "Sign In")
-      .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(1000)
       .click("#sidebarToggle").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(500)

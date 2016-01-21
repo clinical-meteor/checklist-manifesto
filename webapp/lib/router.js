@@ -59,7 +59,7 @@ Router.map(function() {
       }
     },
     onAfterAction: function(){
-      Session.set('showNavbars', true);
+      //Session.set('showNavbars', true);
     }
   });
 
@@ -101,7 +101,7 @@ if (Meteor.isClient) {
     Session.set('pageTitle', '');
     Session.set('westPanelVisible', false);
     Session.set('useCardLayout', true);
-    Session.set('showNavbars', false);
+    //Session.set('showNavbars', false);
     WestPanel.hide();
     this.next();
   });

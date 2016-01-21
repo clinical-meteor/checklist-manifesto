@@ -35,6 +35,10 @@ Template.sidebar.events({
     if (current.route.name === 'checklistPage' && current.data().userId) {
       Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
     }
+    // if (Session.get("appWidth") < 1024) {
+    //   Session.set('useHorizontalFences', false)
+    // }
+
   },
   'click #newListButton': function() {
     Router.go('checklistPage', Lists.createNew());
