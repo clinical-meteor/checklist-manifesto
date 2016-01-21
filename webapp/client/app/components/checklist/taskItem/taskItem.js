@@ -71,10 +71,12 @@ Template.tasksItem.events({
   },
 
   'focus input[type=text]': function(event) {
+    event.preventDefault();
     Session.set("editingTaskId", this._id);
   },
 
   'blur input[type=text]': function(event) {
+    event.preventDefault();
     if (Session.equals("editingTaskId", this._id))
       Session.set("editingTaskId", null);
   },
