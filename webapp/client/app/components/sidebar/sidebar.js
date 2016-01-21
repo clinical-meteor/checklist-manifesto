@@ -1,7 +1,7 @@
 
 
 
-Template.sidebarMenu.rendered = function() {
+Template.sidebar.rendered = function() {
   this.find('#sidebarMenuContents a')._uihooks = {
     insertElement: function(node, next) {
       $(node)
@@ -18,7 +18,7 @@ Template.sidebarMenu.rendered = function() {
 };
 
 
-Template.sidebarMenu.events({
+Template.sidebar.events({
   "click #usernameLink": function(){
     if (!Meteor.user()) {
       Router.go('/entrySignIn');
@@ -28,20 +28,27 @@ Template.sidebarMenu.events({
      Router.go('/protocols');
   },
   'click #logoutButton': function() {
-    Meteor.logout();
+    Meteor.logout(function(){
+      Router.go('/entrySignIn')
+    });
+
 
     // if we are on a private list, we'll need to go to a public one
     var current = Router.current();
     if (current.route.name === 'checklistPage' && current.data().userId) {
       Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
     }
+    if (Session.get("appWidth") < 1024) {
+      Session.set('useHorizontalFences', false)
+    }
+
   },
   'click #newListButton': function() {
     Router.go('checklistPage', Lists.createNew());
   }
 });
 
-Template.sidebarMenu.helpers({
+Template.sidebar.helpers({
   getUsername: function () {
     if (Meteor.user()) {
       if (Meteor.user().emails[0]) {

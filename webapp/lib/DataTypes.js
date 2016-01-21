@@ -1,10 +1,12 @@
 
 ReferenceSchema = new SimpleSchema({
   "reference" : {
-    type: String
+    type: String,
+    optional: true
     },
   "display" : {
-    type: String
+    type: String,
+    optional: true
     },
   "meteorObject" : {
     type: Object,

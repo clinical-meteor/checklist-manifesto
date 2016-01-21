@@ -1,6 +1,34 @@
 
 
 Template.tasksItem.helpers({
+  getCreatedAt: function (){
+    if (this.createdAt) {
+      return moment(this.createdAt).format("MMM DD, YYYY");
+    } else {
+      return "---";
+    }
+  },
+  getStatus: function (){
+    if (this.status) {
+      return this.status;
+    } else {
+      return "---";
+    }
+  },
+  getOrderer: function (){
+    if (this.orderer) {
+      if (this.orderer.display) {
+        return this.orderer.display;
+      } else {
+        return "Unknown";
+      }
+    } else {
+      return "System";
+    }
+  },
+  getAuthoredDate: function (){
+    return moment(this.event[0].dateTime).format("YYYY MMM DD")
+  },
   getStatusColor: function(){
     if (this.status === "completed") {
       return "color: #D3D3D3;";
@@ -35,17 +63,20 @@ Template.tasksItem.events({
   'click .checkbox': function(event) {
     if (this.status === "completed") {
       Tasks.update(this._id, {$set: {status: "planned"}});
+      Lists.update(this.listId, {$inc: {incompleteCount: -1 }});
     } else {
       Tasks.update(this._id, {$set: {status: "completed"}});
+      Lists.update(this.listId, {$inc: {incompleteCount: 1 }});
     }
-    Lists.update(this.listId, {$inc: {incompleteCount: checked ? -1 : 1}});
   },
 
   'focus input[type=text]': function(event) {
+    event.preventDefault();
     Session.set("editingTaskId", this._id);
   },
 
   'blur input[type=text]': function(event) {
+    event.preventDefault();
     if (Session.equals("editingTaskId", this._id))
       Session.set("editingTaskId", null);
   },
@@ -70,7 +101,7 @@ Template.tasksItem.events({
   // on iOS, we still require the click event so handle both
   'mousedown .js-delete-item, click .js-delete-item': function() {
     Tasks.remove(this._id);
-    if (! this.checked) {
+    if (this.status !== "completed") {
       Lists.update(this.listId, {$inc: {incompleteCount: -1}});
     }
   }

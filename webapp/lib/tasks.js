@@ -13,14 +13,21 @@ DiagnosticOrderSchema = new SimpleSchema({
     defaultValue: "DiagnosticOrder"
   },
 
+
+  "createdAt" : {
+    type: Date,
+    defaultValue: new Date(),
+    optional: true
+  },
+
   "listId" : {
     type: String,
     optional: true
   },
   "public" : {
     type: Boolean,
-    optional: true,
-    defaultValue: true
+    defaultValue: true,
+    optional: true
   },
   "ordinal" : {
     type: Number,

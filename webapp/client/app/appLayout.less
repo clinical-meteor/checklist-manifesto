@@ -27,7 +27,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: linear-gradient(to bottom, #555555, #aaaaaa 100%);
+  //background-image: linear-gradient(to bottom, #555555, #aaaaaa 100%);
   //.background-image(linear-gradient(top, #555, #aaa 100%));
   //.background-image( linear-gradient(top, #6ca66a, #bbcaba 100%) );
   //.background-image( url('/img/background.jpg'));
@@ -118,20 +118,20 @@ a:focus{
 
 }
 
+.page{
+  height: 100%;
+}
 
 //==================================================================================================
 // APP LAYOUT
 
 #appLayout {
-  position: absolute;
+  // position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
-  .btn-secondary{
-    color: black;
-  }
   .panel-heading{
     padding: 0px !important;
   }
@@ -144,21 +144,21 @@ a:focus{
     width: 101%;
   }
 
-  @media screen and (min-width: 60em) {
-    left: 5.55555%;
-    right: 5.55555%;
-  }
-
-  @media screen and (min-width: 80em) {
-    left: 11.1111%;
-    right: 11.1111%;
-  }
+  // @media screen and (min-width: 60em) {
+  //   //left: 5.55555%;
+  //   right: 5.55555%;
+  // }
+  //
+  // @media screen and (min-width: 80em) {
+  //   //left: 11.1111%;
+  //   right: 11.1111% !important;
+  // }
 
   // Hide anything offscreen
   overflow: hidden;
 }
 
-#sidebarMenu {
+#sidebar {
 
   position: absolute;
   top: 0;
