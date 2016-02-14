@@ -33,12 +33,13 @@ Template.checklistHeader.events({
       }
     });
   },
-  "click #sidebarToggle": function (event, template){
-    if (Session.get("appWidth") > 1024) {
-       Session.toggle('appSurfaceOffset');
-       Session.toggle('useEastFence');
+  'click .sidebarToggle': function(){
+    if (Session.get("appWidth") > 1040) {
+      WestPanel.show();
+      MainPanel.toggleFullscreen();
     } else {
       Session.toggle('useHorizontalFences')
+      WestPanel.toggle();
     }
   }
 });

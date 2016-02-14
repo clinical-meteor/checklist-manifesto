@@ -10,7 +10,7 @@ Router.configure({
 
   yieldTemplates: {
 
-    'navbarFooter': {
+    'defaultNavbarFooter': {
       to: 'footer'
     },
     'reactiveOverlaysTemplate': {
@@ -42,7 +42,7 @@ Router.map(function() {
       'checklistHeader': {
         to: 'header'
       },
-      'navbarFooter': {
+      'defaultNavbarFooter': {
         to: 'footer'
       },
       'reactiveOverlaysTemplate': {
@@ -77,7 +77,7 @@ Router.map(function() {
       // 'navbarHeader': {
       //   to: 'header'
       // },
-      'navbarFooter': {
+      'defaultNavbarFooter': {
         to: 'footer'
       },
       'reactiveOverlaysTemplate': {

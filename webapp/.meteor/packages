@@ -30,11 +30,11 @@ clinical:error-pages
 clinical:theming
 clinical:theming-ui
 clinical:fonts
-clinical:glass-ui
 clinical:hipaa-logger
 
-clinical:mobile
-clinical:offline
+
+#clinical:mobile
+#clinical:offline
 
 clinical:auto-resizing
 clinical:active-layout
