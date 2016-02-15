@@ -33,13 +33,13 @@ Template.checklistHeader.events({
       }
     });
   },
-  'click .sidebarToggle': function(){
-    if (Session.get("appWidth") > 1040) {
-      WestPanel.show();
-      MainPanel.toggleFullscreen();
-    } else {
-      Session.toggle('useHorizontalFences')
-      WestPanel.toggle();
-    }
-  }
+  // 'click .sidebarToggle': function(){
+  //   if (Session.get("appWidth") > 1040) {
+  //     WestPanel.show();
+  //     MainPanel.toggleFullscreen();
+  //   } else {
+  //     Session.toggle('useHorizontalFences')
+  //     WestPanel.toggle();
+  //   }
+  // }
 });

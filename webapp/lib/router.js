@@ -99,21 +99,21 @@ if (Meteor.isClient) {
 
   Router.onBeforeAction(function (){
     Session.set('pageTitle', '');
-    Session.set('westPanelVisible', false);
     Session.set('useCardLayout', true);
+    // Session.set('westPanelVisible', false);
     //Session.set('showNavbars', false);
-    WestPanel.hide();
+    //WestPanel.hide();
     this.next();
   });
 
-  Router.onAfterAction(function (){
-    if (Session.get("appWidth") < 1024) {
-       Session.set('appSurfaceOffset', true);
-       Session.set('useEastFence', false);
-    } else {
-       Session.set('appSurfaceOffset', true);
-       Session.set('useEastFence', true);
-    }
-  });
+  // Router.onAfterAction(function (){
+  //   if (Session.get("appWidth") < 1040) {
+  //      Session.set('appSurfaceOffset', true);
+  //      Session.set('useEastFence', false);
+  //   } else {
+  //      Session.set('appSurfaceOffset', true);
+  //      Session.set('useEastFence', true);
+  //   }
+  // });
 
 }

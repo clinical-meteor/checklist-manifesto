@@ -12,7 +12,7 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
 clinical:active-entry@1.5.13
-clinical:active-layout@0.7.22
+clinical:active-layout@0.7.23
 clinical:active-users@0.0.5
 clinical:auto-resizing@0.1.2
 clinical:barcode@3.0.1
@@ -28,7 +28,7 @@ clinical:router@2.0.17
 clinical:router-location@2.0.14
 clinical:router-middleware-stack@2.0.13
 clinical:router-url@2.0.15
-clinical:static-pages@1.0.17
+clinical:static-pages@1.0.18
 clinical:theming@0.4.7
 clinical:theming-ui@0.2.7
 clinical:ui-vocabulary@1.0.5

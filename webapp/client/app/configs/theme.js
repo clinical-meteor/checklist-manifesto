@@ -4,6 +4,9 @@ Meteor.startup(function (){
     background: {
       color: "gradient"
     },
+    page: {
+      background: "#ffffff"
+    },
     palette: {
       colorA: "#01b9af",
       colorB: "#00938b",
