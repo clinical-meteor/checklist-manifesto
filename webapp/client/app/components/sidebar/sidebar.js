@@ -19,6 +19,9 @@ Template.sidebar.rendered = function() {
 
 
 Template.sidebar.events({
+  'click #homeLink': function(){
+    Router.go('/');
+  },
   "click #usernameLink": function(){
     if (!Meteor.user()) {
       Router.go('/entrySignIn');
