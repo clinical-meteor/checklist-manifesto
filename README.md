@@ -24,6 +24,11 @@ meteor
 ````
 
 ============================
+#### Flow Chart
+
+![ChecklistManifesto-FlowChart](https://raw.githubusercontent.com/clinical-meteor/cookbook/master/images/whitepapers/redwood/ChecklistWorkflow.png)
+
+============================
 #### Local Development
 
 ChecklistManifesto uses many packages shared between ClinicalFramework apps.  Use the ``starrynight fetch`` command to fetch the shared packages for local development.
