@@ -22,5 +22,4 @@ Meteor.startup(function (){
       danger: "#40434E"
     }
   });
-
 });

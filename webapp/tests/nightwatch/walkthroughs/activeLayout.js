@@ -32,7 +32,7 @@ module.exports = {
     // this depends on the accounts-housemd package
     client
       .url("http://localhost:3000")
-      .initializeLists()
+      //.initializeLists()
       .pause(500)
   },
   // "background color should be the theme color": function(client){
@@ -73,59 +73,59 @@ module.exports = {
     client
       .resizeWindow(480, 800)
         .verify.visible("#sidebarToggle")
-        .verify.elementPresent("#panelSurface")
-        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.elementPresent("#navbarLayer")
+        // .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
   },
   "sidebar should be hidden in portrait mode" : function (client) {
     client
       .resizeWindow(768, 1024)
         .verify.visible("#sidebarToggle")
-        .verify.elementPresent("#panelSurface")
-        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.elementPresent("#navbarLayer")
+        // .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
   },
   "sidebar should be visible in landscape mode" : function (client) {
     client
       .resizeWindow(1024, 768)
         .verify.visible("#sidebarToggle")
-        .verify.elementPresent("#panelSurface")
-        .verify.cssProperty("#panelSurface", "left", "270px")
-        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.elementPresent("#navbarLayer")
+        .verify.cssProperty("#navbarLayer", "left", "270px")
+        // .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
   },
   "anonymous user - sidebar toggle opens and closes in phone mode" : function (client) {
     client
       .resizeWindow(480, 800)
         .verify.visible("#sidebarToggle")
-        .verify.elementPresent("#panelSurface")
-        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.elementPresent("#navbarLayer")
+        // .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
         .click("#sidebarToggle").pause(500)
-        .verify.cssProperty("#panelSurface", "left", "0px")
-        .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
+        .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
         .click("#sidebarToggle").pause(500)
   },
   "anonymous user - sidebar toggle opens and closes in portrait mode" : function (client) {
     client
       .resizeWindow(768, 1024)
         .verify.visible("#sidebarToggle")
-        .verify.elementPresent("#panelSurface")
-        // .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
-        .verify.cssProperty("#panelSurface", "left", "0px")
+        .verify.elementPresent("#navbarLayer")
+        // .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
         .click("#sidebarToggle").pause(500)
-        .verify.cssProperty("#panelSurface", "left", "0px")
-        .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+        .verify.cssProperty("#navbarLayer", "left", "0px")
+        .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
         .click("#sidebarToggle").pause(500)
   },
   // "anonymous user - sidebar toggle switches between pagescreen and fullscreen in landscape mode" : function (client) {
   //   client
   //     .resizeWindow(1024, 768)
   //       .verify.visible("#sidebarToggle")
-  //       .verify.elementPresent("#panelSurface")
-  //       .verify.cssProperty("#panelSurface", "left", "0px")
-  //       .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 270, 0)")
+  //       .verify.elementPresent("#navbarLayer")
+  //       .verify.cssProperty("#navbarLayer", "left", "0px")
+  //       .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 270, 0)")
   //       .click("#sidebarToggle").pause(500)
-  //       .verify.cssProperty("#panelSurface", "transform", "matrix(1, 0, 0, 1, 0, 0)")
+  //       .verify.cssProperty("#navbarLayer", "transform", "matrix(1, 0, 0, 1, 0, 0)")
   // },
   after: function(client){
     client.end();

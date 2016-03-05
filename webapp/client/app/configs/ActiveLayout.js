@@ -30,7 +30,7 @@ Meteor.startup(function (){
       mainPanelIsCard: false,
       navIsFullscreen: true,
       pageWhite: true,
-      secondPanelEnabled: false,
+      secondPanelEnabled: true,
       showNavbars: true,
       showSidebar: true,
       showSearchbar: false,
