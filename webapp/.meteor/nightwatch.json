@@ -14,8 +14,7 @@
     "./tests/nightwatch/commands/api/meteor",
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
-    "./tests/nightwatch/commands/methods",
-    "packages/clinical-keybindings/client/components/keybindingsModal/.tests"
+    "./tests/nightwatch/commands/methods"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"
