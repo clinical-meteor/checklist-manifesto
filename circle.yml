@@ -51,6 +51,7 @@ dependencies:
 test:
   pre:
     - starrynight fetch
+    - cd packages && ls -la
     - meteor:
           background: true
     - sleep 60
