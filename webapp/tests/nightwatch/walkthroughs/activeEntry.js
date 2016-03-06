@@ -162,9 +162,10 @@ module.exports = {
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#navbarHeader").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
-      .click("#logoutButton").pause(200)
-      .verify.containsText("#usernameLink", "Sign In")
-      .meteorLogout();
+      .click("#logoutButton").pause(500)
+      // sidebar should have closed; reopen
+      .click("#navbarHeader").pause(300)
+      .verify.containsText("#usernameLink", "Sign In");
   },
   "existing user should be able to change their password" : function (client) {
     client
