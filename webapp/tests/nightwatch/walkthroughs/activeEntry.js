@@ -177,6 +177,7 @@ module.exports = {
       .verify.elementPresent("#changePasswordPagePasswordInput")
       .verify.elementPresent("#changePasswordPagePasswordConfirmInput")
       .verify.elementPresent("#changePasswordButton")
+      .meteorLogout();
   },
   "existing user should be notified if desired new password is insecure" : function (client) {
     client
