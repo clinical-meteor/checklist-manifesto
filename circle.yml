@@ -21,6 +21,8 @@ checkout:
 
 general:
   build_dir: webapp
+  artifacts:
+    - "./tests/nightwatch/screenshots" # relative to the build directory
 
 ## Customize dependencies
 dependencies:
@@ -43,7 +45,7 @@ dependencies:
     # - if [ ! -e ${HOME}/helloworld ]; then meteor create --release METEOR@1.1.0.3 helloworld; else echo "helloworld app seems to be cached"; fi;
 
   override:
-    #- meteor list
+    - meteor list
 
 ## Customize test commands
 test:
@@ -59,9 +61,6 @@ test:
   override:
     - starrynight run-tests --type validation --env travischrome
 
-general:
-  artifacts:
-    - "./tests/nightwatch/screenshots" # relative to the build directory
 
 ## Customize deployment commands
 #deployment:
