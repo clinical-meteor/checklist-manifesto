@@ -29,6 +29,7 @@ module.exports = {
         .verify.visible("#checklistPage")
         .verify.visible("#checklistTitle")
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/A-Scratchlist.png")
   },
   "anonymous user - cannot access list of lists" : function (client) {
     client
@@ -55,6 +56,7 @@ module.exports = {
       .verify.visible("#usernameLink")
       .verify.visible("#protocolLibraryLink")
       .verify.visible("#newListButton")
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/B-ListOfLists.png")
       // .verify.visible("#lists .listItem:nth-child(1)")
       // .verify.visible("#lists .listItem:nth-child(2)")
       //.verify.visible("#lists .list:nth-child(3)")
@@ -63,12 +65,15 @@ module.exports = {
     client
       .resizeWindow(1024, 768)
         .verify.elementPresent("#checklistPage")
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/C-Checklist.png")
         .click("#showNewTaskToggle").pause(300)
         .verify.visible("#newTaskInput")
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/D-Checklist-NewTaskInput.png")
         .setValue("#newTaskInput", "Publish app in App Store")
         .keys(client.Keys.ENTER).pause(500)
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
         .verify.attributeEquals("#checklistPage .taskItem:nth-child(1) .taskInput", "placeholder", "Publish app in App Store")
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/C-Checklist.png")
   },
   "signed in user - can complete task" : function (client) {
     client
