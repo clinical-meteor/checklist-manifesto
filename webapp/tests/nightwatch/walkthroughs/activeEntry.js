@@ -141,7 +141,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
-      .meteorLogout()
+      .meteorLogout();
   },
   "existing user should be able to sign in on tablet": function (client) {
     client
@@ -152,7 +152,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
-      .meteorLogout()
+      .meteorLogout();
   },
   "existing user should be able to sign in on phone": function (client) {
     client
@@ -164,13 +164,12 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
-      .meteorLogout()
+      .meteorLogout();
   },
   "existing user should be able to change their password" : function (client) {
     client
       .url("http://localhost:3000/entrySignIn")
-      .resizeWindow(1600, 1200)
-      .verify.containsText("#usernameLink", "Sign In")
+      .resizeWindow(1200, 1024).pause(300)
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .url("http://localhost:3000/changePassword")
@@ -182,9 +181,8 @@ module.exports = {
   "existing user should be notified if desired new password is insecure" : function (client) {
     client
       .url("http://localhost:3000/entrySignIn")
-      // .resizeWindow(1600, 1200)
-      // .verify.containsText("#usernameLink", "Sign In")
-      // .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .resizeWindow(1200, 1024).pause(300)
+      .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .url("http://localhost:3000/changePassword")
       .verify.elementPresent("#changePasswordPageOldPasswordInput")
