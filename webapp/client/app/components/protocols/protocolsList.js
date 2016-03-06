@@ -5,9 +5,9 @@ Router.route("/protocols", {
     'checklistHeader': {
       to: 'header'
     },
-    'navbarFooter': {
-      to: 'footer'
-    },
+    // 'navbarFooter': {
+    //   to: 'footer'
+    // },
     'reactiveOverlaysTemplate': {
       to: 'overlays'
     },

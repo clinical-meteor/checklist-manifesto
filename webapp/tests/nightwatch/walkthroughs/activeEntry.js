@@ -130,6 +130,7 @@ module.exports = {
       .verify.elementPresent("#forgotPassword")
       .verify.elementPresent("#signInPageEmailInput")
       .verify.elementPresent("#sendReminderButton");
+      .meteorLogout()
   },
   "existing user should be able to sign in on desktop": function (client) {
     client
@@ -140,6 +141,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In");
+      .meteorLogout()
   },
   "existing user should be able to sign in on tablet": function (client) {
     client
@@ -150,6 +152,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In");
+      .meteorLogout()
   },
   "existing user should be able to sign in on phone": function (client) {
     client
@@ -161,6 +164,7 @@ module.exports = {
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In");
+      .meteorLogout()
   },
   "existing user should be able to change their password" : function (client) {
     client
@@ -201,7 +205,7 @@ module.exports = {
       .setValue("#changePasswordPagePasswordConfirmInput", "janicedoe123")
       .click("#changePasswordPagePasswordConfirmInput").pause(100) // hack to unfocus and input the data
       .verify.cssProperty('#changePasswordPagePasswordConfirmInput', 'border', '1px solid green')
-      .logout()
+      .meteorLogout()
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
