@@ -32,8 +32,8 @@ module.exports = {
       .saveScreenshot("tests/nightwatch/screenshots/simple/D-EulaPage.png")
 
       .click("#privacyButton")
-      .verify.elementPresent("#privacyPage");
-      .saveScreenshot("tests/nightwatch/screenshots/simple/E-PrivacyPage.png")
+      .verify.elementPresent("#privacyPage")
+      .saveScreenshot("tests/nightwatch/screenshots/simple/E-PrivacyPage.png");
   },
   "D. Logout": function(client){
     client
