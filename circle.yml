@@ -51,7 +51,7 @@ test:
     - starrynight fetch
     - starrynight autoconfig
     - cat .meteor/nightwatch.json
-    - rm -rf packages/temp/*
+    - cd packages && rm -rf temp
     - cd packages && ls -la
     - meteor:
           background: true
