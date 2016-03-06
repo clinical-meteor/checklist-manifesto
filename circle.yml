@@ -26,6 +26,21 @@ general:
 dependencies:
   cache_directories:
     - "~/.meteor" # relative to the user's home directory
+    - ~/nvm/v0.10.33/lib/node_modules/starrynight
+    - ~/nvm/v0.10.33/bin/starrynight
+
+  pre:
+    # Install Starrynight unless it is cached
+    - if [ ! -e ~/nvm/v0.10.33/bin/starrynight ]; then npm install -g starrynight; else echo "Starrynight seems to be cached"; fi;
+    # Install  Meteor
+    - mkdir -p ${HOME}/.meteor
+    # If Meteor is already cached, do not need to build it again.
+    - if [ ! -e ${HOME}/.meteor/meteor ]; then curl https://install.meteor.com | /bin/sh; else echo "Meteor seems to be cached"; fi;
+    # Link the meteor executable into /usr/bin
+    - sudo ln -s $HOME/.meteor/meteor /usr/bin/meteor
+    # Check if the helloworld directory already exists, if it doesn't, create the helloworld app
+    # The following doesn't work, because it should be checking ${HOME}/active-entry/helloworld
+    # - if [ ! -e ${HOME}/helloworld ]; then meteor create --release METEOR@1.1.0.3 helloworld; else echo "helloworld app seems to be cached"; fi;
 
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
