@@ -52,6 +52,7 @@ test:
     - starrynight autoconfig
     - cd packages && ls -la
     - cat .meteor/nightwatch.json
+    - rm -rf packages/temp
     - meteor:
           background: true
     - sleep 60
