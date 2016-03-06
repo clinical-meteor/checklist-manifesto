@@ -8,10 +8,13 @@ Template.checklistHeader.helpers({
 
 
 Template.checklistHeader.events({
-  'click #showNewTaskToggle': function (attribute) {
+  'click #showNewTaskToggle': function (event, template) {
+    event.stopPropagation();
     Session.toggle('showSearchbar');
   },
   'click #checklistConfig': function (event, template) {
+    event.stopPropagation();
+    
     Overlay.show();
     Session.set('displayModal', true);
 
