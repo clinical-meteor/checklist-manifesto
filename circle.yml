@@ -57,7 +57,11 @@ test:
           background: true
     - sleep 60
   override:
-    - starrynight run-tests --type validation --env travischrome --skiptags layout
+    - starrynight run-tests --type validation --env travischrome
+
+general:
+  artifacts:
+    - "./tests/nightwatch/screenshots" # relative to the build directory
 
 ## Customize deployment commands
 #deployment:
