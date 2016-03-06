@@ -103,7 +103,7 @@
       "disable_colors": false,
       "firefox_profile": false,
       "screenshots": {
-        "enabled": false,
+        "enabled": true,
         "path": "./tests/nightwatch/screenshots"
       },
       "desiredCapabilities": {
