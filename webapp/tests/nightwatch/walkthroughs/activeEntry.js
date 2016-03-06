@@ -201,7 +201,7 @@ module.exports = {
       .setValue("#changePasswordPagePasswordConfirmInput", "janicedoe123")
       .click("#changePasswordPagePasswordConfirmInput").pause(100) // hack to unfocus and input the data
       .verify.cssProperty('#changePasswordPagePasswordConfirmInput', 'border', '1px solid green')
-      .logout()
+      .meteorLogout()
   },
   "if anonymous user tries to log in with non-existing account, a message is shown" : function (client) {
     client
