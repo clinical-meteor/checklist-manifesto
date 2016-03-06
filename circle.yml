@@ -43,8 +43,8 @@ dependencies:
     # - if [ ! -e ${HOME}/helloworld ]; then meteor create --release METEOR@1.1.0.3 helloworld; else echo "helloworld app seems to be cached"; fi;
 
   override:
-    - meteor || curl https://install.meteor.com | /bin/sh
-    - npm install starrynight -g
+    #- meteor || curl https://install.meteor.com | /bin/sh
+    #- npm install starrynight -g
     - meteor list
 
 ## Customize test commands
