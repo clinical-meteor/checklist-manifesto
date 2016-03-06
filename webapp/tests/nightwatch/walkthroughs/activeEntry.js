@@ -163,8 +163,8 @@ module.exports = {
       .click("#navbarHeader").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(600)
-      // sidebar should have closed; reopen
-      .click("#navbarHeader").pause(400)
+      // // sidebar should have closed; reopen
+      // .click("#navbarHeader").pause(400)
       .verify.containsText("#usernameLink", "Sign In");
   },
   "existing user should be able to change their password" : function (client) {
