@@ -170,8 +170,8 @@ module.exports = {
       .click("#logoutButton").pause(600)
       // // sidebar should have closed; reopen
       // .click("#navbarHeader").pause(400)
-      .verify.containsText("#usernameLink", "Sign In");
-      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-d-loggedout.png")
+      .verify.containsText("#usernameLink", "Sign In")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-d-loggedout.png");
   },
   "existing user should be able to change their password" : function (client) {
     client
