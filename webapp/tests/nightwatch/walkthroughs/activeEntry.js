@@ -157,7 +157,7 @@ module.exports = {
   "existing user should be able to sign in on phone": function (client) {
     client
       .url("http://localhost:3000/entrySignIn")
-      .resizeWindow(320, 960)
+      .resizeWindow(640,960)
       .saveScreenshot("tests/nightwatch/screenshots/entry/phone-a-loggedout.png")
       // .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
