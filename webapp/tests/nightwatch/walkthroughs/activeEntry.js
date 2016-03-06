@@ -158,14 +158,20 @@ module.exports = {
     client
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(320, 960)
+      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-a-loggedout.png")
       // .verify.containsText("#usernameLink", "Sign In")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
+      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-b-loggedin.png")
+
       .click("#navbarHeader").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-c-loggedin-sidebar.png")
+
       .click("#logoutButton").pause(600)
-      // sidebar should have closed; reopen
-      .click("#navbarHeader").pause(400)
+      // // sidebar should have closed; reopen
+      // .click("#navbarHeader").pause(400)
       .verify.containsText("#usernameLink", "Sign In");
+      .saveScreenshot("tests/nightwatch/screenshots/entry/phone-d-loggedout.png")
   },
   "existing user should be able to change their password" : function (client) {
     client
