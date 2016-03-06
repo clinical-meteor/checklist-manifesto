@@ -3,7 +3,7 @@ Meteor.startup(function (){
     passwordSignupFields: 'EMAIL_ONLY',
     logo: {
       url: "appIcon-transparent-medium-teal.png",
-      displayed: true 
+      displayed: false 
     },
     signIn: {
       displayFullName: true,

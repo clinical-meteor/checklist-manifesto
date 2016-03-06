@@ -13,7 +13,7 @@ boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
 clinical:active-entry@1.5.19
-clinical:active-layout@0.7.32
+clinical:active-layout@0.7.33
 clinical:active-users@0.1.2
 clinical:auto-resizing@0.1.2
 clinical:barcode@3.0.1

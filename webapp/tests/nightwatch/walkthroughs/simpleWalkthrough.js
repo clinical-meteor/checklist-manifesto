@@ -6,8 +6,8 @@ module.exports = {
   "A. Sign In Page" : function (client) {
     client
       .url("http://localhost:3000/entrySignUp")
-      .resizeWindow(1024, 768)
-      .waitForPage("#entrySignUp")
+      .resizeWindow(1024, 768).pause(500)
+      .verify.elementPresent("#entrySignUp")
       .saveScreenshot("tests/nightwatch/screenshots/ipad/A-signInPage.png")
       .reviewSignUpPage()
       .verify.elementNotPresent("#logoutButton")
@@ -15,20 +15,21 @@ module.exports = {
   },
   "B. Home Page": function (client){
     client
-      .waitForPage("#checklistPage")
+      .resizeWindow(1024, 768).pause(500)
+      .verify.elementPresent("#checklistPage")
       .reviewMainLayout()
       .reviewSidebar()
   },
   "B. Static Pages": function (client){
     client
       .click("#aboutButton")
-      .waitForPage("#aboutPage")
+      .verify.elementPresent("#aboutPage")
 
       .click("#eulaButton")
       .waitForPage("#eulaPage")
 
       .click("#privacyButton")
-      .waitForPage("#privacyPage")
+      .verify.elementPresent("#privacyPage")
   },
   "D. Logout": function(client){
     client

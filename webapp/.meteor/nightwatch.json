@@ -10,21 +10,22 @@
   ],
   "output_folder": "./tests/nightwatch/reports",
   "custom_commands_path": [
+    "./tests/nightwatch/commands",
+    "./tests/nightwatch/commands/api/meteor",
+    "./tests/nightwatch/commands/actions",
+    "./tests/nightwatch/commands/components",
+    "./tests/nightwatch/commands/methods",
     "packages/active-entry/components/entrySignIn/.tests",
     "packages/active-entry/components/entrySignIn/.tests/actions",
     "packages/active-entry/components/entrySignUp/.tests",
     "packages/active-entry/components/entrySignUp/.tests/actions",
     "packages/active-entry/components/forgotPassword/.tests",
-    "packages/active-entry/tests/nightwatch/commands",
     "packages/active-users/client/components/userEditPage/.tests",
     "packages/active-users/client/components/userImageGridPage/.tests",
     "packages/active-users/client/components/userPreviewPage/.tests",
     "packages/active-users/client/components/usersListPage/.tests",
     "packages/active-users/client/components/usersTablePage/.tests",
-    "packages/active-users/tests/nightwatch/commands",
-    "packages/clinical-keybindings/client/components/keybindingsModal/.tests",
-    "packages/clinical-static-pages/tests/nightwatch/commands",
-    "tests/nightwatch/commands"
+    "packages/clinical-keybindings/client/components/keybindingsModal/.tests"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"

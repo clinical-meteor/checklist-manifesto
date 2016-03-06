@@ -1,234 +1,184 @@
-14:41:17.737 INFO - Launching a standalone server
+16:26:36.750 INFO - Launching a standalone server
 Setting system property webdriver.chrome.driver to /usr/local/lib/node_modules/starrynight/node_modules/chromedriver/bin/chromedriver
-14:41:17.769 INFO - Java: Apple Inc. 20.65-b04-468
-14:41:17.769 INFO - OS: Mac OS X 10.11.2 x86_64
-14:41:17.779 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
-14:41:17.834 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
-14:41:17.880 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-14:41:17.881 INFO - Version Jetty/5.1.x
-14:41:17.881 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-14:41:17.882 INFO - Started HttpContext[/selenium-server,/selenium-server]
-14:41:17.882 INFO - Started HttpContext[/,/]
-14:41:17.918 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@3dbbd23f
-14:41:17.918 INFO - Started HttpContext[/wd,/wd]
-14:41:17.924 INFO - Started SocketListener on 0.0.0.0:4444
-14:41:17.924 INFO - Started org.openqa.jetty.jetty.Server@35c0e45a
-14:41:18.236 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Layout}]])
-14:41:18.245 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Layout}]
-Starting ChromeDriver 2.19.346063 (38b35413bd4a486d436a9749e090454bc9ff6708) on port 39685
+16:26:36.787 INFO - Java: Apple Inc. 20.65-b04-468
+16:26:36.787 INFO - OS: Mac OS X 10.11.2 x86_64
+16:26:36.796 INFO - v2.45.0, with Core v2.45.0. Built from revision 5017cb8
+16:26:36.854 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: MAC
+16:26:36.900 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+16:26:36.901 INFO - Version Jetty/5.1.x
+16:26:36.902 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+16:26:36.903 INFO - Started HttpContext[/selenium-server,/selenium-server]
+16:26:36.903 INFO - Started HttpContext[/,/]
+16:26:36.939 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@75e845c2
+16:26:36.939 INFO - Started HttpContext[/wd,/wd]
+16:26:36.945 INFO - Started SocketListener on 0.0.0.0:4444
+16:26:36.945 INFO - Started org.openqa.jetty.jetty.Server@6262937c
+16:26:37.260 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@20968fda, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Simple Walkthrough}]])
+16:26:37.271 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@20968fda, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Simple Walkthrough}]
+Starting ChromeDriver 2.19.346063 (38b35413bd4a486d436a9749e090454bc9ff6708) on port 4180
 Only local connections are allowed.
-14:41:19.745 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7174d93a, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Active Layout}]]
-14:41:19.759 INFO - Executing: [get: http://localhost:3000])
-14:41:21.002 INFO - Done: [get: http://localhost:3000]
-14:41:22.014 INFO - Executing: [find element: By.cssSelector: body])
-14:41:22.044 INFO - Done: [find element: By.cssSelector: body]
-14:41:22.048 INFO - Executing: [get value of css property: 0 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: body], background-image])
-14:41:22.058 INFO - Done: [get value of css property: 0 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: body], background-image]
-14:41:22.066 INFO - Executing: [set window size])
-14:41:22.272 INFO - Done: [set window size]
-14:41:22.277 INFO - Executing: [find elements: By.cssSelector: #sidebar])
-14:41:22.310 INFO - Done: [find elements: By.cssSelector: #sidebar]
-14:41:22.316 INFO - Executing: [find elements: By.cssSelector: #usernameLink])
-14:41:22.342 INFO - Done: [find elements: By.cssSelector: #usernameLink]
-14:41:22.350 INFO - Executing: [find elements: By.cssSelector: #mainPanel])
-14:41:22.376 INFO - Done: [find elements: By.cssSelector: #mainPanel]
-14:41:22.383 INFO - Executing: [set window size])
-14:41:22.549 INFO - Done: [set window size]
-14:41:22.553 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:22.591 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:22.594 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:22.631 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:22.635 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:22.654 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:22.658 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:22.678 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:22.681 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:22.691 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:22.695 INFO - Executing: [set window size])
-14:41:22.853 INFO - Done: [set window size]
-14:41:22.857 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:22.877 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:22.884 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:22.902 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:22.906 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:22.923 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:22.927 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:22.950 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:22.953 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:22.963 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:22.969 INFO - Executing: [set window size])
-14:41:23.130 INFO - Done: [set window size]
-14:41:23.135 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:23.144 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:23.148 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:23.176 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:23.181 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:23.207 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:23.215 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:23.228 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:23.232 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:23.240 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:23.245 INFO - Executing: [set window size])
-14:41:23.405 INFO - Done: [set window size]
-14:41:23.409 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:23.428 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:23.431 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:23.464 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:23.470 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:23.491 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:23.495 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:23.507 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:23.510 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:23.516 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:23.519 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:23.527 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:23.531 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:23.575 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:24.084 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:24.091 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:24.093 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:24.098 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:24.102 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:24.109 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:24.111 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform])
-14:41:24.120 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform]
-14:41:24.124 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:24.131 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:24.137 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:24.171 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:24.679 INFO - Executing: [set window size])
-14:41:24.850 INFO - Done: [set window size]
-14:41:24.854 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:24.861 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:24.864 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:24.872 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:24.875 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:24.887 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:24.892 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:24.902 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:24.904 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:24.915 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:24.921 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:24.929 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:24.933 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:24.953 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:25.462 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:25.469 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:25.471 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:25.476 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:25.480 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:25.486 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:25.489 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform])
-14:41:25.497 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform]
-14:41:25.500 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:25.507 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:25.509 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:25.532 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:26.043 INFO - Executing: [set window size])
-14:41:26.212 INFO - Done: [set window size]
-14:41:26.216 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:26.228 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:26.231 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:26.260 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:26.264 INFO - Executing: [find elements: By.cssSelector: #navbarLayer])
-14:41:26.292 INFO - Done: [find elements: By.cssSelector: #navbarLayer]
-14:41:26.297 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:26.308 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:26.310 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:26.316 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:26.320 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:26.327 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:26.329 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform])
-14:41:26.336 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform]
-14:41:26.339 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:26.347 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:26.350 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:26.372 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:26.881 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:26.888 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:26.891 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:26.896 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:26.899 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:26.906 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:26.908 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform])
-14:41:26.913 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform]
-14:41:27.921 INFO - Executing: [find element: By.cssSelector: #sidebarToggle])
-14:41:27.929 INFO - Done: [find element: By.cssSelector: #sidebarToggle]
-14:41:27.931 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]])
-14:41:27.953 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #sidebarToggle]]
-14:41:28.459 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:28.466 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:28.468 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left])
-14:41:28.473 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], left]
-14:41:28.476 INFO - Executing: [find element: By.cssSelector: #navbarLayer])
-14:41:28.491 INFO - Done: [find element: By.cssSelector: #navbarLayer]
-14:41:28.495 INFO - Executing: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform])
-14:41:28.500 INFO - Done: [get value of css property: 5 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarLayer], transform]
-14:41:28.508 INFO - Executing: [set window size])
-14:41:28.620 INFO - Done: [set window size]
-14:41:28.623 INFO - Executing: [find elements: By.cssSelector: #navbarHeader])
-14:41:28.639 INFO - Done: [find elements: By.cssSelector: #navbarHeader]
-14:41:28.642 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:28.657 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:28.659 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height])
-14:41:28.667 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height]
-14:41:28.672 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:28.690 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:28.693 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top])
-14:41:28.702 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top]
-14:41:28.706 INFO - Executing: [find elements: By.cssSelector: #navbarFooter])
-14:41:28.722 INFO - Done: [find elements: By.cssSelector: #navbarFooter]
-14:41:28.726 INFO - Executing: [find element: By.cssSelector: #navbarFooter])
-14:41:28.745 INFO - Done: [find element: By.cssSelector: #navbarFooter]
-14:41:28.748 INFO - Executing: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height])
-14:41:28.756 INFO - Done: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height]
-14:41:28.760 INFO - Executing: [send keys to active: [?]])
-14:41:28.767 INFO - Done: [send keys to active: [?]]
-14:41:28.771 INFO - Executing: [send keys to active: [?]])
-14:41:28.775 INFO - Done: [send keys to active: [?]]
-14:41:28.778 INFO - Executing: [send keys to active: [n]])
-14:41:28.800 INFO - Done: [send keys to active: [n]]
-14:41:29.308 INFO - Executing: [send keys to active: [?]])
-14:41:29.312 INFO - Done: [send keys to active: [?]]
-14:41:29.315 INFO - Executing: [find elements: By.cssSelector: #navbarHeader])
-14:41:29.322 INFO - Done: [find elements: By.cssSelector: #navbarHeader]
-14:41:29.325 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:29.332 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:29.334 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height])
-14:41:29.342 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height]
-14:41:29.346 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:29.352 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:29.354 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top])
-14:41:29.366 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top]
-14:41:29.369 INFO - Executing: [find elements: By.cssSelector: #navbarFooter])
-14:41:29.386 INFO - Done: [find elements: By.cssSelector: #navbarFooter]
-14:41:29.390 INFO - Executing: [find element: By.cssSelector: #navbarFooter])
-14:41:29.406 INFO - Done: [find element: By.cssSelector: #navbarFooter]
-14:41:29.409 INFO - Executing: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height])
-14:41:29.421 INFO - Done: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height]
-14:41:29.424 INFO - Executing: [send keys to active: [?]])
-14:41:29.429 INFO - Done: [send keys to active: [?]]
-14:41:29.432 INFO - Executing: [send keys to active: [?]])
-14:41:29.436 INFO - Done: [send keys to active: [?]]
-14:41:29.441 INFO - Executing: [send keys to active: [n]])
-14:41:29.446 INFO - Done: [send keys to active: [n]]
-14:41:29.953 INFO - Executing: [send keys to active: [?]])
-14:41:29.957 INFO - Done: [send keys to active: [?]]
-14:41:29.961 INFO - Executing: [find elements: By.cssSelector: #navbarHeader])
-14:41:29.967 INFO - Done: [find elements: By.cssSelector: #navbarHeader]
-14:41:29.971 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:29.978 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:29.980 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height])
-14:41:29.985 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], height]
-14:41:29.990 INFO - Executing: [find element: By.cssSelector: #navbarHeader])
-14:41:29.997 INFO - Done: [find element: By.cssSelector: #navbarHeader]
-14:41:29.999 INFO - Executing: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top])
-14:41:30.009 INFO - Done: [get value of css property: 6 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarHeader], top]
-14:41:30.012 INFO - Executing: [find elements: By.cssSelector: #navbarFooter])
-14:41:30.020 INFO - Done: [find elements: By.cssSelector: #navbarFooter]
-14:41:30.023 INFO - Executing: [find element: By.cssSelector: #navbarFooter])
-14:41:30.032 INFO - Done: [find element: By.cssSelector: #navbarFooter]
-14:41:30.034 INFO - Executing: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height])
-14:41:30.040 INFO - Done: [get value of css property: 7 [[ChromeDriver: chrome on MAC (c18cd479e65c03872c27416a06b5cdb4)] -> css selector: #navbarFooter], height]
-14:41:30.045 INFO - Executing: [delete session: 120e25f3-860a-4942-94e0-4b849ecfc726])
-14:41:30.614 INFO - Done: [delete session: 120e25f3-860a-4942-94e0-4b849ecfc726]
+16:26:38.987 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@20968fda, platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Simple Walkthrough}]]
+16:26:39.008 INFO - Executing: [get: http://localhost:3000/entrySignUp])
+16:26:40.825 INFO - Done: [get: http://localhost:3000/entrySignUp]
+16:26:40.834 INFO - Executing: [set window size])
+16:26:41.084 INFO - Done: [set window size]
+16:26:41.598 INFO - Executing: [find elements: By.cssSelector: #entrySignUp])
+16:26:41.644 INFO - Done: [find elements: By.cssSelector: #entrySignUp]
+16:26:41.649 INFO - Executing: [take screenshot])
+16:26:41.860 INFO - Done: [take screenshot]
+16:26:41.879 INFO - Executing: [find elements: By.cssSelector: #entrySignUp])
+16:26:41.909 INFO - Done: [find elements: By.cssSelector: #entrySignUp]
+16:26:41.914 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #entrySignUp]])
+16:26:41.942 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #entrySignUp]]
+16:26:41.951 INFO - Executing: [find elements: By.cssSelector: #signUpPageEmailInput])
+16:26:41.975 INFO - Done: [find elements: By.cssSelector: #signUpPageEmailInput]
+16:26:41.980 INFO - Executing: [find elements: By.cssSelector: #signUpPagePasswordInput])
+16:26:42.004 INFO - Done: [find elements: By.cssSelector: #signUpPagePasswordInput]
+16:26:42.009 INFO - Executing: [find elements: By.cssSelector: #signUpPagePasswordConfirmInput])
+16:26:42.035 INFO - Done: [find elements: By.cssSelector: #signUpPagePasswordConfirmInput]
+16:26:42.040 INFO - Executing: [find elements: By.cssSelector: #signUpPageJoinNowButton])
+16:26:42.066 INFO - Done: [find elements: By.cssSelector: #signUpPageJoinNowButton]
+16:26:42.071 INFO - Executing: [find elements: By.cssSelector: #logoutButton])
+16:26:42.090 INFO - Done: [find elements: By.cssSelector: #logoutButton]
+16:26:42.098 INFO - Executing: [find elements: By.cssSelector: #entrySignUp])
+16:26:42.110 INFO - Done: [find elements: By.cssSelector: #entrySignUp]
+16:26:42.117 INFO - Executing: [find elements: By.cssSelector: #signUpPageEmailInput])
+16:26:42.142 INFO - Done: [find elements: By.cssSelector: #signUpPageEmailInput]
+16:26:42.146 INFO - Executing: [find element: By.cssSelector: #signUpPageEmailInput])
+16:26:42.174 INFO - Done: [find element: By.cssSelector: #signUpPageEmailInput]
+16:26:42.182 INFO - Executing: [clear: 1 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageEmailInput]])
+16:26:42.222 INFO - Done: [clear: 1 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageEmailInput]]
+16:26:42.231 INFO - Executing: [find element: By.cssSelector: #signUpPageEmailInput])
+16:26:42.260 INFO - Done: [find element: By.cssSelector: #signUpPageEmailInput]
+16:26:42.265 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageEmailInput], [c, a, r, l, @, s, o, m, e, w, h, e, r, e, ., c, o, m]])
+16:26:42.407 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageEmailInput], [c, a, r, l, @, s, o, m, e, w, h, e, r, e, ., c, o, m]]
+16:26:42.412 INFO - Executing: [find elements: By.cssSelector: #signUpPagePasswordInput])
+16:26:42.430 INFO - Done: [find elements: By.cssSelector: #signUpPagePasswordInput]
+16:26:42.435 INFO - Executing: [find element: By.cssSelector: #signUpPagePasswordInput])
+16:26:42.452 INFO - Done: [find element: By.cssSelector: #signUpPagePasswordInput]
+16:26:42.455 INFO - Executing: [clear: 2 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordInput]])
+16:26:42.493 INFO - Done: [clear: 2 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordInput]]
+16:26:42.496 INFO - Executing: [find element: By.cssSelector: #signUpPagePasswordInput])
+16:26:42.514 INFO - Done: [find element: By.cssSelector: #signUpPagePasswordInput]
+16:26:42.519 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordInput], [c, a, r, l, 1, 2, 3]])
+16:26:42.572 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordInput], [c, a, r, l, 1, 2, 3]]
+16:26:42.576 INFO - Executing: [find elements: By.cssSelector: #signUpPagePasswordConfirmInput])
+16:26:42.597 INFO - Done: [find elements: By.cssSelector: #signUpPagePasswordConfirmInput]
+16:26:42.601 INFO - Executing: [find element: By.cssSelector: #signUpPagePasswordConfirmInput])
+16:26:42.620 INFO - Done: [find element: By.cssSelector: #signUpPagePasswordConfirmInput]
+16:26:42.623 INFO - Executing: [clear: 3 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordConfirmInput]])
+16:26:42.657 INFO - Done: [clear: 3 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordConfirmInput]]
+16:26:42.660 INFO - Executing: [find element: By.cssSelector: #signUpPagePasswordConfirmInput])
+16:26:42.677 INFO - Done: [find element: By.cssSelector: #signUpPagePasswordConfirmInput]
+16:26:42.681 INFO - Executing: [send keys: 3 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordConfirmInput], [c, a, r, l, 1, 2, 3]])
+16:26:42.735 INFO - Done: [send keys: 3 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPagePasswordConfirmInput], [c, a, r, l, 1, 2, 3]]
+16:26:42.741 INFO - Executing: [find element: By.cssSelector: #signUpPageJoinNowButton])
+16:26:42.759 INFO - Done: [find element: By.cssSelector: #signUpPageJoinNowButton]
+16:26:42.764 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageJoinNowButton]])
+16:26:42.813 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #signUpPageJoinNowButton]]
+16:26:44.127 INFO - Executing: [set window size])
+16:26:44.237 INFO - Done: [set window size]
+16:26:44.741 INFO - Executing: [find elements: By.cssSelector: #checklistPage])
+16:26:44.759 INFO - Done: [find elements: By.cssSelector: #checklistPage]
+16:26:44.764 INFO - Executing: [find elements: By.cssSelector: #appLayout])
+16:26:44.780 INFO - Done: [find elements: By.cssSelector: #appLayout]
+16:26:44.785 INFO - Executing: [find elements: By.cssSelector: #navbarHeader])
+16:26:44.803 INFO - Done: [find elements: By.cssSelector: #navbarHeader]
+16:26:44.807 INFO - Executing: [find elements: By.cssSelector: #panelSurface])
+16:26:44.824 INFO - Done: [find elements: By.cssSelector: #panelSurface]
+16:26:44.828 INFO - Executing: [find elements: By.cssSelector: #panelSurface .content-scrollable])
+16:26:44.847 INFO - Done: [find elements: By.cssSelector: #panelSurface .content-scrollable]
+16:26:44.851 INFO - Executing: [find elements: By.cssSelector: #navbarFooter])
+16:26:44.868 INFO - Done: [find elements: By.cssSelector: #navbarFooter]
+16:26:44.873 INFO - Executing: [find elements: By.cssSelector: #sidebar])
+16:26:44.891 INFO - Done: [find elements: By.cssSelector: #sidebar]
+16:26:44.895 INFO - Executing: [find elements: By.cssSelector: #sidebarMenuContents])
+16:26:44.912 INFO - Done: [find elements: By.cssSelector: #sidebarMenuContents]
+16:26:44.917 INFO - Executing: [find element: By.cssSelector: #aboutButton])
+16:26:44.935 INFO - Done: [find element: By.cssSelector: #aboutButton]
+16:26:44.938 INFO - Executing: [click: 13 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #aboutButton]])
+16:26:44.977 INFO - Done: [click: 13 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #aboutButton]]
+16:26:44.981 INFO - Executing: [find elements: By.cssSelector: #aboutPage])
+16:26:45.012 INFO - Done: [find elements: By.cssSelector: #aboutPage]
+16:26:45.016 INFO - Executing: [find element: By.cssSelector: #eulaButton])
+16:26:45.033 INFO - Done: [find element: By.cssSelector: #eulaButton]
+16:26:45.035 INFO - Executing: [click: 15 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #eulaButton]])
+16:26:45.103 INFO - Done: [click: 15 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #eulaButton]]
+16:26:45.113 INFO - Executing: [find elements: By.cssSelector: #eulaPage])
+16:26:45.137 INFO - Done: [find elements: By.cssSelector: #eulaPage]
+16:26:45.139 INFO - Executing: [is displayed: 16 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #eulaPage]])
+16:26:45.170 INFO - Done: [is displayed: 16 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #eulaPage]]
+16:26:45.174 INFO - Executing: [find element: By.cssSelector: #privacyButton])
+16:26:45.191 INFO - Done: [find element: By.cssSelector: #privacyButton]
+16:26:45.193 INFO - Executing: [click: 17 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #privacyButton]])
+16:26:45.239 INFO - Done: [click: 17 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #privacyButton]]
+16:26:45.245 INFO - Executing: [find elements: By.cssSelector: #privacyPage])
+16:26:45.272 INFO - Done: [find elements: By.cssSelector: #privacyPage]
+16:26:45.278 INFO - Executing: [find elements: By.cssSelector: #logoutButton])
+16:26:45.296 INFO - Done: [find elements: By.cssSelector: #logoutButton]
+16:26:45.299 INFO - Executing: [find element: By.cssSelector: #logoutButton])
+16:26:45.319 INFO - Done: [find element: By.cssSelector: #logoutButton]
+16:26:45.323 INFO - Executing: [click: 19 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #logoutButton]])
+16:26:45.362 INFO - Done: [click: 19 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #logoutButton]]
+16:26:45.670 INFO - Executing: [find element: By.cssSelector: #usernameLink])
+16:26:45.689 INFO - Done: [find element: By.cssSelector: #usernameLink]
+16:26:45.692 INFO - Executing: [get text: 20 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #usernameLink]])
+16:26:45.713 INFO - Done: [get text: 20 [[ChromeDriver: chrome on MAC (e8dfc98f4b7151379eb330ba07dbea22)] -> css selector: #usernameLink]]
+16:26:45.717 INFO - Executing: [find elements: By.cssSelector: #logoutButton])
+16:26:45.735 INFO - Done: [find elements: By.cssSelector: #logoutButton]
+16:26:45.741 INFO - Executing: [set script timeoutt: 5000])
+16:26:45.745 INFO - Done: [set script timeoutt: 5000]
+16:26:45.748 INFO - Executing: [execute async script: var passedArgs = Array.prototype.slice.call(arguments,0); return function (data, meteorCallback) {
+      //return HipaaLogger.logEventObject(data);
+      Meteor.call("dropEntryUsers", data, function (meteorError, meteorResult) {
+        var response = (meteorError ? {
+          error: meteorError
+        } : {
+          result: meteorResult
+        });
+        meteorCallback(response);
+      });
+    }.apply(window, passedArgs);, []])
+16:26:52.026 WARN - Exception thrown
+org.openqa.selenium.TimeoutException: asynchronous script timeout: result was not received in 5 seconds
+  (Session info: chrome=48.0.2564.116)
+  (Driver info: chromedriver=2.19.346063 (38b35413bd4a486d436a9749e090454bc9ff6708),platform=Mac OS X 10.11.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.11 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini.hsd1.ca.comcast.net', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.6.0_65'
+Session ID: e8dfc98f4b7151379eb330ba07dbea22
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.IWr4kL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=48.0.2564.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeAsyncScript(RemoteWebDriver.java:526)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy1.executeAsyncScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeAsyncScript(EventFiringWebDriver.java:225)
+	at org.openqa.selenium.remote.server.handler.ExecuteAsyncScript.call(ExecuteAsyncScript.java:57)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+16:26:52.028 WARN - Exception: asynchronous script timeout: result was not received in 5 seconds
+  (Session info: chrome=48.0.2564.116)
+  (Driver info: chromedriver=2.19.346063 (38b35413bd4a486d436a9749e090454bc9ff6708),platform=Mac OS X 10.11.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.11 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Abigails-Mini.hsd1.ca.comcast.net', ip: '192.168.1.105', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.6.0_65'
+Session ID: e8dfc98f4b7151379eb330ba07dbea22
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/wy/x2wnhsd15rxbcnwr07g161b00000gn/T/.org.chromium.Chromium.IWr4kL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=48.0.2564.116, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+16:26:53.176 INFO - Executing: [delete session: bc579912-1423-45f6-82f6-d3dae79a56f1])
+16:26:53.737 INFO - Done: [delete session: bc579912-1423-45f6-82f6-d3dae79a56f1]

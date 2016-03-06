@@ -7,27 +7,24 @@ module.exports = {
     client
       .resizeWindow(1024, 768)
 
-      //============================================================================================
-      .sectionBreak("A. Demo User SignIn")
-
       .url("http://localhost:3000/entrySignIn")
-      .waitForPage("#entrySignIn")
+      .pause(500)
+      .verify.elementPresent("#entrySignIn")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-signInPage.png")
-      .reviewSignInPage()
-
-      //============================================================================================
-      .sectionBreak("B. Marketing, Support, and Privacy")
 
       .url("http://localhost:3000/features")
-      .waitForPage("#marketingPage")
+      .pause(500)
+      .verify.elementPresent("#marketingPage")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-marketingPage.png")
 
       .url("http://localhost:3000/support")
-      .waitForPage("#supportPage")
+      .pause(500)
+      .verify.elementPresent("#supportPage")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-supportPage.png")
 
       .url("http://localhost:3000/privacy")
-      .waitForPage("#privacyPage")
+      .pause(500)
+      .verify.elementPresent("#privacyPage")
       .saveScreenshot("tests/nightwatch/screenshots/iTunesConnect/A-privacyPage.png")
 
       .end();
