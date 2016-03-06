@@ -1,4 +1,7 @@
 {
+  "clinical:active-entry": {
+    "git": "https://github.com/clinical-meteor/clinical-active-entry.git"
+  },
   "clinical:active-layout": {
     "git": "https://github.com/clinical-meteor/clinical-active-layout.git"
   },
