@@ -162,9 +162,9 @@ module.exports = {
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#navbarHeader").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
-      .click("#logoutButton").pause(500)
+      .click("#logoutButton").pause(600)
       // sidebar should have closed; reopen
-      .click("#navbarHeader").pause(300)
+      .click("#navbarHeader").pause(400)
       .verify.containsText("#usernameLink", "Sign In");
   },
   "existing user should be able to change their password" : function (client) {

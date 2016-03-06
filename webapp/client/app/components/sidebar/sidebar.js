@@ -32,15 +32,15 @@ Template.sidebar.events({
   },
   'click #logoutButton': function() {
     Meteor.logout(function(){
-      Router.go('/entrySignIn')
+      // if we are on a private list, we'll need to go to a public one
+      var current = Router.current();
+      if (current.route.name === 'checklistPage' && current.data().userId) {
+        Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
+      } else {
+        Router.go('/entrySignIn')
+      }
     });
 
-
-    // if we are on a private list, we'll need to go to a public one
-    var current = Router.current();
-    if (current.route.name === 'checklistPage' && current.data().userId) {
-      Router.go('checklistPage', Lists.findOne({userId: {$exists: false}}));
-    }
     if (Session.get("appWidth") < 1024) {
       Session.set('useHorizontalFences', false)
     }
