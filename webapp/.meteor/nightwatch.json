@@ -15,11 +15,6 @@
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
     "./tests/nightwatch/commands/methods",
-    "packages/active-users/client/components/userEditPage/.tests",
-    "packages/active-users/client/components/userImageGridPage/.tests",
-    "packages/active-users/client/components/userPreviewPage/.tests",
-    "packages/active-users/client/components/usersListPage/.tests",
-    "packages/active-users/client/components/usersTablePage/.tests",
     "packages/clinical-keybindings/client/components/keybindingsModal/.tests"
   ],
   "custom_assertions_path": [
