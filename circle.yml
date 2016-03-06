@@ -57,7 +57,7 @@ test:
           background: true
     - sleep 60
   override:
-    - starrynight run-tests --type validation --env travischrome
+    - starrynight run-tests --type validation --env travischrome --skiptags layout
 
 ## Customize deployment commands
 #deployment:
