@@ -1,21 +1,18 @@
 {
   "clinical:active-entry": {
-    "git": "https://github.com/clinical-meteor/clinical-active-entry.git"
+    "git": "https://github.com/clinical-meteor/active-entry.git"
   },
   "clinical:active-layout": {
-    "git": "https://github.com/clinical-meteor/clinical-active-layout.git"
+    "git": "https://github.com/clinical-meteor/active-layout.git"
   },
   "clinical:theming": {
-    "git": "https://github.com/clinical-meteor/clinical-theming.git"
-  },
-  "clinical:active-entry": {
-    "git": "https://github.com/clinical-meteor/clinical-active-entry.git"
+    "git": "https://github.com/clinical-meteor/theming.git"
   },
   "clinical:static-pages": {
-    "git": "https://github.com/clinical-meteor/clinical-static-pages.git"
+    "git": "https://github.com/clinical-meteor/static-pages.git"
   },
   "clinical:error-pages": {
-    "git": "https://github.com/clinical-meteor/clinical-error-pages.git"
+    "git": "https://github.com/clinical-meteor/error-pages.git"
   },
   "clinical:extended-api": {
     "git": "https://github.com/clinical-meteor/extended-api.git"
