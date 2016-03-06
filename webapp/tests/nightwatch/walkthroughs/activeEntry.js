@@ -140,7 +140,7 @@ module.exports = {
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
-      .verify.containsText("#usernameLink", "Sign In");
+      .verify.containsText("#usernameLink", "Sign In")
       .meteorLogout()
   },
   "existing user should be able to sign in on tablet": function (client) {
