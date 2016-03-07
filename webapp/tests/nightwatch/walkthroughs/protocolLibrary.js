@@ -27,6 +27,7 @@ module.exports = {
       .verify.elementPresent("#protocolLibraryLink")
       .click("#protocolLibraryLink").pause(1000)
       .verify.elementPresent("#protocolLibraryItems")
+      .saveScreenshot("tests/nightwatch/screenshots/protocols/A-ProtocolLibrary.png")
       // TODO:  implement this
       //.verify.containsText("pageTitle", "Protocol Library")
   },
@@ -42,6 +43,7 @@ module.exports = {
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .cloneButton")
       .verify.elementPresent("#lists .listItem:nth-child(1)")
       .verify.elementNotPresent("#lists .listItem:nth-child(2)")
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-Public.png")
   },
   "signed in user - can not see unpublished private lists in library": function(client) {
     client
@@ -64,6 +66,7 @@ module.exports = {
       .clearValue("#listNameInput")
       .setValue("#listNameInput", "Public List")
       .click("#saveListButton").pause(300)
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-ConfigModal.png")
 
       .click("#protocolLibraryLink").pause(1000)
       .verify.elementPresent("#protocolLibraryItems")
@@ -71,6 +74,7 @@ module.exports = {
       .verify.containsText("#protocolLibraryItems .libraryItem:nth-child(4) .protocolName", "Public List")
       .verify.containsText("#lists .listItem:nth-child(1)", "Public List")
       .verify.containsText("#lists .listItem:nth-child(2)", "List B")
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-Published.png")
 
       .click("#logoutButton").pause(300)
   },
@@ -85,11 +89,15 @@ module.exports = {
       .click("#protocolLibraryLink").pause(300)
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4) .protocolName", "Public List")
       .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(4) .cloneButton")
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-CanClone.png")
+      
       .click("#protocolLibraryItems .libraryItem:nth-child(4) .cloneButton").pause(400)
       .verify.elementPresent("#lists .listItem:nth-child(1)")
       .verify.elementPresent("#lists .listItem:nth-child(2)")
       .verify.containsText("#lists .listItem:nth-child(1)", "List A")
       .verify.containsText("#lists .listItem:nth-child(2)", "Public List")
+      .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-Cloned.png")
+      
       .click("#logoutButton").pause(300)
   },
   "anonymous user - can view public checklistPage with URL" : function (client) {
@@ -99,6 +107,7 @@ module.exports = {
         .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton")
         .verify.elementPresent("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName")
         .verify.containsText("#protocolLibraryItems .libraryItem:nth-child(1) .protocolName", "Collect Blood Specimen")
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-PublicProtocols.png")
         .click("#protocolLibraryItems .libraryItem:nth-child(1) .previewButton").pause(300)
 
         .verify.visible("#checklistPage")
@@ -108,6 +117,8 @@ module.exports = {
         .verify.visible("#checklistPage .taskItem:nth-child(1)")
         .verify.visible("#checklistPage .taskItem:nth-child(1) .taskInput")
         .verify.attributeEquals("#checklistPage .taskItem:nth-child(1) .taskInput", "placeholder", "Step 1a:  Assemble equipment for collecting blood.")
+        
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-PublicList.png")
   },
   after: function (client){
     client

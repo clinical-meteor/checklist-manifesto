@@ -86,6 +86,67 @@ Meteor.methods({
          "Could you be pregnant?",
          "Are you breast-feeding?"
        ]
+      },
+      {
+        name: "Incident Response Containment Checklist",
+        url: "https://github.com/catalyzeio/policies",
+        items: [
+          "1. Review any information that has been collected by the Security Officer or any other individual investigating the security incident.",
+          "2. Secure the network perimeter.",
+          "3. Securely connect to the affected system over a trusted connection.",
+          "4. Retrieve any volatile data from the affected system.",
+          "5. Determine the relative integrity and the appropriateness of backing the system up.",
+          "6. If appropriate, back up the system.",
+          "7. Change the password(s) to the affected system(s).",
+          "8. Determine whether it is safe to continue operations with the affect system(s).",
+          "9. If it is safe, allow the system to continue to function.",
+          "10. Complete any documentation relative to the security incident on the SIR Form.",
+          "11. Apprise Senior Management of progress.",
+          "12. Notify affected Customers and Partners with relevant updates as needed."
+        ]
+      },
+      {
+        name: "Incident Response Eradication Checklist",
+        url: "https://github.com/catalyzeio/policies",
+        items: [
+          "1. Determine symptoms and cause related to the affected system(s).",
+          "2. Strengthen the defenses surrounding the affected system(s), where possible.",
+          "3. Increase in network perimeter defenses.",
+          "4. Increase in system monitoring defenses.",
+          "5. Remediate any security issues within the affected system, such as removing unused services/general host hardening techniques.",
+          "6. Conduct a detailed vulnerability assessment to verify all the holes/gaps that can be exploited have been addressed.",
+          "7. If additional issues or symptoms are identified, take appropriate preventative measures to eliminate or minimize potential future compromises.",
+          "8. Update the Security Incident Documentation with the information learned from the vulnerability assessment, including the cause, symptoms, and the method used to fix the problem with the affected system(s).",
+          "9. Apprise Senior Management of the progress.",
+          "10. Continue to notify affected Customers and Partners with relevant updates as needed."
+        ]
+      },
+      {
+        name: "Incident Response Recovery Checklist",
+        url: "https://github.com/catalyzeio/policies",
+        items: [
+          "1. Determines if the affected system(s) have been changed in any way.",
+          "2. If they have, restores the system to its proper, intended functioning (“last known good”).",
+          "3. Once restored, validate that the system functions the way it was intended/had functioned in the past. This may require the involvement of the business unit that owns the affected system(s).",
+          "4. If operation of the system(s) had been interrupted (i.e., the system(s) had been taken offline or dropped from the network while triaged), restart the restored and validated system(s) and monitor for behavior.",
+          "5. If the system had not been changed in any way, but was taken offline (i.e., operations had been interrupted), restart the system and monitor for proper behavior.",
+          "6. Update the documentation with the detail that was determined during this phase.",
+          "7. Apprise Senior Management of progress.",
+          "8. Continue to notify affected Customers and Partners with relevant updates as needed."
+        ]
+      },
+      {
+        name: "Incident Response Followup Checklist",
+        url: "https://github.com/catalyzeio/policies",
+        items: [
+          "1. Responders to the security incident (Security Incident Response Team) meet to review the documentation collected during the security incident.",
+          "2. Create a “lessons learned” document and attach it to the completed SIR Form.",
+          "3. Evaluate the cost and impact of the security incident to Catalyze using the documents provided by the SIRT and the technical security resource.",
+          "4. Determine what could be improved.",
+          "5. Communicate these findings to Senior Management for approval and for implementation of any recommendations made post-review of the security incident.",
+          "6. Carry out recommendations approved by Senior Management; sufficient budget, time and resources should be committed to this activity.",
+          "7. Close the security incident."
+        ]
       }
     ];
     var timestamp = (new Date()).getTime();
