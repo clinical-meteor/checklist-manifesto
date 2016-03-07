@@ -47,7 +47,8 @@ module.exports = {
     client.verify.elementPresent("#signUpPageEmailInput")
       .verify.elementPresent("#signUpPagePasswordInput")
       .verify.elementPresent("#signUpPagePasswordInput")
-      .verify.elementPresent("#signUpPageJoinNowButton");
+      .verify.elementPresent("#signUpPageJoinNowButton")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp.png")
   },
   // confirm password is an all-or-nothing check, so we don't use the in-between-color
   "guest should be notified if password is insecure": function (client) {
@@ -57,11 +58,14 @@ module.exports = {
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid gray')
       .setValue("#signUpPagePasswordInput", "jan")
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid rgb(242, 222, 222)')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-WeakPassword.png")
       .setValue("#signUpPagePasswordInput", "icedoe123")
       .verify.cssProperty('#signUpPagePasswordInput', 'border', '1px solid green')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-AcceptablePassword.png")
 
     .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid gray')
       .setValue("#signUpPagePasswordConfirmInput", "ja")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-PartialMatch.png")
       .click("#signUpPagePasswordConfirmInput").pause(100) // hack to unfocus and input the data
       // .setValue("#signUpPagePasswordConfirmInput", "n") // we split our setValue into two as a workaround for keyup detection
       .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid rgb(169, 68, 66)')
@@ -69,7 +73,8 @@ module.exports = {
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
       // .click("#signUpPagePasswordConfirmInput").pause(100) // hack to unfocus and input the data
       // .setValue("#signUpPagePasswordConfirmInput", " ")// we split our setValue into two as a workaround for keyup detection
-      .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid green');
+      .verify.cssProperty('#signUpPagePasswordConfirmInput', 'border', '1px solid green')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-Match.png")
   },
   "guest should be notified if passwords do not match": function (client) {
     client
@@ -92,10 +97,13 @@ module.exports = {
       .resetEntry()
       .verify.elementPresent("#signUpPageEmailInput")
       .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid gray')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-PasswordNeeded.png")
       .setValue("#signUpPageEmailInput", "janicedoe")
       .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid rgb(242, 222, 222)')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-IncorrectFormat.png")
       .setValue("#signUpPageEmailInput", "@symptomatic.io")
-      .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid green');
+      .verify.cssProperty('#signUpPageEmailInput', 'border', '1px solid green')
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-CorrectlyFormatted.png")
   },
   "when new user fills out form and registers, new user should get created": function (client) {
     client
@@ -111,25 +119,31 @@ module.exports = {
       .setValue("#signUpPageEmailInput", "janicedoe@symptomatic.io")
       .setValue("#signUpPagePasswordInput", "janicedoe123")
       .setValue("#signUpPagePasswordConfirmInput", "janicedoe123")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-NewUserInputs.png")
 
     .click("#signUpPageJoinNowButton").pause(1000)
+    .saveScreenshot("tests/nightwatch/screenshots/entry/SignUp-NewUserCreated.png")
 
     .verify.containsText("#usernameLink", "janicedoe@symptomatic.io");
   },
   "user should be able to signout": function (client) {
     client
       .verify.elementPresent("#logoutButton")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/CanLogout.png")
       .click("#logoutButton").pause(300)
-      .verify.containsText("#usernameLink", "Sign In");
+      .verify.containsText("#usernameLink", "Sign In")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/LoggedOut.png")
   },
   "user should be able to request reset password email": function (client) {
     client
       .url("http://localhost:3000/entrySignIn")
       .verify.elementPresent("#forgotPasswordButton")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/CanRequestForgottenPassword.png")
       .click("#forgotPasswordButton")
       .verify.elementPresent("#forgotPassword")
       .verify.elementPresent("#signInPageEmailInput")
-      .verify.elementPresent("#sendReminderButton");
+      .verify.elementPresent("#sendReminderButton")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/ForgotPassword.png")
       .meteorLogout()
   },
   "existing user should be able to sign in on desktop": function (client) {
@@ -137,6 +151,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(1600, 1200)
       .verify.containsText("#usernameLink", "Sign In")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-Desktop.png")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
@@ -148,6 +163,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(1024, 768)
       .verify.containsText("#usernameLink", "Sign In")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-Tablet.png")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
       .click("#logoutButton").pause(200)
@@ -159,6 +175,7 @@ module.exports = {
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(320, 960)
       // .verify.containsText("#usernameLink", "Sign In")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-Phone.png")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#navbarHeader").pause(300)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
@@ -178,6 +195,7 @@ module.exports = {
       .verify.elementPresent("#changePasswordPagePasswordInput")
       .verify.elementPresent("#changePasswordPagePasswordConfirmInput")
       .verify.elementPresent("#changePasswordButton")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/ChangePassword.png")
   },
   "existing user should be notified if desired new password is insecure" : function (client) {
     client
@@ -215,7 +233,8 @@ module.exports = {
       .verify.containsText("#signInPageMessage", "User not found [403]")
       .verify.cssProperty("#signInPageMessage", "color", "rgba(169, 68, 66, 1)")
       .verify.cssProperty("#signInPageMessage", "background-color", "rgba(242, 222, 222, 1)")
-      .verify.cssProperty("#signInPageMessage", "border-color", "rgb(235, 204, 209)");
+      .verify.cssProperty("#signInPageMessage", "border-color", "rgb(235, 204, 209)")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-AccountDoesntExist.png")
   },
   "anonymous guest should be notified if email already exists": function (client) {
     client
@@ -224,7 +243,8 @@ module.exports = {
       .signUp("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .click("#signUpPageJoinNowButton").pause(1000)
       .verify.elementPresent("#signUpPageMessage")
-      .verify.containsText("#signUpPageMessage", "Email already exists. [403]");
+      .verify.containsText("#signUpPageMessage", "Email already exists. [403]")
+      .      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-EmailAlreadyExists.png")
   },
   after: function (client) {
     client
