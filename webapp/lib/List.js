@@ -20,16 +20,16 @@ List = {
     }
 
     // bump the ordinal of all the tasks
-    Tasks.find({listId: Session.get('selectedListId')}).forEach(function(task){
-      Tasks.update({_id: task._id}, {$set: {
+    DiagnosticOrders.find({listId: Session.get('selectedListId')}).forEach(function(task){
+      DiagnosticOrders.update({_id: task._id}, {$set: {
         ordinal: task.ordinal + 1
       }})
     });
 
     console.log('newTask', newTask);
 
-    var result = Tasks.insert(newTask);
-    console.log('newTask', Tasks.findOne({_id: result}));
+    var result = DiagnosticOrders.insert(newTask);
+    console.log('newTask', DiagnosticOrders.findOne({_id: result}));
 
     Lists.update(record._id, {$inc: {incompleteCount: 1}});
     $('#newTaskInput').val('');
@@ -53,8 +53,8 @@ List = {
     //   return alert("Sorry, you cannot delete the final public list!");
     // }
 
-    Tasks.find({listId: listId}).forEach(function(task) {
-      Tasks.remove(task._id);
+    DiagnosticOrders.find({listId: listId}).forEach(function(task) {
+      DiagnosticOrders.remove(task._id);
     });
     Lists.remove(listId);
 

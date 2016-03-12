@@ -62,10 +62,10 @@ Template.tasksItem.helpers({
 Template.tasksItem.events({
   'click .checkbox': function(event) {
     if (this.status === "completed") {
-      Tasks.update(this._id, {$set: {status: "planned"}});
+      DiagnosticOrders.update(this._id, {$set: {status: "planned"}});
       Lists.update(this.listId, {$inc: {incompleteCount: -1 }});
     } else {
-      Tasks.update(this._id, {$set: {status: "completed"}});
+      DiagnosticOrders.update(this._id, {$set: {status: "completed"}});
       Lists.update(this.listId, {$inc: {incompleteCount: 1 }});
     }
   },
@@ -94,13 +94,13 @@ Template.tasksItem.events({
   // every 300ms)
   'keyup input[type=text]': _.throttle(function(event) {
     console.log('keyup input[type=text]', event.target.value);
-    Tasks.update(this._id, {$set: {text: event.target.value}});
+    DiagnosticOrders.update(this._id, {$set: {text: event.target.value}});
   }, 300),
 
   // handle mousedown otherwise the blur handler above will swallow the click
   // on iOS, we still require the click event so handle both
   'mousedown .js-delete-item, click .js-delete-item': function() {
-    Tasks.remove(this._id);
+    DiagnosticOrders.remove(this._id);
     if (this.status !== "completed") {
       Lists.update(this.listId, {$inc: {incompleteCount: -1}});
     }

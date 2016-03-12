@@ -27,8 +27,8 @@ Template.libraryItem.events({
         incompleteCount: this.incompleteCount
       }, function(error, newListId){
         console.log('List Cloned to ' + newListId);
-        Tasks.find({listId: selectedListId}).forEach(function(task){
-          Tasks.insert({
+        DiagnosticOrders.find({listId: selectedListId}).forEach(function(task){
+          DiagnosticOrders.insert({
             listId: newListId,
             public: task.public,
             ordinal: task.ordinal,

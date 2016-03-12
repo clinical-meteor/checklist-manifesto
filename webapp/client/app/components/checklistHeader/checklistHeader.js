@@ -25,8 +25,8 @@ Template.checklistHeader.events({
       if(Session.get('deleteListConfirmed')){
         console.log('delete list', Session.get('selectedListId'));
 
-        Tasks.find({listId: this._id}).forEach(function(task) {
-          Tasks.remove(task._id);
+        DiagnosticOrders.find({listId: this._id}).forEach(function(task) {
+          DiagnosticOrders.remove(task._id);
         });
         Lists.remove(Session.get('selectedListId'));
 

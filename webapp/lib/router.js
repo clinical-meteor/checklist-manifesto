@@ -56,6 +56,9 @@ Router.map(function() {
       },
       'configListModal': {
         to: 'modalA'
+      },
+      'iframe': {
+        to: 'secondPage'
       }
     },
     onAfterAction: function(){

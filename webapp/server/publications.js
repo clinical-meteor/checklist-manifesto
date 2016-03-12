@@ -12,11 +12,11 @@ Meteor.publish('lists', function() {
 
 Meteor.publish('tasks', function() {
   if(this.userId){
-    return Tasks.find({$or:[
+    return DiagnosticOrders.find({$or:[
       {ownerId: this.userId},
       {public: true}
       ]});
   }else{
-    return Tasks.find({public: true});
+    return DiagnosticOrders.find({public: true});
   }
 });

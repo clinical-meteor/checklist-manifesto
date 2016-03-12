@@ -250,7 +250,7 @@ module.exports = {
       .click("#signUpPageJoinNowButton").pause(1000)
       .verify.elementPresent("#signUpPageMessage")
       .verify.containsText("#signUpPageMessage", "Email already exists. [403]")
-      .      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-EmailAlreadyExists.png")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-EmailAlreadyExists.png")
   },
   after: function (client) {
     client

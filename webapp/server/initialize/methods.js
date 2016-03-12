@@ -163,9 +163,10 @@ Meteor.methods({
       if(list.items){
         list.items.forEach(function(text, index){
           // add a new task
-          Tasks.insert({
+          DiagnosticOrders.insert({
             orderer: {
-              display: "System"
+              display: "System",
+              reference: "System"
             },
             listId: listId,
             public: true,
@@ -187,8 +188,8 @@ Meteor.methods({
     Lists.find().forEach(function(list){
       Lists.remove({_id: list._id});
     });
-    Tasks.find().forEach(function(task){
-      Tasks.remove({_id: task._id});
+    DiagnosticOrders.find().forEach(function(task){
+      DiagnosticOrders.remove({_id: task._id});
     })
   }
 });

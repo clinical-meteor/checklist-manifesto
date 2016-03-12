@@ -16,7 +16,7 @@ Template.checklistPage.helpers({
     return Lists.findOne({_id: Session.get('selectedListId')});
   },
   tasks: function() {
-    return Tasks.find({listId: Session.get('selectedListId')}, {sort: {ordinal : 1}});
+    return DiagnosticOrders.find({listId: Session.get('selectedListId')}, {sort: {ordinal : 1}});
   },
   editing: function() {
     return Session.get('editingList');
