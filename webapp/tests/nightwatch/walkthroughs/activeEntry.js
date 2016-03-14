@@ -154,6 +154,7 @@ module.exports = {
       .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-Desktop.png")
       .signIn("janicedoe@symptomatic.io", "janicedoe123").pause(500)
       .verify.containsText("#usernameLink", "janicedoe@symptomatic.io")
+      .saveScreenshot("tests/nightwatch/screenshots/entry/SignIn-Desktop-Result.png")
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In")
       .meteorLogout();
