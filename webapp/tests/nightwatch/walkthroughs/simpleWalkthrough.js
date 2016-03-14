@@ -43,8 +43,6 @@ module.exports = {
       .verify.elementNotPresent("#logoutButton");
   },
   after: function(client){
-    client
-      .dropEntryUsers()
-      .end();
+    client.end();
   }
 };

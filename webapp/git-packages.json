@@ -20,5 +20,4 @@
   "clinical:logging": {
     "git": "https://github.com/clinical-meteor/logging.git"
   }
-
 }

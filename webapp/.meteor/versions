@@ -32,7 +32,7 @@ clinical:router-location@2.0.14
 clinical:router-middleware-stack@2.0.13
 clinical:router-url@2.0.15
 clinical:static-pages@1.0.18
-clinical:theming@0.4.7
+clinical:theming@0.4.9
 clinical:theming-ui@0.2.7
 clinical:ui-vocabulary@1.0.5
 clinical:user-model@1.4.2
