@@ -24,7 +24,7 @@ clinical:fonts@1.0.0
 clinical:glass-ui@1.3.10
 clinical:hipaa-logger@1.0.1
 clinical:hl7-resource-datatypes@0.1.0
-clinical:hl7-resource-diagnostic-order@1.2.0
+clinical:hl7-resource-diagnostic-order@1.3.0
 clinical:keybindings@1.2.6
 clinical:modals@1.0.7
 clinical:router@2.0.17
