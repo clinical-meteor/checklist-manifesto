@@ -36,7 +36,7 @@ clinical:hipaa-logger
 
 clinical:auto-resizing
 clinical:active-layout
-clinical:base-model
+#clinical:base-model
 clinical:active-users
 
 clinical:hl7-resource-diagnostic-order
