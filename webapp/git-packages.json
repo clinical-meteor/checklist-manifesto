@@ -5,6 +5,9 @@
   "clinical:active-layout": {
     "git": "https://github.com/clinical-meteor/active-layout.git"
   },
+  "clinical:active-users": {
+    "git": "https://github.com/clinical-meteor/active-users.git"
+  },
   "clinical:theming": {
     "git": "https://github.com/clinical-meteor/theming.git"
   },
@@ -17,7 +20,13 @@
   "clinical:extended-api": {
     "git": "https://github.com/clinical-meteor/extended-api.git"
   },
-  "clinical:logging": {
-    "git": "https://github.com/clinical-meteor/logging.git"
+  "clinical:csv": {
+    "git": "https://github.com/clinical-meteor/csv.git"
+  },
+  "clinical:hl7-resource-diagnostic-order": {
+    "git": "https://github.com/clinical-meteor/hl7-resource-diagnostic-order.git"
+  },
+  "clinical:hipaa-logger": {
+    "git": "https://github.com/clinical-meteor/hipaa-logger.git"
   }
 }

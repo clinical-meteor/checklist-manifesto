@@ -11,12 +11,12 @@
 
 
 if (Meteor.isClient){
-  Meteor.subscribe("diagnosticOrders");
+  Meteor.subscribe("DiagnosticOrders");
 }
 
 
 if (Meteor.isServer){
-  Meteor.publish("diagnosticOrders", function (argument){
+  Meteor.publish("DiagnosticOrders", function (argument){
     return DiagnosticOrders.find();
   });
 }

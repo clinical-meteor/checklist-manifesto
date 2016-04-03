@@ -2,3 +2,9 @@ clinical-active-layout
 clinical-theming
 clinical-active-entry
 clinical-static-pages
+clinical-active-users
+clinical-error-pages
+clinical-extended-api
+clinical-csv
+clinical-hl7-resource-diagnostic-order
+clinical-hipaa-logger
