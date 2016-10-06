@@ -60,9 +60,6 @@ Router.map(function() {
       'iframe': {
         to: 'secondPage'
       }
-    },
-    onAfterAction: function(){
-      //Session.set('showNavbars', true);
     }
   });
 
@@ -103,20 +100,6 @@ if (Meteor.isClient) {
   Router.onBeforeAction(function (){
     Session.set('pageTitle', '');
     Session.set('useCardLayout', true);
-    // Session.set('westPanelVisible', false);
-    //Session.set('showNavbars', false);
-    //WestPanel.hide();
     this.next();
   });
-
-  // Router.onAfterAction(function (){
-  //   if (Session.get("appWidth") < 1040) {
-  //      Session.set('appSurfaceOffset', true);
-  //      Session.set('useEastFence', false);
-  //   } else {
-  //      Session.set('appSurfaceOffset', true);
-  //      Session.set('useEastFence', true);
-  //   }
-  // });
-
 }
