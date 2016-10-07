@@ -31,14 +31,12 @@ clinical:fonts
 clinical:hipaa-logger
 clinical:csv
 
-
-#clinical:mobile
-#clinical:offline
-
 clinical:auto-resizing
 clinical:active-layout
-#clinical:base-model
 clinical:active-users
+
+clinical:accounts-housemd
+clinical:accounts-famous-dead-people
 
 clinical:hl7-resource-diagnostic-order
 

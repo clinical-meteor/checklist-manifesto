@@ -27,4 +27,5 @@ Lists.createNew = function(){
 
 if (Meteor.isClient){
   Meteor.subscribe('lists');
+  Meteor.subscribe('tasks');
 }

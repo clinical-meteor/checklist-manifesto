@@ -128,6 +128,12 @@ module.exports = {
 
         .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-PublicList.png")
   },
+  "anonymous user - can't edit public checklistPage with URL" : function (client) {
+    client
+      .url("http://localhost:3000/protocols").pause(500)
+
+        .saveScreenshot("tests/nightwatch/screenshots/checklists/A-ProtocolLibrary-PublicList-NonEditable.png")
+  },
   after: function (client){
     client
       .dropEntryUsers()

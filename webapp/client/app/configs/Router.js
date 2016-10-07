@@ -31,7 +31,6 @@ Router.configure({
 
 
 Router.map(function() {
-
   this.route('checklistPage', {
     path: '/lists/:_id',
     onBeforeAction: function() {
